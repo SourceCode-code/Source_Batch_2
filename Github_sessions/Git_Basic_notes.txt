@@ -16,3 +16,6 @@ git branch -M main
 git remote add origin https://github.com/SourceCode-code/Source_Batch_2.git
 git push -u origin main
 
+// to get the latest changes --
+
+git pull origin main
