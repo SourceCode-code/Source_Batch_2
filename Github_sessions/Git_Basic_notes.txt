@@ -1,5 +1,10 @@
 git -- version control  tool software 
-github--hosting platfrom (repo) // website 
+
+github--hosting platfrom (repo) // website -- 90% -- microsoft
+
+bitbucket ------- 10                              -- altsain
+
+
 
 untarck ---->                                stagging --------->                      github
                                                middle env                           
