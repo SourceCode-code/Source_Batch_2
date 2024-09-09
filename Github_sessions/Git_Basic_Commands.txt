@@ -19,3 +19,11 @@ git push -u origin main
 // git commit -m"commit message " --------- commits your changes to your repo
 
 // git push origin main          ---------- changes pushed to github 
+
+
+// to push changes in your exstitng repo 
+
+
+1 git add .
+2 git commit -m"commit message"
+3 git push origin main
