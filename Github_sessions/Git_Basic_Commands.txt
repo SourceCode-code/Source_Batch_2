@@ -28,3 +28,13 @@ git push -u origin main
 2 git commit -m"commit message"
 3 git push origin main
 
+todays session 
+
+commands 
+git fetch 
+git pull origin 
+git diff 
+git checkout 
+branches 
+
+
