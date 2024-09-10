@@ -33,8 +33,9 @@ todays session
 commands 
 git fetch 
 git pull origin 
-git diff 
-git checkout 
+git diff        ------> shows the  comparise between current and last commit
+git checkout -f ------> gets your repo to last used commit state 
+git status ---------> shows the current repo status 
 branches 
 
 
