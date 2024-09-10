@@ -36,6 +36,8 @@ git pull origin
 git diff        ------> shows the  comparise between current and last commit
 git checkout -f ------> gets your repo to last used commit state 
 git status ---------> shows the current repo status 
+git rm --cached filename
+
 branches 
 
 
