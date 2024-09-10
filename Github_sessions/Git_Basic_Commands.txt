@@ -38,6 +38,7 @@ git checkout -f ------> gets your repo to last used commit state
 git status ---------> shows the current repo status 
 git rm --cached filename -------> files removed only form commit 
 git rm filename ----------> filed removed from local
+
 branches 
 
 
