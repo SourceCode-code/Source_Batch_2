@@ -3,10 +3,14 @@
 2 install git in your local pc
 
 3 create your own repo and push a file name notes --- push 
+4 create a folder name assignmet and push your last 2 assignment there 
 
-4 take a clone of our master branch  -- make sure you dont do any changes in our master repo 
+5 take a clone of our master branch  -- make sure you dont do any changes in our master repo 
 
-5 create a folder name assignmet and push your last 2 assignment there 
+6 todays commands -- try those commands in your own repo
+
+
+
 
 
  
