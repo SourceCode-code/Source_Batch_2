@@ -27,6 +27,9 @@ git push -u origin main
 1 git add .
 2 git commit -m"commit message"
 3 git push origin main
+4 pull origin branchname 
+5 git fetch 
+6 git checkout 
 
 todays session 
 
@@ -40,6 +43,15 @@ git rm --cached filename -------> files removed only form commit
 git rm filename ----------> filed removed from local
 
 branches  --------------
+
+
+// ----------------------
+
+1 revision 
+2 .gitignore 
+3 braches and how to deal with 
+4 pull request 
+
 
 
 
