@@ -48,6 +48,11 @@ branches  --------------
 // ----------------------
 
 1 revision 
+git checkout -f ------> gets your repo to last used commit state 
+
+
+
+
 2 .gitignore 
 3 braches and how to deal with 
 4 pull request 
