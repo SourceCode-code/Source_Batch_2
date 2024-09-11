@@ -71,7 +71,8 @@ used to store sensitive data to aviod displaying it at org level or repo level
 git fetch -- gives a upoadtes access to git terminal
 git pull origin main -------- gets you the lastest changes in the master
 
-git checkout -b Siddhant_source
+git checkout -b  used to create branch 
+git checkout branch name - used to trvaell in your branches 
 
 
 
