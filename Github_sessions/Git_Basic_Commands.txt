@@ -50,8 +50,10 @@ branches  --------------
 1 revision 
 git checkout -f ------> gets your repo to last used commit state 
 
+git status ---------> shows the current repo status 
 
-
+git diff        ------> shows the  comparise between current (before adding and commit ) and last commit
+git diff --staged  ------> shows the comparise between added files and last  commited files 
 
 2 .gitignore 
 3 braches and how to deal with 
