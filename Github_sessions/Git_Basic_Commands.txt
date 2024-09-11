@@ -55,6 +55,8 @@ git status ---------> shows the current repo status
 git diff        ------> shows the  comparise between current (before adding and commit ) and last commit
 git diff --staged  ------> shows the comparise between added files and last  commited files 
 
+
+
 2 .gitignore 
 3 braches and how to deal with 
 4 pull request 
