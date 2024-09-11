@@ -56,8 +56,14 @@ git diff        ------> shows the  comparise between current (before adding and 
 git diff --staged  ------> shows the comparise between added files and last  commited files 
 
 
+git rm --cached filename -------> files removed only form commit 
+git rm filename ----------> filed removed from local
+
 
 2 .gitignore 
+
+
+
 3 braches and how to deal with 
 4 pull request 
 
