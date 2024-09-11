@@ -1,0 +1,25 @@
+Faculty Name :
+
+Vaibhav Suryawanshi
+Siddhant Gadakh
+Ganesh Mali
+Pratik Mali
+Sayali Kudale
+
+Roles:-
+
+Vaibhav Suryawanshi -- Admin Department
+Siddhant Gadakh     -- Teacher
+Ganesh Mali         -- Teacher
+Pratik Mali         -- Teacher
+Sayali Kudale       -- Teacher
+
+
+E-Mails
+
+Siddhant Gadakh -- siddhantsourceandcode@gmail.com
+Vaibhav Suryawanshi -- vaibhavsourceandcode@gmail.com
+Pratik Mali -- pratiksourceandcode@gmail.com
+
+For any queires please get in touch with us 
+call us at : 9975133448
