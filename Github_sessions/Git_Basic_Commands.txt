@@ -62,9 +62,19 @@ git rm filename ----------> filed removed from local
 
 2 .gitignore 
 
-
+used to store sensitive data to aviod displaying it at org level or repo level
 
 3 braches and how to deal with 
+
+// 1 how to create a branch 
+
+git fetch -- gives a upoadtes access to git terminal
+git pull origin main -------- gets you the lastest changes in the master
+
+git checkout -b Siddhant_source
+
+
+
 4 pull request 
 
 
