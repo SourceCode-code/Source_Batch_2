@@ -79,6 +79,7 @@ git checkout branch name - used to trvaell in your branches
 
 
 4 pull request  ---- a request used for merging your changes with main branch 
+raise pull request by ui
 
 5 git pull origin main -- commands to get your lastest changes in your local 
 
