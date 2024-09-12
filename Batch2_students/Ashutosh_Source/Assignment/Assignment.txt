@@ -1,0 +1,4 @@
+9/11/2024
+Tried and run all commands completed in morning session.
+created my own branch for my work
+pushed a my branch to git repository
