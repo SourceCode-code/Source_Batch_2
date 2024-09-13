@@ -1,1 +1,8 @@
-Sutar
+git status  => Check changes
+git add . => all files and git add "filename" for specific
+git commit -m "Add comment/commit"
+git push origin Branch name   => not in ""
+git checkout -b branchname  => Create branch name
+git checkout branchname => Checkout from the branch or main
+git switch branchname   => Move from main to branch or vice versa
+
