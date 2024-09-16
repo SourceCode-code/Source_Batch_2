@@ -38,3 +38,4 @@ let one= 10;
 thank you*/
 let age=22;
 console.log(age);
+hii
