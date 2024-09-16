@@ -49,16 +49,16 @@ console.log("Combined Result: " + combinedResult);
 let randomVal = Math.random();
 console.log(Math.floor(randomVal * 10) + 5);
 
-/* Ans- The code generates a random integer between 5 and 14, inclusive.
- Explanation=first of all the random function generates the nearest integer, In his scenario there are multiply by 10, 
+/* Ans- The code generates a random integer between 5 to 14, inclusive.
+ Explanation=first of all the random function generates the nearest decimals, In his scenario there are multiply by 10, 
 So here generate the the integers between 0 to 9 but Adding 5 to the floored number shifts the range from [0, 9] to [5, 14].
-Here in 10 & 15 not showing beacause here we use floor method(Math.floor() rounds down the number to the nearest integer)*/
+*/
 
 
 //7 generate  randomBetween(10, 20) should generate a number between 10 and 20.
 let min = 10;
 let max = 20;
-randomBetween = Math.floor(Math.random() * (max - min + 1)) + min;
+randomBetween = Math.floor(Math.random() * (max - min - 1)) + min + 1;
 console.log(randomBetween); 
 
 // 8 generate a random number between 5.5-9.3
@@ -82,15 +82,15 @@ console.log(roundedNumber);
 
 // 10. Write a program  that rounds any given number to the nearest multiple of 5.
 // Example:if 28 is given  should return 30, 32 should return 30.
-let Number1 = 28; 
+let Number1 = 17; 
 
 // Round to the nearest multiple of 5
 let RoundedNumber = Math.round(Number1 / 5) * 5;
 
-console.log(RoundedNumber); // Output will be 30 for number = 28
+console.log(RoundedNumber); // for number 17 outout is = 15
 
-// For 32
-Number2 = 32;
+// For 22
+Number2 = 22;
 roundedNumber = Math.round(Number2 / 5) * 5;
 
-console.log(roundedNumber); // Output will be 30 for number = 32
+console.log(roundedNumber); // for number 22 outout is = 20
