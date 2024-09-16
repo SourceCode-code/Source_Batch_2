@@ -1,86 +1,69 @@
-//Q.1  
-//This is a comment which makes the code readable .
+//Q.1 
+let x = 7.2;
+console.log(Math.round(x));
 
-//Q.2.
-// Welcome to 30 days of Javascript
+//it will round off to 7 
 
-//Q.3 .
-/* Comments can make code readable , 
-   they are easy to reuse , and they 
-   are informative*/
+//Q.2. 
+let gravity = 9.81;
+console.log(typeof(gravity));
 
+//number
 
-//Q.4.
-//string 
-let Name = "Culhane";
+//Q.3 
+let randomNum = Math.floor(Math.random() * 10) + 1;
+console.log(randomNum);
 
-//boolean
-let  isAdult = true;
+// random numbers generated : 3,8,6,7,5
 
-//undefined
-let Age;
+//Q.4 
+let num = 5.7 ;
+//console.log(Math.ceil(num));
+console.log(Math.floor(num));
+//using Math.floor method , we get the number as 5 & using Math.ceil  method we get the number as 6. 
 
-//null 
-let  address = null;
-//------------------------------------------------------------------------------------------------------//
-
-//Q.5.
-//string 
-
-console.log("Data type of Name", typeof(Name));
-
-//boolean
-console.log("Data type of  isAdult", typeof(isAdult));
-
-//undefined 
-console.log("Data type of  Age", typeof(Age));
-
-//null
-console.log("Data type of   address", typeof(address));
-//-----------------------------------------------------------------------------------------------------------//
-
-//Q.6
-let Bold;
-let Italic;
-let Town;
-let Governer;
-//--------------------------------------------------------------------------------------------------//
+//Q.5
+ function rollDice() {
+    let dice1 = Math.floor(Math.random() * 6) +1 ;
+    let dice2 = Math.floor(Math.random() * 6) +1 ;
+    return dice1 +  dice2 ;
+ } 
+    console.log("You rolled a " + rollDice());
 
 
-//Q.7. 
-let bold  = "Bold";
-let italic = "Italic";
-let town = "Pune";
-let governer = "Eknath Shinde";
+//Q.6 
+/*for this query, the numbers are generated between 0 and 9 , also when added 5 , 
+the numbers will be generated between 0 and 14*/
 
+//Q.7 
+function randomBetween (min, max) {
+  return  Math.floor(Math.random() * (max - min + 1)) + min ;
 
+}
+ console.log(randomBetween(10,20));
+
+//the  numbers generated are between 10 and 20. 
 
 //Q.8
-let firstName = "Atharva";
+function randomBetween (min, max) {
+    return  Math.floor(Math.random() * (max - min + 1)) + min ;
+  
+  }
+   console.log(randomBetween(5.5,9.3)); 
 
-let lastName = "Pandit";
+//Q.9 
+// have doubt for this query
 
-let maritalStatus = "Single";
+//Q.10 
 
-let Country = "India";
+function roundTonearestFive(num){
+    const remainder = num % 5;
 
-let  age = 24; 
-//----------------------------------------------------------------------------------------------------//
-
-//Q.9
-let  name = "Atharva"; let LastName = "Pandit";  var MaritalStatus = "Single"; var country ="India"; let  agE ="24";
-//--------------------------------------------------------------------------------------------------------//
-
-//Q.10
-
-let myAge = "24";
-let yourAge = "30";
-console.log("My Age is" + myAge);
-console.log("Your Age is " + yourAge);
-//---------------------------------------------------------------------------------------------//
-
-
-
-
-
-
+    if (remainder < 3){
+        return num - remainder;
+    }
+    else {
+        return num + (5 - remainder);
+    }
+}
+//
