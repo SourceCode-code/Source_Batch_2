@@ -30,7 +30,7 @@ console.log("Ans of Qes No. 5",language[4]);
 
 
 // 6. Write a program to generate an even random number between 0-20 using `Math.random()`, then log the number.
-let x = ((Math.round(Math.random()*11)*2));
+let x = ((Math.round((Math.random()*20)/2)*2));
 console.log("Ans of Qes No. 6",x)
 
 // Advanced Session Assignments:
@@ -70,12 +70,16 @@ console.log("Ans of Qes No. 12",str)
 let str1 = 'abc';
 let str2 = 'def';
 let STR = str1 + " " + str2
-console.log("Ans of Qes No. 13",STR)
+console.log("Ans of Qes No. 13",STR);
 
+var str12 = 'abc';
+var str21 = 'def';
+let STR1 = `${str12}    ${str21}`
+console.log("Ans of Qes No. 13.1",STR1)
 
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
 let B= "qwertyuiopasdfghjklzxcvbnm"
-Randomelement= (Math.round(Math.random()*B.length))
+Randomelement= ((Math.round(Math.random()*B.length))-1)
 console.log("Ans of Qes No. 14",B[Randomelement])
 
 
@@ -85,4 +89,7 @@ let b= 150
 let randomodd = Math.round(Math.random()*(75-15)+15)
 console.log("Ans of Qes No. 15",2*randomodd+1);
 
-
+//16 Write a js code to print the following sentence
+// /t is used to add indentation or space
+let C = "\\t is used to add indentation or space"
+console.log(C)
