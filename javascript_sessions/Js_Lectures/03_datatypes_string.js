@@ -1,113 +1,95 @@
-// last lecture we saw dataypes --> numbers 
-// strings----> anything that is define in 'single quotes'  , "double quotes " ,`backticks`
+// Datatypes in JavaScript:
 
+// 1. Strings:
+// Strings are sequences of characters and can be defined using single quotes (''), double quotes (""), or backticks (``).
 
-//example :-
-let str = "          "   //
-let str1 = 'siddhant'
-let str2 = `12345678`
-let str3 = "@@#$@#$%^&*"
-let str4 = "true"
+// Example of string declaration:
+let str = "";           // Empty string
+let str1 = 'siddhant';   // String in single quotes
+let str2 = `12345678`;   // String in backticks (used for template literals)
+let str3 = "@@#$@#$%^&*"; // Special characters in a string
+let str4 = "true";       // String containing the word "true"
 
-console.log(typeof (str)) // string
-console.log(typeof (str1)) // string
-console.log(typeof (str2))
-console.log(typeof (str3))
-console.log(typeof (str4))
+// Checking the data type of the variables:
+console.log(typeof(str));   // string
+console.log(typeof(str1));  // string
+console.log(typeof(str2));  // string
+console.log(typeof(str3));  // string
+console.log(typeof(str4));  // string
 
+// 2. Numbers:
+// JavaScript has various methods for working with numbers.
 
+let num = 10.6;
 
-//numbers-->
-/**
- *floor  -->  gives us the lowest value of the neareast intergetr
- ceil   -->   highest
- random --> generates random number betwwen --0.0.9
- round --> 0--> 0.4 lowest  and 0.5-->0.9 -- highest
-*/
+// Examples of common number methods:
 
-// string --->  properties and methods 
+console.log(Math.floor(num));  // floor gives the lowest integer value (output: 10)
+console.log(Math.ceil(num));   // ceil gives the highest integer value (output: 11)
+console.log(Math.random());    // generates a random number between 0 and 1
+console.log(Math.round(num));  // round rounds off the number (output: 11)
 
-// there are many methods in string 
-// touppercase 
-// tolowercase
-//str
-//substr
-//match
-//replace
-//etc
+// 3. String Methods:
+// JavaScript provides a wide range of methods to manipulate strings.
 
-//properties -->
-//1 string has only one property that is length
-//2 charcate is based form indexing //
+let strExample = 'JavaScript is awesome';
 
-//     's i d d h a n t'
-//      0 1 2 3 4 5 6 7  ==>8
+// Common string methods:
+console.log(strExample.toUpperCase());  // Converts the string to uppercase
+console.log(strExample.toLowerCase());  // Converts the string to lowercase
+console.log(strExample.substr(0, 10));  // Extracts a part of the string (substring)
+console.log(strExample.match('is'));    // Searches for a match in the string
+console.log(strExample.replace('awesome', 'great')); // Replaces part of the string
 
+// String Properties:
+// 1. `length` property returns the length of the string.
+console.log(strExample.length);  // Example output: 20
 
-let str5 = 'one'
+// 2. Characters are indexed in strings (zero-based indexing):
+// Example:
+let name = 'siddhant';
+// Indexing:  s  i  d  d  h  a  n  t
+//            0  1  2  3  4  5  6  7
+console.log(name[1]);  // Output: 'i'
 
-// sytnax to get the string character 
-console.log(str5[1])
+// String concatenation:
 
+let firstname = "Siddhant";
+let lastname = "Gadakh";
+let middlename = "Arjun";
 
-let firstname = "siddhant"
-let lastname = "gadakh"
-let middlename = "arjun"
+// Using the + operator:
+let fullname = firstname + " " + middlename + " " + lastname;
+console.log(fullname);  // Output: "Siddhant Arjun Gadakh"
 
-// string concantination with addition opertaor 
+// Using template literals (introduced in ES6):
+let fullnamenew = `My full name is ${firstname} ${middlename} ${lastname}`;
+console.log(fullnamenew);  // Output: "My full name is Siddhant Arjun Gadakh"
 
-let fullname = firstname + " " + middlename + " " + lastname
-console.log(fullname)
+// Long literal strings:
+let longString = `wertghjkjnhbgfdertyuijhbvfdrtyujhbgfrtyujnbvcdertyujhcxsaertyuijhgfrtyu
+ghjkiuyhjkiuhbnmkiuhbnmkiujh 
+String that spans across multiple lines is called a long literal string.`;
 
-//ES6 --> ``
+console.log(longString);
 
-let fullnamenew = `my full name is ${firstname} ${middlename} ${lastname}`
+// 4. Escape Characters:
+// Escape characters are special characters used in strings starting with a backslash (\).
+// Examples of commonly used escape characters:
 
-console.log(fullnamenew)
+// (\n) - Newline:
+console.log('I\nam\nlearning\nJavaScript');
 
+// (\t) - Tab (used to add 8 spaces):
+let str9 = 'Siddhant\tGadakh';
+console.log(str9);
 
-//string --
-//"----------------------------------------------------------------------------------------------"
-let str7 = "wertghjkjnhbgfdertyuijhbvfdrtyujhbgfrtyujnbvcdertyujhcxsaertyuijhgfrtyu\
-ghjkiuyhjkiuhbnmkiuhbnmkiujh\  string which consist of multiple lines is called long literall string \
-hgbnmkiuhnmkjhbnmjh\
-nhbnmkjhnmkj"
+// (\') - Adding single quotes in a string declared with single quotes:
+let str10 = 'Hello, my name is \'Siddhant\'';
+console.log(str10);
 
+// (\") - Adding double quotes in a string declared with double quotes:
+let str11 = "Hello, my name is \"Siddhant\"";
+console.log(str11);
 
-let paragraph ="dtfghijoiuytfhvbjnkjouyugfyhvnbnkjuiyugfhvnbkhghvnbkhgvhnbmnkhgjvnbmbdsvkjbvhfkdfhbbjkkk\
-kkkkkkkkkkkkkkkkkkkkkkkkkfhgjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\
-kjhgfhbjkiyugjbnkjlouiyhjnkljihjgbmn"
-console.log(str7)
-
-
-// escape character ===>
-
-//how to find or detect escape character
-
-//  \ -- if any thing in string begins with a backlash it is and ecsape character 
-
-//usescases--
-
-// (\) -- used to delecre long literall string 
-
-// i am learning js 
-
-//(\n) --use to print the string in new line 
-
-console.log('i\nam \nlearning\njs ')
-
-// (\t) -- tab key (use to give 8 spaces)
-
-let str9='siddhant\tgadakh'
-console.log(str9)
-
-
-
-//(/') -- used to add '' in a string delecraed with single qutoes 
-
-let str10='hello my name is \'siddhant\' '
-console.log(str10)
-//(/") -- used to add '' in a string delecraed with single qutoes 
-let str11="hello my name is \"siddhant\" "
-
-console.log(str11)
+// Note: Always use escape characters carefully to handle special characters or multi-line strings effectively.
