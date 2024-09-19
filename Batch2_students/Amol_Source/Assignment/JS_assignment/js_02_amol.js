@@ -48,6 +48,7 @@ console.log("Qes no.6 Ans : Number in beteen 5 to 14 ",Math.floor(randomVal * 10
 // Hint: Understand how the number is being generated and what range it falls in.
 // Ans= The Result in beteen 5 to 14 
 // Reason = Becuase we used Math.floor is always start with before./left/ base value last (i.e 1 to 10, But +5 is initial start value)
+// Ans comes between 5 to 14 because we take Math.floor, And other side if we apply Math.ceil it will be output between 5 to 15.
 
 //7 generate  randomBetween(10, 20) should generate a number between 10 and 20.
 //console.log(randomBetween(10, 20));
