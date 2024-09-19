@@ -5,8 +5,9 @@ console.log("Ans of Qes No. 1",str1.length)
 
 // 2. Retrieve the last character of the string "automation".
 let str2 = "automation";
-console.log("Ans of Qes No. 2",str2[9]);
-
+//console.log("Ans of Qes No. 2",str2[9]);
+let Lastchar= ((str2.length)-1)
+console.log("Ans of Qes No. 2",str2[Lastchar])
 
 // 3. Convert the string "learning" to uppercase.
 let str3 = "learning";
@@ -26,7 +27,7 @@ console.log("Ans of Qes No. 5",str5.trim());
 // Tough and Advanced Questions
 // 6. Extract the first 5 characters from the string "PlaywrightAutomation".
 let str6 = "PlaywrightAutomation";
-console.log("Ans of Qes No. 6",str6.substr('0','5'))
+console.log("Ans of Qes No. 6",str6.substr(0,5))
 
 // 7. Split the string "Cypress is fun" by spaces and print each word on a new line.
 let str7 = "Cypress is fun";
@@ -62,6 +63,5 @@ console.log("Ans of Qes No. 13",lowercase1);
 // 14. Replace the first occurrence of "test" with "exam" in the string "test your code with a test case".
 let str14 = "test your code with a test case";
 console.log("Ans of Qes No. 14",str14.replace("test","exam"));
-
 
 //thanks 
