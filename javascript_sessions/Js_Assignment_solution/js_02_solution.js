@@ -55,11 +55,8 @@ console.log(Math.floor(randomVal * 10) + 5);
 //ANSWER:--------
 //the value genetarted by the code will be form range  5 --->14
 //let randomVal = Math.random(); this line will generate a random number form 0 to 0.9
-//(Math.floor(randomVal * 10) this code will genrate number between 0 to 10
-//console.log(Math.floor(randomVal * 10) + 4); adding 5 will make sure to get the output form 5 to 15 that is adding 5 to every genrated output
-
-
-
+//(Math.floor(randomVal * 10) this code will genrate number between 0 to 9
+//console.log(Math.floor(randomVal * 10) + 5); adding 5 will make sure to get the output form 5 to 14 that is adding 5 to every genrated output
 
 
 
