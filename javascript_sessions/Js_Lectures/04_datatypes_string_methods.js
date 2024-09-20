@@ -1,4 +1,5 @@
-// Let's learn about the methods used in string manipulation
+// JavaScript String Manipulation Methods
+
 let str = "siddhantarjungadakh";
 
 // 1. Length of the string
@@ -9,7 +10,7 @@ console.log("Last element in the string:", str[str.length - 1]); // Output: 'h'
 
 // 3. Retrieving a specific character by index
 console.log("Character at index 18:", str[18]); // Output: 'h'
-console.log("Character at index 2:", str[2]); // Output: 'd'
+console.log("Character at index 2:", str[2]);   // Output: 'd'
 
 // 4. Converting the string to uppercase
 let upperCaseStr = str.toUpperCase();
@@ -26,7 +27,6 @@ console.log("Method concatenation result:", methodConcat); // Output: 'SIDDHANTA
 // 7. Explanation of method chaining
 // Method chaining is when the output of one method is a valid input for the next method.
 // For example, `str.toUpperCase().length` returns a number, but `toUpperCase()` can't be applied to a number.
-
 try {
     let invalidConcat = str.toUpperCase().length.toUpperCase();
     console.log(invalidConcat);
@@ -53,13 +53,13 @@ console.log("Using substr:", substrResult);
 // 11. Splitting strings
 let str6 = "siddhant arjun gadakh";
 console.log("Split by space:", str6.split(" ")); // Output: ['siddhant', 'arjun', 'gadakh']
-console.log("Split by 'a':", str6.split("a")); // Output: ['siddh', 'nt ', 'rjun g', 'd', 'kh']
+console.log("Split by 'a':", str6.split("a"));   // Output: ['siddh', 'nt ', 'rjun g', 'd', 'kh']
 console.log("Split by characters:", str6.split("")); // Output: ['s', 'i', 'd', 'd', 'h', ...]
 
 // 12. Trim, TrimStart, and TrimEnd methods
 let str7 = " Amol ";
 console.log("Original length:", str7.length); // Output: 6
-console.log("Trimmed string:", str7.trim()); // Output: 'Amol'
+console.log("Trimmed string:", str7.trim());  // Output: 'Amol'
 console.log("Trimmed length:", str7.trim().length); // Output: 4
 
 // 13. Checking if a string contains a substring using includes()
@@ -71,7 +71,6 @@ console.log("Includes 'javascript':", str9.includes("javascript")); // Output: f
 let str10 = "I am learning JavaScript";
 let newStr1 = str10.replace("a", "z");
 console.log("After replacing 'a' with 'z':", newStr1); // Output: 'I zm learning JavaScript'
-
 // Replacing a word
 let newStr2 = str10.replace("JavaScript", "Cypress");
 console.log("After replacing 'JavaScript' with 'Cypress':", newStr2); // Output: 'I am learning Cypress'
@@ -82,44 +81,28 @@ console.log("Original string:", str11);
 console.log("Trimmed string:", str11.trim()); // Output: 'Amol'
 console.log("Trimmed length:", str11.trim().length); // Output: 4
 
-//16  Checking the index of a character we use indexOf() --> first occurance  
+// 16. Checking the index of a character using indexOf() --> first occurrence
+let str12 = "qwertyuiopq";
+console.log(str12.indexOf("y")); // Output: 5
 
-let str12="qwertyuiopq"
+// 17. Using lastIndexOf() -- last occurrence
+console.log(str12.length - 1);   // Output: 10
+console.log(str12.lastIndexOf("q")); // Output: 10
 
-console.log(str12.indexOf("y")) // output -->5
+// 18. Concatenating strings using concat()
+let str13 = "siddhant ";
+let str14 = "gadakh";
+let str15 = "arjun";
+console.log(str14.concat(str13, str15)); // Output: 'gadakhsiddhant arjun'
 
-//17  to get the last index of any string lastIndexOf() -- last occurance 
+// 19. Using startsWith() and endsWith() methods
+console.log(str13.startsWith("s"));  // Output: true
+console.log(str13.endsWith("T"));    // Output: false
 
-console.log(str12.length-1) // output 9
+// 20. Repeating strings using repeat()
+let str16 = "push";
+console.log(str16.repeat(10)); // Output: 'pushpushpushpushpushpushpushpushpushpush'
 
-console.log(str12.lastIndexOf("Q")) // gives you the last index of chacret   if not found gives -1
-
-// 18 if you want to join 2 string  use concat method 
-// thefirst string you wantt to join .concat(the  string you want joiin, another string you want tojoin)
-
-let str13="siddhant "
-let str14 = "gadakh"
-let str15 = "arjun"
-
-console.log(`${str13} ${str14}`)
-
-console.log(str14.concat(str13,str15))
-
-// startWith(), --- check the startinh caharact of your string   ---> true or false 
-// endsWith() -- check the ending character of the string        --->true or false
-
-console.log(str13.startsWith("s")) // true 
-
-console.log(str13.endsWith("T")) // false
-
-// repeat() -- reapts the string or word to increse the length
-
-let str16="push"
-
-console.log(str16.repeat(10)) //pushpushpushpushpushpushpushpushpushpush
-
-// match() -- matches the word or chacter of the string and give you the information about it 
-
-let str17  = "I AM LEARINING JS , LEARINING CYPRESS, LEARINING PLAYWRIGHT"
-
-console.log(str17.match("LEARINING"))
+// 21. Using match() to search for a pattern
+let str17 = "I AM LEARNING JS , LEARNING CYPRESS, LEARNING PLAYWRIGHT";
+console.log(str17.match("LEARNING")); // Output: [ 'LEARNING', index: 5, input: 'I AM LEARNING...', groups: undefined ]
