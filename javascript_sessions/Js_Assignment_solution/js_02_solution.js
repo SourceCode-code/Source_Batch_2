@@ -82,3 +82,10 @@ console.log((Math.round(number * 100) / 100))
 let num1 = 28
 console.log(Math.round(num1 / 5) * 5)
 
+let num2 =19
+console.log(Math.round(num2/6)*6)
+
+
+
+
+

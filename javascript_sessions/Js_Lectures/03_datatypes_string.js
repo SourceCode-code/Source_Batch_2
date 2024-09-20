@@ -67,8 +67,8 @@ let fullnamenew = `My full name is ${firstname} ${middlename} ${lastname}`;
 console.log(fullnamenew);  // Output: "My full name is Siddhant Arjun Gadakh"
 
 // Long literal strings:
-let longString = `wertghjkjnhbgfdertyuijhbvfdrtyujhbgfrtyujnbvcdertyujhcxsaertyuijhgfrtyu
-ghjkiuyhjkiuhbnmkiuhbnmkiujh 
+let longString = `wertghjkjnhbgfdertyuijhbvfdrtyujhbgfrtyujnbvcdertyujhcxsaertyuijhgfrtyu\
+ghjkiuyhjkiuhbnmkiuhbnmkiujh\ 
 String that spans across multiple lines is called a long literal string.`;
 
 console.log(longString);
