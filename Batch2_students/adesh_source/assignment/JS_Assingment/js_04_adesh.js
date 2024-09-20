@@ -5,7 +5,7 @@ console.log(str1.length);
 
 // 2. Retrieve the last character of the string "automation".
 let str2 = "automation";
-console.log(str2[9]);
+console.log(str2[str1.length9]);
 
 // 3. Convert the string "learning" to uppercase.
 let str3 = "learning";
