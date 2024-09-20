@@ -1,167 +1,125 @@
-// lets learns the methods in string datatype
+// Let's learn about the methods used in string manipulation
+let str = "siddhantarjungadakh";
 
-let str = "siddhantarjungadakh"
+// 1. Length of the string
+console.log("Length of the string:", str.length); // Output: 19
 
-// lets see some of the methods used in maniopulationof the string 
+// 2. Getting the last element in the string
+console.log("Last element in the string:", str[str.length - 1]); // Output: 'h'
 
-//length ----
-console.log(str.length)
-// to get the last element in the string
-console.log(str[(str.length)-1])
-// exaplination of above code 
-console.log(str[18])
-// to revtrire any element 
-console.log(str[2])
+// 3. Retrieving a specific character by index
+console.log("Character at index 18:", str[18]); // Output: 'h'
+console.log("Character at index 2:", str[2]); // Output: 'd'
 
-//lowercase -- qwertyuioikjhg (small letters )
-//uppercase -- QWERTRE (captial letter)
+// 4. Converting the string to uppercase
+let upperCaseStr = str.toUpperCase();
+console.log("Uppercase string:", upperCaseStr); // Output: 'SIDDHANTARJUNGADAKH'
 
-//toUpperCase
-// to convert the sring in uppercase -->(toUpperCase)
-//syntax of using methods 
- //name of your string . name of your method ()
-let uppercasestr= str.toUpperCase()
-console.log(uppercasestr)
-//output -->SIDDHANTARJUNGADAKH
+// 5. Converting the string to lowercase
+let lowerCaseStr = upperCaseStr.toLowerCase();
+console.log("Lowercase string:", lowerCaseStr); // Output: 'siddhantarjungadakh'
 
-//toLowerCase()
-// to convert the sring in lowercase -->(toUpperCase)
-let lowerstr= uppercasestr.toLowerCase()
-console.log(lowerstr)
-// output -->siddhantarjungadakh
+// 6. String concatenation using method chaining
+let methodConcat = str.toUpperCase().toLowerCase().toUpperCase();
+console.log("Method concatenation result:", methodConcat); // Output: 'SIDDHANTARJUNGADAKH'
 
+// 7. Explanation of method chaining
+// Method chaining is when the output of one method is a valid input for the next method.
+// For example, `str.toUpperCase().length` returns a number, but `toUpperCase()` can't be applied to a number.
 
-//string concatiation (combining)--> we can add 2 string 
-// method concatiation --> 
+try {
+    let invalidConcat = str.toUpperCase().length.toUpperCase();
+    console.log(invalidConcat);
+} catch (e) {
+    console.log("Error: Cannot apply toUpperCase() to a number.");
+}
 
+// 8. Substr method to get part of a string (start index, number of characters)
+let newStr = str.substr(0, 2);
+console.log("Using substr:", newStr); // Output: 'si'
 
-//let str = "siddhantarjungadakh"
-//    your string --->uppercase -->lowercase-->uppercase
-let methodcon=str.toUpperCase().toLowerCase().toUpperCase()
-console.log(methodcon)
+// 9. Substring method to get part of a string (start index, end index - non-inclusive)
+let str3 = "javascript";
+let substring = str3.substring(0, 4);
+console.log("Using substring:", substring); // Output: 'java'
 
-// example
-// let methodcon2=str.toUpperCase().toLowerCase().toUpperCase().length.toUpperCase()
-// console.log(methodcon2)
-//str.toUpperCase().toLowerCase().toUpperCase()--- string 
-//error -->  
-//length ---> number // 
-//toUpperCase is not a method of numbers its of string
+// 10. Difference between substr() and substring()
+let str4 = "hello";
+let substrResult = str4.substr(0, 4); // Output: 'hell'
+let substringResult = str4.substring(0, 4); // Output: 'hell'
+console.log("Using substring:", substringResult);
+console.log("Using substr:", substrResult);
 
+// 11. Splitting strings
+let str6 = "siddhant arjun gadakh";
+console.log("Split by space:", str6.split(" ")); // Output: ['siddhant', 'arjun', 'gadakh']
+console.log("Split by 'a':", str6.split("a")); // Output: ['siddh', 'nt ', 'rjun g', 'd', 'kh']
+console.log("Split by characters:", str6.split("")); // Output: ['s', 'i', 'd', 'd', 'h', ...]
 
-//in method concatation the output of first method should be a vaild input for the second 
+// 12. Trim, TrimStart, and TrimEnd methods
+let str7 = " Amol ";
+console.log("Original length:", str7.length); // Output: 6
+console.log("Trimmed string:", str7.trim()); // Output: 'Amol'
+console.log("Trimmed length:", str7.trim().length); // Output: 4
 
-//a method to get some caharcter of the string --> substr()
+// 13. Checking if a string contains a substring using includes()
+let str9 = "I am learning JavaScript";
+console.log("Includes 'JavaScript':", str9.includes("JavaScript")); // Output: true
+console.log("Includes 'javascript':", str9.includes("javascript")); // Output: false
 
-// let str = "siddhantarjungadakh"
-//substr( starting--index,numbercharacter)
-let newstr= str.substr(0,2)
+// 14. Replacing part of a string
+let str10 = "I am learning JavaScript";
+let newStr1 = str10.replace("a", "z");
+console.log("After replacing 'a' with 'z':", newStr1); // Output: 'I zm learning JavaScript'
 
-console.log(newstr)
+// Replacing a word
+let newStr2 = str10.replace("JavaScript", "Cypress");
+console.log("After replacing 'JavaScript' with 'Cypress':", newStr2); // Output: 'I am learning Cypress'
 
-let str3= "javascript"
+// 15. Another example of using trim()
+let str11 = " Am  ol ";
+console.log("Original string:", str11);
+console.log("Trimmed string:", str11.trim()); // Output: 'Amol'
+console.log("Trimmed length:", str11.trim().length); // Output: 4
 
-let script=str3.substr(4,10)
-console.log(script)
+//16  Checking the index of a character we use indexOf() --> first occurance  
 
+let str12="qwertyuiopq"
 
-// substring()--->
-//a method to get some caharcter of the string --> substring()
+console.log(str12.indexOf("y")) // output -->5
 
-// syantx --
-//substr(staring index , number characters ) //0  --->2  // ja 
-//substring (staring index ,ending index ) // this doesnt inculde ending index 
+//17  to get the last index of any string lastIndexOf() -- last occurance 
 
-let substring=str3.substring(0,1) //ja
-let substr=str3.substr(0,2)
+console.log(str12.length-1) // output 9
 
-console.log("i am the output for substring method",substring)
-console.log("i am the output for substr method",substr)
+console.log(str12.lastIndexOf("Q")) // gives you the last index of chacret   if not found gives -1
 
+// 18 if you want to join 2 string  use concat method 
+// thefirst string you wantt to join .concat(the  string you want joiin, another string you want tojoin)
 
-let str4="hello"
- //          (staring index, endingindex)-->doesnt inculde ending index
-let substring1=str4.substring(0,4)  // hell
-//            (starting index, number of charcter)
-let substr1=str4.substr(0,5) //hello
+let str13="siddhant "
+let str14 = "gadakh"
+let str15 = "arjun"
 
-console.log("i am the output for substring method",substring1)
-console.log("i am the output for substr method",substr1)
+console.log(`${str13} ${str14}`)
 
+console.log(str14.concat(str13,str15))
 
+// startWith(), --- check the startinh caharact of your string   ---> true or false 
+// endsWith() -- check the ending character of the string        --->true or false
 
+console.log(str13.startsWith("s")) // true 
 
-// let str4="hello"
-//  //          (staring index, endingindex)-->doesnt inculde ending index
-// let substring1=str4.substring(0,5)  // hell
-// //            (starting index, number of charcter)
-// let substr1=str4.substr(0,5) //hello
+console.log(str13.endsWith("T")) // false
 
-// console.log("i am the output for substring method",substring1)
-// console.log("i am the output for substr method",substr1)
+// repeat() -- reapts the string or word to increse the length
 
+let str16="push"
 
-// // spilt ---> to break to seprate 
-let str6 = "siddhant arjun gadakh"
-//  spilt("parameter where the string is needed to split" )
-console.log(str6.split(" "))
+console.log(str16.repeat(10)) //pushpushpushpushpushpushpushpushpushpush
 
-console.log(str6.split("a"))
-// ["s","i","d"]
+// match() -- matches the word or chacter of the string and give you the information about it 
 
+let str17  = "I AM LEARINING JS , LEARINING CYPRESS, LEARINING PLAYWRIGHT"
 
-console.log(str6.split(""))
-
-//toUppercase
-//toLowercase
-//substr
-//substring
-//spilt
-
-//trim , trimStart,trimEnd
-
-let str7 = " Amol "
-
-console.log(str7.length) //6
-//trim -- removes starting spaces and ending space
-console.log(str7.trim())//"siddhant"
-console.log(str7.trim().length)// 8
-
-//trimStart,
-//trimEnd,
-
-
-let str9= "i am learning Javascript"
-
-//Javascript
-//inculdes -- check whetaer the character is present in the string or not 
-// --- output (booleans (True or false))
-
-console.log(str9.includes("Javascript")) // true
-//ex 2 
-console.log(str9.includes("javascript")) // false 
-
-// 0--1 binarary ------ code scan 
-
-// cypress  --
-//replace()--->used to replace the charter in string (first occrance)
-let str10= "i am learning Javascript"
-
-//replace("words you want to replace","the words you want to replace with")
-
-// example replace first occurance
-let newstr1= str10.replace("a","z")
-
-console.log(newstr1)
-// replace the word
-let newstr11= str10.replace("Javascript","cypress")
-
-console.log(newstr11)
-
-
-let str11 = " Am  ol "
-console.log(str11)
-console.log(str11.length)//6  " Amol "
-console.log(str11.trim()) // "Amol" //4
-console.log(str11.trim().length) //4
-
+console.log(str17.match("LEARINING"))
