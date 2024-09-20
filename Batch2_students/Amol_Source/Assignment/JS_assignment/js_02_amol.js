@@ -1,71 +1,77 @@
-//Q no.1  Write a single line comment which says, comments can make code readable
-// comments can make code readable
+// JavaScript Number Data Type - Assignment
 
-//Q no.2  Write another single comment which says, Welcome to 30DaysOfJavaScript
-//Welcome to 30DaysOfJavaScript
+// Simple Questions:
 
-// Q no.3 Write a multiline comment which says, comments can make code readable, easy to reuse and informative
-//comments can make code readable
-// easy to reuse and informative
+// 1. What will be the output of the following code? 
+let x = 7.2;
+console.log("Qes no.1 Ans :",Math.round(x));
+// Hint: It will round to the nearest integer. write in comment
+// Ans. 7
 
-// Q no.4 Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
-// String
-let Name1="Amol"
-//Number
-let AGE2 = 25;
-//boolean
-let isLoggedof1 = true;
-//undefined
-let JADHAV1;
-//null
-let Mark1 = null;
-
-// Q no.5 Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
-// String
-let Name="Amol"
-console.log("Data type of Name",typeof(Name));
-//Number
-let AGE = 25;
-console.log("Data type of AGE",typeof(AGE));
-//boolean
-let isLoggedof = true;
-console.log("Data type of isLoggedof",typeof(isLoggedof));
-//undefined
-let JADHAV;
-console.log("Data type of JADHAV",typeof(JADHAV));
-//null
-let Mark = null;
-console.log("Data type of Mark",Mark);
-
-// Q no.6 Declare four variables without assigning values
-let firstname;
-let lastename;
-let age;
-let city;
+// 2. Write code to check the type of the variable `gravity = 9.81` using the typeof operator.
+// Example:
+let gravity = 9.81;
+// Hint: Use typeof to determine the data type.
+console.log("Qes no.2 Ans :",typeof(gravity));
 
 
-// Q no.7 Declare four variables with assigned values
-let Firstname = "Amol";
-let Lastename = "Jadhav";
-let Age ='25';
-let City ="Pune";
+// Medium Questions:
 
-// Q no.8 Declare variables to store your first name, last name, marital status, country and age in multiple lines
-let first_name = "Amol";
-let last_name = "Jadhav";
-let marital_status = "Single";
-let country = "Pune";
-let age1 = "25"
-console.log(first_name);
-console.log(last_name);
-console.log(marital_status);
-console.log(country);
-console.log(age1);
+// 3. Generate a random number between 1 and 10 (inclusive) and print it.
+let randomNum = Math.floor(Math.random() * 10) + 1;
+//console.log(randomNum);
+// Hint: Use Math.random() and Math.floor() to generate random numbers.
+console.log("Qes no.3 Ans :",randomNum);
 
-// Q no.9 Declare variables to store your first name, last name, marital status, country and age in a single line
-console.log("Fristname"+ first_name, "Lastname"+ last_name,"Maritalstatus"+ marital_status,"Country"+ country,"Age"+ age1);
+// 4. What is the output of rounding the number 5.7 using Math.ceil() and Math.floor()? 
+let num = 5.7;
+// Hint: Rounds up to the nearest integer.
+console.log("Qes no.4.1 Ans :",Math.ceil(num));
+//math ceil= 6
+ // Hint: Rounds down to the nearest integer.
+console.log("Qes no.4.2 Ans :",Math.floor(num));
+ //Math.Floor = 5
 
-// Q no.10 Declare two variables myAge and yourAge and assign them initial values and log to the console.
-let myAge = 25;
-let yourAge = 30;
-console.log("My_Age",myAge,"Your_Age",yourAge);
+
+// 5. Write program  `rollDice` that simulates rolling two dice and returns their combined result.
+// Hint: Each dice roll should return a number between 1 and 6.
+let rollDice = Math.ceil(Math.random()*6);
+console.log("Qes no.5(i.e single dice) Ans :",rollDice);
+let rollDice1 = Math.ceil(Math.random()*6);
+let rollDice2 = Math.ceil(Math.random()*6);
+console.log("Qes no.5(i.e Two dice) Ans :",rollDice1,rollDice2);
+
+// 6. What will be the result of the following code? Explain why.
+let randomVal = Math.random();
+console.log("Qes no.6 Ans : Number in beteen 5 to 14 ",Math.floor(randomVal * 10) + 5);
+// write the output and reason in commnets
+// Hint: Understand how the number is being generated and what range it falls in.
+// Ans= The Result in beteen 5 to 14 
+// Reason = Becuase we used Math.floor is always start with before./left/ base value last (i.e 1 to 10, But +5 is initial start value)
+// Ans comes between 5 to 14 because we take Math.floor, And other side if we apply Math.ceil it will be output between 5 to 15.
+
+//7 generate  randomBetween(10, 20) should generate a number between 10 and 20.
+//console.log(randomBetween(10, 20));
+let randomBetween=(Math.ceil(Math.random()*10)+10)
+console.log("Qes no.7 Ans :",randomBetween);
+
+// 8 generate a random number between 5.5-9.3
+//Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
+let X=5.5;
+let Y= 9.3;
+console.log("Qes no.8 Ans :",Math.random()*(9.3-5.5)+5.5);
+
+//I get fromula from youtube, To find out any number between any two numbers(i.e (Max-Min)+Min)
+
+// 9. Given a number `x = 1234.56789`, write code to round this number to 2 decimal places. that is x=1234.57
+let number = 1234.56789;
+// Hint: Multiply by 100, round it, and then divide by 100.
+let number1 = 1234.56789;
+console.log("Qes no.9 Ans :",(Math.round(number1*100))/100);
+
+// 10. Write a program  that rounds any given number to the nearest multiple of 5.
+// Example:if 28 is given  should return 30, 32 should return 30.
+// Ans
+let X1 =17
+let Y1 = (Math.floor(Math.round(X1/5))*5)
+console.log("Qes no.10 Ans :",Y1);

@@ -1,83 +1,74 @@
-// Q.1 Write a single line comment which says, comments can make code readable
-// Comments can make code readable
+// JavaScript Number Data Type - Assignment
+
+// Simple Questions:
+
+// 1. What will be the output of the following code? 
+let x = 7.2;
+console.log("Qes no.1 Ans is :",Math.round(x));
+// Hint: It will round to the nearest integer. write in comment
+// Ans. 7
+
+// 2. Write code to check the type of the variable gravity = 9.81 using the typeof operator.
+// Example:
+let gravity = 9.81;
+// Hint: Use typeof to determine the data type.
+console.log("Qes no.2 Ans is :",typeof(gravity));
 
 
-// Q.2 Write another single comment which says, Welcome to 30DaysOfJavaScript
-// Welcome to 30DayofJavaScript
+// Medium Questions:
+
+// 3. Generate a random number between 1 and 10 (inclusive) and print it.
+let randomNum = Math.floor(Math.random() * 10) + 1;
+//console.log(randomNum);
+// Hint: Use Math.random() and Math.floor() to generate random numbers.
+console.log("Qes no.3 Ans is :",randomNum);
+
+// 4. What is the output of rounding the number 5.7 using Math.ceil() and Math.floor()? 
+let num = 5.7;
+// Hint: Rounds up to the nearest integer.
+console.log(Math.ceil(num));
+//math ceil= 6
+
+ // Hint: Rounds down to the nearest integer.
+console.log(Math.floor(num));
+ //Math.Floor = 5
 
 
-// Q.3 Write a multiline comment which says, comments can make code readable, easy to reuse and informative
-/* comments can make code readable, 
-easy to reuse and informative*/
+// 5. Write program  rollDice that simulates rolling two dice and returns their combined result.
+// Hint: Each dice roll should return a number between 1 and 6.
+let rollDice = Math.ceil(Math.random()*6);
+console.log("Qes no.5(i.e single dice) Ans :",rollDice);
+let rollDice1 = Math.ceil(Math.random()*6);
+let rollDice2 = Math.ceil(Math.random()*6);
+console.log("Qes no.5(i.e Two dice) Ans :",rollDice1,rollDice2);
 
+// 6. What will be the result of the following code? Explain why.
+let randomVal = Math.random();
+console.log("Qes no.6 Ans is : Number in between 1 to 14 ",Math.floor(randomVal *10));
+// write the output and reason in commnets
+// Hint: Understand how the number is being generated and what range it falls in.
+// Ans= The Result in beteen 1 to 14 
+// Reason = Becuase we used Math.floor is always start with before./left/ base value 
 
-// Q.4 Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
-// string data type
-let name = "Adesh";
-console.log(name);
+//7 generate  randomBetween(10, 20) should generate a number between 10 and 20.
+//console.log(randomBetween(10, 20));
+let randomBetween=(Math.ceil(Math.random()*10)+10)
+console.log("Qes no.7 Ans is :",randomBetween);
 
-//boolen data type
-let isLoggedIn = true;
-console.log(isLoggedIn);
+// 8 generate a random number between 5.5-9.3
+//Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
+let X=5.5;
+let Y= 9.3;
+console.log("Qes no.8 Ans :",Math.random()*(9.3-5.5)+5.5);
 
-// Undefined data type-declared but not assigned, hence Undefined
-let userAge;
-console.log(userAge);
+// 9. Given a number x = 1234.56789, write code to round this number to 2 decimal places. that is x=1234.57
+let number = 1234.56789;
+// Hint: Multiply by 100, round it, and then divide by 100.
+let number1 = 1234.56789;
+console.log("Qes no.9 Ans is :",Math.floor(number1*100)/100)
 
-// Null data type
-let userLocation = null;
-console.log(userLocation);
-
-
-//Q.5 Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
-//boolen data type
-let isLoggedof = true;
-
-// Undefined data type-declared but not assigned, hence Undefined
-let UserAge;
-
-// Null data type
-let UserLocation = null;
-
-// check and log the data type of each vaiable
-
-
-console.log(" Datatype of name is:", typeof name);
-console.log("Datatype of isLoggedIn is:", typeof isLogged);
-console.log("Datatype of userAge is:", typeof userAge);
-console.log("Datatype of userLocation is:", typeof userLocation);
-
-
-// Q.6 Declare four variables without assigning values
-let FirstName;
-let LastName;
-let age;
-let city;
-
-// Q.7 Declare four variables with assigned values
-let Name ="Adesh";
-let LName ="Devkar";
-let myage ="22";
-let mycity ="Tuljapur";
-
-// Q.8 Declare variables to store your first name, last name, marital status, country and age in multiple lines
-let firstName = "Adesh"
-let lastName = "Devkar"
-let maritalStatus = "Unmarried"
-let country = "india"
-let Age = "22" 
-
-
-// Q.9 Declare variables to store your first name, last name, marital status, country and age in a single line
-let fName = "Adesh", lName = "Devkar", MaritalStatus = "unmarried", Country = "India", Myage = 22;
-
-
-// Q.10 Declare two variables myAge and yourAge and assign them initial values and log to the console.
-let myAge = 22;
-let yourAge = 30;
-
-console.log("I am " + myAge + " years old.");
-console.log("You are " + yourAge + " years old.");
-
-
-hiiii
+// 10. Write a program  that rounds any given number to the nearest multiple of 5.
+// Example:if 28 is given  should return 30, 32 should return 30.
+let a=30;
+let a2=Math.ceil(a/5)*5;
+console.log(a);
