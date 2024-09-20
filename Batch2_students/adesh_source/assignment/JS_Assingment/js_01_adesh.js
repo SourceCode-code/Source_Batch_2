@@ -79,3 +79,7 @@ let yourAge = 30;
 console.log("I am " + myAge + " years old.");
 console.log("You are " + yourAge + " years old.");
 
+let myname="pratik"
+console.log(myname.substring(3,6))
+console.log(myname.substr(3,3))
+
