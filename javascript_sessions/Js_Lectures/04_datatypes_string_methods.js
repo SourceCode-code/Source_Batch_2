@@ -164,3 +164,4 @@ console.log(str11)
 console.log(str11.length)//6  " Amol "
 console.log(str11.trim()) // "Amol" //4
 console.log(str11.trim().length) //4
+
