@@ -157,3 +157,8 @@ console.log(chall3.length)
 console.log(chall3.substr(24,46));Node;
 
 
+
+let x="thank you"
+console.log(x);
+
+
