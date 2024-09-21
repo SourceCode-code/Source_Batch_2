@@ -1,0 +1,13 @@
+let C = "\\t is used to add indentation or space"
+console.log(C)
+\t -Command use for tab ( for 8 digt spacing)
+
+ ``(backticks) are always use on $ 
+ E.g FullName1 = `My full name is ${firstName} ${middleName} ${lastname}`;
+ eg. let STR1 = `${str12}    ${str21}`
+
+ If we have to find Index it sholud always start with 0, and .lenght always start with 1
+
+ If we have to pick up random alphabate, fistly convert it to lenth then apply in [] so e can pic up alphabates as per lenght of strings.
+ 
+ if u have to find odd number then always go (2N+-1) for between two values(MAx-MIN)+min
