@@ -1,158 +1,140 @@
-
-//Operators -- there are some signs or symbols used to perform operations 
-
-//Assignment Operator
-// Assignment Operator (=) it is used to assign the value to a variable 
-
-let var1 = 20
-
-console.log(var1)
-
-// x = y
-
-//(+=)
-
-//x +=y -->(x=x+y)
-
-// x -=y --> (x=x-y)
-
+// Operators -- Symbols used to perform operations
 
 //-------------------------------------------------------------------
 
-// Arithmatic operators 
+// Assignment Operator
+// Assignment Operator (=) is used to assign a value to a variable.
+
+let var1 = 20;
+console.log(var1); // Output: 20
+
+// x = y (assigns y to x)
+
+// Compound Assignment Operators:
+// += adds and assigns, i.e., x += y is equivalent to x = x + y
+// -= subtracts and assigns, i.e., x -= y is equivalent to x = x - y
+
+//-------------------------------------------------------------------
+
+// Arithmetic Operators
 
 /**
- * + ---> addtion 
- * - ---> substarction
- * * ---> multiplication
- * / ---> division
- * % ---> modulus  -- reminder 
- * ** --> exponetional -- power
+ * +  ---> Addition
+ * -  ---> Subtraction
+ * *  ---> Multiplication
+ * /  ---> Division
+ * %  ---> Modulus (remainder)
+ * ** ---> Exponentiation (power)
  */
 
-console.log(2**3) // 8
+console.log(2 ** 3); // Output: 8
 
-//comparison operators 
+//-------------------------------------------------------------------
+
+// Comparison Operators
 
 /**
- * > -- greater than 
- * < -- less than 
- * >= -- gerater than equal to 
- * <= -- less equal to 
- * ! -- not  -- its reverses your values 
- * == -- check similar values 
- *=== -- 
+ * >   ---> Greater than
+ * <   ---> Less than
+ * >=  ---> Greater than or equal to
+ * <=  ---> Less than or equal to
+ * !   ---> Not (reverses values)
+ * ==  ---> Checks equality (values only)
+ * === ---> Checks equality (values and types)
  */
 
-console.log(8=="8") // true --> values 
-console.log(8 === "8")//false -->checks values and datatypes 
+console.log(8 == "8");  // Output: true (values are similar)
+console.log(8 === "8"); // Output: false (value and type mismatch)
 
-console.log(8 !== "8") //fasle (true)
+console.log(8 !== "8"); // Output: true (not equal in type)
+console.log(NaN == NaN); // Output: false (NaN is not equal to itself)
 
-console.log(NaN == NaN) //true -->  //false -->
+//-------------------------------------------------------------------
 
-// logical operator 
+// Logical Operators
 
-//AND ( && )
-
+// AND (&&)
 /**
- * T && T ==> True
- * F && F ==> false 
- * T && F ==> Fasle
- * F && T ==> false 
-
-examples
-//           T       T
-console.log(4>3 && 10>5) 
-//           F      T      
-
-console.log(2>3 && 10>5)
-
-
-
-
-//OR (||)
-
-/**
-  * T || T ==> True
- * F || F ==> false 
- * T || F ==> true
- * F || T ==> true 
- * 
- * //           T       T
-console.log(4>3 || 10>5)   // true
-//           F      T      
-
-console.log(2>3 || 10>5) //true
- * 
- */
-//NOT (!)
-
-/**
- * T!F
- * F!T
- * 
- * 
- * 
-console.log(!(4>3)) // true  -->false
+ * T && T  ==> True
+ * F && F  ==> False
+ * T && F  ==> False
+ * F && T  ==> False
  */
 
-// increment operator  (++ variable)
+console.log(4 > 3 && 10 > 5); // Output: true
+console.log(2 > 3 && 10 > 5); // Output: false
 
-//pre increment -- increment is done before that varaible 
-let incr= 10
-console.log(++incr) // 11
-console.log(incr) //11
-
-//post inccrement--
-let incr1= 20
-console.log(incr1++)  //20
-console.log(incr1) //21
-
-// decrement operator (--)
-
-
-
-//pre dercement -- decrement is done before that varaible 
-let incr3= 10
-console.log(--incr3) // 9
-console.log(incr3) //9
-
-//post decrement--
-let incr4= 2
-console.log(incr4--)  //2
-console.log(incr4) //1
-
-
-//Ternaray operators (if else ) 
-
-// syntax 
-
-// condition 1 ? output of condition 1 :output of condition 2 
-
-let num =-5
-num >0 ? console.log(` your given number ${num} is positive number`):
-console.log(`your given number ${num} is negative number`)
-
-let season = "dfgbjkuygt"
-
-season=="raining"?console.log("carry raincoats "):
-console.log("do not carry any raincoats ")
-
-
-// ternaary operators 
-
+// OR (||)
 /**
- * ?--> if 
- * :-->else 
+ * T || T  ==> True
+ * F || F  ==> False
+ * T || F  ==> True
+ * F || T  ==> True
  */
 
-let status1 = "DSR SENT"
+console.log(4 > 3 || 10 > 5); // Output: true
+console.log(2 > 3 || 10 > 5); // Output: true
 
-// dsr sent --> work done considered 
-// dsr not sent --> marked as abesent 
+// NOT (!)
+/**
+ * !T ==> False
+ * !F ==> True
+ */
 
+console.log(!(4 > 3)); // Output: false
 
- status1==" not DSR SENT"?console.log("work done considered "):console.log("marked as abesent ")
+//-------------------------------------------------------------------
 
+// Increment Operator (++)
 
+// Pre-increment (increment happens before the variable is used)
+let incr = 10;
+console.log(++incr); // Output: 11
+console.log(incr);   // Output: 11
+
+// Post-increment (increment happens after the variable is used)
+let incr1 = 20;
+console.log(incr1++); // Output: 20
+console.log(incr1);   // Output: 21
+
+//-------------------------------------------------------------------
+
+// Decrement Operator (--)
+
+// Pre-decrement (decrement happens before the variable is used)
+let incr3 = 10;
+console.log(--incr3); // Output: 9
+console.log(incr3);   // Output: 9
+
+// Post-decrement (decrement happens after the variable is used)
+let incr4 = 2;
+console.log(incr4--); // Output: 2
+console.log(incr4);   // Output: 1
+
+//-------------------------------------------------------------------
+
+// Ternary Operator (if-else shorthand)
+
+// Syntax: condition ? expression_if_true : expression_if_false
+
+let num = -5;
+num > 0
+    ? console.log(`Your given number ${num} is a positive number`)
+    : console.log(`Your given number ${num} is a negative number`);
+
+let season = "summer";
+season === "raining"
+    ? console.log("Carry raincoats.")
+    : console.log("Do not carry any raincoats.");
+
+// Explanation of ternary operators:
+/**
+ * ? --> Equivalent to "if"
+ * : --> Equivalent to "else"
+ */
+
+// Another Example:
+let status1 = "DSR SENT";
+status1 === "not DSR SENT"
+    ? console.log("Work done considered.")
+    : console.log("Marked as absent.");

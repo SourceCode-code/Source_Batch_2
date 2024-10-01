@@ -1,22 +1,27 @@
-// datatypes ---
+// Datatypes
 
-// booelans -- booleans contains 2 values which are true or false 
+// Booleans: Booleans contain two values: true or false.
 
-// use --> comparision 
+// Usage: Mainly used for comparisons.
 
-// True-->
-//1 all strings are true value expect (empty string )
-//2 all numbers are  true (postive & negative) expect (zero)
+// True values:
+// 1. All non-empty strings are considered true.
+// 2. All numbers are considered true, whether positive or negative, except for zero (0).
 
+// False values:
+// 1. Empty strings ("") are false.
+// 2. The number zero (0) is false.
+// 3. null is false.
+// 4. undefined is false.
+// 5. NaN (Not-a-Number) is false.
 
-//False-->
-//1 all  empty strings  value (empty string )
-//2 number (zero)
-//3 null
-//4 undefined 
-//5 NaN
-//6 On
+// Example:
+let isTrue = Boolean("hello");  // true
+let isFalse = Boolean("");      // false
+let isTrueNumber = Boolean(42); // true
+let isFalseNumber = Boolean(0); // false
 
-
-
-//2-- 02_Interview.js
+console.log(isTrue);        // Output: true
+console.log(isFalse);       // Output: false
+console.log(isTrueNumber);  // Output: true
+console.log(isFalseNumber); // Output: false
