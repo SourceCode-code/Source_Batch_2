@@ -173,6 +173,7 @@ console.log("slope between two points is:", slope);
 // 20. Compare the slope of the two questions above.
 
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
+// help me to solvethis que
 
 // 22. Compare the length of your first name and your family name.
 let firstName1 = "Shrikant";
@@ -190,4 +191,14 @@ console.log(myAge - yourAge);
 
 
 // 24. Using prompt, when birth year and calculate if they are old enough to drive.*/
+let age1 = 20;
+age1 > 18
+? console.log("able to drive with age:", (age1))
+: console.log("not able to drive with age:", (age1));
 
+
+
+let age2 = 16;
+age2 > 18
+? console.log("able to drive with age:", (age2))
+: console.log("not able to drive with age:", (age2));
