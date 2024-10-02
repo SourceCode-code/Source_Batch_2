@@ -5,7 +5,7 @@
 // Assignment Operator
 // Assignment Operator (=) is used to assign a value to a variable.
 
-let var1 = 20;
+let var1 = 20; 
 console.log(var1); // Output: 20
 
 // x = y (assigns y to x)
