@@ -1,0 +1,26 @@
+
+* Checking the index of a character using indexOf() --> first occurrence: - we normally use to find out the character index number
+let str12 = "qwertyuiopq";
+console.log(str12.indexOf("y")); // Output: 5
+
+* Using lastIndexOf() -- last occurrence :- we normally use to find out the last character index number
+console.log(str12.length - 1);   // Output: 10
+console.log(str12.lastIndexOf("q")); // Output: 10
+
+* Concatenating strings using concat() :- hen we have to add string. syntax is important
+let str13 = "siddhant ";
+let str14 = "gadakh";
+let str15 = "arjun";
+console.log(str14.concat(str13, str15)); // Output: 'gadakhsiddhant arjun'
+
+* Using startsWith() and endsWith() methods :- It Always use when we have to find starting initial or ending initial
+console.log(str13.startsWith("s"));  // Output: true
+console.log(str13.endsWith("T"));    // Output: false
+
+* Repeating strings using repeat(): synntx:- console.log(str16.repeat(10)) its show N times the out what we insert
+let str16 = "push";
+console.log(str16.repeat(10)); // Output: 'pushpushpushpushpushpushpushpushpushpush' 
+
+*Using match() to search for a pattern :- Syntax console.log(str17.match("LEARNING")); 
+let str17 = "I AM LEARNING JS , LEARNING CYPRESS, LEARNING PLAYWRIGHT";
+console.log(str17.match("LEARNING")); // Output: [ 'LEARNING', index: 5, input: 'I AM LEARNING...', groups: undefined ]
