@@ -10,10 +10,14 @@ console.log(typeof(D1)); // D1 is a number
 
 
 //Q2. Check if parseFloat('9.8') is equal to 10. If not, round it to make it equal to 10.
-let NUM = parseFloat('9.8');
-NUM == 10 ? console.log("NUM is not uqual to 10 "):
-console.log(Math.round(NUM));
-console.log("NUM is uequal to 10 ")
+// let NUM = parseFloat('9.8');
+// NUM == 10 ? console.log("NUM is not uqual to 10 "):
+// console.log(Math.round(NUM));
+// console.log("NUM is uequal to 10 ")
+
+let NUMBER1 = parseFloat('9.8');
+let NUMBER2 = 10;
+console.log(Math.round(NUMBER1) === NUMBER2);
 
 
 
@@ -31,7 +35,8 @@ console.log(sentence.includes('jargon')); //true
 // "You cannot end a sentence with because because because is a conjunction."
 let longSentence = 'You cannot end a sentence with because because because is a conjunction.';
 console.log(longSentence.indexOf('because because because'));
-console.log(longSentence.substr(31,30)); 
+console.log(longSentence.substr(31,23));
+
 
 //Thought of a diffenrent approach/ way to extract 'beacuse' ; i think it is wrong // 
 let startIndex = longSentence.indexOf('because because becasue');
@@ -59,6 +64,11 @@ let Y = '10';
 let Num = 10 ;
 let Z = parseInt(Y);
 console.log(Y == Num);
+
+console.log(parseInt("10")===10);
+
+
+
 
 //Q.8 Boolean value is either true or false. Write three JavaScript statements that provide truthy values.
 //1 
@@ -115,6 +125,8 @@ let Length2 = A2.length;
 let FalsyLength = Length1!== Length2;
 console.log(FalsyLength); //false , as both the lengths are same .
 
+// console.log((py.lentgth!==ja.length))
+
 //Q.12 Evaluate the following expressions and confirm with `console.log()`:
 //write the output in the comments 
 console.log(4 > 3 && 10 < 12);   // True 
@@ -130,6 +142,9 @@ console.log(!(4 === '4')); // true
 
 //Q.13  Check if there is no 'on' in both 'dragon' and 'python'.
 let dragon = 'dragon';
+let python = 'python';
+console.log(!(dragon.includes("on")&& python.includes('on')));
+
 
 
 //Q.14 
@@ -163,10 +178,24 @@ console.log(AreaOfCircle);
 console.log(circumferenceOfCircle);
 
 //Q.18 
+let slope = 2;
+let y = -2;
+let x = -y/slope;
+console.log(x);
+
+//Q.19 
+let x1 = 2;
+let y1 = 2;
+let x2 = 6;
+let y2 = 10;
+console.log((10-2)/(6-2));
+let slope2 = (10-2)/(6-2);
+
+//Q.20 
+console.log(slope === slope2)
 
 
-
-
+//Q.21 = advanced will be discussed later 
 //Q.22 
 let FirstName = 'Atharva';
 let FamilyName = 'Pandit';
@@ -180,4 +209,8 @@ let CompareAge = myAge < yourAge;
 console.log(CompareAge); 
 
 //Q.24 
-let BirthYear = '1999';
+let AGE1 = 13;
+
+AGE1>18
+?console.log("you are allowed to drive")
+:console.log("you are not allowed to drive");
