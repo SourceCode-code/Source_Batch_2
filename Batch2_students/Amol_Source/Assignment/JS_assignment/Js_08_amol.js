@@ -81,6 +81,7 @@ console.log('Ans of qestion no. 5',leapcheack)
 // let currentYear = check
 // currentYear == 0
 // ? console.log(`${cur2024} is leap not leap year`):console.log(`${cur2024} is a leap year`)
+// im tring to push a file on github but the pull request is not visible
 
 
 
