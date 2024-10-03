@@ -159,7 +159,10 @@ console.log("area of circle is:", 3.14 * radius * radius);
 console.log("circumstances of circle is:", 2 * 3.14 * radius);
 
 // 18. Calculate the slope, x-intercept and y-intercept of y = 2x - 2.
-
+let slope1 = 2
+let y = -2
+let x= -y/slope1
+console.log(x)
 
 // 19. Compare the slope between two points (2, 2) and (6, 10).
 let x1 = 2;
@@ -171,6 +174,9 @@ console.log("slope between two points is:", slope);
 
 
 // 20. Compare the slope of the two questions above.
+console.log(slope===slope1)
+
+
 
 // 21. Calculate the value of y (y = x^2 + 6x + 9) for different x values and figure out when y equals 0.
 // help me to solvethis que
