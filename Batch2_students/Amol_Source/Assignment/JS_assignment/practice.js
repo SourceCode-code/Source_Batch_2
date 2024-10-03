@@ -57,7 +57,74 @@
 // ? console.log('on in both dragon and python')
 // : console.log('no on in both dragon and python')
 
-let longSentence = 'You cannot end a sentence with because because because is a conjunction.'
+// let longSentence = 'You cannot end a sentence with because because because is a conjunction.'
+// let A = longSentence.indexOf('because')
+// console.log(A)
+// let B= longSentence.lastIndexOf('because');
+// console.log(B)
+// let final = (B-A)+'because'.length
+// console.log(final)
+// console.log (longSentence.substr(A,final))
+        
+// let Amol = 'good behaviour'
+// Amol == 'good behaviour'
+// ? console.log('ok')
+// : console.log('check second stall')
+// let a =10
+// let b = ++a + a++
+// console.log(b)
 
-console.log(longSentence.substr(31,24))
-//console.log("Ans of Qes No. 5",longSentence.substr(longSentence.indexOf('because'),longSentence.lastIndexOf('because')));
+
+// let count = 0;
+// X = count--
+// Y= count--
+// Z = count-- 
+// console.log(Z)
+
+// let Num = 87
+// Num %= 80
+// console.log(Num)
+
+// let a =10
+// let b = ++a + a++ + a++
+// console.log(b)
+
+// console.log(0)
+// let now = new Date();
+// console.log(now )
+// let specificdate = new Date( '2024,11,02')
+// console.log(specificdate)
+// console.log(now.getFullYear())
+// console.log(now.getHours())
+// console.log(now.getMonth()+1)
+// let now = new Date()
+// console.log(typeof(now))
+// let nowHour = now.getHours()
+// let nowHour1 = nowHour<=10 ? `0${nowHour}`: nowHour
+// let nowMin = now.getMinutes()
+// let nowMin1 = String(nowMin).padStart(2,0)
+// let nowSec = now.getSeconds()
+// let nowSec1 = String(nowSec).padStart(2,0)
+// let ampm = nowHour>=12 ? "am":"pm"
+// let in12format = nowHour1% 12 
+// console.log(`${in12format}:${nowMin1}:${nowSec1} ${ampm} `)
+
+// let day = now.getDay()
+// let day1 = day<10 ? `0${day}`:day
+// let month = now.getMonth()
+// let month1= String(month).padStart(2,0)
+// let year = now.getFullYear()
+
+// let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
+// //console.log(Indiatime)
+
+let Date1 = new Date
+let samor = Date1.getDate()
+Date1.setDate(samor+7)
+console.log((Date1.getDate()))
+
+let  date1 = new Date('2024-12-31');
+let date2 = new Date('2024-10-03');
+let difference = Math.abs(date1 - date2);
+let days = Math.ceil(difference / (1000 * 60 * 60 * 24));    
+console.log(days);

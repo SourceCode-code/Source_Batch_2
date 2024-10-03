@@ -74,7 +74,8 @@ console.log(2 ** 3); // Output: 8
 console.log(8 == "8");  // Output: true (values are similar)
 console.log(8 === "8"); // Output: false (value and type mismatch)
 
-console.log(8 !== "8"); // Output: true (not equal in type)
+console.log(8 !
+== "8"); // Output: true (not equal in type)
 console.log(NaN == NaN); // Output: false (NaN is not equal to itself)
 
 //-------------------------------------------------------------------
@@ -166,3 +167,25 @@ let status1 = "DSR SENT";
 status1 === "not DSR SENT"
     ? console.log("Work done considered.")
     : console.log("Marked as absent.");
+
+for incremental and decremental oprator
+let a =10
+          11   11   12
+let b = ++a + a++ + a++
+console.log(b)
+ans 34 - (a gets the value 11 from ++x, then x is incremented to 12 after the expression.)
+
+some imp notes
+condition 1 :if the value of vaiable is too much smaller than the quetiont then it shows as it is number in output.
+condition 2 :if the asssign value is even then output is 0
+condition 3 :if the value odd number then output will always be the 1
+condition 4 :if the value is near to the quetiont then ialaay show the remainng minus value 
+     e.g let Num = 87 
+    Num %= 80
+    console.log(Num)
+
+    Some E.g of ternanry oprater
+bool condition = false;
+int output = condition ? 100 : 200;
+
+output is 200 bcoz condition is flase

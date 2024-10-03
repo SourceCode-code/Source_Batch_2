@@ -139,7 +139,7 @@ console.log ("Ans of Qes No.17", Math.round(Math.PI*cicleR**2));
 // let Standard Equation = y=mx+b
 //i.e m=slope, 
 // given equation = y=2x-2 
-//if we conside x =0 then i.e y= 2(0)-2 so y= -2 so slope of Y axis = (o,-2)
+//if we conside x=0 then i.e y= 2(0)-2 so y= -2 so slope of Y axis = (o,-2)
 //if we conside y=0 then i.e 0= 2x-2, 2= 2x, x=2/2, x=1 so slope of x axis = (1,0)
 let a1 =1
 let c1 =0
