@@ -118,13 +118,24 @@
 // let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
 // //console.log(Indiatime)
 
-let Date1 = new Date
-let samor = Date1.getDate()
-Date1.setDate(samor+7)
-console.log((Date1.getDate()))
+// let Date1 = new Date
+// let samor = Date1.getDate()
+// Date1.setDate(samor+7)
+// console.log((Date1.getDate()))
 
-let  date1 = new Date('2024-12-31');
-let date2 = new Date('2024-10-03');
-let difference = Math.abs(date1 - date2);
-let days = Math.ceil(difference / (1000 * 60 * 60 * 24));    
-console.log(days);
+// let  date1 = new Date('2024-12-31');
+// let date2 = new Date('2024-10-03');
+// let difference = Math.abs(date1 - date2);
+// let days = Math.ceil(difference / (1000 * 60 * 60 * 24));    
+// console.log(days);
+
+let date = new Date()
+// let year = date.getFullYear()
+// date.setFullYear(year-4)
+// console.log(date.getFullYear())
+
+let month = date.getMonth()
+date.setMonth(month)
+//let sss = date.getMonth()
+let ss1= date.toLocaleString('en',{month: "long"})
+console.log(ss1)
