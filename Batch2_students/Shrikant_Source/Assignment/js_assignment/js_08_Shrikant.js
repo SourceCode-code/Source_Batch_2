@@ -54,9 +54,15 @@ console.log(days);
 
 
 
-/* 
-Question 4: 
-Check if a current  year is a leap year.
 
-*/
+// Question 4: 
+// Check if a current  year is a leap year.
 
+let currentYear = new Date().getFullYear();
+
+let isLeapYear = (currentYear % 4 === 0 && currentYear % 100 !== 0) || (currentYear % 400 === 0);
+
+// Output the result
+let leapcheck = (currentYear = isLeapYear)
+    ? console.log("The given year is a leap")
+    : console.log("The given year is not leap");
