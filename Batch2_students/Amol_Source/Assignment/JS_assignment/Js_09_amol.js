@@ -1,10 +1,11 @@
 // 1. Get user input using prompt("Enter your age:"). 
 // If user is 18 or older, give feedback: 'You are old enough to drive'. 
 // If not 18, give feedback stating how many years are left to turn 18.
-let person = 24
+let person = 17
 let agediff = (18 -person)
 if (person>=18){
     console.log('You are old enough to drive')
+
 }
 else{console.log(`You are left with ${agediff} years to drive`)}
 
@@ -161,7 +162,7 @@ default : console.log(`Enter Valid data`)
  */
 
 // 1. Write a program that tells the number of days in a month.
-let MONTH ="MArch";
+let MONTH ="april";
 let Check12 = MONTH.toLowerCase()
 switch(Check12){
 case "january" : 
@@ -175,7 +176,7 @@ break;
 case "april"   :
 case "june "   :
 case "september": 
-case "november": console.log (`${Check12} January has 30 days`)
+case "november": console.log (`${Check12}  has 30 days`)
 break;
 case "february": console.log(`${Check12} has 28 or 29 days (29 days/ Leap year i.e once in 4 year) `)
 break;
@@ -187,3 +188,4 @@ default: console.log(`Enter Valid data`)
  * Enter a month: January
  * January has 31 days.
  */
+ 
