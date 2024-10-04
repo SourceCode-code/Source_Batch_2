@@ -1,3 +1,31 @@
+// Datatypes
+
+// Booleans: Booleans contain two values: true or false.
+
+// Usage: Mainly used for comparisons.
+
+// True values:
+// 1. All non-empty strings are considered true.
+// 2. All numbers are considered true, whether positive or negative, except for zero (0).
+
+// False values:
+// 1. Empty strings ("") are false.
+// 2. The number zero (0) is false.
+// 3. null is false.
+// 4. undefined is false.
+// 5. NaN (Not-a-Number) is false.
+
+// Example:
+let isTrue = Boolean("hello");  // true
+let isFalse = Boolean("");      // false
+let isTrueNumber = Boolean(42); // true
+let isFalseNumber = Boolean(0); // false
+
+console.log(isTrue);        // Output: true
+console.log(isFalse);       // Output: false
+console.log(isTrueNumber);  // Output: true
+console.log(isFalseNumber); // Output: false
+
 // Operators -- Symbols used to perform operations
 
 //-------------------------------------------------------------------
@@ -25,7 +53,7 @@ console.log(var1); // Output: 20
  * /  ---> Division
  * %  ---> Modulus (remainder)
  * ** ---> Exponentiation (power)
- */  
+ */
 
 console.log(2 ** 3); // Output: 8
 
@@ -46,7 +74,8 @@ console.log(2 ** 3); // Output: 8
 console.log(8 == "8");  // Output: true (values are similar)
 console.log(8 === "8"); // Output: false (value and type mismatch)
 
-console.log(8 !== "8"); // Output: true (not equal in type)
+console.log(8 !
+== "8"); // Output: true (not equal in type)
 console.log(NaN == NaN); // Output: false (NaN is not equal to itself)
 
 //-------------------------------------------------------------------
@@ -54,69 +83,68 @@ console.log(NaN == NaN); // Output: false (NaN is not equal to itself)
 // Logical Operators
 
 // AND (&&)
-/*
+/**
  * T && T  ==> True
-
  * F && F  ==> False
  * T && F  ==> False
- * F && T  ==> False 
+ * F && T  ==> False
  */
 
 console.log(4 > 3 && 10 > 5); // Output: true
 console.log(2 > 3 && 10 > 5); // Output: false
 
 // OR (||)
-/*
- * T || T  ==> True 
- * F || F  ==> False 
- * T || F  ==> True 
- * F || T  ==> True 
- */ 
+/**
+ * T || T  ==> True
+ * F || F  ==> False
+ * T || F  ==> True
+ * F || T  ==> True
+ */
 
 console.log(4 > 3 || 10 > 5); // Output: true
 console.log(2 > 3 || 10 > 5); // Output: true
 
 // NOT (!)
-/*
+/**
  * !T ==> False
  * !F ==> True
- */ 
+ */
 
-console.log(!(4 > 3)); // Output: false 
+console.log(!(4 > 3)); // Output: false
 
 //-------------------------------------------------------------------
 
-// Increment Operator (++) 
+// Increment Operator (++)
 
 // Pre-increment (increment happens before the variable is used)
-let incr = 10; 
-console.log(++incr); // Output: 11 
-console.log(incr);   // Output: 11 
+let incr = 10;
+console.log(++incr); // Output: 11
+console.log(incr);   // Output: 11
 
 // Post-increment (increment happens after the variable is used)
 let incr1 = 20;
-console.log(incr1++); // Output: 20 
-console.log(incr1);   // Output: 21 
+console.log(incr1++); // Output: 20
+console.log(incr1);   // Output: 21
 
 //-------------------------------------------------------------------
 
-// Decrement Operator (--) 
-// Pre-decrement (decrement happens before the variable is used)
+// Decrement Operator (--)
 
+// Pre-decrement (decrement happens before the variable is used)
 let incr3 = 10;
-console.log(--incr3); // Output: 9 
-console.log(incr3);   // Output: 9 
+console.log(--incr3); // Output: 9
+console.log(incr3);   // Output: 9
 
 // Post-decrement (decrement happens after the variable is used)
 let incr4 = 2;
-console.log(incr4--); // Output: 2 
-console.log(incr4);   // Output: 1 
+console.log(incr4--); // Output: 2
+console.log(incr4);   // Output: 1
 
 //-------------------------------------------------------------------
 
-// Ternary Operator (if-else shorthand) 
+// Ternary Operator (if-else shorthand)
 
-// Syntax: condition ? expression_if_true : expression_if_false 
+// Syntax: condition ? expression_if_true : expression_if_false
 
 let num = -5;
 num > 0
@@ -139,3 +167,25 @@ let status1 = "DSR SENT";
 status1 === "not DSR SENT"
     ? console.log("Work done considered.")
     : console.log("Marked as absent.");
+
+for incremental and decremental oprator
+let a =10
+          11   11   12
+let b = ++a + a++ + a++
+console.log(b)
+ans 34 - (a gets the value 11 from ++x, then x is incremented to 12 after the expression.)
+
+some imp notes
+condition 1 :if the value of vaiable is too much smaller than the quetiont then it shows as it is number in output.
+condition 2 :if the asssign value is even then output is 0
+condition 3 :if the value odd number then output will always be the 1
+condition 4 :if the value is near to the quetiont then ialaay show the remainng minus value 
+     e.g let Num = 87 
+    Num %= 80
+    console.log(Num)
+
+    Some E.g of ternanry oprater
+bool condition = false;
+int output = condition ? 100 : 200;
+
+output is 200 bcoz condition is flase

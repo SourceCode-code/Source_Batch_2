@@ -103,7 +103,7 @@ let curhours = curTime %12 //  12/12 --------0  24/12===========0
 //0
 //1
 //2
-curhours = curhours?curhours :12
+curhours = curhours?curhours :12//this is for only 12'o'clock
 // 13/12 -----1
 //14/12 -------2
 // 12/12 --- 0
