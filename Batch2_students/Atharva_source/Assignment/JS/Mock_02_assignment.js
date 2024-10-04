@@ -272,7 +272,8 @@ console.log(typeof(STR2)); //gives the output as string. // typeof operator  is 
 
 //2: Indexing: this property returns the exact character present at a particular index.//
 
-//3: String concatenation: this can be achieved by : 1: the '+' operator , 2: using template literals, 3: using literal strings and 4: using escape characters.
+/*3: String concatenation: this can be achieved by : 1: the '+' operator , 
+2: using template literals, 3: using literal strings and 4: using escape characters.
 
 //String methods: 
 //1 : toUpperCase() : // converts a string to the uppercase 
@@ -433,7 +434,8 @@ console.log(qaz.toUpperCase().toLowerCase().toUpperCase());//RICKY//
 
 //---------------------------------------------------------------------------//
 
-//3 .Substr method : method to get specific characters from a string where starting index, and No. of characters are needed) 
+//3 .Substr method : method to get specific characters from a string where starting index,
+ and No. of characters are needed) 
 
 //a 
 let asd = 'Macintosh';
@@ -576,4 +578,5 @@ console.log(UUU.match("tutorial")); /*[
 
 
  
+
 
