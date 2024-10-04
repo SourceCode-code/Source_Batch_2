@@ -45,15 +45,6 @@ console.log(`${StrDay} ${TodayDate1} ${StrMonth} ${ThisYear} ${time1}:${min1} `)
 
 
 
-
-
-
-
-
-
-
-
-
 /* 
 Question 3: 
 Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
