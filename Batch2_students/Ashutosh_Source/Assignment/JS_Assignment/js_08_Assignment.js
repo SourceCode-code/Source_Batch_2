@@ -28,8 +28,6 @@ sec = date.getSeconds()
 // Also, display the current time in various formats.
 age = 10
 
-
-
 // dd:mm:yyyy HH:mm (24 hours)
 console.log(`${String(datee).padStart(2,0)}:${String(month).padStart(2,0)}:${year} ${time}:${min}`);
 
@@ -49,15 +47,18 @@ console.log(`${year}:${String(month).padStart(2,0)}:${String(datee).padStart(2,0
 // Question 2: 
 // Return the date in the format: "Day of the Week, DD Month YYYY HH:mm" 
 // (e.g., "Monday, 02 October 2024 15:30").
-
-
 // (e.g., "Monday, 02 October 2024 3:30 pm").
-
-// */
+let Ttoday = date.getDate()
+let daystr = date.toLocaleString('en-gb', {weekday:'long'});
+let monthstr = date.toLocaleString('en-gb',{month: 'long'})
+console.log(`${daystr},${String(datee).padStart(2,0)} ${monthstr} ${year} ${time}:${min}`);
 
 // /* 
 // Question 3: 
 // Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
+let newdate = new Date("2024-12-31")
+timeremaining = Math.abs(datee-newdate)
+console.log((timeremaining)/(1000*60*60*24));
 
 // 31 -dec
 
@@ -67,4 +68,7 @@ console.log(`${year}:${String(month).padStart(2,0)}:${String(datee).padStart(2,0
 // /* 
 // Question 4: 
 // Check if a current  year is a leap year.
+(year%4==0 && year%100!=0||year%400==0) ? console.log(`${year} is a leap year`):
+console.log(`${year} is not a leap year`);
+
 
