@@ -131,9 +131,11 @@ console.log(Math.floor(Math.random() * (max2 - min2) + min2))
 // 10. Access the 'JavaScript' string characters using a random number.
 let jsString = 'JavaScript'
 
-let s = console.log(jsString.indexOf('S'))
+let s = console.log(Math.random(jsString.indexOf('S')))
 console.log(Math.random() * 4)
 
+//let randomNum = (Math.round(Math.random()*jsString.length))
+console.log(jsString[4])
 // 11. Use console.log() and escape characters to print the following pattern:
 // 1 1 1 1 1
 // 2 1 2 4 8

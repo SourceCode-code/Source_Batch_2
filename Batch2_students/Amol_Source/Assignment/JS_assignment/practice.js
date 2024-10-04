@@ -129,13 +129,13 @@
 // let days = Math.ceil(difference / (1000 * 60 * 60 * 24));    
 // console.log(days);
 
-let date = new Date()
+// let date = new Date()
 // let year = date.getFullYear()
 // date.setFullYear(year-4)
 // console.log(date.getFullYear())
 
-let month = date.getMonth()
-date.setMonth(month)
-//let sss = date.getMonth()
-let ss1= date.toLocaleString('en',{month: "long"})
-console.log(ss1)
+// let month = date.getMonth()
+// date.setMonth(month)
+// let sss = date.getMonth()
+// let ss1= date.toLocaleString('en',{month: "long"})
+// console.log(ss1)
