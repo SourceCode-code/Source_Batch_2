@@ -37,7 +37,7 @@ let strExample = 'JavaScript is awesome';
 // Common string methods:
 console.log(strExample.toUpperCase());  // Converts the string to uppercase
 console.log(strExample.toLowerCase());  // Converts the string to lowercase
-console.log(strExample.substr(0, 10));  // Extracts a part of the string (substring)
+console.log(strExample.substring(0, 9));  // Extracts a part of the string (substring)
 console.log(strExample.match('is'));    // Searches for a match in the string
 console.log(strExample.replace('awesome', 'great')); // Replaces part of the string
 

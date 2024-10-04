@@ -93,3 +93,9 @@ console.log("Ans of Qes No. 15",2*randomodd+1);
 // /t is used to add indentation or space
 let C = "\\t is used to add indentation or space"
 console.log(C)
+
+let STR29 = "We are learning javascript"
+console.log(STR29,"and Cypresss")
+console.log (STR29.replace('javascript','Paython Playwrite and cypress'));
+
+console.log((Math.ceil(Math.random()*999999999 + 910000000 )))

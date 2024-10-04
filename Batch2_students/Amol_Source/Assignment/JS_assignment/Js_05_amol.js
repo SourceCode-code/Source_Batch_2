@@ -23,9 +23,9 @@ console.log("Ans of Qes No. 5",C1.toLowerCase());
 
 // 6. Cut (slice) out the first word of the string using substr() or substring() method
  // Using substring method
- let D = "Hello Amol jadhav"
- console.log("Ans of Qes No. 6",D.substring(0,5));
- console.log("Ans of Qes No. 6.1",D.substr(0,5));
+let D = "Hello Amol trtrtrt jadhav"
+console.log("Ans of Qes No. 6",D.substring(10,18));
+console.log("Ans of Qes No. 6.1",D.substr(10,7));
 
 // 7. Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
 let E="30 Days Of JavaScript."
@@ -34,6 +34,7 @@ console.log("Ans of Qes No. 7.1",E.substr(3,18));
 
 // 8. Check if the string contains a word Script using includes() method
 let F= "So this is my Script"
+
 console.log("Ans of Qes No. 8",F.includes('Script'));
 
 
@@ -68,7 +69,6 @@ console.log("Ans of Qes No. 15",K.indexOf("3"))
 
 // 16. Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
 console.log("Ans of Qes No. 16",J1.lastIndexOf('t'));
-
 // 17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:
 let P1= 'Because of yesterday cricket Match'
 console.log("Ans of Qes No. 17",P1.indexOf('Because'))
@@ -76,7 +76,7 @@ console.log("Ans of Qes No. 17",P1.indexOf('Because'))
 // 18. Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence.
 P2 = 'we lost match because'
 console.log("Ans of Qes No. 18",P2. lastIndexOf('because'));
-console.log
+
 
 // 19. Use search to find the position of the first occurrence of the word because in the following sentence.
 let P3= 'i am tired Because of yesterday cricket Match'
