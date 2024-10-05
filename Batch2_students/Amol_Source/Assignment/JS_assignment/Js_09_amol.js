@@ -109,7 +109,7 @@ else {
 
 
 // 2. Check the season based on user input month.
-let user= 'February'
+let user= 'january'
 let user1 = user.toLowerCase()
 let Summer = 'march, april, may'
 let Monsoon = 'june, july, august, september'
@@ -162,7 +162,7 @@ default : console.log(`Enter Valid data`)
  */
 
 // 1. Write a program that tells the number of days in a month.
-let MONTH ="april";
+let MONTH ="february";
 let Check12 = MONTH.toLowerCase()
 switch(Check12){
 case "january" : 
@@ -188,4 +188,6 @@ default: console.log(`Enter Valid data`)
  * Enter a month: January
  * January has 31 days.
  */
+let MNB = new Date 
+let MNB1 = MNB.getDate()
  
