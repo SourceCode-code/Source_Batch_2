@@ -14,6 +14,25 @@ dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
 yyyy:mm:DD mm:hh 
 
 */
+let Day = new Date()
+let Day1 = Day.getDate()
+let day2 = Day1<=10?`0${Day1}`:Day1
+let Month = Day.getMonth();
+let month1 = String(Month).padStart(2,0);
+    let month2= Day.toLocaleString('en-gb',{Month:'short'})
+        let month3= Day.toLocaleString('en-gb',{Month:'long'})
+let year1 = Day.getFullYear();
+let hr =Day.getHours()
+let hr1 = hr<=10?`0${hr}`:hr
+      let Hr2 = hr%12
+let min= Day.getMinutes()
+let min1 = min<=9?`0${min}`:min
+let ampm1= hr<=12?'am':'pm'
+
+console.log(`${day2}:${month1}:${year1} ${hr1}:${min1} ${ampm1}`)
+console.log(`${day2}:${month2}:${year1} ${Hr2}:${min1} ${ampm1}`)
+console.log(`${day2}:${month3}:${year1} ${Hr2}:${min1} ${ampm1}`)
+console.log(`${year1}:${month1}:${day2} ${min1}:${hr1} ${ampm1}`)
 
 // Question 2: 
 // Return the date in the format: "Day of the Week, DD Month YYYY HH:mm" 
