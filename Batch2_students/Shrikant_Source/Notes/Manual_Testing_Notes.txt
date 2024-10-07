@@ -1,0 +1,147 @@
+1.Software:- Software is a set of instructions that tells a computer or device how to work. 
+It comes in two main types:
+       System Software: This includes things like operating systems (like Windows or macOS) that help the computer run.
+       Application Software: These are programs for specific tasks, like writing documents (Microsoft Word) or browsing the internet (Chrome).
+
+2.Sottware testing:- Software testing is a process to check completeness and correctness of the functionality 
+                  with respect to the client requirement.
+
+3.Software Quality assurance:- QA is a set of activities for ensuring Quality in the process,
+                               QA is used to follow process & avoiding buds,
+                               QA is prevening defects
+
+4.SDLC:- stands for Software Developement Life Cycle
+          There are multiple stages in sdlc-
+          1.Information/ Requirement collection: Business analyst (BA) collects the requirement from client for developing Software, this document is called as buisness requirement specification(BRS)
+          2. Analysis: BA analysis this document and convert BRS to SRS (Software Requirement specification) document, SRS document defines functional requirement to be Developement
+          *Content of SRS document- 1.Functional requirement
+                                    2. Use cases -> I/P, Process, O/Process
+                                    3. Snapshots-snapshots can capture the visual state of an application.
+          3. Design: design team prepares design of application, it is called as mockup.Design prepared by design architect or solution engineer
+          4. Coding/Developement: Developement team is involved in this stage, there are two type of Developement complete in stage 1.Front-end Developement 2.Back-end Developement
+          5. Testing: After complete the developement the application come under testing, we test engineer perform the testing on application. 
+          There are three typeof testing perform on application:
+                        1.White box testing- TO check completeness and correctness of programs, performed by developer
+                        2.Black box testing-To check completeness and correctness of functionality, performed by tester, Here we check positive and negative scenarios
+                        3.Gre box testing- Black box tester having knowledge of Coding
+           6. Maintainance: After giving application to client, if there is any issue in application, itis fixed under Maintainance             
+                
+5.SDLC Approaches:-
+            1. Waterfall Model: Waterfall is a step by step process, every stages is performed sequentially
+             that is one after another
+             Information gathering >> Analysis >> Design >> Coding >> Testing.
+             The all stsges performed in a specific time that is called Release(generally release are 3 months).
+             During the testing, if any defect is found ,it is logged and fixed in next realese.
+             Waterfall Model used when, Requirement are very well documented and clear and there is no any change in requirement
+             Disadvantage- unable to see any working Software during release & difficult to measure progress within stages
+
+            2. Agile Methodology: Its a approach of SDLC, in which stages are performed simultaneously that mean developement and testing perform at same level, 
+            The general flow of the agile is 1.Stakeholder-is top most element in agile,
+                                                           he has a set of all requirement.
+                                             2. Product owner- Product owner collects the requirement for project from Stakeholder. Those complete requirement for project are called project backlog
+                                             3.Sprint Backlog-In Sprint planning meeting requirement are finalized, those requirement are called sprint backlog     
+                                             4.User Stories- From sprint backlog scrum master prepare user Stories for that sprint
+                                             5.Test cases- From the user stories we test engineer prepares test cases, then execution of test cases 
+                                             after the complete the testing we deliver the application to client         
+            In agile methodology change in requirement is allowed.
+
+            3. V model: The V-model is a type of sdlc model where process execute in a sequential manner in V-shape. It is also known as verification and validation model.
+            In V-model stages followed--Requirement analysis >> System design >> Architect design >> Component design >> Implementation >> Component test >> Integration testing >> Snapshots testing >> Acceptance testing.(all stages are performed sequentially in V-shape).
+
+            4. Fish model- The fish model is also known as static and dynamic testing. In this every stages performed sequentially and all stages under reviewed at the time of developement.
+            BRS >> SRS >> Design >> Coding >> Testing.
+
+
+6.Agile Ceremonies:- In agile methodology we need to follow some meetings that is known as agile
+                      Ceremonies. There are different agile Ceremonies
+                      1.Sprint planning meeting- In this meeting requirement for sprint are finalized i.e sprint backlog. Requirement for sprint are finalized depending on- Clinet priority, Efforts required, Resources available.
+                      Product owner, scrum master, dev team lead, testing team lead participate in this meeting.
+                      Duration: 2-3 hours
+
+                      2.Daily Stand-up (Daily Scrum):Purpose: To synchronize the team and address any immediate challenges.
+                      Participants: Development Team, testing team, Scrum Master and Product Owner.
+                      Activities: Each team member shares what they did yesterday, what they plan to do today, and any blockers they're facing.
+                      Duration: 15 min
+
+                      3.Sprint Review Meeting:
+                      Purpose: To inspect the increment and adapt the product backlog if necessary.
+                      Participants: Development Team, testing team, Scrum Master and Product Owner.
+                      Activities: Demonstration of completed work, gathering feedback, and discussing what was accomplished during the sprint.
+                      Duration: 1-2 hours
+
+                      4.Sprint Retrospective:
+                      Purpose: To reflect on the sprint and identify improvements for future sprints.
+                      Participants: Development Team, testing team, Scrum Master and Product Owner.
+                      Activities: Discuss what went well, what didn’t, and how the team can improve its processes and collaboration.
+                      Duration: 1-2 hours.
+
+7.User Stories:- User story are used to explain the expected behaviour of software, usually from the perspective of a user.
+Contents of User story- 1.Summary
+                        2.Acceptance Criteria
+                        3.Assigne 
+                        4.Test engineer
+                        5.Story Point
+
+8.Test Cases:- Conditions to be applied, The navigational statement to define functionality.
+               Test cases design "means how to test?".
+               Contents of Test cases-
+               Sr.No | User Story | Module | Test case | Test steps | Test Data | Expected Result | Actual Result | Status.
+
+9.Test scenario:- It is nothing but the functionality, Test scenario means "what to test?".
+                  One Test scenario consist of multiple number of test cases.
+
+
+10.Priority:- Importance of the defect with respect to requirement.
+              Urgency of defect with respect to requirement.
+              Priority marks developer by discuss with tester.
+
+11.Severity:- Seriousness of defect with respect to functionality.
+              Severity marks by Tester.
+                                                           Severity       |     Priority
+* Examples: 1.User is not able to add item in cart=          High                   High
+            2.On UI having any spelling mistake=             Low                    High
+            3.Web page not found when user click on link=     High                  Low
+
+
+12.Smoke Testing:-
+Purpose: To verify that the most critical functions of an application work after a new build or deployment.
+Scope: Broad and shallow; tests the main features to ensure the application is stable enough for further testing.
+When Performed: Conducted after each build or release to catch major issues early.
+Outcome: If the smoke test passes, the build is considered stable enough for deeper testing. If it fails, the build is rejected for further development.
+Example: Checking that the application launches, users can log in, and key functionalities are operational.
+
+
+13.Sanity Testing:-
+Purpose: To verify that specific functionalities work after changes have been made to the application, particularly after bug fixes or minor changes.
+Scope: Narrower and deeper; focuses on specific areas or functionalities to ensure they work correctly.
+When Performed: Conducted after receiving a new build that includes bug fixes or specific improvements.
+Outcome: If the sanity test passes, the team can proceed with further testing. If it fails, it indicates that the recent changes may have introduced new issues.
+Example: After fixing a bug related to user registration, sanity testing would check only that registration functionality to confirm it works as intended. 
+
+
+14.Functional Testing:- Here we are use to check all functionalities with respect to client requirement. Functional testing is also known as system testing.
+In Functional testing we are checking few coverage:
+           1.Behaviour coverage- Here we check behaviour of each element:
+                                  Element         |     Behaviour
+                                  Test box            Focus/ Unfocus
+                                  Radio button         ON/OFF
+                                  Drop down           List should be displayed
+                                  Check box           Check/ Uncheck
+                                  Button               Enabled/Disable
+
+           2.Input Domain coverage- Here we check size and datatype of Input
+                                    BVA-Boundary Value Analysis
+                                    ECP-Equivalence class partition
+
+           3.Backend coverage - Here we check front end information save in database or not and this info
+                                reflects on UI or not.
+                                Here validate impact of database on frontend operationa.
+
+           4.Error handling coverage- Here we check error message is displayed or not.
+                                      This is for checking prevention of negative navigation, Tested for valid and Invalid data.
+
+           5.Calculation based coverage- Here we check arithmatic Calculation.
+
+
+15.
+            
