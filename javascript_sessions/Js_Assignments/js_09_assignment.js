@@ -15,6 +15,9 @@
  * You are left with 3 years to drive.
  */
 
+
+
+
 // 2. Compare the values of myAge and yourAge using if...else.
 // Log the result stating who is older. Use prompt("Enter your age:") to get the age input.
 
