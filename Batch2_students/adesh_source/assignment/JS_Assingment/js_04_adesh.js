@@ -8,6 +8,9 @@ let str2 = "automation";
 console.log(str2[str1.length9]);
 
 // 3. Convert the string "learning" to uppercase.
+
+
+
 let str3 = "learning";
 console.log(str3.toUpperCase);
 
