@@ -106,3 +106,4 @@ console.log(str16.repeat(10)); // Output: 'pushpushpushpushpushpushpushpushpushp
 // 21. Using match() to search for a pattern
 let str17 = "I AM LEARNING JS , LEARNING CYPRESS, LEARNING PLAYWRIGHT";
 console.log(str17.match("LEARNING")); // Output: [ 'LEARNING', index: 5, input: 'I AM LEARNING...', groups: undefined ]
+

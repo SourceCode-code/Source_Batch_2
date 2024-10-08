@@ -84,12 +84,18 @@ console.log(`${str1}${str2}`);
 
 
 // 14. Write a program to pick a random element from string "qwertyuiopasdfghjklzxcvbnm" and log the selected element.
-let ABC = 'qwertyuiopasdfghjklzxcvbnm'
-console.log(ABC[Math.floor(Math.random()* 10)]);
+let abc = 'qwertyuiopasdfghjklzxcvbnm'
+console.log(abc[Math.floor(Math.random() *(abc.length))]);
 
 
-//15 write a program to generate a random odd number form 15-150*/
-let x = 15;
-let z = 150;
-let randomOdd = Math.floor(Math.random() * ((z - x) / 2 + 1)) * 2 + x;
-console.log(randomOdd);
+ //15 write a program to generate a random odd number form 15-150*/
+ let x = 15;
+ let z = 150;
+ let randomOdd = Math.floor(Math.random() * ((z - x) / 2 + 1)) * 2 + x;
+ console.log(randomOdd);
+
+// let min = 15;
+// let max= 75;
+// let a = Math.round(Math.random() * (max - min)+ min);
+// console.log((2 * a) + 1);
+
