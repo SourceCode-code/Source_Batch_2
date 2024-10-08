@@ -151,6 +151,8 @@ console.log(Math.round(NUMBER5)); // output 1 ; Explanation : As the number is a
 //7 
 let NUMBER6 = 19.75;
 console.log(Math.round(NUMBER6)); // output : 20 ; explanation : as the number is above 0.5 ,  it rounds Up to 20.
+
+//8 
 //-----------------------------------------------------------------------------------------------------------------///
 
 /*MATH.CEIL  : This method converts a float integer to the Nearest Highest Integer */
@@ -576,7 +578,233 @@ console.log(UUU.match("tutorial")); /*[
   ] */
 
 
+ // 1. Conversion from Number to String   
+//a:
+let x1 = 100;
+let x2 = "200";
+console.log(x2 + x1);// output : "200100" 
 
+//b 
+let i1 = 300;
+let i2 = "400";
+console.log(i1 + i2);//output : "300400"
+
+//c 
+let j1 = 800;
+let j2 = "900";
+console.log(j1 + j2);
+//output : "800900"
+
+//d 
+let o1 = 700;
+let o2 = "650";
+console.log(o1 + o2); //output "700650";
+
+//e 
+let kk = 234;
+let kj = "900";
+console.log(kk + kj);
+//output :  "234900"
+
+//f 
+let m1 = 1000;
+let m2 = "8765";
+console.log(m1 + m2);
+//output : "10008765"
+
+//g 
+let n1 = 450;
+let n2 = "395";
+console.log(n1 + n2); //output : 450395;
+
+//h 
+let H1 = 999;
+let L1 = "777";
+console.log(H1 + L1); //output : "999777"
+
+//i  
+let I1 = 444;
+let I2 = "555";
+console.log(I1 + I2);
+//output : "444555"
+
+//j 
+let Q1 = 9090;
+let Q2 = "8008";
+console.log(Q1 + Q2);
+//"90908008"
+
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//Conversion from String to Number
+
+// a. Using parseInt() - Converts a string into an integer
+let x3 = parseInt(x2);
+console.log(x3 + x1); // Output: 300 (Number addition)
+console.log(typeof x3); // Output: "number"
+  
+
+//b 
+let x4 = parseInt(x2);
+console.log(x4 + x1);// output = 300;
+console.log(typeof x4) // number
+
+//c 
+let x5 = parseInt(x2);
+console.log(x5 + x1); //output : 300
+
+//d 
+let x6 = parseInt(x2);
+console.log(x6 + x1);// 300
+
+//e 
+let x7 = parseInt(x2);
+console.log(x7 + x1); //output : 300 
+
+//f 
+let x8 = parseInt(x2);
+console.log(x8 + x1); //300
+
+//g 
+let Y1 = 300;
+let Y2 = "500";
+let Y3 = parseInt(Y2);
+console.log(Y3 + Y1); //800 
+
+//h 
+let Y4 = parseInt(Y2);
+console.log(Y4 + Y1); //800
+
+//i 
+let Y5 = parseInt(Y2);
+console.log(Y5 + Y1); //800
+
+////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//b. Using Number() - Converts a string into a number
+//a 
+let Z1 = Number(Y2);
+console.log(Z1 + Y1); // Output: 800 (Number addition)
+console.log(typeof x4); // Output: "number
+
+//b
+let Z2 = Number(Y2);
+console.log(Z2 + Y2);// 800 : Output 
+
+//c 
+let Z3 = Number(Y2);
+console.log(Z3 + Y2); //OUTPUT : 800 
+
+//D 
+let Z4 = Number(Y2);
+console.log(Z4 + Y2); // 800 
+
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// C. Using the unary plus (+) operator
+//a 
+let num1 = "10000";
+let num2 = +num1;
+console.log(typeof num2); // Output: "number"
+
+
+// b 
+
+let Num1 = "100";
+let Num2 = +Num1;
+console.log(typeof Num2); // number
+
+//c 
+
+let num3 = "800";
+let num4 = +num3;
+console.log(typeof num3); // number
+
+//d 
+let num5 = "700";
+let num6 = +num5;
+console.log(typeof num6); // number
+
+//e 
+let num7 = "900";
+let num8 = +num7;
+console.log(typeof num8); // number
+
+//////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//3. Conversion from Number to String
+
+// a. Using toString() method
+let mun = 7020400749;
+let mun1 = mun.toString();
+console.log(typeof mun1); // Output: "string"
+
+
+//b 
+let Jnu = 789876;
+let Jnu1 = Jnu.toString();
+console.log(typeof Jnu1); // Output: "string"
+
+
+//c 
+let YuM = 9999;
+let MuY = YuM.toString();
+console.log(typeof MuY); // "string"
+
+//d 
+let Ilk = 998777;
+let Kli = Ilk.toString();
+console.log(typeof Kli); //String 
+
+//e 
+let YuY = 335789;
+let Lky = YuY.toString();
+console.log(typeof Lky);  //string 
+
+
+///\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////
+
+
+// BOOLEAN  Operators \\\ 
+
+// comparison operators  
+
+/*
+*>
+*<
+*>=
+*<=
+*!
+== 
+===0 
+
+
+Logical Operators 
+1 : &&  
+
+
+ */
+console.log(4 > 3 && 10 > 5); // Output: true
+console.log(2 > 3 && 10 > 5);// false
+console.log(4<2 && 11 < 9) // false
+console.log(4<3 && 11 < 12) // false
+console.log( 9>8 && 8 <9) //true 
+
+// 2 : OR ( || )
+console.log(5 > 3 || 10 > 6); // Output: true
+console.log(1 > 3 || 10 > 7); // Output: true
+console.log( 8 > 4 || 9 < 4) // true 
+console.log( 7 > 5 || 6 < 5); //true 
+console.log( 9 < 5 || 10 < 12) // true 
+
+
+//3 : NOT ( ! )
+console.log(! (9 < 10 )); // false 
+console.log( !( 9>8)); // true 
+console.log(! (9 > 7)); //false 
+console.log(!(7 > 9)); //true
+console.log(!( 20 > 18)); //false 
+//////////////////////////////////////////////
  
 
 
