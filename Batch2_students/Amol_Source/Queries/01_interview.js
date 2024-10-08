@@ -29,26 +29,26 @@
 // console.log(curTime)
 
 
-//now get a month which is 8 month back
-let date =new Date
-let Month =(date.getMonth()+1)
-console.log(Month-8)
-console.log(date.toLocaleString('en',{month:"long"}))
+// //now get a month which is 8 month back
+// let date =new Date
+// let Month =(date.getMonth()+1)
+// console.log(Month-8)
+// console.log(date.toLocaleString('en',{month:"long"}))
 
-//now get a month which is 6 day back
-let day6Back = (date.getDate()-6)
-console.log(day6Back)
+// //now get a month which is 6 day back
+// let day6Back = (date.getDate()-6)
+// console.log(day6Back)
 
-//now get a month which is 6 day front
-let day6Front = (date.getDate()+6)
-console.log(day6Front)
+// //now get a month which is 6 day front
+// let day6Front = (date.getDate()+6)
+// console.log(day6Front)
 
-//now craete date of 29/02/3000
-let year1 =date.getFullYear()+976
-let month1 = (date.getMonth()+1)-8
-let Month1= String(month1).padStart(2,0)
-let day1= date.getDate()+22
-console.log(`${day1}/${Month1}/${year1}`);
+// //now craete date of 29/02/3000
+// let year1 =date.getFullYear()+976
+// let month1 = (date.getMonth()+1)-8
+// let Month1= String(month1).padStart(2,0)
+// let day1= date.getDate()+22
+// console.log(`${day1}/${Month1}/${year1}`);
 
 
 

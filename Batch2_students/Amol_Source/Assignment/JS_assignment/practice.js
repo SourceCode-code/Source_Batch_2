@@ -457,5 +457,5 @@ let str = "hello";
 let reversedStr = str.split('').reverse().join('');
 
 console.log(reversedStr);
-let str1 ="Amol Jadhav"
-console.log(str1.split('').reverse().join(""))
+let str1 =1233444
+console.log(str1.toString().split('').reverse().join(""))

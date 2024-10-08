@@ -55,3 +55,33 @@
 //   // 13) Write a script which generates a random hexadecimal number.
 
 //   // 14) Write a script which generates a random rgb color number.
+
+//15) print the following patterns 
+//   * 
+//  ***
+// ******
+//  ***
+//   *
+
+
+
+//2
+
+// ****
+// *  *
+// ****
+
+
+
+//3
+
+// 4444
+// 333
+// 22
+// 1
+
+// // 4
+// 1111
+// 222
+// 33
+// 4

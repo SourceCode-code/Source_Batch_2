@@ -34,7 +34,7 @@ Agile employs various artifacts that provide transparency and a means to track p
 * Includes tasks necessary to deliver the sprint goal.
 * list of userstories commited by QA and DEV
 
-3.Increment:/ Burndown and Burnup chart 
+3.Increment:/ Burndown and Burnlup chart 
 * The sum of all completed product backlog items during a sprint, along with the value of increments from previous sprints.
 * Must be in a usable state at the end of each sprint.
 

@@ -92,3 +92,96 @@ for (let i = 1; i <= 10; i++) {
     console.log(`${i * i}`);
 }
 // Output: 1 4 9 16 25 36 49 64 81 100
+
+
+
+//----------------------------------------more examples for logic buliding ---------
+
+
+// *****
+//  ***
+//   *
+//method 1
+let n =3 // number no rows
+let stars = 5 // the stars in staring line 
+
+// using for loop 
+for(let i=0;i<n;i++){
+    let pattern = " ".repeat(i)+"*".repeat(stars)
+console.log('using for loop ',pattern)
+// to minus the stars
+stars-=2
+}
+
+// *****
+//  ***
+//   *
+
+//-----------------------------------------------------------------------------//
+//method 2
+
+//
+for(let i = 0; i<n;i++){
+    let pattern =" "
+    for(let j =0;j<i;j++){
+pattern+=" "
+    }
+    for(let k =0;k<(n-i)*2;k++){
+pattern+="*"
+
+    }
+console.log(pattern)
+}
+
+// ******
+//  ****
+//   **
+
+
+
+//-------------------------------------------------------------------------
+// ******
+// *****
+// ***
+// **
+// *
+
+
+let rows = 5
+let stars1=6
+
+for(let i=0;i<rows;i++){
+let pattern ="".repeat(i)+"*".repeat(stars1)
+console.log(pattern)
+stars1-=1
+}
+
+// //method 2 
+
+let ro = 5
+for(let i =ro; i>0;i--){
+
+let pattern=""
+for(let j = 0;j<i;j++){
+    pattern +="*"
+}
+console.log(pattern)
+}
+
+// method 3 
+
+for(let rows=0;rows<=n;rows++){
+    let pattern = "*".repeat(ro-rows)
+    console.log(pattern)
+}
+
+// *****
+// ****
+// ***
+// **
+// *
+
+// *****
+// ****
+// ***
+// **
