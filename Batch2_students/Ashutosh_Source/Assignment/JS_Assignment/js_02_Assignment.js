@@ -49,9 +49,5 @@ console.log(Math.random() * 3.8 + 5.5);
 
 // // 10. Write a program  that rounds any given number to the nearest multiple of 5.
 // // Example:if 28 is given  should return 30, 32 should return 30.
-// num = 62
+// num = 12
 // console.log(Math.round(num / 5) * 5)
-
-
-
-

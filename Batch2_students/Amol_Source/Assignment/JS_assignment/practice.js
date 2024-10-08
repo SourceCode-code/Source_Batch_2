@@ -416,6 +416,7 @@
 
 // let amol = "Amoljadhav"
 // console.log(String(amol).padStart(11,0))
+
 // console.log(amol.includes('Ja'))
 
 // let diceroll= (Math.ceil(Math.random()*2))
@@ -423,7 +424,7 @@
 // let y = 10
 // console.log(++y)
 // console.log(y++)
-let date = new Date
+// let date = new Date
 // let date1= date.getDate()
 // console.log(date1)
 // console.log(date.toLocaleString('en',{weekday:"long"}))
@@ -442,5 +443,19 @@ let date = new Date
 // US timezone
 //let curUSTime = (date.toLocaleString('en',{year:"numeric",month:'long',weekday:"long",hour:"2-digit",second:"2-digit"}))
 // console.log(curUSTime)
-let Amol=17
-console.log((Amol>=20?`${Amol} ok`: "not okk please check the value"))
+// let Amol=88
+// console.log((Amol>=20?`${Amol} ok`: "not okk please check the value"))
+// let Num = 88
+// if (Num % 2 == 0) {
+//     console.log(`${Num} is a even number`)
+// }
+// else {
+//     console.log(`${Num} is a odd number `)}
+
+
+let str = "hello";
+let reversedStr = str.split('').reverse().join('');
+
+console.log(reversedStr);
+let str1 ="Amol Jadhav"
+console.log(str1.split('').reverse().join(""))

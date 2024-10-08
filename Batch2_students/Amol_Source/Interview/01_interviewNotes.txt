@@ -1,0 +1,115 @@
+Agile Methodology
+
+Iterative and Incremental Development: Delivering small, usable increments of a product.
+Collaboration: Encouraging active stakeholder involvement.
+Flexibility: Adapting to changing requirements at any stage of development.
+
+# Roles
+Scrum:
+* it is a framework agile Methodology.
+
+1. Product Owner:
+* Represents the stakeholders and like customer.
+* Responsible for defining product features and prioritizing the product backlog.
+
+2. Scrum Master:
+* Facilitates the Agile process and helps the team to follow Agile principles.
+* Acts as a coach, removing obstacles that hinder the team's progress.
+
+3. Development Team:
+* A group of professionals (developers, testers, designers) who work together to deliver the product increments.
+* Typically consists of 3-9 members.
+
+# Artifacts:
+
+Agile employs various artifacts that provide transparency and a means to track progress:
+
+1. Product Backlog:
+* An ordered list of features, enhancements, bug fixes, and technical work needed for the product.
+* Continuously prioritized by the Product Owner.
+* list of user stories created by product owner.
+
+2.Sprint Backlog:
+* A subset of the product backlog that the team commits to completing during a specific sprint.
+* Includes tasks necessary to deliver the sprint goal.
+* list of userstories commited by QA and DEV
+
+3.Increment:/ Burndown and Burnup chart 
+* The sum of all completed product backlog items during a sprint, along with the value of increments from previous sprints.
+* Must be in a usable state at the end of each sprint.
+
+# Ceremonies(meetings)
+Agile involves several ceremonies for communication and collaboration:
+
+1. Sprint Planning:
+* A meeting to determine the sprint goal and select items from the product backlog to include in the sprint backlog.
+* Typically lasts 2-4 hours.
+
+2. Daily Stand-up (Daily Scrum):
+* A brief (15 minutes) meeting for team members to discuss progress, plans for the day, and any impediments.
+
+3. Sprint Review:
+* Held at the end of the sprint to showcase completed work to stakeholders.
+* Time for feedback and adjustments to the product backlog.
+* Typically lasts 1-2 hours.
+
+4. Sprint Retrospective:
+* A meeting for the team to reflect on the sprint, discussing what went well, what didn't, and how to improve.
+* Typically lasts 1-1.5 hours.
+
+# Flow of Agile Methodology
+The flow in Agile in the following steps:
+
+1. Backlog Creation:
+The Product Owner creates and prioritizes the product backlog.
+2. Sprint Planning:
+The team selects items from the product backlog to work on in the upcoming sprint during the sprint planning meeting.
+3. Sprint Execution:
+The team works on the tasks defined in the sprint backlog during a fixed time period (usually 2-4 weeks).
+Daily stand-up meetings keep the team aligned and address any issues.
+4. Sprint Review:
+At the end of the sprint, the team demonstrates what they have built and gathers feedback.
+5. Sprint Retrospective:
+The team reflects on the sprint, identifies improvements, and adjusts their processes.
+6. Iterate:
+The cycle repeats, with new items added to the backlog and further refinements made based on feedback.
+
+//sprint Planning meeting : Plan the work for the upcoming sprint. Time = 2-4 hours, Maximum = 8 hours (for larger teams or complex sprints)
+
+// Daily Stand-up (Daily Scrum): Brief daily meeting to discuss progress and blockers. Time= 15 minutes	Maximum = 15 minutes
+
+// Sprint Review: Review the work completed in the sprint with stakeholders. Time =	1-2 hours	Maximum time = 4 hours
+
+// Sprint Retrospective: Reflect on the sprint to discuss what went well, what didn’t, and how to improve. Time= 1-1.5 hours maximum time = 3 hours
+__________________________________________________________________________________________________________________________
+
+Regression testing
+
+Regression testing is a critical component of the software development lifecycle, aimed at ensuring that changes made to the codebase do not adversely affect existing functionality. By systematically verifying the integrity of the application after updates, regression testing plays a vital role in maintaining software quality and reliability. It's essential to integrate regression testing into the development process, especially in Agile and DevOps environments, where frequent changes are the norm.
+
+
+# Regression Testing is a type of software testing that ensures that previously developed and tested software continues to perform after a change. The primary purpose of regression testing is to catch bugs that may have been introduced inadvertently during changes in the codebase. These changes can arise from various activities, including:
+
+# Types of Regression Testing:-
+
+1. Unit Regression Testing: Tests individual components or modules of the software after changes.
+2. Partial/Regional Regression Testing: Focuses on testing specific parts of the application that might be affected by recent changes.
+3. Full / Complete Regression Testing: Tests the entire application to ensure that all functionalities work as expected after changes.
+4. Progressive Regression Testing: Conducted when new features are added to ensure that both new and existing functionalities are intact.
+
+
+# When to Perform Regression Testing:-
+
+1 .After Bug Fixes: Whenever a defect is fixed, regression tests are essential to ensure that the fix does not break any existing functionality.
+
+2. After New Feature Development: When new features are added, regression testing verifies that existing features remain unaffected.
+
+3. Code Refactoring: When the code is restructured or optimized without changing its external behavior, regression testing helps ensure that the modifications do not introduce new issues.
+
+4. Updates and Patches: After applying updates to libraries, frameworks, or other dependencies, regression tests confirm that the application still behaves as expected.
+
+5. Integration Testing: When integrating with third-party services or new modules, regression testing ensures that existing functionalities remain intact.
+
+6. Before Releases: Prior to a software release or deployment, regression testing is crucial to confirm that all functionalities are working correctly.
+
+* Tools for Regression Testing :- Jest/Mocha
