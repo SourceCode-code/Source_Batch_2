@@ -143,5 +143,93 @@ In Functional testing we are checking few coverage:
            5.Calculation based coverage- Here we check arithmatic Calculation.
 
 
-15.
+15.Non-Functional Testing:- After completion of functional testing we go for non functional testing, there are
+                            different non functional testing are:
+                            1.Recovery Testing-During this testing we check wheather application recovers from abnormal situation to normal situation or not.
+                            e.g. Downloading PDF, due to lack of charging laptop is off but when we start the system redirect to the same page.
+
+                            2.Compatability testing-Here we check wheather application works as expected on customer expected platform or not, here we are checking application on different browsers or different divices so its called as browser Compatability testing.
+                            e.g:Firefox, chrome, Microsoft edge etc 
+
+                            3.Sanitation Testing-Here we check and find out the extra features which are not part of requirement
+                            e.g: At the amount section there is no requirement for currency symbol.
+
+                            4.Responsive Testing-here we check Responsiveness of application at different zoom level 
+                            e.g:75%,80%,90%, 100%, 125% etc
+
+                            5.Performance Testing- In Performance testing, we are giving load on application and check its performance.
+                            Here load and stress testing are done,
+                            Load testing:here we are aplying load within a limit and check its performance
+                            Stress Testing:here we are aplying load beyond the limit and check its performance 
+                            This testing perform on J-meter tool 
+
+16.Re-testing:-After the fixing defect, we get a modified build for testing .
+               To check that the bug is fixed or not on modified build is called re-testing.
+
+17.Regression testing:- Regression testing means testing on modified build to ensure bug fix and to ensure
+                        side effects of bug fix.
+
+
+18.Final Regression testing:- Final regression testing is a type of regression testing conducted at the end of 
+                              the software development lifecycle, typically just before a product is released. Its primary purpose is to ensure that the entire application works as intended after all changes, bug fixes, and enhancements have been made. 
+                              It usually involves a thorough testing of the entire application, including all critical functionalities, to ensure no new defects have been introduced.
+                              The goal is to validate the stability of the software, confirming that both new and existing features operate correctly together.
+
+
+19.UAT(User Acceptance Testing):-In UAT, testing team, developement team & client is involved.
+                                 Here end to end testing perform on application
+                                 Focuses on functionality, usability, and overall user experience.
+                                 Reduces the risk of issues arising after deployment, leading to smoother implementation and user adoption.
+
+                                 There are two type of UAT:
+                                 1.Alpha testing- Alpha testing is performed to identify all possible bugs before releasing product to end user.
+                                 Alpha testing is performed by in house team, where both black and white box testing techniques can be used.
+                                 Aim of alpha testing is to test the application by considering end user point of view
+
+                                 2.Beta testing-This testing perform by real user/client.
+                                 This is also called as external UAT.
+                                 Test the software in a real-world environment and gather feedback from actual users.
+
+
+20.Integration Testing:-Integration testing is a crucial phase in the software testing lifecycle where
+                        individual components or systems are combined and tested as a group. The main goal is to identify any issues that arise when these components interact with one another.
+                        To verify that integrated components work together as intended.
+                        To uncover interface defects, data flow issues, and communication problems between modules.
+                        There are some type of Integration testing:
+                        1.Big Bang Integration Testing-All components or modules are integrated at once and 
+                                                       tested together.
+                                                        It is Simple to implement, allows for testing of the entire system in one go.
+                                                        But Difficult to isolate defects, as it can be challenging to determine which component is causing an issue.
+
+                        2.Incremental Integration Testing-Components are integrated and tested one at a 
+                          time or in small groups. This approach can be further divided into:
+                              1.Top-Down Integration Testing- Testing starts from the top-level modules 
+                                                              and progressively integrates lower-level modules.
+                              2.Bottom-Up Integration Testing-Testing begins with lower-level modules and 
+                                                               gradually integrates higher-level modules.
+
+
+21.Defect Life Cycle:- During the testing if we found any defect, we log that defect in Jira tool, we assigne 
+                       the particular developer , in discription we write step to reproduce and attach some screenshots for proof, then its status in new.
+                       After that developer open that defect and fix that defect.
+                       After that we retest that defect on modified build.
+                       Stages of Defect lifecycle is:
+                       New >> Open >> Fixed >> Retest >> Close
+                       If it is fixed, we close it either we reopen this defect .
+
+22.Adhoc Testing:-During final regression testing, if we have a maximum number of test cases and less time,
+                  then we go for Adhoc testing.
+                  Here we check random test cases
+                  To evaluate the software's usability and overall functionality in a spontaneous manner.
+
+23.Exploratory Testing:-If we dont have any test cases or any other documents for required for testing
+                        but we are aware about functional flow of application, then Exploratory testing is Performed
+                        The purpose is to discover defects and issues that may not be captured by scripted tests.
+                        Especially useful in situations where time is limited, requirements are unclear, or when the application is constantly evolving.
+
+
+
+
+
+
             
