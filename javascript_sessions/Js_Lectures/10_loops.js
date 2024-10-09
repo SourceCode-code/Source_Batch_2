@@ -106,9 +106,9 @@ let n =3 // number no rows
 let stars = 5 // the stars in staring line 
 
 // using for loop 
-for(let i =0;i<n;i++){
+for(let i=0;i<n;i++){
     let pattern = " ".repeat(i)+"*".repeat(stars)
-console.log(pattern)
+console.log('using for loop ',pattern)
 // to minus the stars
 stars-=2
 }
