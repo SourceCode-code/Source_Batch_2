@@ -100,15 +100,15 @@ console.log("US-TIME-ZONE:", curUSTime); // Example: "12/07/2022, 10:24:13 PM"
 
 // Example: Generate a date 5 days later
 let manipulatedDate = new Date();
-let futureDate = manipulatedDate.getDate();
+let futureDate = manipulatedDate.getDate(); // current date 
 manipulatedDate.setDate(futureDate + 5); // Adds 5 days
 console.log(manipulatedDate.getDate()); // Example: "8"
 
 // Manipulating months
 let futureMonth = manipulatedDate.getMonth();
-manipulatedDate.setMonth(futureMonth + 2); // Adds 2 months
+manipulatedDate.setMonth(futureMonth + 2); // Adds 2 months  (0--11)
 console.log(manipulatedDate.getMonth() + 1); // Example: "12" (Note: +1 because getMonth() is zero-based)
-
+ 
 // Manipulating years
 let year2 = manipulatedDate.getFullYear();
 manipulatedDate.setFullYear(year2 - 2); // Subtracts 2 years

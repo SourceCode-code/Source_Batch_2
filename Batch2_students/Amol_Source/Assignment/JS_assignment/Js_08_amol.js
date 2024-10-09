@@ -21,7 +21,7 @@ let Day1 = Day.getDate()
 let day2 = Day1<=10?`0${Day1}`:Day1
 let month = Day.getMonth();
 let month1 = String(month).padStart(2,0);
-    let month2= Day.toLocaleString('en-gb',{month:'short'})
+    let month2= Day.toLocaleString('en-gb', {month:'short'})
         let month3= Day.toLocaleString('en-gb',{month:'long'})
 let year = Day.getFullYear();
 let hr =Day.getHours()

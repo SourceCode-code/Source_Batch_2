@@ -1,0 +1,261 @@
+// Assignment: JavaScript Date and Time Exercises
+
+/* 
+Question 1: 
+Prompt the user to enter the number of years they have lived. 
+Then, calculate the number of seconds a person can live.
+Assume someone lives 100 years as the maximum.
+
+
+
+Question 1.1 :display the current time in various formats.
+
+1.1 dd:mm:yyyy HH:mm (24 hours)
+1.2 dd:mm:yyyy HH:mm (12 hours) // (month should be like oct) here we used % oprater on hrs. and for month we use 
+let month2= Day.toLocaleString('en-gb', {month:'short'})
+    variables = starting variable. toLocal string('en'i.e language, { monthi.e pre define in js :(Colon) "lenght of string"})
+1.3 dd:mm:yyyy HH:mm (12 hours) // (month should be like october)
+1.4 yyyy:mm:DD mm:hh 
+
+*/
+let Day = new Date() // this is the first step to get our dates
+let Day1 = Day.getDate() // this is the todays date
+let day2 = Day1<=10?`0${Day1}`:Day1 // when we required 2 digit output using ternanry oprater
+let month = Day.getMonth();// here we get current month but always use +1 coz month always start with 0
+let month1 = String(month).padStart(2,0);// same we need 2 digit oprator but using padstart method always ensure use string before variable
+    let month2= Day.toLocaleString('en-gb', {month:'short'}) //  here we get benifit of js bu using tolocalstring and then ('whichever language or timzone we required:(using colon) ' in which and how lengthy we want ans)
+        let month3= Day.toLocaleString('en-gb',{month:'long'})
+let year = Day.getFullYear();
+let hr =Day.getHours()
+let hr1 = hr<=10?`0${hr}`:hr 
+      let Hr2 = hr%12 //  here we convert the 24 hr format to 12 hr format
+let min= Day.getMinutes()
+let min1 = min<=9?`0${min}`:min // ternary oprator
+let ampm= hr<=12?'am':'pm' //  ternanry oprater
+
+console.log('Ans of qestion no. 1.1',`${day2}:${month1}:${year} ${hr1}:${min1} ${ampm}`) //always use backtics(``) ${}( curly bracket)
+console.log('Ans of qestion no. 1.2',`${day2}:${month2}:${year} ${Hr2}:${min1} ${ampm}`)
+console.log('Ans of qestion no. 1.3',`${day2}:${month3}:${year} ${Hr2}:${min1} ${ampm}`)
+console.log('Ans of qestion no. 1.4',`${year}:${month1}:${day2} ${min1}:${hr1} ${ampm}`)
+
+ 
+/*Question 2: 
+Return the date in the format: "Day of the Week, DD Month YYYY HH:mm" 
+(e.g., "Monday, 02 October 2024 15:30").*/
+let tday= new Date()
+let Ttoday = tday.getDate()
+let Ttoday1 = tday.toLocaleString('en-gb', {weekday:'long'}); /// here we use *weekday* in toLocaleString opertor which is predefine
+
+let tday1 = Ttoday<=10 ?`0${Ttoday}`:Ttoday
+let cMonth = tday.getMonth()
+let cMonth1=tday.toLocaleString('en-gb',{month: 'long'})/// here we use *month* in toLocaleString opertor which is predefine
+let cYear = tday.getFullYear()
+let cTime = tday.getHours()
+let cTime1 = cTime<=10 ? `0${cTime}`: cTime
+let cMin = tday.getMinutes()
+let cMin1 = cMin<=10 ? `0${cMin}`: cMin
+console.log('Ans of qestion no. 2',`"${Ttoday1} , ${tday1} ${cMonth1} ${cYear}  ${cTime1}:${cMin1}"`)
+
+
+/* 
+Question 3: * simplest way to get our future date with Math.abs,  and then we have just take in our format ehich is alredy mention(/1000 for milisecond to second,60 to convert minutes, 60 for the hours, 24 for per day)
+Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
+31 -dec*/
+let datte = new Date("2024-10-03")
+let fdatte = new Date("2024-12-31")
+let Final = Math.abs(datte-fdatte) //  here we get ans in miliseconds
+let Finaloutput = ((Final)/(1000*60*60*24))// this Calculation for converting milisecond to days
+console.log('Ans of qestion no. 4',Finaloutput)
+
+
+// /* 
+// Question 4: 
+// Check if a current  year is a leap year.*/
+let new1 = new Date
+let cur2024 = new1.getFullYear()
+let booleancheck= (cur2024%4===0 && cur2024%100!==0||cur2024%400===0)// we required condition which is divided by 4,but not divided by 100 and divided by 400 then it a leap year.
+if it is not divided by 4 but divided by 100 then it is not leap year unless it is also dividedby 400
+(# a year is consider a leap year if : it is divisible by 4 however if it is divisible by 100 it is not a leapyear unless it is also divisible by 400)
+let leapcheack = (leapyear = booleancheck ?` 2024 is leap year`:`year 2024 is not leap year`)
+console.log('Ans of qestion no. 5',leapcheack)
+
+
+// let check =(cur2024% 4)
+// console.log(check)
+// let currentYear = check
+// currentYear == 0
+// ? console.log(`${cur2024} is leap not leap year`):console.log(`${cur2024} is a leap year`)
+// im tring to push a file on github but the pull request is not visible 
+
+****************************************************By Lectures**********************************************************
+
+// date---> gets your the date and time 
+
+let date = new Date() 
+
+//getFullYear-- gets you the full year in 4 digits (yyyy)
+//getMonth()--- gets you the month form (0-11)  // 1-12
+//getDate ---- gets you the date ---(1-31)
+//getHours --- gets hours --(0--23) // 24
+//getminutes -- gets you the min --0-59
+//getsecond ---gets you the sec --0-59
+//getmilli -- gets you the sec --0-59
+// gettime ()---> seconds --------1jan 1970
+// getday ---> 0-6 ()0--6
+
+
+// 02-oct-2024 9.12 (2/Oct/2024)
+
+let year= date.getFullYear() //2024
+console.log(year)
+let month=date.getMonth() // oct
+ let strmonth=date.toLocaleString('en-gb', { month: 'long' })
+console.log(strmonth) //October
+let strmonth1=date.toLocaleString('en-gb', { month: 'short' })
+console.log(strmonth1) //Oct
+
+todaydate=date.getDate()
+console.log(todaydate)
+let gethours= date.getHours() //
+let gemin= date.getMinutes() //
+
+
+
+console.log(`${todaydate}/${strmonth1}/${year}  ${gethours}.${gemin}`) //2/Oct/2024  9.22
+
+//---------------------------------------------------------------------------------------------------//
+
+/**
+ * human readable formated date 
+ * 
+ * conversion of 24 hours into 12 hours
+ * time conversion in diferent timezone
+ * set date ------ to manipluate the date 
+ */
+
+//human readable formated date  (dd/mm/yyyy) 
+
+let day = date.getDate()//
+let month1 = date.getMonth()
+let year1 = date.getFullYear()
+
+console.log(`${day}/${month1}/${year1}`) //3/9/2024
+
+
+//03/09/2024
+
+// method 1 --(logic and teranary opertor)
+
+let dayformat = day <10 ? `0${day}`:day
+let monthformat = month <10 ?`0${month}`:month
+
+console.log(`${dayformat}/${monthformat}/${year}`)  //03/09/2024
+
+// method 2 --(using string methods -- padstart()& padEnd())
+//padstart(final length of string ,which elemnt to be added)---
+//"1" --- 
+
+
+let str = "1"
+
+console.log(str.padStart(2,0)) //01
+
+console.log(str.padStart(5,"------------"))
+
+console.log(str.padEnd(5,"---------")) // 1----
+
+let paddayformat = String(day).padStart(2,0)
+let padmonthformat = String(month1).padStart(2,0)
+
+console.log(paddayformat)
+console.log(padmonthformat)
+
+console.log(`${paddayformat}/${padmonthformat}/${year}`)  //03/09/2024
+
+
+//----------------------------------------------------------------------------
+
+// time i 12 hours format 
+
+
+let curTime= date.getHours() 
+let curmin = date.getMinutes()
+let cursec = date.getSeconds()
+
+//24 -----------converts  12
+
+
+console.log(`${curTime}:${curmin}:${cursec}`) //8:27:37 
+
+let ampm = curTime >=12 ? "PM":"AM" //13 --- pm
+// 13:09:01 pm
+// convert time in 12 hour format 
+let curhours = curTime %12 //  12/12 --------0  24/12===========0
+//0
+//1
+//2
+curhours = curhours?curhours :12//this is for only 12'o'clock
+// 13/12 -----1
+//14/12 -------2
+// 12/12 --- 0
+// 24/12 ---0
+// to pad the time 
+let paddedtime = String(curhours).padStart(2,0)
+let paddedmin = String(curmin).padStart(2,0)
+console.log(paddedtime)
+console.log(`${paddedtime}:${paddedmin}:${cursec} ${ampm}`) // 08:37:54 AM //08:38:2 AM
+
+
+// ---------------------------------
+
+
+//  time conversion in diferent timezone
+
+//us , indian, eupore , aus
+
+let curindiantime= date.toLocaleString("en",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"}) 
+console.log("Indiantimezone",curindiantime) 
+//12/08/2022, 08:51:07 AM
+
+let curustime = date.toLocaleString("en",{timeZone:'America/New_York',day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit"})
+
+console.log("US-TIME-ZONE",curustime)
+//US-TIME-ZONE 12/07/2022, 10:24:13 PM
+
+//------------------------------------------------------------------------------------------------------
+//set date -- used to manipulate the date 
+
+// generate a date 5 later form today 
+// 
+let manidate = new Date()
+
+let futuredate= manidate.getDate() // 3
+
+console.log(futuredate) // 3\
+
+manidate.setDate(futuredate+5) //8
+
+console.log(date.getDate()) // 8 
+
+//-------------------- month -------------------
+let futuremon = manidate.getMonth() // 9
+
+console.log(futuremon)+1 //10
+
+manidate.setMonth(futuremon +2) //12
+console.log(manidate.getMonth()+1) //12 --------0-11
+
+// 2024 
+
+//2022
+
+console.log(year) //2024
+
+date.setFullYear(year -2)
+
+
+console.log(date.getFullYear()) // 2022
+
+
+// Indiantimezone 10/03/2024, 08:57:46 AM
+// US-TIME-ZONE 10/02/2024, 11:27:46 PM
