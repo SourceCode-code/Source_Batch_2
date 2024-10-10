@@ -1,6 +1,6 @@
 //what is agile
 
-//agile means is intractive and increamental approchto softwate devlopment.
+//agile means is intractive and increamental approch to software devlopment.
 
 // 1.flexibility and adaptality
 //2.collabratiom

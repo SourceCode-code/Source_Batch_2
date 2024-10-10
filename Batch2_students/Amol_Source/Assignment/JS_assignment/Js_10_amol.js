@@ -170,7 +170,7 @@
 // // // 22
 // // // 1
 // for(let i=4;i>=1;i--){
-// console.log(i.toString().repeat(i))
+// console.log(String(i).repeat(i))
 //  }
 
 // // // 4

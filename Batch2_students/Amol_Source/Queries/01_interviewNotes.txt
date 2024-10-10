@@ -45,6 +45,7 @@ Agile involves several ceremonies for communication and collaboration:
 * A meeting to determine the sprint goal and select items from the product backlog to include in the sprint backlog.
 * Typically lasts 2-4 hours.
 
+
 2. Daily Stand-up (Daily Scrum):
 * A brief (15 minutes) meeting for team members to discuss progress, plans for the day, and any impediments.
 
@@ -111,5 +112,3 @@ Regression testing is a critical component of the software development lifecycle
 5. Integration Testing: When integrating with third-party services or new modules, regression testing ensures that existing functionalities remain intact.
 
 6. Before Releases: Prior to a software release or deployment, regression testing is crucial to confirm that all functionalities are working correctly.
-
-* Tools for Regression Testing :- Jest/Mocha
