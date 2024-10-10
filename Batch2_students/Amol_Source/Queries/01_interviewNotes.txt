@@ -16,6 +16,7 @@ Scrum:
 * Facilitates the Agile process and helps the team to follow Agile principles.
 * Acts as a coach, removing obstacles that hinder the team's progress.
 
+
 3. Development Team:
 * A group of professionals (developers, testers, designers) who work together to deliver the product increments.
 * Typically consists of 3-9 members.
@@ -112,3 +113,5 @@ Regression testing is a critical component of the software development lifecycle
 5. Integration Testing: When integrating with third-party services or new modules, regression testing ensures that existing functionalities remain intact.
 
 6. Before Releases: Prior to a software release or deployment, regression testing is crucial to confirm that all functionalities are working correctly.
+
+* Tools for Regression Testing :- Jest
