@@ -1,0 +1,8 @@
+What is SDLC
+what is Sanity and Smoke
+explain differenc between sanity and Smoke
+what is regression testingwhat is re testing
+what is agile
+explain the agilee Methodology
+explain meetingwhat is the maximum and min time for ceremony
+difference between sprint review and sprint retrospective meeting

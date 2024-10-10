@@ -76,15 +76,19 @@
 // }
 
 // //8) Use for loop to iterate from 0 to 100 and print only prime numbers // the numbers which are self divisible and only by 1   
-//   let num = 100
-// for(i=2;i<=num;i++){
-//   for (j=2;j<=prime;j++){
-//      let prime = (i%i == 0 && i%2 != 0)
-//     if(prime === true){
-//       console.log(`${i} its a prime number`)
-//       }
+// for (let num=2;num<=100;num++){
+//   let isprime = true;
+
+//     for(let i=2;i<Math.sqrt(num);i++){
+//         if(num%i==0){
+//             isprime =false;
+//             break;
+//        }
+// }
+//         if(isprime){
+//             console.log(num)
+//         }
 //     }
-//   }
 
 // //   // 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 // let num = 0
@@ -111,7 +115,7 @@
 //     idrandom1 += randomID.charAt(Math.floor(Math.random() * randomID.length))
 //     // idrandom when we have to create random string, create one empty string and then roll it (empty variable) += (operation)
 // }
-// console.log("Ans of Question No.12:",idrandom1)// if we put console.log inside  the loop it will show and from 1 to next 6th line and if we console out side of loop it will gives one line code.
+// console.log("Ans of Question No.11:",idrandom1)// if we put console.log inside  the loop it will show and from 1 to next 6th line and if we console out side of loop it will gives one line code.
 
 // // 12) Develop a small script which generates any number of characters random id.
 // let num =10
@@ -121,11 +125,31 @@
 //   Id = Math.round(Math.random()*str.length)
 //   charRandID += str.charAt(Id)
 // }
-// console.log("Ans of Question No.12:",charRandID)
+// // console.log("Ans of Question No.12:",charRandID)
+
+// let amol ="bxckbnncnconxofnnedfohaodnn"
+// let AMOL = ""
+// for(b=1;b<=6;b++)// we created length of our random id
+// {
+// let R = amol.length //get the length for random nubers 
+// let T = Math.round(Math.random()*R)// here we create any random number 
+// AMOL+=amol.charAt(T)// here we fill up a empty string w.r.t length
+// }
+// console.log((AMOL))// print the last condition of last length in one line( in we console inside the loop it will be in triangle format)
+// *********Method 2******
+// let randomid = Math.floor(Math.random()+toString(36).substr(2,10))
+// console.log(randomid)
 
 // 13) Write a script which generates a random hexadecimal number.
+// let hexaNum="#"+Math.floor(Math.random()*12345878799656).toString(16)
+// console.log(hexaNum)
+
 
 // 14) Write a script which generates a random rgb color number.
+// let r = Math.floor(Math.random()*256)
+// let g = Math.floor(Math.random()*256)
+// let b = Math.floor(Math.random()*256)
+// console.log(`${r},${g},${b}`)
 
 //15) print the following patterns 
 //   * 
@@ -146,7 +170,6 @@
 //   let pattern1 =" ".repeat(i)+"*".repeat(star1)
 //   console.log(" ",pattern1)
 //   star1 -= 2
-  
 // }
 
 // //2
@@ -162,7 +185,6 @@
 // }
 //   console.log(result)
 // }
-
 
 // // //3
 // // // 4444
@@ -182,3 +204,26 @@
 // for(let i=1;i<=4;i++){
 // console.log(i.toString().repeat(num--))
 // }
+
+//5
+//      *
+//     ***   
+//    *****  
+//   ******* 
+//  *********
+// star= 1
+// for(i=5;i>=1;i--){
+//   result = " ".repeat(i)+"*".repeat(star)
+//   star+=2
+//   console.log(result)
+//   }
+//Fibonacci Sequence:
+
+i=0,b=1;
+for(let i=1; i<=10;i++){
+console.log(i)
+let next = i + b;
+i = b;
+b = next;
+}
+
