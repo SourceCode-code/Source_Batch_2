@@ -284,7 +284,7 @@
 // }
 
 //16) check if the given string is a palindrome 
-let str="racecar"
+let str="nitin"
 let lstr = str.length
 let ree =""
 
@@ -303,8 +303,11 @@ console.log(ree==ree2)
 //17) print the longest word form the given string
 
 str = " hello i am learning javascript and currently i am seeing the topic loops"
-kstr = ''
-let kkk= str.split(' ')
-kstr += kkk.
-
-console.log(kstr)
+let str1 = str.split(' ')
+let longestWord = ''
+for(let i = 0;i<str1.length;i++){
+  if(str1[i].length > longestWord.length){
+      longestWord = str1[i]
+  }
+}
+console.log(longestWord)
