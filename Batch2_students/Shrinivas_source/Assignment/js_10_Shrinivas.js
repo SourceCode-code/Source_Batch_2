@@ -260,4 +260,48 @@ for (let i = 1; i <= 4; i++) {
     console.log(String(i).repeat(5 - i));
 }
 
-//
+////16) check if the given string is a palindrome 
+let str="racecar"
+let isPalindrome = str === str.split('').reverse().join('');
+
+console.log(isPalindrome); // Output: true
+
+
+// true 
+//false
+
+//17) print the longest word form the given string
+
+let str1 = "hello i am learning javascript and currently i am seeing the topic loops";
+
+let words = str1.split(' ')
+let longestWord = ''
+
+//use a for loop
+for(let i = 0; i<words.length; i++){
+    if(words[i].length > longestWord.length){
+        longestWord = words[i]
+    }
+}
+
+console.log(longestWord)
+
+
+
+
+// // Split the string into words
+// const words = str1.split(' ');
+
+// let longestWord = '';
+
+// // Use a for loop to iterate through the words
+// for (let i = 0; i < words.length; i++) {
+//     if (words[i].length > longestWord.length) {
+//         longestWord = words[i];
+//     }
+// }
+
+// console.log(longestWord);
+
+
+
