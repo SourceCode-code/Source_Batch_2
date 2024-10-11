@@ -192,7 +192,7 @@
 // // // 22
 // // // 1
 // for(let i=4;i>=1;i--){
-// console.log(i.toString().repeat(i))
+// console.log(String(i).repeat(i))
 //  }
 
 // // // 4
@@ -275,10 +275,36 @@
 //   *******************
 //  *********************
 // ***********************
-let row2 = 11
-let star2 = 1
-for(let i=11;i>=0;i--){  
-  let pattern2 =" ".repeat(i)+"*".repeat(star2)
-  console.log(pattern2)
-star2=star2+2
+// let row2 = 11
+// let star2 = 1
+// for(let i=11;i>=0;i--){  
+//   let pattern2 =" ".repeat(i)+"*".repeat(star2)
+//   console.log(pattern2)
+// star2=star2+2
+// }
+
+//16) check if the given string is a palindrome 
+let str="racecar"
+let lstr = str.length
+let ree =""
+
+for(i=0;i<=lstr;i++){
+  ree += str.charAt(i)
 }
+let ree2 =""
+for(i=lstr-1;i>=0;i--){
+  ree2 += str.charAt(i)
+}
+console.log(ree==ree2)
+
+// true 
+//false
+
+//17) print the longest word form the given string
+
+str = " hello i am learning javascript and currently i am seeing the topic loops"
+kstr = ''
+let kkk= str.split(' ')
+kstr += kkk.
+
+console.log(kstr)
