@@ -19,8 +19,8 @@
 // console.log(Amol.endsWith('L'))
 // console.log(Amol.substring(5,13))
 // console.log(Amol.substr(5,9))
-// let JAJA ='push push push push push "push\"'
-// console.log(JAJA.split(" "))
+// let JAJA ='push push push "\push" "\push"'
+// console.log(JAJA)
 
 // Even = (Math.ceil(Math.random()*50))
 // console.log(2*Even)
@@ -98,16 +98,16 @@
 // console.log(now.getHours())
 // console.log(now.getMonth()+1)
 // let now = new Date()
-// console.log(typeof(now))
+// // console.log(typeof(now))
 // let nowHour = now.getHours()
 // let nowHour1 = nowHour<=10 ? `0${nowHour}`: nowHour
-// let nowMin = now.getMinutes()
-// let nowMin1 = String(nowMin).padStart(2,0)
-// let nowSec = now.getSeconds()
-// let nowSec1 = String(nowSec).padStart(2,0)
+// // let nowMin = now.getMinutes()
+// // let nowMin1 = String(nowMin).padStart(2,0)
+// // let nowSec = now.getSeconds()
+// // let nowSec1 = String(nowSec).padStart(2,0)
 // let ampm = nowHour>=12 ? "am":"pm"
 // let in12format = nowHour1% 12 
-// console.log(`${in12format}:${nowMin1}:${nowSec1} ${ampm} `)
+// console.log(`${in12format}:${nowHour} ${ampm} `)
 
 // let day = now.getDay()
 // let day1 = day<10 ? `0${day}`:day
@@ -143,11 +143,11 @@
 //  * Enter a month: January
 //  * January has 31 days.
 //  */
-// let MNB = new Date 
-// let MNB1 = MNB.getMonth()
+//  let MNB = new Date 
+// let MNB1 = MNB.getDate()
 // let MNB2 = MNB.toLocaleString('en-gb',{month:"long"})
-// SSE= MNB.toLocaleString('en-gb',{weekday: "Long"})
-// console.log(MNB2)
+// SSE= MNB.toLocaleString('en-gb',{weekday:"long"})
+// console.log(SSE)
 
 
 // let ABS = new Date
@@ -168,7 +168,8 @@
 //  let LLL = new Date
 // date.setFullYear()
 // console.log(date.getFullYear())
-// let curUStime =date.toJSON('en',{timezone : 'Mountain Standard Time (MST)',day:"2-digit",month:'long',year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit" })
+// let date = new Date
+// let curUStime =date.toLocaleString('en',{timezone : 'Mountain Standard Time (MST)',weekday:"long",month:'long',year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit" })
 // console.log(curUStime)
 
 // 15 write a program to generate a random odd number form 15-150
@@ -181,7 +182,7 @@
 // 6. Extract the first 5 characters from the string "PlaywrightAutomation".
 // 5. Use `substr` to slice out the phrase 'because because because' from the following sentence:
 // "You cannot end a sentence with because because because is a conjunction."
-// let longSentence = 'You cannot end a with sentence with because because because is a conjunction.';
+//let longSentence = 'You cannot end a with sentence with because because because is a conjunction.';
 // console.log(longSentence.substr(31,23)) //because because because
 
 // let firstindex=longSentence.indexOf("because")
@@ -190,11 +191,11 @@
 // let lastindex=longSentence.lastIndexOf("because")
 // console.log(lastindex) //47
 
-// let stringlength= lastindex-firstindex+"because".length
-// console.log(stringlength)
+//  let stringlength= lastindex-firstindex+"because".length
+//  console.log(stringlength)
 
 // let finalout=longSentence.substr(firstindex,stringlength)
-// console.log(finalout)
+// console.log(longSentence.substr(firstindex,stringlength))
 
 // console.log(str6.substr(11,31));
 
@@ -259,12 +260,12 @@
 // console.log(String(Pappa).padStart(20,0))
 // console.log(Pappa<=15?`0${Pappa}`: Pappa)
 
-// let Long = '   maiohoifdifbovhdosvlvovfohkvboxncohcbounskvohzofcbixncllnxoiuag  '
+// let Long = 'maiohoifdifbovhdosvlvovfohkvboxncohcbounskvohzofcbixncllnxoiuag'
 // console.log(Long.trimStart())
 // console.log(Long.length)
 
 // let Amol ="Amol"
-// console.log(Amol=="amol"&& Amol ==="Amol" );
+// console.log((Amol=="amol"&& Amol ==="Amol"));
 
 // let Slice= "Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript"
 // console.log(Slice.indexOf('S'));
@@ -296,9 +297,9 @@
 //     console.log('please check the condition')
 // }
 
-// /*let number = 'a'
+// let number = 1
 // switch (number) {
-//     case "a" : console.log(`${number} is first day`)
+//     case 1 : console.log(`${number} is first day`)
 //     break;
 //     case 2 : console.log(`${number} is second day`) 
 //     break;
@@ -322,7 +323,7 @@
 //         break;
 //     default: console.log("enter valid number")
 
-// }*/
+// }
 
 // Write a function that takes a temperature in Celsius and returns whether it’s cold, mild, or hot:
 
@@ -453,9 +454,153 @@
 //     console.log(`${Num} is a odd number `)}
 
 
-let str = "hello";
-let reversedStr = str.split('').reverse().join('');
+// let str = "hello";
+// let reversedStr = str.split('').reverse().join('');
 
-console.log(reversedStr);
-let str1 =1233444
-console.log(str1.toString().split('').reverse().join(""))
+// console.log(reversedStr);
+// let str1 =1233444
+// console.log(str1.toString().split('').reverse().join(""))
+
+// reverse name
+// let fullName = "Amol Kantital Jadhav"
+// let lname = fullName.length
+// let fullName1 = ""
+// for(i=lname;i>=0;i--){
+//     fullName1 += fullName.charAt(i)
+// }
+// console.log(fullName1)
+
+// let Fullname = " my name is amol jadhav"
+// let fullname = Fullname.length
+// let Name=""
+// vowels = "aeiou"
+// for(i=0;i<fullname;i++){
+//     if(vowels.includes(Fullname[i]))// here we get true or flase in boolean format
+//         Name+=Fullname[i]// here we store it in empy strin        
+// }
+// // console.log(Name,Name.length) 
+
+// let amolJ="AMOL JADHAV"
+// chat = ""
+// for(i=amolJ.length-1;i>=0;i--){
+//     chat += amolJ[i]
+// }
+// console.log(chat)
+// str = " hello i am learning javascript and currently i am seeing the topic loops"
+// let str1 = str.split(' ')
+// let longestWord = " "
+// for(i=0;i<=str1.length-1;i++){
+//     if(str1[i].length>longestWord.length)
+//         longestWord =str1[i]
+   
+//     }
+//      console.log(longestWord)
+
+// for(i=0;i<=10;i++){
+
+//     if(i==3)
+//  break
+//     console.log(i)// for break the loop we console inside the braket, if we console outside the braket it will shw only one outout
+// }
+// for(i=1;i<=10;i++){
+   
+//      if(i==5)
+//         break
+//      console.log(i)
+// }
+
+  // 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+//   let num1 = 0
+// for(i=0;i<=100;i+=2){
+//     num1+=i
+// }
+// console.log(num1)
+// let num2 = 0
+// for(i=1;i<=100;i+=2){
+//     num2+=i
+// }
+// console.log(num2)
+//let date = new Date
+// let date1  = (date.getMonth()+1)
+// let month1 = String(date1).padStart(3,0)
+// console.log(month1)
+// let date2 = date.getFullYear()
+// let date3 = date.getFullYear() +5
+// let diffMonth = date3-date2
+// console.log(diffMonth)
+
+// // Check if a current  year is a leap year.*/
+// let new1 = new Date
+// let cur2024 = 2025
+// let booleancheck= (cur2024%4===0 && cur2024%100!==0||cur2024%400===0)
+// let leapcheack = (leapyear = booleancheck ?` 2024 is leap year`:`year ${cur2024} is not leap year`)
+// console.log('Ans of qestion no. 5',leapcheack)
+
+// 3. Check if a day is a weekend or working day. Take day input and check its case insensitively.
+//12) Develop a small script which generates any number of characters random id.
+// let num =10
+// let charRandID =''
+// let str = "ADSGHTY@#$12345"
+// for(b=1;b<=num;b++){
+//   Id = Math.round(Math.random()*str.length)
+//   charRandID += str.charAt(Id)
+// }
+// console.log("Ans of Question No.12:",charRandID)
+
+// let amol ="bxckbnncnconxofnnedfohaodnn"
+// let AMOL = ""
+// for(b=1;b<=5;b++)// we created length of our random id
+// {
+// let R = amol.length //get the length for random nubers 
+// let T = Math.round(Math.random()*R)// here we create any random number 
+// AMOL+=amol.charAt(T)// here we fill up a empty string w.r.t length
+
+// }
+// console.log((AMOL))
+//console.log((AMOL))// print the last condition of last length in one line( in we console inside the loop it will be in triangle format)
+// *********Method 2******
+//  let randomid = Math.random().toString(36).substr(2,10)
+// console.log(randomid)// ) print the longest word form the given string
+// str = " hello i am learning javascript and currently i am seeing the topic loops"
+// let str1 = str.split(' ')
+// let longestWord= ''
+// for(let i = 0;i<str1.length;i++){
+//   if(str1[i].length > longestWord.length){
+//       longestWord = str1[i]
+//   }
+// }
+// console.log(longestWord)
+let Myname= "Amol kantilal jadhav"
+let Myname1 = Myname.length
+let vovo = ""
+let vovels ="aeiou"
+for(i=0;i<Myname1;i++){
+  if(vovels.includes(Myname[i])){
+    vovo+= Myname.charAt(i)
+  }
+  
+}
+console.log(vovo,vovo.length)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

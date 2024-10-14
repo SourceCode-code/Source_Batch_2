@@ -141,7 +141,7 @@
 // console.log(randomid)
 
 // 13) Write a script which generates a random hexadecimal number.
-// let hexaNum="#"+Math.floor(Math.random()*12345878799656).toString(16)
+// let hexaNum="#"+ Math.floor(Math.random()*12345878799656).toString(16)
 // console.log(hexaNum)
 
 
@@ -308,6 +308,6 @@ let longestWord = ''
 for(let i = 0;i<str1.length;i++){
   if(str1[i].length > longestWord.length){
       longestWord = str1[i]
-  }
+  } 
 }
 console.log(longestWord)

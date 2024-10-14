@@ -6,7 +6,7 @@ Flexibility: Adapting to changing requirements at any stage of development.
 
 # Roles
 Scrum:
-* it is a framework agile Methodology.
+* it is a framework agile Metho dology.
 
 1. Product Owner:
 * Represents the stakeholders and like customer.

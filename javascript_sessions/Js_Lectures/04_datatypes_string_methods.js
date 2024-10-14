@@ -3,6 +3,7 @@
 let str = "siddhantarjungadakh";
 
 // 1. Length of the string
+
 console.log("Length of the string:", str.length); // Output: 19
 
 // 2. Getting the last element in the string
