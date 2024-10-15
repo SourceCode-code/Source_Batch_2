@@ -301,7 +301,4 @@ console.log(longestWord)
 //     }
 // }
 
-// console.log(longestWord);
-
-
-
+ 

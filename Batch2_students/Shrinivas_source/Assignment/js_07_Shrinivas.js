@@ -21,6 +21,7 @@ console.log(result)
 let word1 = 'python';
 let word2 = 'jargon';
 
+
 // Check if 'on' is found in both words
 let foundWords = word1.includes('on') && word2.includes('on');
 
