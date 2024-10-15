@@ -136,8 +136,8 @@
 // AMOL+=amol.charAt(T)// here we fill up a empty string w.r.t length
 // }
 // console.log((AMOL))// print the last condition of last length in one line( in we console inside the loop it will be in triangle format)
-// *********Method 2******
-// let randomid = Math.floor(Math.random()+toString(36).substr(2,10))
+//*********Method 2******
+// let randomid = Math.random().toString(36).substr(2,10)
 // console.log(randomid)
 
 // 13) Write a script which generates a random hexadecimal number.
@@ -218,12 +218,96 @@
 //   console.log(result)
 //   }
 //Fibonacci Sequence:
+// i=0,b=0;
+// for(let i=1; i<=50;i++){
+// console.log(i)
+// let next = i + b;
+// i = b;
+// b = next;
+// }
 
-i=0,b=1;
-for(let i=1; i<=10;i++){
-console.log(i)
-let next = i + b;
-i = b;
-b = next;
+// // right angledd triangle
+// for (i=1;i<=10;i++){
+//     console.log('#'.repeat(i))
+// }
+// // inverted right angledd triangle
+// for (i=10;i>=1;i--){
+//     console.log('#'.repeat(i))
+// }
+// // 3. Pyramid Pattern
+
+// doller = 1
+// for (i=10;i>=1;i--){
+//     let pyr = " ".repeat(i)+"$".repeat(doller)
+//     doller +=2
+// console.log(pyr)
+// }
+
+// 4. reverse Pyramid Pattern
+//   ***********************
+//    *********************
+//     *******************
+//      *****************
+//       ***************
+//        *************
+//         ***********
+//          *********
+//           *******
+//            *****
+//             ***
+//              *
+// let row1 = 11
+// let star1 = 23
+// for(let i=0;i<=row1;i++){  
+//   let pattern1 =" ".repeat(i)+"*".repeat(star1)
+//   console.log(pattern1)
+// star1 =star1-2
+//}
+//            *
+//           ***
+//          *****
+//         *******
+//        *********
+//       ***********
+//      *************
+//     ***************
+//    *****************
+//   *******************
+//  *********************
+// ***********************
+// let row2 = 11
+// let star2 = 1
+// for(let i=11;i>=0;i--){  
+//   let pattern2 =" ".repeat(i)+"*".repeat(star2)
+//   console.log(pattern2)
+// star2=star2+2
+// }
+
+//16) check if the given string is a palindrome 
+let str="nitin"
+let lstr = str.length
+let ree =""
+
+for(i=0;i<=lstr;i++){
+  ree += str.charAt(i)
 }
+let ree2 =""
+for(i=lstr-1;i>=0;i--){
+  ree2 += str.charAt(i)
+}
+console.log(ree==ree2)
 
+// true 
+//false
+
+//17) print the longest word form the given string
+
+str = " hello i am learning javascript and currently i am seeing the topic loops"
+let str1 = str.split(' ')
+let longestWord = ''
+for(let i = 0;i<str1.length;i++){
+  if(str1[i].length > longestWord.length){
+      longestWord = str1[i]
+  }
+}
+console.log(longestWord)
