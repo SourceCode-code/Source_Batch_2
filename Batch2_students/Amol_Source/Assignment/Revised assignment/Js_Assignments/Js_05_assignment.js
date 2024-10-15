@@ -41,7 +41,7 @@
 // console.log(company.split(","))
 
 // 12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
-let AA= "30 Days Of JavaScript"
+//let AA= "30 Days Of JavaScript"
 // console.log(AA.replace("JavaScript","Python"))
 
 // 13. What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
