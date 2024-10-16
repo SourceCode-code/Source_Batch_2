@@ -59,7 +59,9 @@
 //method 2
 // numArray.splice(0,4)
 // console.log(numArray)
-//***** from Pratik****
+
+//***** From Pratik****
+
 // 1. Write a code to reverse a given array without using reverse function
 // Eg. Given 
 // let array =[2, 5, 7, 1]
@@ -157,6 +159,7 @@
 // console.log(ard2)
 // ard2.splice(7,0,"contactnumber")
 // console.log(ard2)
+
 // 9. Method2: splice() Removing elements from index (staring number, Last index not inclusive):
 //let ard3 = ["Amol", 24, "kantilal", "jadhav", 9767004310, true]
 // ard3.splice(1,1)
@@ -167,6 +170,7 @@
 //console.log(ard3) //[ 'Amol', true ]
 // ard3.splice(0,2)
 // console.log(ard3)//[ 'kantilal', 'jadhav', 9767004310, true ]
+
 //10 Method: join() -> Converts an array into a string
 // let ard4 = ["Amol", 24, "kantilal", "jadhav", 9767004310, true]
 // let dd= ard4.join(" ")
