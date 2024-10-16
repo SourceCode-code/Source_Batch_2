@@ -155,7 +155,7 @@ console.log(arra); // ['Amol', 'Athrava', 'Shrinivas', 'Siddhant', 'Sneha', 'Vai
 
 // Sorting a number array:
 let numarra = [97854726, 1, 5, 50, 60, 700, 800, 900, 5024, 65445, 28522, 138561, 7891];
-numarra.sort((a, b) => a - b);
+numarra.sort((a, b) => { return a - b });
 console.log(numarra); // Sorted numerically
 
 // 11. Reverse an array:
@@ -185,3 +185,152 @@ console.log(combined); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let mix = [1, 2, 3, 4, ["qwertyu", "asdfgh", "zxcvbn"], [true, false]];
 let solved = mix.flat();
 console.log(solved); // [1, 2, 3, 4, 'qwertyu', 'asdfgh', 'zxcvbn', true, false]
+
+
+//-----------------------------------------------------------------------------------------------//
+
+
+//  * 1) Find the largest and the smallest number from the array.
+let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 55, 88, 9, 99, 44, 55, 2587452, 256852, 0, 12585]
+
+let largestnumber = (Math.max(...array1))
+
+console.log(largestnumber) //2587452
+
+let Smallestnumber = (Math.min(...array1))
+console.log(Smallestnumber) //0
+
+//  * 3) Add 2 to each element of the array.
+let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+let newnumarr = []
+for (let i = 0; i < numArray.length; i++) {
+    newnumarr.push(numArray[i] + 2)
+}
+
+console.log(newnumarr) //[3, 4,  5,  6, 7,8, 9, 10, 11]
+
+// map ------> used to iterate over every element in the array 
+
+//syntax 
+/**
+ * let arraynew=oldarryname.map((el,index,arr)=>{
+ * return el any operation to perform
+ * })
+ */
+
+let maparr = numArray.map((el, index, arr) => {
+    return el + 2
+
+})
+
+console.log(maparr) // [3, 4,  5,  6, 7,8, 9, 10, 11]
+
+
+let maparr2=numArray.map((el,index,arr)=>{
+
+    return el-1
+})
+
+console.log(maparr2) //[0, 1, 2, 3, 4,5, 6, 7, 8 ]
+
+//  *
+//  * 4) Find the sum of all elements in the array.
+let   numArray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+let sum=0
+for(let i=0;i<numArray2.length;i++){
+    // sum=sum+numArray2[i]
+    sum+=numArray2[i]
+}
+
+console.log(sum) // 45
+
+
+// reduce ==> used to get the collective sum in array 
+
+let arrsum= numArray2.reduce((el,index,arr)=>{
+return el+index
+
+})
+
+console.log(arrsum)
+//  *
+//  * 5) Get all values in the array that are greater than 5.
+ let numArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//------------loop---------
+
+let greaterThan5 =[]
+
+for(let i=0;i<numArray1.length;i++){
+  if(numArray1[i]>5){
+greaterThan5.push(numArray1[i])
+  }
+}
+
+console.log(greaterThan5) //[ 6, 7, 8, 9 ]
+
+
+//filter-------------> used to filter out each element in the array 
+
+let gr5=numArray1.filter((el,index,arr)=>{
+    return el>5
+})
+
+console.log(gr5) //[ 6, 7, 8, 9 ]
+
+
+
+//* 2) Convert all elements of the following array to uppercase.
+let   namearray = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
+
+
+for(let i =0;i<namearray.length;i++){
+    console.log(namearray[i].toUpperCase())
+}
+
+
+/**
+ * VAIBHAV
+SNEHA
+SIDDHANT
+SHRINIVAS
+ATHRAVA
+AMOL
+ */
+
+// Foreach==> 
+namearray.forEach((el,index,arr)=>{
+      console.log( el.toUpperCase())
+    })
+
+/**
+ * 
+ * VAIBHAV
+SNEHA
+SIDDHANT
+SHRINIVAS
+ATHRAVA
+AMOL
+ */
+
+
+//every --> &&(true & false)
+
+// let numArray1 = [ 1, 2, 3, 4, 5, 6, 7, 8,9]
+
+let checkever=numArray1.every((el,index,arr)=>{
+    return el>0
+})
+
+
+console.log(checkever)
+//some--||
+
+
+let checksome=numArray1.some((el,index,arr)=>{
+    return el>5
+})
+
+console.log(checksome)
