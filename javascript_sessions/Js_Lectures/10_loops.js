@@ -287,9 +287,8 @@ let vowels="aeiou"
 for(let i=0;i<vstr.length;i++){
     if(vowels.includes(vstr[i])){
         rstr+=vstr[i]
-        count++
+        count++ 
     }
-
 }
 
 console.log(`the vowels in the string are ${rstr} and the total count of vowels is ${count} `)

@@ -170,8 +170,8 @@ console.log(arra.indexOf("Shrinivas")); // 3
 console.log(arra[3]); // Shrinivas
 
 // 14. Convert array into a string:
-let str = arra.join(" ");
-console.log(str); // 'Vaibhav Sneha Siddhant Shrinivas Athrava Amol'
+let str1 = arra.join(" ");
+console.log(str1); // 'Vaibhav Sneha Siddhant Shrinivas Athrava Amol'
 console.log(typeof str); // string
 
 // 15. Concatenate arrays:
