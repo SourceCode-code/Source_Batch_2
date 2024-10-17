@@ -334,3 +334,25 @@ let checksome=numArray1.some((el,index,arr)=>{
 })
 
 console.log(checksome)
+
+// Filter out companies which have more than one 'o' without using the filter method
+let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+let result = []
+
+for (let i = 0; i < company.length; i++) {
+
+  let count = 0;
+
+  // we have to find occurance of letter o 
+  for (let char of company[i].toLowerCase()) {
+    if (char === "o") {
+      count++
+    }
+  }
+  if (count > 1) {
+    result.push(company[i])
+  }
+}
+
+console.log(result)
