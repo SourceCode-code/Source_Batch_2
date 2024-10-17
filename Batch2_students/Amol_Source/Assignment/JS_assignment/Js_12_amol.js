@@ -75,14 +75,14 @@ const countries = [
 // Check if a certain company exists in the itCompanies array. If it exists return the company else return 'Company is not found'
 // let company = "Facebook"
 // let itCompanies1 = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
-// // if(itCompanies1.includes(company)){
-// //     console.log(`${company} is there`)
-// // }else{
-// //    console.log(`${company} is not found'`) 
-// // }
+// if(itCompanies1.includes(company)){
+//     console.log(`${company} is there`)
+// }else{
+//    console.log(`${company} is not found'`) 
+// }
 
 // //Method 2 : but here we have to make it on lowercase
-// let checkcompany = itCompanies.some((el,index,arr)=>{
+// let checkcompany = itCompanies1.some((el,index,arr)=>{
 //     return el == company
 // })
 // if (checkcompany == true){
@@ -94,16 +94,20 @@ const countries = [
 
 // Filter out companies which have more than one 'o' without using the filter method(
 
-// let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
-// let itCompanies1 = []
-// for(i=0;i<itCompanies.length;i++){
-//   let comapany = itCompanies[i]
-//   let company1 =comapany.toLowerCase().includes('o')//.repeat(2)
-//   if(company1==true){
-//     console.log(comapany)
-//   }
-// } // im not getting ans for more than one 'o'  
+let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+let itCompanies1 = []
 
+for(i=0;i<itCompanies.length;i++){
+let count = 0 
+for(let char of itCompanies[i].toLowerCase()){
+  if(char==='o'){
+    count++
+  }}
+  if(count>1){
+    itCompanies1.push(itCompanies[i])
+  }
+  }
+  console.log(itCompanies1)
 // Sort the array using sort() method
 //console.log(itCompanies.sort()) 
 
@@ -114,6 +118,7 @@ const countries = [
 // Slice out the first 3 companies from the array
 // let first3 = itCompanies.slice(0,3)
 // console.log(first3)
+
 // Slice out the last 3 companies from the array
 // let last1 = itCompanies.slice(4,itCompanies.length)
 // console.log(last1)
@@ -122,7 +127,7 @@ const countries = [
 // let mid1 = itCompanies.slice(2,3)
 // console.log(mid1) //out put [ 'Microsoft' ]
 // let mid2 = itCompanies.slice(2,5)
-// console.log(mid2) 
+// console.log(mid2) //[ 'Microsoft', 'Apple', 'IBM' ]
 
 // Remove the first IT company from the array
 // let fisrt = itCompanies.shift()
@@ -130,7 +135,7 @@ const countries = [
 
 // Remove the middle IT company or companies from the array
 // itCompanies.splice(3,1)
-// console.log(itCompanies) /// here we font required new vaiable nd with splice method we have to inter index number and then next number wich is not inclusive
+// console.log(itCompanies) /// here we required new vaiable nd with splice method we have to inter index number and then next number which is not inclusive
 
 // Remove the last IT company from the array
 // let lastel = itCompanies.pop()
@@ -141,7 +146,7 @@ const countries = [
 
 // Exercise: Level 2
 
-// Create a separate countries.js file and store the countries array in it, create a separate file web_techs.js and store the webTechs array in it. Access both files in main.js file
+//***** Create a separate countries.js file and store the countries array in it, create a separate file web_techs.js and store the webTechs array in it. Access both files in main.js file
 
 // First remove all the punctuations and change the string to an array and count the number of words in the array:
 // let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
@@ -164,12 +169,15 @@ const countries = [
 
 // remove 'Honey' if you are allergic to honey
 // Method 1 
-//delete shoppingCart[shoppingCart.length-1]
+// delete shoppingCart[shoppingCart.length-1]
 // console.log(shoppingCart)
 
 //Method2
-// shoppingCart.pop()
-// console.log(shoppingCart)
+//shoppingCart.pop()
+//console.log(shoppingCart)
+
+//method 3
+//console.log(shoppingCart.slice(0,3))
 
 // modify 'Tea' to 'Green Tea'
 // shoppingCart[2] = "Green tea"
@@ -201,7 +209,6 @@ const countries = [
 // webTechs.push("'Sass'")
 // console.log(webTechs)
 
-/******************************* */
 // Concatenate the following two variables and store it in a fullStack variable:
 // const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 // const backEnd = ['Node', 'Express', 'MongoDB']
@@ -220,7 +227,7 @@ const countries = [
 // let age2 =(Math.min(...ages))
 // console.log(age2)
 
-// Find the median age(one middle item or two middle items divided by two)
+//********* */ Find the median age(one middle item or two middle items divided by two)
 
 // Find the average age(all items divided by number of items)
 // let age3 = ages.reduce((el,index,arr)=>{
@@ -251,4 +258,3 @@ const countries = [
 // let countries2 = countries.slice(6,12)
 // console.log(countries1)
 // console.log(countries2)
-  
