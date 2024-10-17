@@ -111,6 +111,7 @@ function fullNamE(firstName,middlename,lastName){
 
 }
 console.log(fullNamE("siddhant","arjun","gadakh"))
+
 //2 expression type
 // because this function is stored in a expression so its called and experssion type
 let fullnaME =function (firstName,middlename,lastName){
@@ -141,3 +142,14 @@ function iteratenumbers(n){
 }
 
 iteratenumbers(100)
+
+
+let printnumber=function(n){
+    for(let i=0;i<=n;i++){
+        console.log(i)
+    }
+}
+
+
+
+printnumber(2)
