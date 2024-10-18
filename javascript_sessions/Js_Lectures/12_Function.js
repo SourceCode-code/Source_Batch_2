@@ -153,3 +153,6 @@ let printnumber=function(n){
 
 
 printnumber(2)
+
+
+// let (a+b)2= a2+2ab+b2
