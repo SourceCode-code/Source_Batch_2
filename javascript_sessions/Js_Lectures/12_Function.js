@@ -1,158 +1,120 @@
-// Functions---> to make your code dynamic and resusable you use function 
+// Functions ---> To make your code dynamic and reusable, you use functions.
 
+// Example without functions:
+let a = 10;
+let b = 20;
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Division:", a / b);
+console.log("Multiplication:", a * b);
+console.log("Modulus:", a % b);
 
-// let a=10
-// let b =20
+let c = 100;
+let d = 50;
+console.log("Addition:", c + d);
+console.log("Subtraction:", c - d);
+console.log("Division:", c / d);
+console.log("Multiplication:", c * d);
+console.log("Modulus:", c % d);
 
-// console.log("Addition",a+b)
-// console.log("Substarction",a-b)
-// console.log("division",a/b)
-// console.log("multipication",a*b)
-// console.log("modulus",a%b)
+// Advantages of functions:
+// 1. Keeps your code clean and dynamic.
+// 2. Makes the code easier to understand.
+// 3. Easy to test.
 
-
-// //-----------------------------
-
-// let c = 100
-// let d =50
-
-// console.log("Addition",c+d)
-// console.log("Substarction",c-d)
-// console.log("division",c/d)
-// console.log("multipication",c*d)
-// console.log("modulus",c%d)
-
-
-// advatange===>
-
-//1 keeps your code clean and dynamic 
-// makes it easy to understand
-//3 easy to test
-
-// there 6 functions 
-
-// its divided in two major catageries
-//1 the way of writting  --- 3
-//2 parameter and retrun type ---3
-
+// Types of Functions:
+// Functions are categorized into two major types:
+// 1. The way of writing.
+// 2. Parameter and return type.
 
 /**
- * syntax for function 
- * 
- * 
- * function functionname ( parameter){
- * // code
+ * Syntax for a function:
+ *
+ * function functionName(parameter) {
+ *   // Code
  * }
- * 
- * functionname(parameter)
+ *
+ * functionName(parameter);
  */
 
+// Types of functions with examples:
 
+// 1) Based on parameter and return type:
 
-//  type of functions with examples 
-
-//1 parameter and return type ---3
-
-// function without parameter without return type
-
-function fullname() {
-    console.log("siddhant arjun gadakh")
+// Function without parameters and without return type.
+function fullName() {
+  console.log("Siddhant Arjun Gadakh");
 }
 
-// 
+// Call the function
+fullName(); 
 
-fullname()
-
-
-// function with parameter without return type
-
+// Function with parameters and without return type.
 function calculator(a, b) {
-
-    console.log(`the calcuation of values ${a} & ${b} are`)
-    console.log("Addition", a + b)
-    console.log("Substarction", a - b)
-    console.log("division", a / b)
-    console.log("multipication", a * b)
-    console.log("modulus", a % b)
-
+  console.log(`The calculations for the values ${a} & ${b} are:`);
+  console.log("Addition:", a + b);
+  console.log("Subtraction:", a - b);
+  console.log("Division:", a / b);
+  console.log("Multiplication:", a * b);
+  console.log("Modulus:", a % b);
 }
 
-calculator(10,20)
+// Call the function with different parameters
+calculator(10, 20);
+calculator(30, 20);
 
-calculator(30,20)
-
-
-// function with parameter with return type
-
-
-function fullName(firstName,middlename,lastName){
-    return  `${firstName} ${middlename} ${lastName}`
-
+// Function with parameters and with return type.
+function fullNameWithReturn(firstName, middleName, lastName) {
+  return `${firstName} ${middleName} ${lastName}`;
 }
 
+// Store the result in variables and log them
+let siddhantInfo = fullNameWithReturn("Siddhant", "Arjun", "Gadakh");
+let vaibhavInfo = fullNameWithReturn("Vaibhav", "Pratap", "Suryawanshi");
 
-let siddhantinfo=fullName("siddhant","arjun","gadakh")
-let vaibhavinfo=fullName("vaibhav","pratap","suryawanshi")
-console.log(siddhantinfo)
-console.log(vaibhavinfo)
+console.log(siddhantInfo);
+console.log(vaibhavInfo);
 
+// Convert to uppercase
+console.log(siddhantInfo.toUpperCase());
 
-console.log(siddhantinfo.toLocaleUpperCase())
+// 2) Based on the way of writing:
 
-
-
-
-//1 the way of writting  --- 3
-
-//1 delecrative type --
-// because your delacrting the name of the function while writting its as delecrative type 
-function fullNamE(firstName,middlename,lastName){
-    return  `${firstName} ${middlename} ${lastName}`
-
-}
-console.log(fullNamE("siddhant","arjun","gadakh"))
-
-//2 expression type
-// because this function is stored in a expression so its called and experssion type
-let fullnaME =function (firstName,middlename,lastName){
-    return  `${firstName} ${middlename} ${lastName}`
-
+// 1. Declarative function type.
+function fullNameDeclarative(firstName, middleName, lastName) {
+  return `${firstName} ${middleName} ${lastName}`;
 }
 
-console.log(fullnaME(("siddhant","arjun","gadakh")))
-//3 arrow type
+console.log(fullNameDeclarative("Siddhant", "Arjun", "Gadakh"));
 
+// 2. Expression function type.
+let fullNameExpression = function (firstName, middleName, lastName) {
+  return `${firstName} ${middleName} ${lastName}`;
+};
 
-let s= (firstName,middlename,lastName)=>{
-  return  `${firstName} ${middlename} ${lastName}`
+console.log(fullNameExpression("Siddhant", "Arjun", "Gadakh"));
+
+// 3. Arrow function type.
+let fullNameArrow = (firstName, middleName, lastName) => {
+  return `${firstName} ${middleName} ${lastName}`;
+};
+
+console.log(fullNameArrow("Siddhant", "Arjun", "Gadakh"));
+
+// Iterating from 0 to n using for loop
+function iterateNumbers(n) {
+  for (let i = 0; i <= n; i++) {
+    console.log(i);
+  }
 }
 
-console.log(s("siddhant","arjun","gadakh"))
+iterateNumbers(100);
 
+// Same operation using function expression
+let printNumbers = function (n) {
+  for (let i = 0; i <= n; i++) {
+    console.log(i);
+  }
+};
 
-//Iterate 0 to n using for loop, do the same using while
-
-
-
-function iteratenumbers(n){
-    for(let i=0;i<=n;i++){
-        console.log(i)
-    }
-
-}
-
-iteratenumbers(100)
-
-
-let printnumber=function(n){
-    for(let i=0;i<=n;i++){
-        console.log(i)
-    }
-}
-
-
-
-printnumber(2)
-
-
-// let (a+b)2= a2+2ab+b2
+printNumbers(2);
