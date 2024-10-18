@@ -3,29 +3,29 @@
 
 
 const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ];
-  
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-  ];
-  
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
+
 
 // Declare an empty array
 // Declare an array with more than 5 number of elements
@@ -53,7 +53,6 @@ const countries = [
 
 // Exercise: Level 2
 
-// Create a separate countries.js file and store the countries array in it, create a separate file web_techs.js and store the webTechs array in it. Access both files in main.js file
 // First remove all the punctuations and change the string to an array and count the number of words in the array:
 // let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 // console.log(words)
@@ -90,3 +89,5 @@ const countries = [
 // Slice the first ten countries from the countries array
 // Find the middle country(ies) in the countries array
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+
+

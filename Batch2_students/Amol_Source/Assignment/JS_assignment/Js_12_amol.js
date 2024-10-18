@@ -94,20 +94,20 @@ const countries = [
 
 // Filter out companies which have more than one 'o' without using the filter method(
 
-let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
-let itCompanies1 = []
+// let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+// let itCompanies1 = []
 
-for(i=0;i<itCompanies.length;i++){
-let count = 0 
-for(let char of itCompanies[i].toLowerCase()){
-  if(char==='o'){
-    count++
-  }}
-  if(count>1){
-    itCompanies1.push(itCompanies[i])
-  }
-  }
-  console.log(itCompanies1)
+// for(i=0;i<itCompanies.length;i++){
+// let count = 0 
+// for(let char of itCompanies[i].toLowerCase()){
+//   if(char==='o'){
+//     count++
+//   }}
+//   if(count>1){
+//     itCompanies1.push(itCompanies[i])
+//   }
+//   }
+//   console.log(itCompanies1)
 // Sort the array using sort() method
 //console.log(itCompanies.sort()) 
 
