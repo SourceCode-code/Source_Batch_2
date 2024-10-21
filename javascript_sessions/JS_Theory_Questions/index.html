@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img id="rock" onclick="myfunction('Rock')"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4bvWcI0gZ9uCSjk6rQyLxiL6377zX2Ok_Q&" alt="rock">
+
+    <img id="paper" onclick="myfunction('Paper')"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIE07RinhO_R9xAjwDWj4RgqJRXx5H8ZxtQ&s" alt="">
+
+    <img id="katri" onclick="myfunction('Katri')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiA-7x7WMdfgP7M-Ig8n3NaGBqionPZsCgKA&s" alt="">
+
+    <h1>Bot Choice:<span id="bot"></span></h1>
+    <h1>My Choice: <span id="my"></span></h1>
+    
+
+    <h1 id="result"></h1>
+
+
+    <script>
+
+
+
+
+        function myfunction(item) {
+            var myselection = item
+            var botselection = botChoice()
+
+            document.getElementById("bot").innerHTML = botselection
+            document.getElementById("my").innerHTML = myselection
+
+
+
+            if (myselection == "Rock" && botselection == "Paper") {
+                 document.getElementById("result").innerHTML = "Bot Wins"
+            }
+            else if (myselection == "Paper" && botselection == "Katri") {
+                document.getElementById("result").innerHTML = "Bot Wins"
+                
+            }
+            else if (myselection == "Katri" && botselection == "Rock") {
+                                 document.getElementById("result").innerHTML = "Bot Wins"
+
+            }
+            else if (myselection == botselection) {
+                document.getElementById("result").innerHTML = "Tie"
+
+            } 
+            else {
+                document.getElementById("result").innerHTML = "You Win"
+
+            }
+
+        }
+
+
+        function botChoice() {
+            var randomNum = Math.random() * 3
+            var wholeRandom = Math.floor(randomNum)
+
+            if (wholeRandom == 0) {
+                return "Rock"
+            }
+            else if (wholeRandom == 1) {
+                return "Paper"
+            }
+            else if (wholeRandom == 2) {
+                return "Katri"
+            }
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
