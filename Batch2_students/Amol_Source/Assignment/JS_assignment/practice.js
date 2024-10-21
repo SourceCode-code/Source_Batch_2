@@ -611,21 +611,22 @@
 // console.log(Fullname("amol","kantilal","jadhav").toUpperCase())
 
 
-let aaa= function (firstName,middlename,lastName){
-  return  `${firstName} ${middlename} ${lastName}`
-}
+// let aaa= function (firstName,middlename,lastName){
+//   return  `${firstName} ${middlename} ${lastName}`
+// }
 
-console.log(aaa("","","amol"))
-
-
+// console.log(aaa("","","amol"))
 
 
-
-
-
-
-
-
+// let ard3 = ["Amol", 24, "kantilal", "jadhav", 9767004310, true]
+// ard3.splice(1,1)
+// console.log(ard3)//[ 'Amol', 'kantilal', 'jadhav', 9767004310, true ]
+// ard3.splice(4,5)
+// console.log(ard3)//[ 'Amol', 24, 'kantilal', 'jadhav' ]
+// ard3.splice(1,4)
+// console.log(ard3) //[ 'Amol', true ]
+// ard3.splice(0,2)
+// console.log(ard3)//[ 'kantilal', 'jadhav', 9767004310, true ]
 
 
 
