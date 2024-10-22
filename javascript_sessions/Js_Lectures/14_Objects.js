@@ -65,22 +65,20 @@ let tatacurv = {
 //1 retriving the  any value from an objects
 
 // by dot notations
-console.log(tatacurv.Ex_showroomPrice) // output value ->1600000
+//console.log(tatacurv.Ex_showroomPrice) // output value ->1600000
 
 //by bracket notations
 
-console.log(tatacurv["modelName"])// output value ->adventure
-
-
+//console.log(tatacurv["modelName"])// output value ->adventure
 
 // console.log(tatacurv.details())
 
-
 //2 adding a new value
 // by dot notations
-tatacurv.engine_Warrenty = "1 year full replacement" // output value ->1600000
+//tatacurv.engine_Warrenty="1 year full replacement" // output value ->1600000
+//tatacurv.engine_Warrenty="1 year full replacement" // output value ->1600000
 
-console.log(tatacurv)
+//console.log(tatacurv)
 //by bracket notations
 
 // tatacurv["battery_warrenty":"2years"]
@@ -92,7 +90,7 @@ console.log(tatacurv)
 //3 upadting exsiting value 
 
 // by dot notations
-tatacurv.engine_Warrenty = "1 year full replacement and 1 year maintaince" // output value ->1600000
+tatacurv.engine_Warrenty = "1 year full replacement and 1 year maintaince" //
 
 console.log(tatacurv)
 //by bracket notations
@@ -151,7 +149,6 @@ console.log(data.firstName) //Vihaan -->dot notation doesnt work in loop
 console.log(data["lastName"]) //Mehta -->
 
 
-
 //add     -->
 
 data.pacakage="12 LPA"
@@ -161,7 +158,9 @@ console.log(data)
 
 data["inHandsalary"]="10LPA"
 console.log(data)
+
 //delete  -->
+
  delete data["inHandsalary"]
 
  console.log(data)
@@ -175,7 +174,6 @@ console.log(data)
 
 data["pacakage"]="18 LPA"
 console.log(data)
-
 
 
 
@@ -362,5 +360,5 @@ console.log(above3)
 //   ]
 
 // object assignment 
-//  vihan metha has experince of 3 years  his current position is autoamtion testor ad his skills include   skills: [ 'TypeScript', 'CI/CD' ],
+//  vihan metha has experince of 3 years  his current position is autoamtion testor and his skills include   skills: [ 'TypeScript', 'CI/CD' ],
 

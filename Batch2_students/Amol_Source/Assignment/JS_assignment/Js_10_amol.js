@@ -302,12 +302,32 @@ console.log(ree==ree2)
 
 //17) print the longest word form the given string
 
-str = " hello i am learning javascript and currently i am seeing the topic loops"
-let str1 = str.split(' ')
-let longestWord = ''
-for(let i = 0;i<str1.length;i++){
-  if(str1[i].length > longestWord.length){
-      longestWord = str1[i]
-  } 
-}
-console.log(longestWord)
+// str = " hello i am learning javascript and currently i am seeing the topic loops"
+// let str1 = str.split(' ')
+// let longestWord = ''
+// for(let i = 0;i<str1.length;i++){
+//   if(str1[i].length > longestWord.length){
+//       longestWord = str1[i]
+//   } 
+// }
+// console.log(longestWord)
+
+// let Fullnamee = "amol kantilal jadhav"
+// vowels = "aieou"
+// vowels1 = ""
+// for (i=0;i<Fullnamee.length;i++){
+//   if(vowels.includes(Fullnamee[i])){
+//     vowels1+=Fullnamee[i]
+//   }
+// }
+// console.log(vowels1)
+
+// let countries2 = "Albania Bolivia Canada Denmark Ethiopia Finland Germany Hungary Ireland Japan Kenya"
+// let aa = countries2.split(" ")
+// let longestWord = ""
+// for(let i=0;i<aa.length;i++){
+//   if(aa[i].length>longestWord.length){
+//     longestWord = aa[i]
+//     console.log(longestWord)
+//   }
+// }

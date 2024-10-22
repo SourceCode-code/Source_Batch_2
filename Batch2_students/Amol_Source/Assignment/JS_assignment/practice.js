@@ -569,38 +569,64 @@
 //       longestWord = str1[i]
 //   }
 // }
-// console.log(longestWord)
-let Myname= "Amol kantilal jadhav"
-let Myname1 = Myname.length
-let vovo = ""
-let vovels ="aeiou"
-for(i=0;i<Myname1;i++){
-  if(vovels.includes(Myname[i])){
-    vovo+= Myname.charAt(i)
-  }
+// // console.log(longestWord)
+// let Myname= "Amol kantilal jadhav"
+// let Myname1 = Myname.length
+// let vovo = ""
+// let vovels ="aeiou"
+// for(i=0;i<Myname1;i++){
+//   if(vovels.includes(Myname[i])){
+//     vovo+= Myname.charAt(i)
+//   }
   
-}
-console.log(vovo,vovo.length)
+// }
+// console.log(vovo,vovo.length)
 
 
+/****************************************** */
+/*********** Functions********************* */
+// function fullname(){
+//   console.log("Amol kantilal jadhav")
+// }
+// fullname()
 
 
+// function check(a,b){
+// console.log(a+b)
+// console.log(a-b)
+// console.log(a/b)
+// }
+// check()
+
+// function Fullname(name,mifname,sirname){
+//   return `${name} ${mifname} ${sirname}`
+// }
+// let amol = Fullname("amol","kantilal","jadhav")
+// console.log(amol)
+
+// function Fullname(name,mifname,sirname){
+//   return `${name} ${mifname} ${sirname}`
+// }
+// Fullname("amol","kantilal","jadhav")
+// console.log(Fullname("amol","kantilal","jadhav").toUpperCase())
 
 
+// let aaa= function (firstName,middlename,lastName){
+//   return  `${firstName} ${middlename} ${lastName}`
+// }
+
+// console.log(aaa("","","amol"))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// let ard3 = ["Amol", 24, "kantilal", "jadhav", 9767004310, true]
+// ard3.splice(1,1)
+// console.log(ard3)//[ 'Amol', 'kantilal', 'jadhav', 9767004310, true ]
+// ard3.splice(4,5)
+// console.log(ard3)//[ 'Amol', 24, 'kantilal', 'jadhav' ]
+// ard3.splice(1,4)
+// console.log(ard3) //[ 'Amol', true ]
+// ard3.splice(0,2)
+// console.log(ard3)//[ 'kantilal', 'jadhav', 9767004310, true ]
 
 
 

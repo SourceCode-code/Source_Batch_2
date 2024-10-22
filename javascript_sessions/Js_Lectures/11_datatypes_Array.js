@@ -15,8 +15,8 @@ const arr = Array();
 console.log(arr);
 
 // Example:
-let ar = ["Siddhant", 23, "Arjun", "Gadakh", 7020400749, true, "@#$%^"];
-// Array indexes:    0        1     2         3          4        5      6
+let ar =      ["Siddhant", 23, "Arjun", "Gadakh", 7020400749, true, "@#$%^"];
+// Array indexes: 0        1      2         3          4        5      6
 
 // Values in the array are stored at indexes
 // Length of the array is always (last index + 1)
