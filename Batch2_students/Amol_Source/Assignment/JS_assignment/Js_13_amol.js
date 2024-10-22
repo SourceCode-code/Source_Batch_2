@@ -193,14 +193,14 @@
 // 08/01/2020 04:08
 
 //// 5 Declare a function name swapValues. This function swaps value of x to y.
-function swapValues(x, y) {
-    let swap = x
-    x=y
-    y=swap
-    console.log(`x=>${x} y=${y}`)
-}
-swapValues(3,4)
-swapValues(4,5) /// im not cleaar with this concept
+// function swapValues(x, y) {
+//     let swap = x
+//     x=y
+//     y=swap
+//     console.log(`x=>${x} y=${y}`)
+// }
+// swapValues(3,4)
+// swapValues(4,5) /// im not cleaar with this concept
 // swapValues(3, 4) // x => 4, y=>3
 // swapValues(4, 5) // x = 5, y = 4
 
@@ -315,20 +315,28 @@ swapValues(4,5) /// im not cleaar with this concept
 
 // 15 Writ a function which generates a randomUserIp.
 // function randomUserIp(Random){
-//     return Random= Math.random().toString(36).substr(2,19)
+//     return Random= Math.random().toString(36).substr(2,6)
 // }
-// console.log(randomUserIp([]))
+// console.log(randomUserIp())
 
 
 // 16 Write a function which generates a randomMacAddress
-
+// function randonMacAdsress(random){
+// return random = Math.random()
+// }
 // 17 Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
-
+// function randomHexaNumberGenerator(hexanumber){
+//     return hexanumber ="#"+ Math.random().toString(16).substr(2,6)
+//     }
+// console.log(randomHexaNumberGenerator())
 // console.log(randomHexaNumberGenerator());
 // '#ee33df'
 
 // 18 Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
-
+// function userIdGenerator(ranID){
+//     return ranID = (Math.random().toString(16)).substring(3,10)
+// }
+// console.log(userIdGenerator())
 // console.log(userIdGenerator());
 // 41XTDbE
 
@@ -375,7 +383,7 @@ swapValues(4,5) /// im not cleaar with this concept
 // function rgbColorGenerator(){
 //     return(`(#${r},#${b},#${g})`)
 // }
-// console.log(rgbColorGenerator(5).split())
+// console.log(rgbColorGenerator().split())
 
 // 5 Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
@@ -391,18 +399,57 @@ swapValues(4,5) /// im not cleaar with this concept
 // 8 Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 
 // 9 Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
-
+// function factorial(wholeNumber){
+// let fact = 1
+//     for(i=1;i<=wholeNumber;i++){
+//     fact=fact*i
+   
+// }
+// console.log(fact)
+// }
+// factorial([5])
 // 10 Call your function isEmpty, it takes a parameter and it checks if it is empty or not
 
 // 11 Call your function sum, it takes any number of arguments and it returns the sum.
+// function sum(n){
+//     check=0
+//     for(i=0;i<=n;i++){
+//         check+=i
+//     }
+//     console.log(check)
+    
+// }
+// sum(10)
 
 // 12 Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
 
+// function sumOfArrayItems(array){
+//     let kkk=array.reduce((el,index,arr)=>{
+//         return el+index
+// })
+// console.log(kkk,typeof(kkk))
+// }
+// sumOfArrayItems([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])
+
 // 13 Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+// function average(array){
+//     sum =0
+//     for (i=0;i<=array.length-1;i++){
+//      sum=sum+array[i]
+    
+//     }
+//     console.log(sum/array.length)
+// }
+// average([1,2,3,4,5,6,7,8,9,10])
 
 // 14 Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
-
-// console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
+// function modifyArray(array){
+//     return array.push("Ladyfinger")//[5]="Ladyfinger"
+// }
+// let C = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
+// C[4]="LEMON"
+// console.log(C)
+///console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
 // ['Avocado', 'Tomato', 'Potato','Mango', 'LEMON', 'Carrot']
 // console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']);
 // ['Google', 'Facebook','Apple', 'Amazon','MICROSOFT',  'IBM']
@@ -411,27 +458,88 @@ swapValues(4,5) /// im not cleaar with this concept
 
 // 15  Write a function called isPrime, which checks if a number is prime number.
 // function isPrime(n){
-//     return `${n} is not a prime number`
 //     for(i=2;i<=n;i++){
 //         if(n%i===0){
 //             return `${n} it is not a prime number`
 //         }
-//      return `${n}is A prime number`
-    
+//         else{
+//      return `${n} is A prime number`
 //     }
 
+//     }
 // }
 // console.log(isPrime(13))
 
 // 16 Write a functions which checks if all items are unique in the array.
-
+// function UniqueArray(array){
+//     array.forEach((el,index,arr)=>{
+//         if (el==index){
+//         console.log (`flase`)
+//         }
+//     })
+// }
+// UniqueArray([1,2,3,4,5,6,,7,8,9])
 // 17 Write a function which checks if all the items of the array are the same data type.
 
 // 18 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+// array = ["amolJ#qwe34"]
+// array.forEach((el,index,arr)=>{
+//     console.log(el.split("").join().includes("@"||"#"||"%"||"^"||"&"||"*"))
+// })
+
+
+//let Var = ("@#%&")
+
+// function isValidVariable(variable){
+//     for(i=0;i<=Var.split("").length-1;i++){
+//         let CC = Var[i]
+//         console.log(CC)
+//     }
+// let KK= variable.map((el,index,arr)=>{
+//             let BB = el.split("").join(" ")
+//  if(BB.includes(Var[i])){
+// console.log(`${variable} is invalid`)
+//     }
+//     else{
+//         console.log(`${variable} is valid`)
+//     }
+// })
+// }
+// isValidVariable(["amol@123"])
+///// not able to solve
 
 // 19 Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
-
+// function randomArray(array){
+// let RanNum = []
+//     for(i=0;i<=array.length-1;i++){
+//     let Check = Math.floor(Math.random()*array[i])
+//     RanNum.push(Check)
+// }
+// console.log(RanNum.splice(1,7))
+// }
+// randomArray([0,1,2,3,4,5,6,7,8,9])
 // sevenRandomNumbers()
-// [(1, 4, 5, 7, 9, 8, 0)]
+// [(1, 4, 5, 7, 9, 8, 0)]///not geting random numbers
 
 // 20 Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+// function reverseCountries(countries){
+// let reverse = []
+//     for(i=countries.length-1;i>=0;i--){
+//     reverse.push(countries[i])
+// }
+// console.log(reverse)
+// }
+// reverseCountries([
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya',
+//   ])
+
