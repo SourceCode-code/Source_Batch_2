@@ -126,22 +126,36 @@
 // }
 
 ////////15 Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
-// function largestNumber(a,b,c){
-//     return(`${a},${b},${c}`)
+
+// function largestNumber(Check){
+//     max=0
+//     for(i=0;i<=Check.length-1;i++){
+// if(max<=Check[i]){
+//  console.log((max)=Check[i])
 // }
-// let check = largestNumber(0,10,5)
-// console.log(Math.max(...check))
-// // console.log(findMax(0, 10, 5))
-// // 10
-// // console.log(findMax(0, -10, -2))
-// // 0
+// }    
+// }
+// largestNumber([0,10,5])
+// largestNumber([0,-10,-2])
+// console.log(findMax(0, 10, 5))// here im getting two ans 0 and 10
+// 10
+// console.log(findMax(0, -10, -2))
+// 0
 
 
 // Exercises: Level 2
 
 // 1 Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
+// function solveLinEquation(a,b,c,x,y){
+//     return (`${a*x + b*y + c}`)
+// }
+// console.log(solveLinEquation(1,2,-3,1,1))
 
 // 2 Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
+//     function solveQuadEquation(a,b,c,x,y){
+//    return (`${a*x**2+b*y+c}`)
+//     }
+// console.log(solveQuadEquation(1,4,4,-2,-1))
 
 // console.log(solveQuadratic()) // {0}
 // console.log(solveQuadratic(1, 4, 4)) // {-2}
@@ -151,18 +165,58 @@
 // console.log(solveQuadratic(1, -1, 0)) //{1, 0}
 
 // 3 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+// function printArray(array){
+// for (i=0;i<=array.length-1;i++){
+//     console.log(`${array[i]}`)
+// }
+// }
+// printArray([1,2,3])
+// printArray(["a",'b','c'])
 
 // 4 Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+// function showDate(Date){
+// console.log(`${Date}`)
+// }
+// let Date1 = new Date 
+// let day = Date1.getDate()-13
+// let day1 = String(day).padStart(2,0)
+// let Month = (Date1.getMonth()+1)-9
+// let Month1 = String(Month).padStart(2,0)
+// let year = Date1.getFullYear()-4
+// let hour = Date1.getHours()-2
+// let Hour1 = String(hour).padStart(2,0)
+// let min = Date1.getMinutes()+6
+// let min1 =String(min).padStart(2,0) 
+// showDate(`${day1}/${Month1}/${year} ${Hour1}:${min1}`)
 
 // showDateTime()
 // 08/01/2020 04:08
 
-// 5 Declare a function name swapValues. This function swaps value of x to y.
-
+//// 5 Declare a function name swapValues. This function swaps value of x to y.
+function swapValues(x, y) {
+    let swap = x
+    x=y
+    y=swap
+    console.log(`x=>${x} y=${y}`)
+}
+swapValues(3,4)
+swapValues(4,5) /// im not cleaar with this concept
 // swapValues(3, 4) // x => 4, y=>3
 // swapValues(4, 5) // x = 5, y = 4
 
 // 6 Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+// function reverseArray(reverse){
+//     let REV = []
+//     for(i=reverse.length-1;i>=0;i--){
+    
+//         REV.push(reverse[i])
+        
+//    }
+//    console.log(REV)
+// }
+// reverseArray([1,2,3,4,5])
+// reverseArray(['A','B','C'])
 
 // console.log(reverseArray([1, 2, 3, 4, 5]))
 // //[5, 4, 3, 2, 1]
@@ -170,29 +224,101 @@
 // //['C', 'B', 'A']
 
 // 7 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+//  function capitalizeArray(array){ 
+//     let Array1 =""
+//     for(i=0;i<array.length;i++){
+//         Array1+= array[i].toUpperCase()+" "
+//     }
+//     console.log(Array1)
+//  }
+//  capitalizeArray(["amol", "Kantilal", "Jadhav"]) // not getting Exact ans
+
+ 
 
 // 8 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+// function addItem(item){
+//    item.unshift("Fullname")
+//    return item
+// }
+// console.log(addItem(['amol','Kantilal','jadhav']))
 
 // 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+// function removeItem(index){
+// index.pop()
+// return index
+// }
+// console.log(removeItem(["Amol","Kantilal","Jadhav", "typomistake"]))
 
 // 10 Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
 
+// function sumOfNumbers(number){
+// sum =0
+// for(i=0;i<=number.length-1;i++){
+// sum =number[i]+sum
+// }
+// return sum
+// }
+// console.log(sumOfNumbers([1,2,3,4,5,6,7,8,9]))
+   
 // 11 Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+// function sumOfodds(number){
+//     sumodd =0
+//     for(i=1;i<=number.length-1;i+=2){
+//      sumodd =  number[i]+ sumodd
+//     }
+//     return sumodd
+// }
+// console.log(sumOfodds([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))
 
 // 12 Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
-
+// function sumOfeven(number){
+//     let sumEven = 0
+//     for(i=0;i<=number.length-1;i+=2){
+//        sumEven+=number[i]
+//     }
+//     return sumEven
+// }
+// console.log(sumOfeven([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]))
 // 13 Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+// function evensAndOdds(positiveinteger){
+//     let even = 0
+//    let odd =0
+// for(i=0;i<=positiveinteger;i++){
+//     if(i%2 === 0){
+//         even++
+//     }
+//     else {
+//         odd++
+//     }
+// }
+//     return {
+//         even,odd
+//     }
+// }
+//    console.log(evensAndOdds(100))
 
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
 
 // 14 Write a function which takes any number of arguments and return the sum of the arguments
-
+// function sum(array){
+//     let sum1=0
+//     for(i=0;i<=array.length-1;i++)
+//     sum1 = sum1+array[i]
+// return sum1
+// }
+// console.log(sum([1,2,3]))
+// console.log(sum([1,2,3,4,]))
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
 
 // 15 Writ a function which generates a randomUserIp.
+// function randomUserIp(Random){
+//     return Random= Math.random().toString(36).substr(2,19)
+// }
+// console.log(randomUserIp([]))
+
 
 // 16 Write a function which generates a randomMacAddress
 
@@ -243,13 +369,13 @@
 // console.log(arrayOfHexaColors().split())
 
 // 4 Write a function arrayOfRgbColors which return any number of RGB colors in an array.
-let r = Math.floor(Math.random()*256)
-let b = Math.floor(Math.random()*256)
-let g = Math.floor(Math.random()*256)
-function rgbColorGenerator(){
-    return(`(#${r},#${b},#${g})`)
-}
-console.log(rgbColorGenerator(5).split())
+// let r = Math.floor(Math.random()*256)
+// let b = Math.floor(Math.random()*256)
+// let g = Math.floor(Math.random()*256)
+// function rgbColorGenerator(){
+//     return(`(#${r},#${b},#${g})`)
+// }
+// console.log(rgbColorGenerator(5).split())
 
 // 5 Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
@@ -284,18 +410,18 @@ console.log(rgbColorGenerator(5).split())
 //   'Not Found'
 
 // 15  Write a function called isPrime, which checks if a number is prime number.
-function isPrime(n){
-    return `${n} is not a prime number`
-    for(i=2;i<=n;i++){
-        if(n%i===0){
-            return `${n} it is not a prime number`
-        }
-     return `${n}is A prime number`
+// function isPrime(n){
+//     return `${n} is not a prime number`
+//     for(i=2;i<=n;i++){
+//         if(n%i===0){
+//             return `${n} it is not a prime number`
+//         }
+//      return `${n}is A prime number`
     
-    }
+//     }
 
-}
-console.log(isPrime(13))
+// }
+// console.log(isPrime(13))
 
 // 16 Write a functions which checks if all items are unique in the array.
 
