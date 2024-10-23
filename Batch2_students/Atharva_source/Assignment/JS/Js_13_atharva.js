@@ -161,6 +161,7 @@ console.log("----ex-lev-2; Ans1---------")
 // console.log(solveQuadratic(1, 0, -4)) //{2, -2}
 // console.log(solveQuadratic(1, -1, 0)) //{1, 0}
 
+//Wrong implementation \\ Solve Again\\\\
 function  solveQuadratic(a1,b1,c1){
     let x =9;
     let d  = a1 * x * 2 + b1 * x + c1;
@@ -180,10 +181,14 @@ function showDateTime(){
     let day = date.getDate();
     let month = date.getMonth();
     let year = date.getFullYear();
+    let minutes = date.getMinutes();
+    let hours = date.getHours();
 
     let padDayFormat = String(day).padStart(2,'0');
     let padMonthFormat = String(month).padStart(2,'0');
-    console.log(`${padDayFormat}/${padMonthFormat}/${year}`);
+    let padminutes = String(minutes).padStart(2,'0');
+    let padhours = String(hours).padStart(2,'0');
+    console.log(`${padDayFormat}/${padMonthFormat}/${year} ${padhours}:${padminutes}`);
 }
 showDateTime();
 console.log("----ex-level-2; Ans.4---------")
@@ -235,17 +240,57 @@ function capitalizeArray(ARRAY){
 capitalizeArray(['atharva']);
 console.log("--ex-lev-2; Ans.7-----------")
 // 8 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
-
+function addItem(item){
+    item.unshift("mobilename");
+    return  item;
+}
+console.log(addItem(['iqoo 9pro','motog']));
+console.log("---ex-lev-2;Ans.8---------")
 // 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-
+function reoveItem(Item){
+    Item.pop();
+    return Item
+}
+console.log(reoveItem(['car','mobile','asset']));
+console.log("----ex---lev-2; Ans.9-----------")
 // 10 Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
-
+function sumOfNumbers(number){
+    let sum = 0;
+    for(i=0;i<=number.length-1;i++){
+        sum = number[i] + sum;
+    }
+    return sum;
+}
+console.log(sumOfNumbers([3,9,12,18,36]));
+console.log("----ex--lev-2;Ans,10------------")
 // 11 Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
-
+function sumOfOdds(Number){
+    let sumOfOdd = 0;
+    for(i=0;i<=Number.length-1;i++){
+        sumOfOdd += Number[i];
+    }
+    return  sumOfOdd;
+}
+console.log(sumOfOdds([2,3,4,5,6,7,8]));
+console.log("---ex-level-2; Ans.11---------")
 // 12 Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
-
+function sumOfEven(number){
+    let sumeveN = 0;
+    for( i=0;i<=number.length-1;i++){
+        sumeveN += number[i];
+    }
+    return sumeveN;
+}
+console.log(sumOfEven([1,2,3,4,5,6,7,8,9,10,11]));
+console.log("------ex-lev-2; Ans.12-----------")
 // 13 Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
-
+// function evensAndOdds(integer){
+//     let evenodd = 0;
+//     let count = 0;
+//     for(i=0;i<integer.length-1;i++){
+//         if()
+//     }
+// }
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
