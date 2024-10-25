@@ -127,20 +127,22 @@
 
 ////////15 Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
 
-// function largestNumber(Check){
-//     max=0
-//     for(i=0;i<=Check.length-1;i++){
-// if(max<=Check[i]){
-//  console.log((max)=Check[i])
-// }
-// }    
-// }
-// largestNumber([0,10,5])
-// largestNumber([0,-10,-2])
+//function largestNumber(Check){
+//Array1 = Math.max(...Check)
+//console.log(Array1)
+//}
+//largestNumber([0,10,5])
+//largestNumber([0,-10,-2])
+
 // console.log(findMax(0, 10, 5))// here im getting two ans 0 and 10
 // 10
 // console.log(findMax(0, -10, -2))
 // 0
+// array= [1,2,3,4,5,6,7]
+// Max= array.reduce((el,index)=>{
+//   return index>el?index:el
+// })
+// console.log(Max)
 
 
 // Exercises: Level 2
@@ -151,7 +153,7 @@
 // }
 // console.log(solveLinEquation(1,2,-3,1,1))
 
-// 2 Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
+// //2 Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 //     function solveQuadEquation(a,b,c,x,y){
 //    return (`${a*x**2+b*y+c}`)
 //     }
@@ -171,7 +173,7 @@
 // }
 // }
 // printArray([1,2,3])
-// printArray(["a",'b','c'])
+// printArray(['a','b','c'])
 
 // 4 Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
 // function showDate(Date){
@@ -193,14 +195,15 @@
 // 08/01/2020 04:08
 
 //// 5 Declare a function name swapValues. This function swaps value of x to y.
+
 // function swapValues(x, y) {
 //     let swap = x
 //     x=y
 //     y=swap
-//     console.log(`x=>${x} y=${y}`)
+//     return (`x=>${x} y=>${y}`)
 // }
-// swapValues(3,4)
-// swapValues(4,5) /// im not cleaar with this concept
+// console.log(swapValues(3,4))
+// console.log(swapValues(4,5)) //
 // swapValues(3, 4) // x => 4, y=>3
 // swapValues(4, 5) // x = 5, y = 4
 
@@ -224,6 +227,16 @@
 // //['C', 'B', 'A']
 
 // 7 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+//Method 1
+// function capitalizeArray(array){
+// let Capital = []
+//   array.forEach((el,index,arr)=>{
+//        Capital.push(el.toUpperCase())
+// })
+// console.log(Capital)
+// }
+// (capitalizeArray(['Amol','kantilal',"jadhav"]))
+// Method 2
 //  function capitalizeArray(array){ 
 //     let Array1 =""
 //     for(i=0;i<array.length;i++){
@@ -259,6 +272,14 @@
 // return sum
 // }
 // console.log(sumOfNumbers([1,2,3,4,5,6,7,8,9]))
+//using Reduce Method : 
+// function sumofItem(array){
+//   let k = array.reduce((el,index,arr)=>{
+//   return el+index
+// })
+// console.log(k)
+// }
+// (sumofItem([1,2,3,4,5,6,7,8,9]))
    
 // 11 Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
 // function sumOfodds(number){
@@ -297,6 +318,17 @@
 // }
 //    console.log(evensAndOdds(100))
 
+// method 2 using ternary operater
+// function evenodd(num){
+// even = 0
+// odd = 0
+//   for (i=0;i<=num;i++){
+//   (i%2==0)?even++:odd++
+// }
+// console.log(even,odd)
+// }
+// (evenodd(100))
+
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
@@ -309,26 +341,54 @@
 // return sum1
 // }
 // console.log(sum([1,2,3]))
-// console.log(sum([1,2,3,4,]))
+// console.log(sum([1,2,3,4]))
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
 
 // 15 Writ a function which generates a randomUserIp.
-// function randomUserIp(Random){
-//     return Random= Math.random().toString(36).substr(2,6)
-// }
-// console.log(randomUserIp())
-
+// function randomUserIP(){
+// let a = Math.round(Math.random()*256)
+// b = Math.round(Math.random()*256)
+// c = Math.round(Math.random()*256)
+// d = Math.round(Math.random()*256)
+// e = Math.round(Math.random()*256)
+// console.log (`${a}.${b}.${c}.${d}.${e}`)
+// }randomUserIP()
+/////////Method 2 
+// function ranomUserIp(){
+// let user = ""
+//     for (i=0;i<4;i++){
+    
+//     let user1 = Math.round(Math.random()*256)
+//     user+=user1
+// if(i<4){
+//     user+="."
+//        }
+//     }
+// return user
+//    }
+// console.log(ranomUserIp())
 
 // 16 Write a function which generates a randomMacAddress
-// function randonMacAdsress(random){
-// return random = Math.random()
+// function randonMacAdsress(){
+// let randomMac=''
+// for (i=0;i<6;i++){
+// let random = Math.round(Math.random()*256).toString(16).padStart(2,"0")
+// randomMac+=(random)
+// if(i<5){
+//     randomMac+=':'
 // }
+// }
+// return randomMac
+// }
+// console.log(randonMacAdsress())
+
 // 17 Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
-// function randomHexaNumberGenerator(hexanumber){
+// function randomHexaNumberGenerator(){
 //     return hexanumber ="#"+ Math.random().toString(16).substr(2,6)
 //     }
 // console.log(randomHexaNumberGenerator())
+
 // console.log(randomHexaNumberGenerator());
 // '#ee33df'
 
@@ -366,15 +426,19 @@
 //     return(`rgb (${r},${b},${g})`)
 // }
 // console.log(rgbColorGenerator())
-// rgbColorGenerator()
+// // rgbColorGenerator()
 // rgb(125,244,255)
 
 // 3 Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
-// let a = "#"+ Math.floor(Math.random()*256)
-// function arrayOfHexaColors(){
-//     return (`${a}`)
+// function arrayOfHexaColors(num){
+//     let Hexa =[]
+//     for(i=0;i<num;i++){
+//     let a = Math.floor(Math.random()*16777215).toString(16).padStart(6,"0")
+//     Hexa.push(a)
+//     }
+//     return Hexa
 // } 
-// console.log(arrayOfHexaColors().split())
+// console.log(arrayOfHexaColors(4))
 
 // 4 Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 // let r = Math.floor(Math.random()*256)
@@ -386,10 +450,49 @@
 // console.log(rgbColorGenerator().split())
 
 // 5 Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+// function convertHexaToRgb(Hexa){
+//     let r=parseInt(Hexa.slice(1,3),16)
+//     let b=parseInt(Hexa.slice(3,5),16)
+//     let g=parseInt(Hexa.slice(5,7),16)
+// return[r, g, b]
+// }
+// console.log(convertHexaToRgb("#19EDef"))
+
 
 // 6 Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
-// 7 Write a function generateColors which can generate any number of hexa or rgb colors.
+
+// /////7 Write a function generateColors which can generate any number of hexa or rgb colors.
+// function generateColors(num){
+//     let array = []
+//     for(i=0;i<num;i++){
+//     let r ='#'+ Math.round(Math.random()*16777215).toString(16)
+//     let b = '#'+ Math.round(Math.random()*16777215).toString(16)
+//     let g = '#'+ Math.round(Math.random()*16777215).toString(16)
+//     let  k = (`${r},${b},${g}`)
+//       array.push(r)
+      
+//     }
+//     return array
+// }
+// console.log(generateColors(1))
+
+// function generateColors1(num){
+//     let array = ("")
+//     for(i=0;i<num;i++){
+//     let r =Math.round(Math.random()*256)
+//     let b = Math.round(Math.random()*256)
+//     let g = Math.round(Math.random()*256)
+//     let  k = (`rgb(${r},${b},${g})`)
+//       array+=(k)
+//       if(i<2){
+//         array+= ","
+//       }
+      
+//     }
+//     return array
+// }
+// console.log(generateColors1(3))
 
 // console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
 // console.log(generateColors('hexa', 1)) // '#b334ef'
@@ -397,6 +500,15 @@
 // console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 
 // 8 Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+// function ShuffleArray(array){
+// for (i=array.length-1;i>0;i--){
+//     j = Math.floor(Math.random()*(i+1));// at this line ";" when i applied that, then only i get the output
+//     [array[i],array[j]]=[array[j],array[i]]   
+//     // original array    // shuffules array
+// }
+// return array
+// }
+// console.log(ShuffleArray([1,2,3,4,5,6,7,8,9]))
 
 // 9 Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 // function factorial(wholeNumber){
@@ -409,6 +521,10 @@
 // }
 // factorial([5])
 // 10 Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+// function isEmpty([]){
+
+// }
+// isEmpty([])
 
 // 11 Call your function sum, it takes any number of arguments and it returns the sum.
 // function sum(n){
@@ -444,9 +560,12 @@
 
 // 14 Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 // function modifyArray(array){
-//     return array.push("Ladyfinger")//[5]="Ladyfinger"
+//     let k= array[4]="LEMON"
+//   console.log(array.push(k))
+    
 // }
-// let C = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
+// (modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
+// // let C = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
 // C[4]="LEMON"
 // console.log(C)
 ///console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
@@ -478,7 +597,7 @@
 //         }
 //     })
 // }
-// UniqueArray([1,2,3,4,5,6,,7,8,9])
+// UniqueArray([1,2,3,4,5,6,7,8,9])
 // 17 Write a function which checks if all the items of the array are the same data type.
 
 // 18 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
