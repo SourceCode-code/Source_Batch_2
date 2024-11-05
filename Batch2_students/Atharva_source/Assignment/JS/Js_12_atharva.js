@@ -1,228 +1,139 @@
-/**
- * 
- * //1  get me the largest number and the smallest number form the array 
- * array=[1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585]
- * 
-
-
-//2  convert this array into uppcase 
-array=
-[ 'vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol' ]
-
-//3 add 2 in every element of this array 
-numaarry=[1,2,3,4,5,6,7,8,9]
-
-//4 get the me sum of this array 
-
-numaarry=[1,2,3,4,5,6,7,8,9]
-
-//5 get me all the value in this array above 5
-
-numaarry=[1,2,3,4,5,6,7,8,9]
-
-//6 --- give me 4 examples of every method taught of array .
-* 
- * 
- * 
- * 
- * 
- * 
- */ 
-  
-////////////////////////---------------------------------------\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-//get me the largest number and the smallest number form the array 
-// array=[1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585]
-
-let ARRAY = [1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585];
-let SmallestNumber = 0;
-for(let i=0; i>=ARRAY.length; i++){
-    if(ARRAY[i]>= SmallestNumber){
-       SmallestNumber = ARRAY[i];
-    }
-}
-console.log("the smallest number is", SmallestNumber); // 
-
-let ARRAY1 = [1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585];
-let LargestNumber = 0;
-for (let i =0; i<=ARRAY1.length; i++){
-    if(ARRAY1[i]>=LargestNumber){
-        LargestNumber = ARRAY1[i];
-    }
-}
-console.log("the LargestNumber is",LargestNumber);
-
-console.log("-----------------1----------------------")
-
-
-// Q2 .   convert this array into uppcase array= [ 'vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol' ]
-
-let  Ary = [ 'vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol' ];
-for (let i = 0; i<Ary.length; i++){
-    Ary[i] = Ary[i].toUpperCase();
-}
-console.log(Ary); // ['VAIBHAV','SNEHA','SIDDHANT','SHRINI']
-console.log("--------------2----------------------");
- 
-
-// //Q3/  add 2 in every element of this array  numaarry=[1,2,3,4,5,6,7,8,9] 
-
-let numarray = [1,2,3,4,5,6,7,8,9];
-let numbertoadd = 2
-for (let i = 0; i<numarray.length; i++){
-    numarray[i] +=  numbertoadd;
-}
-    
-console.log(numarray); //[3,4,5,6,7,8,9,10,11]
-console.log("-----------------3----------------------");
-
-
-//Q4. get the me sum of this array 
-
-let NumArray=[1,2,3,4,5,6,7,8,9];
-let sum = 0;
-for (let i = 0; i<NumArray.length; i++){
-    sum += NumArray[i];
-}
-console.log(sum); // 45
-console.log("-----------------4----------------------");
-
-//Q.5  get me all the value in this array above 5
-let NumArraY=[1,2,3,4,5,6,7,8,9];
-let newArr = [];
-for (let i = 0; i<NumArraY.length; i++){
-    if (NumArraY[i] > 5) {
-        newArr.push(NumArraY[i]);
-    }
-} 
-console.log(newArr); // [6,7,8,9] 
-console.log("-----------------5----------------------");
-
-
-//Q6. give me 4 examples of every method taught of array 
-//1.  push() method
-let arr = [1,2,3,4,5];
-console.log(arr.push(6)); 
-console.log(arr); // 6
-
-let rut = [8,9,10,11];
-console.log(rut.push(12)); 
-console.log(rut); // 12
-
-let uyu = [20,30,40,50,60];
-console.log(uyu.push(70,80,90));
-console.log(uyu); /*[
-    20, 30, 40, 50,
-    60, 70, 80, 90
-  ] */
-
-let poi = [13,15,17,19];
-console.log(poi.push(21));
-console.log(poi); // 21 
-//////////////\\\\\\\\\
-
-//2 . pop() method
-let ety = [2,4,6,8,20];
-ety.pop();
-console.log(ety);
-
-let tey = [9,10,11,12];
-tey.pop();
-console.log(tey);
-
-let jlk = [7,0,8,0];
-jlk.pop();
-console.log(jlk);  
-
-let lpl = [11,22,33,44,55];
-lpl.pop();
-console.log(lpl);  // [11,22,33,44]
-
-////////////\\\\\\\\\ 
-
-//3 . unshift() method
-let opo = ['this','is','atharva'];
-opo.unshift('hola');
-console.log(opo);
-
-let oop = ['code','is','a','batch'];
-oop.unshift('source');
-console.log(oop);
-
-let PoP = ['are','qwerty','shortcuts'];
-PoP.unshift('these');
-console.log(PoP); 
-
-let Loc = ['2','3','4','5','6'];
-Loc.unshift('1');
-console.log(Loc); 
-
-//4 SPLICE()
-let kkk = ['a','b','c','d'];
-kkk.splice(3);
-console.log(kkk); 
-
-let oiy = [0,9,7,6,5];
-oiy.splice(0,2);
-console.log(oiy);
-
-let lio = [7,7,8,8,9];
-lio.splice(0,3);
-console.log(lio);
-
-let hjh = [5,10,15,20,25];
-hjh.splice(1,4);
-console.log(hjh)
-
-///////////////\\\\\\\\\\\\\\\\\\
-
-//4 join('-->')
-let ikt = ["this","is","the","main"];
-let att = ikt.join('-->');
-console.log(att);
-
-let ioj = ["atharva","vijay","pandit"];
-let joi = ioj.join('-->');
-console.log(joi); 
-
-
-// console.log("-----------------6----------------------")
-
-
-// PRATIk's Questions : 
-
-// 1. Write a code to reverse a given array without using reverse function
-// Eg. Given array [2, 5, 7, 1]
-// Expected output [1, 7, 5, 2]
-
-// 2. Write a code to find out whether the given element is present in the given sorted array or not.
-// Eg. Given array [1, 2, 4 , 7, 15, 22, 25] given element 22.
-// Expected output:True
-// Explanation :
-// as 22 is present in a given array print true. 
-
-// In case of given element as 8 output should be false because 8 is not in given array 
-
-//Q.1 
-//  let Arr = [2,5,7,1];
-//  let Arr1 = [];
-//  for(let i >=0;  i--){
-//     console.log(Arr1);
-//  }
+// Exercise: Level 1
 
 
 
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
 
 
-//Q.2.
-let Arr2 = [1, 2, 4 , 7, 15, 22, 25];
-if (Arr2[5] == 22){
-    console.log("True")
-}
-else(console.log("False"))
-// if (Arr2.includes(Arr2[5])){
-//     console.log("True")
-// }
-// else(console.log("False"))
+// Declare an empty array 
+let emparr = [];
+// Declare an array with more than 5 number of elements
+let ofc = [2, 5, 6, 9, 10, 0, 8, 11, 323, 545];
+// Find the length of your array
+let lenofc = ofc.length;
+console.log(lenofc); // 10 
+
+// Get the first item, the middle item and the last item of the array 
+let getarr = ofc.slice(0, 6);
+console.log(getarr);
+// Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+let mixedDataTypes = ["lenovo", 678, 'true', '',]
+// Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+
+// Print the array using console.log()
+console.log(itCompanies);
+// Print the number of companies in the array
+console.log(itCompanies);
+// Print the first company, middle and last company
+console.log(itCompanies.length);
+
+// console.log(itCompanies[0, length-1]);
+
+
+// Print out each company
+
+// Change each company name to uppercase one by one and print them out
+let mapitCompanies = itCompanies.map(company => company.toUpperCase());
+console.log(mapitCompanies);
+// Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon are big IT companies.
+let sentence = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'and Amazon', ['are', 'big IT companies']];
+let solved = sentence.flat();
+console.log(solved)
+
+// Check if a certain company exists in the itCompanies array. If it exists return the company else return 'Company is not found'
+
+// Filter out companies which have more than one 'o' without using the filter method
+// Sort the array using sort() method
+itCompanies.sort();
+console.log(itCompanies);
+// Reverse the array using reverse() method
+itCompanies.reverse();
+console.log(itCompanies);
+console.log("----------------ItCompanies");
+// Slice out the first 3 companies from the array
+let utt = itCompanies.slice(0, 3);
+console.log(utt);
+// Slice out the last 3 companies from the array
+let ttu = itCompanies.slice(4, 7);
+console.log(ttu);
+// Slice out the middle IT company or companies from the array
+// Remove the first IT company from the array
+
+// Remove the middle IT company or companies from the array
+// Remove the last IT company from the array
+// Remove all IT companies
+
+// Exercise: Level 2
+
+// Create a separate countries.js file and store the countries array in it, create a separate file web_techs.js and store the webTechs array in it. Access both files in main.js file
+// First remove all the punctuations and change the string to an array and count the number of words in the array:
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+// console.log(words)
+// console.log(words.length)
+// ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+// 13
+
+// In the following shopping cart add, remove, edit items:
+// let shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'] 
+// // add 'Meat' in the beginning of your shopping cart if it has not been already added
+// shoppingCart.unshift('Meat');
+// // add Sugar at the end of your shopping cart if it has not been already added
+// shoppingCart.push('Sugar');
+// // remove 'Honey' if you are allergic to honey
+// console.log(shoppingCart);
+// shoppingCart.pop();
+
+// // modify 'Tea' to 'Green Tea'
+// shoppingCart[2] = "Green Tea";
+// console.log(shoppingCart);
+
+
+
+// In countries array check if 'Ethiopia' exists in the array, if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+// In the webTechs array check if 'Sass' exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist, add Sass to the array and print the array.
+
+// Concatenate the following two variables and store it in a fullStack variable:
+// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+// const backEnd = ['Node', 'Express', 'MongoDB']
+// console.log(fullStack)
+// ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+
+// Exercise: Level 3
+
+// The following is an array of 10 students' ages:
+// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+// Sort the array and find the min and max age
+// Find the median age(one middle item or two middle items divided by two)
+// Find the average age(all items divided by number of items)
+// Find the range of the ages (max minus min)
+// Compare the value of (min - average) and (max - average), use abs() method
+
+// Slice the first ten countries from the countries array
+// Find the middle country(ies) in the countries array
+// Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
+
 
 
