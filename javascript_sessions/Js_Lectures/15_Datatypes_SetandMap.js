@@ -1,244 +1,123 @@
-//datatypes -->
-// primitive --> string , boolean , numbers, null, undefined
-// nonprimitive -->arrays , objects 
+// Data Types
+// Primitive: string, boolean, number, null, undefined
+// Non-Primitive: arrays, objects
+// Set and Map
 
-// sets and map
+// Set --> A collection of unique values
+// Example:
+let arr = [1, 2, 4, 5, 6, 7, 4, 6, 2];
+console.log(new Set(arr)); // Set { 1, 2, 4, 5, 6 }
 
-// set --> set is a collection of elements ,set only conatins a unqiue value   
-// let arr = [1,2,4,5,6,7,4,6,2] // example of array 
+// Declaring a Set
+const setOne = new Set();
+console.log(setOne); // Set(0) {}
 
-//set = [1,2,4,5,6]
+const languages = ["English", "Spanish", "French", "English", "Spanish", "German", "French"];
+let setOfLanguages = new Set(languages);
+console.log(setOfLanguages); // Set { 'English', 'Spanish', 'French', 'German' }
 
-// how to delcare a set 
-const set_one = new Set()
-
-console.log(set_one)
-//Set(0) {}
-
-// 2 way -->
-const lang = ["English", "Spanish", "French", "English", "Spanish", "german", "French"]
-
-let setOfLang = new Set(lang)
-
-console.log(setOfLang)
-//Set(4) { 'English', 'Spanish', 'French', 'german' }
-
-
-//how use  loops in set
-for (const lan of setOfLang) {
-
-    console.log(lan)
+// Looping through a Set
+for (const lang of setOfLanguages) {
+    console.log(lang);
 }
+// Output:
+// English
+// Spanish
+// French
+// German
 
-/**
- * English
-Spanish
-French
-german
- */
+// Operations on Set
+// Adding elements to a Set
+let companies = new Set();
+companies.add("Google");
+console.log(companies); // Set { 'Google' }
+companies.add("Microsoft");
+console.log(companies); // Set { 'Google', 'Microsoft' }
 
-//--------------------------------------------------------------------------------
-
-
-//operations on set 
-
-// add element in the set 
-
-let Companies = new Set()
-
-console.log(Companies) //Set(0) {}
-
-Companies.add("Google")
-
-
-console.log(Companies) //Set(1) { 'Google' }
-
-Companies.add("Microsoft")
-
-console.log(Companies)  //Set(2) { 'Google', 'Microsoft' }
-
-
-//--------------------------------------------------------------------------------
-
-
-let comp = ["google", "amazon", "microsoft", "orcale"]
-
-let com = new Set()
-
-for (let i of comp) {
-    com.add(i)
+// Adding multiple elements from an array to a Set
+let companyArray = ["Google", "Amazon", "Microsoft", "Oracle"];
+let companySet = new Set();
+for (let company of companyArray) {
+    companySet.add(company);
 }
-console.log(com) //Set(4) { 'google', 'amazon', 'microsoft', 'orcale' }
+console.log(companySet); // Set { 'Google', 'Amazon', 'Microsoft', 'Oracle' }
 
+// Deleting values from a Set
+companySet.delete("Oracle");
+console.log(companySet); // Set { 'Google', 'Amazon', 'Microsoft' }
+companySet.delete("Amazon");
+console.log(companySet); // Set { 'Google', 'Microsoft' }
 
+// Clearing a Set
+setOfLanguages.clear();
+console.log(setOfLanguages); // Set(0) {}
 
-//Set(4) { 'google', 'amazon', 'microsoft', 'orcale' }
+// Converting array to Set to remove duplicates
+let numArray = [1, 1, 2, 2, 4, 4, 5, 5, 6, 6, 67, 7, 7, 8, 8, 5];
+let setOfNumbers = new Set(numArray);
+console.log(setOfNumbers); // Set { 1, 2, 4, 5, 6, 67, 7, 8 }
 
+// Union of Sets (finding common elements)
+let a = [1, 2, 3];
+let b = [4, 5, 6, 7, 8];
+let c = [...a, ...b];
+let unionSet = new Set(c);
+console.log(unionSet); // Set { 1, 2, 3, 4, 5, 6, 7, 8 }
 
-//---------------------------------------------------------------------------------
-//deleting value form set
-com.delete("orcale")
-console.log(com) //Set(3) { 'google', 'amazon', 'microsoft' }
+// Intersection of Sets
+let x = [1, 2, 3, 4, 5];
+let y = [4, 5, 6, 7, 8];
+let setX = new Set(x);
+let setY = new Set(y);
+let intersection = x.filter((el) => setY.has(el));
+console.log(new Set(intersection)); // Set { 4, 5 }
 
-com.delete("amazon")
-console.log(com)//Set(2) { 'google', 'microsoft' }
+// Difference between Sets
+let uniqueX = x.filter((el) => !setY.has(el)); // {1, 2, 3}
+let uniqueY = y.filter((el) => !setX.has(el)); // {6, 7, 8}
+let differenceSet = new Set([...uniqueX, ...uniqueY]);
+console.log(differenceSet); // Set { 1, 2, 3, 6, 7, 8 }
 
-
-// -----------------------------------------------------------
-//delete all value for set 
-
-//Set(4) { 'English', 'Spanish', 'French', 'german' }
-
-setOfLang.clear()
-
-console.log(setOfLang) //Set(0) {}
-
-
-let numarr = [1, 1, 2, 2, 4, 4, 5, 5, 6, 6, 67, 7, 7, 8, 8, 5]
-
-let setofnum = new Set(numarr)
-
-console.log(setofnum) //Set(8) { 1, 2, 4, 5, 6, 67, 7, 8 }
-
-
-
-// uuion of set  -- fnding common elements
-
-
-let a = [1, 2, 3]
-let b = [4, 5, 6, 7, 8]
-
-// (A U B)
-
-
-let c = [...a, ...b]
-console.log(c)
-
-// //[
-//     1, 2, 3, 1,
-//     2, 3, 4, 5
-//   ]
-
-let A = new Set(a)
-
-let B = new Set(b)
-
-let C = new Set(c)
-
-
-console.log(C) //Set(8) { 1, 2, 3, 4, 5, 6, 7, 8 }
-
-
-
-// intersection -- >
-
-
-let x = [1, 2, 3, 4, 5]
-let y = [4, 5, 6, 7, 8]
-
-
-let X = new Set(x)
-let Y = new Set(y)
-
-let z = x.filter((el) => { Y.has(el) })
-
-console.log(z)// [4,5]
-let Z = new Set(z)
-
-console.log(Z) //Set(2) { 4, 5 }
-
-
-// difference -- >
-
-let uncomon = x.filter((el) => !Y.has(el)) // {1,2,3}
-let uncoom = y.filter((el) => !X.has(el)) //{6,7,8}
-console.log(uncoom)
-
-let diff = [...uncomon, ...uncoom]
-
-
-
-let Diff = new Set(diff)
-console.log(Diff) //Set(6) { 1, 2, 3, 6, 7, 8 }
-
-
-// set example on how to actually use set
-
-const Lang = ["English", "Spanish", "French", "English", "Spanish", "german", "French", "English"]
-
-// get the occurance of each langauge in the above array 
-
-// [{lang:"english",count:3},
-// {}, {}
-// ]
-
-const unilang = new Set(Lang)
-
-console.log(unilang) //Set(4) { 'English', 'Spanish', 'French', 'german' }
-console.log(unilang.size) // 4
-
-const counts = []
-const count = {}
-
-for (let lan in unilang) {
-
-    const filterlang = Lang.filter((el) => el === lan)
-    console.log(filterlang)
-    counts.push({ lang: lan, count: filterlang.length })
-
+// Example of using Set to count occurrences
+const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+const uniqueLanguages = new Set(langArray);
+const languageCounts = [];
+for (let lang of uniqueLanguages) {
+    const filteredLangs = langArray.filter((el) => el === lang);
+    languageCounts.push({ lang, count: filteredLangs.length });
 }
+console.log(languageCounts); // [{ lang: 'English', count: 3 }, { lang: 'Spanish', count: 2 }, ...]
 
-console.log(counts)
-
-
-
-
-
-//------------------------------------------------------------------------------------------//
-
-let arr1=[
-    ["india","delhi"],["usa","washington dc"],["england","london"]
-]
-//map --->  map is a collection of uniqye element , the element is stored in key value pair 
-
-let map = new Map()
-console.log(map)
-
-
-// 
-let newdata= new Map(arr1)
-console.log(newdata)
-
-console.log(newdata.size)
-
-
-//------------------------------------------------------------------------------------------------
-//adding value in map 
-// here set doent refer to a datatype set it refers to a method called as set in map
-newdata.set("bangladesh","dhaka")
-console.log(newdata)
+//--------------------------------------------------------------------------------------------------
 
 
 
+// Map --> A collection of unique elements stored in key-value pairs
+let countryCapitalArray = [
+    ["India", "Delhi"],
+    ["USA", "Washington DC"],
+    ["England", "London"]
+];
+let countryCapitalMap = new Map(countryCapitalArray);
+console.log(countryCapitalMap); // Map { 'India' => 'Delhi', 'USA' => 'Washington DC', 'England' => 'London' }
+console.log(countryCapitalMap.size); // 3
 
-// --------------------------
-// geeting value form a map
-//get
-console.log(newdata.get("usa"))
+// Adding values to a Map
+countryCapitalMap.set("Bangladesh", "Dhaka");
+console.log(countryCapitalMap); // Map { 'India' => 'Delhi', 'USA' => 'Washington DC', 'England' => 'London', 'Bangladesh' => 'Dhaka' }
 
+// Getting values from a Map
+console.log(countryCapitalMap.get("USA")); // Washington DC
 
-// verifying if key exsist in map
+// Checking if a key exists in a Map
+console.log(countryCapitalMap.has("England")); // true
 
-console.log(newdata.has("england"))
-
-
-// using loop on map 
-
-for(const data of newdata){
-    console.log(data)
+// Looping through a Map
+for (const [country, capital] of countryCapitalMap) {
+    console.log(`${country}: ${capital}`);
 }
-
-//
-for(const [data,value] of newdata){
-console.log(data,value)
-}
+// Output:
+// India: Delhi
+// USA: Washington DC
+// England: London
+// Bangladesh: Dhaka

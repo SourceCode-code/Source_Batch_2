@@ -1,366 +1,128 @@
-//Object--> object in js is a variable container that is used to store values
-//          the value stored in object is in key and value pair 
-//          objects are non primitive datatypes 
+// Object: A container in JavaScript used to store values in key-value pairs.
+// Objects are non-primitive data types that allow us to group related data and functionality together.
 
+let tataCurv = {
+  modelName: "Adventure",
+  exShowroomPrice: 1600000,
+  color: "white",
+  bootSpace: 530,
+  makeYear: 2021,
+  details: function () {
+      return `${this.modelName} - the ex-showroom price is ${this.exShowroomPrice}`;
+  }
+  // Objects have a hidden property called "prototype" that allows inheritance in JavaScript.
+};
 
-// let tatacurv=["adventure","16,00,000","Whitecolor",530,2020]
-// length
-// string
+// Accessing Object Properties:
+// Properties are key-value pairs defined in an object, and methods are functions defined in an object.
 
-// how to define a objects ==
+// Retrieve values from an object using dot notation
+console.log(tataCurv.exShowroomPrice); // Output: 1600000
 
-let tatacurv = {
-    modelName: "adventure",
-    Ex_showroomPrice: 1600000,
-    Color: "white",
-    boot_space: 530,
-    makeYear: 2021,
-    details: function () {
-        return `${this.modelName} the exshowroom price is ${this.Ex_showroomPrice}`
-    }
-    // there is a hidden property in a object called as prototype 
-}
+// Retrieve values using bracket notation
+console.log(tataCurv["modelName"]); // Output: "Adventure"
 
-// property  is the key and value pair that we define in a object and 
-// method : the functions that we define in a object
+// Accessing a method within an object
+console.log(tataCurv.details()); // Output: "Adventure - the ex-showroom price is 1600000"
 
-//let tatacurv2 = { modelName: "adventure", Ex_showroomPrice: 1600000, Color: "white", boot_space: 530, makeYear: 2021 }//
+// Adding new properties to an object:
+tataCurv.engineWarranty = "1 year full replacement";
+console.log(tataCurv); // New property 'engineWarranty' added with value "1 year full replacement"
 
+// Adding properties using bracket notation
+tataCurv["batteryWarranty"] = "2 years";
+console.log(tataCurv); // Adds 'batteryWarranty' with value "2 years"
 
-// Math --> object 
-// string --> object 
-// array--> object 
+// Updating existing values:
+tataCurv.engineWarranty = "1 year full replacement and 1 year maintenance";
+console.log(tataCurv);
 
+// Updating using bracket notation
+tataCurv["batteryWarranty"] = "2 years replacement warranty";
+console.log(tataCurv);
 
+// Deleting properties:
+delete tataCurv.batteryWarranty;
+console.log(tataCurv); // 'batteryWarranty' removed
 
-// let tatacurv = {
-//     modelName: "adventure",
-//     Ex_showroomPrice: 1600000,
-//     Color: "white",
-//     boot_space: 530,
-//     makeYear: 2021,
-//     details:function(){
-//         return `${this.modelName} the exshowroom price is ${this.Ex_showroomPrice}`
-//     }
-//     // there is a hidden property in a object called as prototype 
-// }
+delete tataCurv['engineWarranty'];
+console.log(tataCurv); // 'engineWarranty' removed
 
-/**
- * when we have any non-primitive datatype we have 4 major operation to perform
-
-//1 retriving the value 
-//2 adding a new value 
-//3 upadting exsiting value 
-//4 delete the value 
- */
-
-// array.push("value")
-
-// 1 barcket notiation --> beacuse dot notions dosent work in loop 
-// 2 dot notations --> easy to understand 
-
-
-
-
-//1 retriving the  any value from an objects
-
-// by dot notations
-console.log(tatacurv.Ex_showroomPrice) // output value ->1600000
-
-//by bracket notations
-
-console.log(tatacurv["modelName"])// output value ->adventure
-
-
-
-// console.log(tatacurv.details())
-
-
-//2 adding a new value
-// by dot notations
-tatacurv.engine_Warrenty = "1 year full replacement" // output value ->1600000
-
-console.log(tatacurv)
-//by bracket notations
-
-// tatacurv["battery_warrenty":"2years"]
-tatacurv["battery_warrenty"] = "2years"
-
-console.log(tatacurv)
-
-
-//3 upadting exsiting value 
-
-// by dot notations
-tatacurv.engine_Warrenty = "1 year full replacement and 1 year maintaince" // output value ->1600000
-
-console.log(tatacurv)
-//by bracket notations
-
-// tatacurv["battery_warrenty":"2years"]
-tatacurv["battery_warrenty"] = " 2 years replacement warrenty"
-
-console.log(tatacurv)
-
-
-//4 delete the value 
-// by dot notations
-delete tatacurv.battery_warrenty
-
-console.log(tatacurv)
-
-//by bracket notations
-delete tatacurv['engine_Warrenty']
-
-console.log(tatacurv)
-
-
-
-// retive the skills cypress form the below object 
-
+// Object with an array property and retrieving specific elements from it
 let person = {
-    name: "siddhant",
-    age: 25,
-    skills: ["js", "cypress", "playwright", "PSM", "REACT/ANGULAR", "GIT_GITHUB", "AZURE", "AWS"]
-}
+  name: "Siddhant",
+  age: 25,
+  skills: ["JavaScript", "Cypress", "Playwright", "PSM", "React/Angular", "Git/GitHub", "Azure", "AWS"]
+};
 
+console.log(person.skills[1]); // Output: "Cypress"
 
-
-console.log(person.skills[1])
-
-console.log(person["skills"][1])
-
-//---------------------------------------------------------------------------------------------//
-
-
+// Example of another object with various properties
 let data = {
-    firstName: "Vihaan",
-    lastName: "Mehta",
-    age: 28,
-    experience: 6,
-    skills: ["TypeScript", "CI/CD"],
-    position: "Automation Tester"
+  firstName: "Vihaan",
+  lastName: "Mehta",
+  age: 28,
+  experience: 6,
+  skills: ["TypeScript", "CI/CD"],
+  position: "Automation Tester"
+};
+
+// Retrieving properties
+console.log(data.firstName); // Output: "Vihaan"
+console.log(data["lastName"]); // Output: "Mehta"
+
+// Adding new properties
+data.package = "12 LPA";
+console.log(data);
+
+// Adding using bracket notation
+data["inHandSalary"] = "10 LPA";
+console.log(data);
+
+// Deleting properties
+delete data["inHandSalary"];
+console.log(data);
+
+// Updating properties
+data.package = "15 LPA";
+console.log(data);
+
+data["package"] = "18 LPA";
+console.log(data);
+
+// Looping through an object's properties using for...in loop
+for (let key in data) {
+  console.log(`${key}: ${data[key]}`);
 }
 
-//retrive -->
-// dot notaion
+// Array of Objects example with a filter operation and sorting
 
-console.log(data.firstName) //Vihaan -->dot notation doesnt work in loop 
+const profiles = [
+  { firstName: "Vihaan", lastName: "Mehta", age: 28, experience: 6, skills: ["TypeScript", "CI/CD"], position: "Automation Tester" },
+  { firstName: "Rohan", lastName: "Joshi", age: 29, experience: 11, skills: ["TypeScript", "JavaScript", "Cypress", "Docker"], position: "Technical Lead" },
+  { firstName: "Vihaan", lastName: "Deshmukh", age: 32, experience: 1, skills: ["Python", "TypeScript"], position: "Software Engineer" },
+  { firstName: "Ishaan", lastName: "Pandey", age: 31, experience: 14, skills: ["Python", "Cypress"], position: "Systems Engineer" },
+  { firstName: "Ishaan", lastName: "Deshmukh", age: 25, experience: 1, skills: ["Java", "Playwright", "JavaScript", "SQL"], position: "Systems Engineer" },
+  { firstName: "Rohan", lastName: "Joshi", age: 33, experience: 3, skills: ["JavaScript", "Java", "Docker", "TypeScript"], position: "Full-Stack Developer" },
+  { firstName: "Pranav", lastName: "Joshi", age: 24, experience: 2, skills: ["JavaScript", "GitHub Actions", "Playwright", "TypeScript"], position: "Data Analyst" },
+  { firstName: "Rohan", lastName: "Nayak", age: 24, experience: 10, skills: ["JavaScript", "GitHub Actions", "Playwright"], position: "Backend Developer" },
+  { firstName: "Arjun", lastName: "Nayak", age: 36, experience: 4, skills: ["Java", "Playwright", "Docker"], position: "Systems Engineer" },
+  { firstName: "Vikram", lastName: "Joshi", age: 34, experience: 1, skills: ["Python", "GitHub Actions"], position: "Full-Stack Developer" }
+];
 
-// by bracket notataion
-console.log(data["lastName"]) //Mehta -->
+console.log(profiles);
 
+// Retrieve names of persons with "Cypress" as a skill
+profiles.forEach(profile => {
+  if (profile.skills.includes("Cypress")) {
+      console.log(`${profile.firstName} ${profile.lastName}`);
+  }
+});
 
+// Filter profiles for persons with more than 3 years of experience
+let experiencedProfiles = profiles.filter(profile => profile.experience > 3);
+console.log(experiencedProfiles);
 
-//add     -->
-
-data.pacakage="12 LPA"
-console.log(data)
-
-// barcket -->
-
-data["inHandsalary"]="10LPA"
-console.log(data)
-//delete  -->
- delete data["inHandsalary"]
-
- console.log(data)
-
-
-
-//update  -->
-
-data.pacakage="15LPA"
-console.log(data)
-
-data["pacakage"]="18 LPA"
-console.log(data)
-
-
-
-
-// //let data = {
-//     firstName: "Vihaan",
-//     lastName: "Mehta",
-//     age: 28,
-//     experience: 6,
-//     skills: ["TypeScript", "CI/CD"],
-//     position: "Automation Tester"
-// }
-
-
-for(let i=0;i<Array.length;i++){
-    //array syntax
-}
-
-
-// object loop sytanx 
-
-for(let key in data){
-   console.log(`${key}  :${data[key]}`)
-}
-
-
-// example  array=[ {hbd},{hsdbcd}]
-
-
-
-
- const profiles = [
-    {
-      firstName: "Vihaan",
-      lastName: "Mehta",
-      age: 28,
-      experience: 6,
-      skills: ["TypeScript", "CI/CD"],
-      position: "Automation Tester"
-    },
-    {
-      firstName: "Rohan",
-      lastName: "Joshi",
-      age: 29,
-      experience: 11,
-      skills: ["TypeScript", "JavaScript", "Cypress", "Docker"],
-      position: "Technical Lead"
-    },
-    {
-      firstName: "Vihaan",
-      lastName: "Deshmukh",
-      age: 32,
-      experience: 1,
-      skills: ["Python", "TypeScript"],
-      position: "Software Engineer"
-    },
-    {
-      firstName: "Ishaan",
-      lastName: "Pandey",
-      age: 31,
-      experience: 14,
-      skills: ["Python", "Cypress"],
-      position: "Systems Engineer"
-    },
-    {
-      firstName: "Ishaan",
-      lastName: "Deshmukh",
-      age: 25,
-      experience: 1,
-      skills: ["Java", "Playwright", "JavaScript", "SQL"],
-      position: "Systems Engineer"
-    },
-    {
-      firstName: "Rohan",
-      lastName: "Joshi",
-      age: 33,
-      experience: 3,
-      skills: ["JavaScript", "Java", "Docker", "TypeScript"],
-      position: "Full-Stack Developer"
-    },
-    {
-      firstName: "Pranav",
-      lastName: "Joshi",
-      age: 24,
-      experience: 2,
-      skills: ["JavaScript", "GitHub Actions", "Playwright", "TypeScript"],
-      position: "Data Analyst"
-    },
-    {
-      firstName: "Rohan",
-      lastName: "Nayak",
-      age: 24,
-      experience: 10,
-      skills: ["JavaScript", "GitHub Actions", "Playwright"],
-      position: "Backend Developer"
-    },
-    {
-      firstName: "Arjun",
-      lastName: "Nayak",
-      age: 36,
-      experience: 4,
-      skills: ["Java", "Playwright", "Docker"],
-      position: "Systems Engineer"
-    },
-    {
-      firstName: "Vikram",
-      lastName: "Joshi",
-      age: 34,
-      experience: 1,
-      skills: ["Python", "GitHub Actions"],
-      position: "Full-Stack Developer"
-    }
-  ];
-
-
-console.log(profiles)
-// sort this data 
-
-// get me the name of the persons who has cypress as skill
-
-profiles.forEach((el,index,arr)=>{
-if(el.skills.includes("Cypress")){
-    console.log(`${el.firstName} ${el.lastName}`)
-}
-})
-
-
-// Rohan Joshi
-// Ishaan Pandey
-
-
-// print me the name of persons above 3 years of exp 
-
-
-let above3=profiles.filter((el,index,arr)=>{
-    return el.experience > 3
-     
-})
-
-console.log(above3)
-
-
-// [
-//     {
-//       firstName: 'Vihaan',
-//       lastName: 'Mehta',
-//       age: 28,
-//       experience: 6,
-//       skills: [ 'TypeScript', 'CI/CD' ],
-//       position: 'Automation Tester'
-//     },
-//     {
-//       firstName: 'Rohan',
-//       lastName: 'Joshi',
-//       age: 29,
-//       experience: 11,
-//       skills: [ 'TypeScript', 'JavaScript', 'Cypress', 'Docker' ],
-//       position: 'Technical Lead'
-//     },
-//     {
-//       firstName: 'Ishaan',
-//       lastName: 'Pandey',
-//       age: 31,
-//       experience: 14,
-//       skills: [ 'Python', 'Cypress' ],
-//       position: 'Systems Engineer'
-//     },
-//     {
-//       firstName: 'Rohan',
-//       lastName: 'Nayak',
-//       age: 24,
-//       experience: 10,
-//       skills: [ 'JavaScript', 'GitHub Actions', 'Playwright' ],
-//       position: 'Backend Developer'
-//     },
-//     {
-//       firstName: 'Arjun',
-//       lastName: 'Nayak',
-//       age: 36,
-//       experience: 4,
-//       skills: [ 'Java', 'Playwright', 'Docker' ],
-//       position: 'Systems Engineer'
-//     }
-
-//   ]
-
-// object assignment 
-//  vihan metha has experince of 3 years  his current position is autoamtion testor ad his skills include   skills: [ 'TypeScript', 'CI/CD' ],
-
+// Explanation:
+// - The 'forEach' method iterates over each profile and checks if "Cypress" exists in 'skills' array.
+// - The 'filter' method creates a new array containing only profiles with experience greater than 3 years.
