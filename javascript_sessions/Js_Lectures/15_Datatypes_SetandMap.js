@@ -10,22 +10,22 @@
 //set = [1,2,4,5,6]
 
 // how to delcare a set 
-const set_one=new Set()
+const set_one = new Set()
 
 console.log(set_one)
 //Set(0) {}
 
 // 2 way -->
-const lang = ["English","Spanish","French","English","Spanish","german","French"]
+const lang = ["English", "Spanish", "French", "English", "Spanish", "german", "French"]
 
-let setOfLang= new Set(lang)
+let setOfLang = new Set(lang)
 
 console.log(setOfLang)
 //Set(4) { 'English', 'Spanish', 'French', 'german' }
 
 
 //how use  loops in set
-for(const lan of setOfLang){
+for (const lan of setOfLang) {
 
     console.log(lan)
 }
@@ -61,11 +61,11 @@ console.log(Companies)  //Set(2) { 'Google', 'Microsoft' }
 //--------------------------------------------------------------------------------
 
 
-let comp = ["google","amazon","microsoft","orcale"]
+let comp = ["google", "amazon", "microsoft", "orcale"]
 
-let com= new Set()
+let com = new Set()
 
-for( let i of comp){
+for (let i of comp) {
     com.add(i)
 }
 console.log(com) //Set(4) { 'google', 'amazon', 'microsoft', 'orcale' }
@@ -94,9 +94,9 @@ setOfLang.clear()
 console.log(setOfLang) //Set(0) {}
 
 
-let numarr=[1,1,2,2,4,4,5,5,6,6,67,7,7,8,8,5]
+let numarr = [1, 1, 2, 2, 4, 4, 5, 5, 6, 6, 67, 7, 7, 8, 8, 5]
 
-let setofnum=new Set(numarr)
+let setofnum = new Set(numarr)
 
 console.log(setofnum) //Set(8) { 1, 2, 4, 5, 6, 67, 7, 8 }
 
@@ -105,13 +105,13 @@ console.log(setofnum) //Set(8) { 1, 2, 4, 5, 6, 67, 7, 8 }
 // uuion of set  -- fnding common elements
 
 
-let a = [1,2,3]
-let b =[4,5,6,7,8]
+let a = [1, 2, 3]
+let b = [4, 5, 6, 7, 8]
 
 // (A U B)
 
 
-let c =[...a,...b]
+let c = [...a, ...b]
 console.log(c)
 
 // //[
@@ -119,9 +119,9 @@ console.log(c)
 //     2, 3, 4, 5
 //   ]
 
-let A=new Set(a)
+let A = new Set(a)
 
-let B =new Set(b)
+let B = new Set(b)
 
 let C = new Set(c)
 
@@ -133,14 +133,14 @@ console.log(C) //Set(8) { 1, 2, 3, 4, 5, 6, 7, 8 }
 // intersection -- >
 
 
-let x = [1,2,3,4,5]
-let y =[4,5,6,7,8]
+let x = [1, 2, 3, 4, 5]
+let y = [4, 5, 6, 7, 8]
 
 
-let X= new Set(x)
-let Y= new Set(y)
+let X = new Set(x)
+let Y = new Set(y)
 
-let z = x.filter((el)=>{Y.has(el)})
+let z = x.filter((el) => { Y.has(el) })
 
 console.log(z)// [4,5]
 let Z = new Set(z)
@@ -150,13 +150,95 @@ console.log(Z) //Set(2) { 4, 5 }
 
 // difference -- >
 
-let uncomon= x.filter((el)=>!Y.has(el)) // {1,2,3}
-let uncoom  = y.filter((el)=>!X.has(el)) //{6,7,8}
+let uncomon = x.filter((el) => !Y.has(el)) // {1,2,3}
+let uncoom = y.filter((el) => !X.has(el)) //{6,7,8}
 console.log(uncoom)
 
-let diff = [...uncomon,...uncoom]
+let diff = [...uncomon, ...uncoom]
 
 
 
 let Diff = new Set(diff)
 console.log(Diff) //Set(6) { 1, 2, 3, 6, 7, 8 }
+
+
+// set example on how to actually use set
+
+const Lang = ["English", "Spanish", "French", "English", "Spanish", "german", "French", "English"]
+
+// get the occurance of each langauge in the above array 
+
+// [{lang:"english",count:3},
+// {}, {}
+// ]
+
+const unilang = new Set(Lang)
+
+console.log(unilang) //Set(4) { 'English', 'Spanish', 'French', 'german' }
+console.log(unilang.size) // 4
+
+const counts = []
+const count = {}
+
+for (let lan in unilang) {
+
+    const filterlang = Lang.filter((el) => el === lan)
+    console.log(filterlang)
+    counts.push({ lang: lan, count: filterlang.length })
+
+}
+
+console.log(counts)
+
+
+
+
+
+//------------------------------------------------------------------------------------------//
+
+let arr1=[
+    ["india","delhi"],["usa","washington dc"],["england","london"]
+]
+//map --->  map is a collection of uniqye element , the element is stored in key value pair 
+
+let map = new Map()
+console.log(map)
+
+
+// 
+let newdata= new Map(arr1)
+console.log(newdata)
+
+console.log(newdata.size)
+
+
+//------------------------------------------------------------------------------------------------
+//adding value in map 
+// here set doent refer to a datatype set it refers to a method called as set in map
+newdata.set("bangladesh","dhaka")
+console.log(newdata)
+
+
+
+
+// --------------------------
+// geeting value form a map
+//get
+console.log(newdata.get("usa"))
+
+
+// verifying if key exsist in map
+
+console.log(newdata.has("england"))
+
+
+// using loop on map 
+
+for(const data of newdata){
+    console.log(data)
+}
+
+//
+for(const [data,value] of newdata){
+console.log(data,value)
+}
