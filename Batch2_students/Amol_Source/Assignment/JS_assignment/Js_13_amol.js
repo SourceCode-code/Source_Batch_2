@@ -560,18 +560,21 @@
 
 // 14 Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
 // function modifyArray(array){
-//     let k= array[4]="LEMON"
-//   console.log(array.push(k))
-    
+//     array.splice(4,1,"LEMON")
+//     return array
 // }
-// (modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
-// // let C = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
-// C[4]="LEMON"
-// console.log(C)
-///console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
+//  console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
+//console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']);
 // ['Avocado', 'Tomato', 'Potato','Mango', 'LEMON', 'Carrot']
+
+// function modifyArray1(array1){
+// array1[4]="MICROSOFT"
+// return array1
+// }
+// console.log(modifyArray1(['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']))
 // console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']);
 // ['Google', 'Facebook','Apple', 'Amazon','MICROSOFT',  'IBM']
+
 // console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon']);
 //   'Not Found'
 
@@ -587,45 +590,42 @@
 
 //     }
 // }
-// console.log(isPrime(13))
+//console.log(isPrime(8))
 
 // 16 Write a functions which checks if all items are unique in the array.
 // function UniqueArray(array){
-//     array.forEach((el,index,arr)=>{
-//         if (el==index){
-//         console.log (`flase`)
-//         }
-//     })
+//     array.forEach((acc,el,index,)=>{
+//      console.log(acc==el)
+//     }) 
 // }
-// UniqueArray([1,2,3,4,5,6,7,8,9])
+// (UniqueArray([1,2,2,3,3,6,7,8,9]),0)
+
 // 17 Write a function which checks if all the items of the array are the same data type.
+// function datatypes(array2){
+// array2.forEach((acc,el,index)=>{
+// if(typeof(acc)===typeof(el)){
+//     console.log("Yes Datatypes is Same")
+// }
+// else{
+//     console.log("data type is not same")
+// }
+
+// })
+
+// }datatypes(["amol",24,true,9767004310,null,undefined],0)
 
 // 18 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
-// array = ["amolJ#qwe34"]
-// array.forEach((el,index,arr)=>{
-//     console.log(el.split("").join().includes("@"||"#"||"%"||"^"||"&"||"*"))
-// })
-
-
-//let Var = ("@#%&")
-
-// function isValidVariable(variable){
-//     for(i=0;i<=Var.split("").length-1;i++){
-//         let CC = Var[i]
-//         console.log(CC)
-//     }
-// let KK= variable.map((el,index,arr)=>{
-//             let BB = el.split("").join(" ")
-//  if(BB.includes(Var[i])){
-// console.log(`${variable} is invalid`)
+// function isValidvariable(array){
+//     str1 = array.join(" ")
+//     if (str1.includes("$")||str1.includes("_"))
+//       {  console.log('Variable is valid')
 //     }
 //     else{
-//         console.log(`${variable} is valid`)
+//        console.log('Variable is invalid')
 //     }
-// })
 // }
-// isValidVariable(["amol@123"])
-///// not able to solve
+// isValidvariable(["Amol_1234"])
+
 
 // 19 Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 // function randomArray(array){
@@ -661,4 +661,3 @@
 //     'Japan',
 //     'Kenya',
 //   ])
-
