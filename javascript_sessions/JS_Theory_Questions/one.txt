@@ -1,1 +1,1 @@
-questions
+this is file used to add js theory questions
