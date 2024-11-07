@@ -18,7 +18,6 @@ let tatacurv = {
     details: function () {
         return `${this.modelName} the exshowroom price is ${this.Ex_showroomPrice}`
     }
-    // there is a hidden property in a object called as prototype 
 }
 
 // property  is the key and value pair that we define in a object and 
@@ -26,12 +25,9 @@ let tatacurv = {
 
 //let tatacurv2 = { modelName: "adventure", Ex_showroomPrice: 1600000, Color: "white", boot_space: 530, makeYear: 2021 }//
 
-
 // Math --> object 
 // string --> object 
 // array--> object 
-
-
 
 // let tatacurv = {
 //     modelName: "adventure",
@@ -116,20 +112,17 @@ console.log(tatacurv)
 
 // retive the skills cypress form the below object 
 
-let person = {
+let person = 
+{
     name: "siddhant",
     age: 25,
     skills: ["js", "cypress", "playwright", "PSM", "REACT/ANGULAR", "GIT_GITHUB", "AZURE", "AWS"]
 }
 
-
-
 console.log(person.skills[1])
 
 console.log(person["skills"][1])
-
 //---------------------------------------------------------------------------------------------//
-
 
 let data = {
     firstName: "Vihaan",
@@ -142,12 +135,10 @@ let data = {
 
 //retrive -->
 // dot notaion
-
 console.log(data.firstName) //Vihaan -->dot notation doesnt work in loop 
 
 // by bracket notataion
 console.log(data["lastName"]) //Mehta -->
-
 
 //add     -->
 
