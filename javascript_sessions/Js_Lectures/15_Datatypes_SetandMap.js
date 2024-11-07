@@ -121,3 +121,60 @@ for (const [country, capital] of countryCapitalMap) {
 // USA: Washington DC
 // England: London
 // Bangladesh: Dhaka
+
+
+
+
+// // Intersection of Sets
+// let x = [1, 2, 3, 4, 5];
+// let y = [4, 5, 6, 7, 8];
+// let setX = new Set(x);
+// let setY = new Set(y);
+// let intersection = x.filter((el) => setY.has(el));
+// console.log(new Set(intersection)); // Set { 4, 5 }
+
+// // Difference between Sets
+// let uniqueX = x.filter((el) => !setY.has(el)); // {1, 2, 3}
+// let uniqueY = y.filter((el) => !setX.has(el)); // {6, 7, 8}
+// let differenceSet = new Set([...uniqueX, ...uniqueY]);
+// console.log(differenceSet); // Set { 1, 2, 3, 6, 7, 8 }
+
+
+//set --> collection of  unique element 
+
+// union of set ---> 
+let aa=[1,2]
+let bb =[3,4]
+
+let AA = new Set(aa)
+let BB = new Set(bb)
+let CC = new Set([...aa,...bb])
+
+console.log(CC)
+//Set(4) { 1, 2, 3, 4 }
+
+
+
+// intersection
+
+let dd=[1,2,3,4,5]
+
+let ee=[5,6,7,8,9,10]
+
+let DD=new Set(dd)
+let EE = new Set(ee)
+
+//---------------intersection------------------
+let intersection1=dd.filter((el)=>EE.has(el))
+let newinterSet = new Set(intersection1)
+
+console.log(newinterSet) //Set(1) { 5 }
+
+
+//-------------------differnece-------------------------
+
+let diff1=dd.filter((el)=>!EE.has(el))
+let diff2 =ee.filter((el)=>!DD.has(el))
+
+let DIFF = new Set([...diff1 ,...diff2])
+console.log(DIFF) //Set(9) { 1, 2, 3, 4, 6, 7, 8, 9, 10 }
