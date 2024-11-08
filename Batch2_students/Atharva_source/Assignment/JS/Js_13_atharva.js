@@ -284,25 +284,82 @@ function sumOfEven(number){
 console.log(sumOfEven([1,2,3,4,5,6,7,8,9,10,11]));
 console.log("------ex-lev-2; Ans.12-----------")
 // 13 Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
-// function evensAndOdds(integer){
-//     let evenodd = 0;
-//     let count = 0;
-//     for(i=0;i<integer.length-1;i++){
-//         if()
-//     }
-// }
+function evensAndOdds(positiveinteger){
+    let even = 0;
+    let odd = 0;
+    for(i =0; i<=positiveinteger;i++){
+        if (i % 2 === 0){
+            even++;
+        }
+        else{
+            odd++;
+        }
+    }
+    return {
+        even, odd
+    } 
+}
+console.log(evensAndOdds(100));
+console.log("-----ex-lev-2; Ans.13--------");
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
 
 // 14 Write a function which takes any number of arguments and return the sum of the arguments
-
+function sumofArg(args){
+    let sum =0;
+    for(i=0;i<=args.length-1;i++){
+        sum += args[i];
+    }
+    return sum;
+}
+console.log(sumofArg([1,2,3]));
+console.log(sumofArg([1,2,3,4]));
+console.log("---ex-lev-2;Ans.14----------------")
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
 
 // 15 Writ a function which generates a randomUserIp.
+function randomuserIp(){
+    let a = Math.round(Math.random()*256);
+    let b = Math.round(Math.random()*256);
+    let c = Math.round(Math.random()*256);
+    let d = Math.round(Math.random()*256);
+    let e = Math.round(Math.random()*256);
+    console.log(`${a}.${b}.${c}.${d}.${e}`);
+}
+console.log("-----ex-lev-2; Ans.15-------")
+return  randomuserIp();
+
+
+//Method 2 :- 
+
+// function RandomUserIp(){
+//     let user = "";
+//     for(i=0;i<4;i++){
+//         let user1 = Math.round(Math.random()*256)
+//         user += user1
+//         if(i<4){
+//             user += "."
+//         }
+//     }
+//     return user;
+// }
+// console.log(RandomUserIp());
 
 // 16 Write a function which generates a randomMacAddress
+function RandomMacAddress(){
+    let randommac =''
+    for(let i=0;i<6;i++){
+        let random = Math.round(Math.random()*256).toString(16).padStart(2,'0')
+        randommac+=(random)
+        if(i<5){
+            randommac += ":"
+        }
+    }
+    return  randommac;
+}
+console.log(RandomMacAddress(1));
 
 // 17 Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 
@@ -374,11 +431,36 @@ console.log("------ex-lev-2; Ans.12-----------")
 //   'Not Found'
 
 // 15  Write a function called isPrime, which checks if a number is prime number.
+function isPrime(){
+    for (let num =2; num<=100;i++){
+        let isprime = true
+        for(let i =2; i<Math.sqrt(num);i++){
+            if(num % i === 0) {
+                isprime = false;
+                break;
+        }
+        if (isprime) {
+            console.log(num)
+        }
+    }
+    } 
+    console.log(isPrime(13));      
+}  
+
 
 // 16 Write a functions which checks if all items are unique in the array.
 
 // 17 Write a function which checks if all the items of the array are the same data type.
-
+function  checkDataType(){
+    let arr = [1,99,76,89];
+    let dataType = typeof arr[0];
+    for (let i = 0; i<arr.length; i++){
+        if (typeof arr[i] !== dataType) {
+            console.log('Not all items are the same data type');
+            return;
+    }
+}
+}
 // 18 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
 // 19 Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
