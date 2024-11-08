@@ -162,7 +162,7 @@ const users = {
   },
   Paul: {
     email: 'paul@paul.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node','powerBI'],
     age: 20,
     isLoggedIn: false,
     points: 40,
@@ -172,13 +172,19 @@ const users = {
 // Tasks:
 // 1. Find the person with the most skills.
 
-// mostskills =''//[]
+// mostskills1 = 0
+// mostsPerson = []
 // for (let key in users){
-//   if (users[key]['skills'].length > mostskills.length){
-//        mostskills = key//.push(key)
+//   if (users[key]['skills'].length > mostskills1){
+//        mostskills1 = users[key]['skills'].length
 //   }
 // }
-// console.log(mostskills)// out put => AlexAsab
+// for(let i in users){
+// if(users[i]['skills'].length>=mostskills1){
+//   mostsPerson.push(i)
+// }
+// }
+// console.log(mostsPerson)
 
 // 2. Count the number of users who are logged in.
 // count = 0
@@ -206,14 +212,16 @@ const users = {
 
 // 4. Identify the MERN stack developers in the users object.
 // Skills = ['MongoDB', 'Express', 'React', 'Node']
-// Skills1 = Skills.join(" ")
 // let name = []
 // for (let key in users){
-//   if (users[key]['skills'].includes(Skills1)){
-//     name.push(key)
+//   let user = (users[key]['skills'])
+//   let check = (user.join(' ').includes('MongoDB'|| 'Express'|| 'React'||'Node'))
+//   if(check==true){
+// name.push(key)
 //   }
 // }
-// console.log(name)// not getting ans
+// console.log(name)//[ 'Asab', 'Paul' ]
+
 
 // 5. Add your own details to the users object without modifying the original object.
 // users['amol'] = {
@@ -243,15 +251,18 @@ const users = {
 // - Population count
 // - Languages spoken
 
+// import { countries } from "./Js_15_amol";
+// console.log(countries)
+
 // Question 3: Creating a personAccount Object
 // Create an object literal named personAccount with the following properties and methods:
 
-let personAccount = {
-firstName:"Amol",
-lastName:" Jadhav",
-incomes: ["job",'business','trading'],
-expenses: [20,80,50]
-}
+// let personAccount = {
+// firstName:"Amol",
+// lastName:" Jadhav",
+// incomes: ["job",'business','trading'],
+// expenses: [20,80,50]
+// }
 
 // Properties:
 // - firstName
@@ -308,11 +319,11 @@ expenses: [20,80,50]
 
 
 // Example of using Set to count occurrences
-const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-const uniqueLanguages = new Set(langArray);
-const languageCounts = [];
-for (let lang of uniqueLanguages) {
-    const filteredLangs = langArray.filter((el) => el === lang);
-    languageCounts.push({ lang, count: filteredLangs.length });
-}
-console.log(languageCounts)
+// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+// const uniqueLanguages = new Set(langArray);
+// const languageCounts = [];
+// for (let lang of uniqueLanguages) {
+//     const filteredLangs = langArray.filter((el) => el === lang);
+//     languageCounts.push({ lang, count: filteredLangs.length });
+// }
+// console.log(languageCounts)

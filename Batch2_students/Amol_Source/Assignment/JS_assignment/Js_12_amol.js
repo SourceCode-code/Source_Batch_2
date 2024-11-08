@@ -94,7 +94,7 @@ const countries = [
 
 // Filter out companies which have more than one 'o' without using the filter method(
 
-// let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+ //let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 // let itCompanies1 = []
 
 // for(i=0;i<itCompanies.length;i++){
@@ -112,8 +112,8 @@ const countries = [
 //console.log(itCompanies.sort()) 
 
 // Reverse the array using reverse() method
-// let rev1 = itCompanies.reverse()
-// console.log(rev1)
+//  let rev1 = itCompanies.reverse()
+//  console.log(rev1)
 
 // Slice out the first 3 companies from the array
 // let first3 = itCompanies.slice(0,3)
@@ -152,8 +152,8 @@ const countries = [
 // let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 // console.log(text.split(" "))
 // console.log(text.split(" ").length)
-// console.log(words)
-// console.log(words.length)
+//console.log(words)
+//console.log(words.length)
 // ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
 // 13
 

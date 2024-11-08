@@ -108,7 +108,7 @@
 
 
 // data for question  
-const countries = [
+ const countries = [
     {
         name: 'Afghanistan',
         capital: 'Kabul',
@@ -2115,12 +2115,13 @@ const countries = [
     {
         name: 'Zimbabwe',
         capital: 'Harare',
-        languages: ['English', 'Shona', 'Northern Ndebele'],
+        languages: ['English', 'Shona', 'Northern Ndebele',],
         population: 14240168,
         flag: 'https://restcountries.eu/data/zwe.svg',
         currency: 'Botswana pula'
     }
 ]
+
 // const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
 // const uniqueLanguages = new Set(langArray);
 // const languageCounts = [];
@@ -2131,13 +2132,24 @@ const countries = [
 // console.log(languageCounts)
 
 //1 How many languages are there in the countries object file.
-kk=[]
-for (let i of countries){
- kk.push(...i.languages)  
-}
-console.log(new Set(kk).size)// output = 112
+// kk=[]
+// for (let i of countries){
+//  kk.push(...i.languages)  
+// }
+// console.log(new Set(kk).size)// output = 112
 
 // *** Use the countries data to find the 10 most spoken languages:
+// check = []
+// for (let i of countries){
+// check.push(...i.languages)
+// langset = (new Set (check))
+
+// for (let i of countries){
+//    allLang = i.languages
+
+//  console.log(allLang.filter(langset))
+// }
+// }
 
 // output be like this --->
 // Your output should look like this
@@ -2154,20 +2166,4 @@ console.log(new Set(kk).size)// output = 112
 //     { Chinese: 5 },
 //     { Swahili: 4 },
 //     { Serbian: 4 }
-// ]
-// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-// const uniqueLanguages = new Set(langArray);
-// const languageCounts = [];
-// for (let lang of uniqueLanguages) {
-//     const filteredLangs = langArray.filter((el) => el === lang);
-//     languageCounts.push({ lang, count: filteredLangs.length });
-// }
-// console.log(languageCounts)
-
-// // Your output should look like this
-// console.log(mostSpokenLanguages(countries, 3))
-// [
-//     { English: 91 },
-//     { French: 45 },
-//     { Arabic: 25 }
 // ]
