@@ -21,6 +21,7 @@ function FullName(FirstName, LastName){
 }
 console.log(FullName("Atharva","Pandit"));
 console.log("----ex-level-1;Ans.2-----------")
+
 // 3 Declare a function addNumbers and it takes two two parameters and it returns sum.
 function addNumbers(num1, num2){
     let sumofnumbers = num1 + num2;
@@ -247,11 +248,11 @@ function addItem(item){
 console.log(addItem(['iqoo 9pro','motog']));
 console.log("---ex-lev-2;Ans.8---------")
 // 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-function reoveItem(Item){
+function removeItem(Item){
     Item.pop();
     return Item
 }
-console.log(reoveItem(['car','mobile','asset']));
+console.log(removeItem(['car','mobile','asset']));
 console.log("----ex---lev-2; Ans.9-----------")
 // 10 Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
 function sumOfNumbers(number){
