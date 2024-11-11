@@ -1,130 +1,114 @@
-// destructing and spread
+// ------------------------ Destructuring and Spread in JavaScript ------------------------
 
-// what is structure
+// 1. What is Destructuring?
+// Destructuring is a way to unpack arrays and objects and assign them to distinct variables.
 
-// let arr = [1,2,3,4]
+// 2. Destructuring an Array
+// Example 1: Without Destructuring
+let arr = [1, 2, 3, 4];
+let num1 = arr[0];
+let num2 = arr[1];
+let num3 = arr[2];
+let num4 = arr[3];
+console.log(num1, num2, num3, num4);
 
+// Example 2: With Destructuring
+let [number1, number2, number3, number4] = arr;
+console.log(number1, number2, number3, number4); // Output: 1 2 3 4
 
+// Example 3: Destructuring with String Array
+let names = ["Siddhant", "Amol", "Atharva", "Adesh"];
+let [person1, person2, person3, person4] = names;
+console.log(person1, person2, person3, person4); // Output: Siddhant Amol Atharva Adesh
 
-// let num1=arr[0]
-// let num2=arr[1]
-// let num3=arr[2]
-// let num4=arr[3]
+// Example 4: Nested Arrays
+let fullStack = [
+    ["HTML", "CSS", "JS", "React", "Angular"],   // Frontend stack
+    ["Node", "Express", "MongoDB", "SQL"]         // Backend stack
+];
+let [frontend, backend] = fullStack;
+console.log(frontend);  // Output: [ 'HTML', 'CSS', 'JS', 'React', 'Angular' ]
+console.log(backend);   // Output: [ 'Node', 'Express', 'MongoDB', 'SQL' ]
 
-// console.log(num1,num2,num3,num4)
+// Destructuring specific values from nested arrays
+let [[front1, front2, front3, front4], [back1, back2, back3, back4]] = fullStack;
+console.log(front1, front2, front3, front4, back1, back2, back3, back4);  // Output: HTML CSS JS React Node Express MongoDB SQL
 
-//destructuring --> destrucuting is a way to unpack arrays and objects  and assiginning them a distinct varaible 
+// 3. Skipping Elements during Destructuring
+let numbers = [1, 2, 3, 4];
+let [Num1, , , Num4] = numbers;
+console.log(Num1, Num4); // Output: 1 4
 
-// how to destructure and array 
+// 4. Default Values in Destructuring
+// If a value is undefined in the array, you can assign it a default value during destructuring
+let values = [undefined, "Siddhant", "Amol"];
+let [Name1 = "Adesh", Name2, Name3] = values;
+console.log(Name1, Name2, Name3); // Output: Adesh Siddhant Amol
 
-let arr = [1, 2, 3, 4]
+// 5. Using the Spread Operator with Destructuring
+// Example where we only want the first two elements and store the rest in another array
+let moreNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let [a, b, ...remainingNumbers] = moreNumbers;
+console.log(a, b);        // Output: 1 2
+console.log(remainingNumbers); // Output: [3, 4, 5, 6, 7, 8, 9, 10]
 
-
-let [num1, num2, num3, num4] = arr
-
-// num1 , num2, num3,num4 = 1,2,3,4
-console.log(num1, num2, num3, num4)
-
-// example 2
-
-let arr1 = ["siddhant", "amol", "athrava", "adesh"]
-
-let [person1, person2, person3, person4] = arr1
-console.log(person1, person2, person3, person4)
-
-
-let fullstack = [
-    ["HTML", "CSS", "JS", "REACT", "ANGULAR"],
-    ["NODE", "EXPRESS", "MOGODB", "SQL"]
-]
-
-
-//frontend=["HTML", "CSS", "JS", "REACT", "ANGULAR"]
-//backend =  ["NODE", "EXPRESS", "MOGODB", "SQL"]
-
-let [frontEnd, backend] = fullstack
-
-console.log(frontEnd)
-console.log(backend)
-//[ 'HTML', 'CSS', 'JS', 'REACT', 'ANGULAR' ]
-//[ 'NODE', 'EXPRESS', 'MOGODB', 'SQL' ]
-
-// let [value1,value2,value3,value4]=frontEnd
-
-let [[value1, value2, value3, value4], [value5, vlaue6, value7, value8]] = fullstack
-
-console.log(value1, value2, value3, value4, value5, vlaue6, value7, value8)  //HTML CSS JS REACT NODE EXPRESS MOGODB SQL
-
-
-// now if we want to skip any value
-
-
-
-// let arr = [1, 2, 3, 4]
-
-let [Num1, , , Num4] = arr
-
-console.log(Num1, Num4)
-
-// if any value in array is undefined and we have define it while destructing 
-
-let names = [undefined, "siddhant", "amol"]
-
-let [Name1 = "adesh", Name2, Name3] = names
-console.log(Name1, Name2, Name3)
-
-
-// now a example where we only have to destrurctre first 2 value and then get the array same
-
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-let [a, b, ...z] = numbers
-console.log(z, a, b)
-
-// loop for destructing 
+// 6. Loop with Destructuring
 let countryCapitalArray = [
     ["India", "Delhi"],
     ["USA", "Washington DC"],
     ["England", "London"]
 ];
-
 for (let [country, capital] of countryCapitalArray) {
-    console.log(country, capital)
+    console.log(`${country}: ${capital}`);
+}
+// Output:
+// India: Delhi
+// USA: Washington DC
+// England: London
+
+// ------------------------ Destructuring Objects ------------------------
+
+let obj = {
+    firstName: "Vihaan",
+    lastName: "Mehta",
+    age: 28,
+    experience: 6,
+    skills: ["TypeScript", "CI/CD"],
+    position: "Automation Tester"
+};
+
+// Destructuring object properties into variables
+let { firstName, lastName, age, experience, skills, position } = obj;
+console.log(firstName, lastName, age, experience, skills, position);
+
+// Renaming Variables during Destructuring
+let { firstName: fn, lastName: ln, age: ag, experience: ex, skills: sk, position: pos } = obj;
+console.log(fn, ln, ag, ex, sk, pos);
+
+// Destructuring specific items from an array inside an object
+let [skill1, skill2] = sk;
+console.log(skill1, skill2); // Output: TypeScript CI/CD
+
+// ------------------------ Notations in Objects ------------------------
+
+// When to use Dot Notation and Bracket Notation
+// - Dot Notation: Use when accessing object properties directly by their name. It is clear and easy to read.
+console.log(obj.firstName);  // Output: Vihaan
+
+// - Bracket Notation: Use when accessing properties dynamically or when the property name includes special characters.
+// Example: Accessing properties with a variable
+let property = "lastName";
+console.log(obj[property]);  // Output: Mehta
+
+// ------------------------ Looping with 'in' and 'of' ------------------------
+
+// 'for...in' is used to iterate over the keys of an object.
+for (let key in obj) {
+    console.log(`${key}: ${obj[key]}`);
 }
 
-/**'
- * India Delhi
-USA Washington DC
-England London 
-*/
-
-
-
-//---------------------------------------------------------------------------------------------------------------
-
-//destructing of object
-
-
-let obj={ firstName: "Vihaan", lastName: "Mehta", age: 28, experience: 6, skills: ["TypeScript", "CI/CD"], position: "Automation Tester" }
-
-let {firstName,lastName,age,experience,skills,position}=obj
-// fn,ln,ag,ex,po
-console.log(firstName,lastName,age,experience,skills,position)
-// renaming of values while destructing
-
-let {firstName:fn,lastName:ln,age:ag,experience:ex,skills:sk,position:p}=obj
-
-console.log(fn,ln,sk,ag,ex,p)
-
-let [sk1,sk2]=sk
-console.log(sk1,sk2)
-
-//object --> dot,bracket--> loop--> bracket 
-// dot --> other than loop 
-
-
-// loop made in  -->  
-
-
-
-
+// 'for...of' is used to iterate over the values in an array.
+let numbersArray = [10, 20, 30];
+for (let value of numbersArray) {
+    console.log(value);
+}
