@@ -117,7 +117,7 @@
 // Question 1: Skills and Points Analysis
 // Given the following users object:
 
-const users = {  
+const users = {
   Alex: {
     email: 'alex@alex.com',
     skills: ['HTML', 'CSS', 'JavaScript'],
@@ -162,7 +162,7 @@ const users = {
   },
   Paul: {
     email: 'paul@paul.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node','powerBI'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'Node', 'powerBI'],
     age: 20,
     isLoggedIn: false,
     points: 40,
@@ -190,7 +190,7 @@ const users = {
 // count = 0
 // for (let key in users){
 //   trueValue =''
- 
+
 //   if( users[key]['isLoggedIn']==true){
 //     count ++,
 //     trueValue+=(key)
@@ -214,14 +214,16 @@ const users = {
 // Skills = ['MongoDB', 'Express', 'React', 'Node']
 // let name = []
 // for (let key in users){
-//   let user = (users[key]['skills'])
-//   let check = (user.join(' ').includes('MongoDB'|| 'Express'|| 'React'||'Node'))
+
+//   let check = (users[key]['skills'].includes('MongoDB'&&'Express'&&'React'&&'Node'))
+//   // console.log(check)
 //   if(check==true){
 // name.push(key)
 //   }
 // }
-// console.log(name)//[ 'Asab', 'Paul' ]
 
+
+//  console.log(name)//[ 'Asab', 'Paul' ]
 
 // 5. Add your own details to the users object without modifying the original object.
 // users['amol'] = {
@@ -233,10 +235,12 @@ const users = {
 // }
 // console.log(users)
 
-// 6. Retrieve all keys (properties) in the users object.
+// // 6. Retrieve all keys (properties) in the users object.
 // for(let key in users){
 //   console.log(key)
 // }
+
+
 
 // 7. Retrieve all values in the users object.
 // for(let key in users){
@@ -250,7 +254,17 @@ const users = {
 // - Capital city
 // - Population count
 // - Languages spoken
-
+// const countries = require('./Js_15_amol')
+// console.log(countries.length)
+// for(let key of countries){
+//  let A  = [
+//   (`Country name : ${key['name']}`),
+// (`Capital city : ${key['capital']}`),
+// (`Population count : ${key['population']}`),
+// (`Languages spoken : ${key['languages']}`)
+//  ]
+// console.log(A)
+// }
 // import { countries } from "./Js_15_amol";
 // console.log(countries)
 
@@ -258,11 +272,19 @@ const users = {
 // Create an object literal named personAccount with the following properties and methods:
 
 // let personAccount = {
-// firstName:"Amol",
-// lastName:" Jadhav",
-// incomes: ["job",'business','trading'],
-// expenses: [20,80,50]
+//   firstName: "Amol",
+//   lastName: " Jadhav",
+//   incomes: [
+//     { description: "job", amount: 55000 },
+//     { description: "business", amount: 100000 }
+//   ],
+//   expenses: [
+//     {description :"Rent",amount :12000},
+//      {description : "travel",amount: 3000},
+//       {description : "food",amount: 7000 }
+//   ]
 // }
+
 
 // Properties:
 // - firstName
@@ -272,7 +294,24 @@ const users = {
 
 // Methods:
 // - totalIncome(): Calculate and return the total income.
+// function totalIncome(){
+//   sumofIncome = 0
+// let y =personAccount.incomes
+// for (let i in y){
+//   sumofIncome=sumofIncome+(y[i].amount)
+// }
+// }totalIncome()
+// console.log(sumofIncome)
+
 // - totalExpense(): Calculate and return the total expenses.
+// function totalExpense(){
+//   sumofexpence = 0
+//   let k = personAccount.expenses
+//   for(let i in k){
+//     sumofexpence= sumofexpence+(k[i].amount)
+//   }
+// console.log(sumofexpence)
+// }totalExpense()
 
 // - accountInfo(): Display account details.
 //console.log(personAccount)
@@ -293,7 +332,7 @@ const users = {
 // Question 4: Users and Products Analysis
 // Consider the following arrays:
 
-// const users = [
+// const users1 = [
 //   { _id: 'ab12ex', username: 'Alex', email: 'alex@alex.com', password: '123123', createdAt: '08/01/2020 9:00 AM', isLoggedIn: false },
 //   { _id: 'fg12cy', username: 'Asab', email: 'asab@asab.com', password: '123456', createdAt: '08/01/2020 9:30 AM', isLoggedIn: true },
 //   { _id: 'zwf8md', username: 'Brook', email: 'brook@brook.com', password: '123111', createdAt: '08/01/2020 9:45 AM', isLoggedIn: true },
@@ -301,29 +340,96 @@ const users = {
 //   { _id: 'ghderc', username: 'Thomas', email: 'thomas@thomas.com', password: '123333', createdAt: '08/01/2020 10:00 AM', isLoggedIn: false }
 // ];
 
+
+// Tasks:
+// 1. Sign Up Function: Create a function signUp which allows a user to add themselves to the users array. If the user already exists, display a message saying they already have an account.
+// function signUp(mail){
+// for (let key in users1){
+//   if(users1[key]['email']===mail){
+//   return true
+// }
+// return false}
+// }
+// let check = signUp('amolj6896@gmail')
+// if (check){
+//   console.log("user already exits")
+// }
+// else{
+//   console.log("user not exits")
+// }
+
+// 2. Sign In Function: Create a function signIn to allow a user to log into the application.
+// let approveID = []
+// function signIn(password1) {
+//   for (let key in users1) {
+//     let M = (users1[key].password)
+//     if (M == password1) {
+//       //console.log(`${users1[key].email} password Math user can log into Application`)
+//       approveID.push(users1[key].email)
+//       return true
+//     }
+//   }
+//   return false
+// }
+// let check1 = signIn(123333)
+// if(check1){
+//   console.log(`${approveID} password Math user can log into Application`)
+// }
+// else{
+//   console.log("passward not Match")
+// }
 // const products = [
 //   { _id: 'eedfcf', name: 'mobile phone', description: 'Huawei Honor', price: 200, ratings: [ { userId: 'fg12cy', rate: 5 }, { userId: 'zwf8md', rate: 4.5 } ], likes: [] },
 //   { _id: 'aegfal', name: 'Laptop', description: 'MacPro: System Darwin', price: 2500, ratings: [], likes: ['fg12cy'] },
 //   { _id: 'hedfcg', name: 'TV', description: 'Smart TV:Procaster', price: 400, ratings: [{ userId: 'fg12cy', rate: 5 }], likes: ['fg12cy'] }
 // ];
 
-// Tasks:
-// 1. Sign Up Function: Create a function signUp which allows a user to add themselves to the users array. If the user already exists, display a message saying they already have an account.
-// 2. Sign In Function: Create a function signIn to allow a user to log into the application.
 // 3. Product Rating:
 //    a. Create a function rateProduct to rate a product.
+// function rateProduct(product_id){
+//   for (let key in products){
+//     let m = (products[key]._id)
+//     if(m==product_id){
+//       let s= (products[key].ratings)
+//       for(let k in s){
+//         console.log(s[k].userId,":",s[k].rate)
+//       }
+//     }
+//   }
+// }rateProduct('hedfcg')// i dont think so that is right way
+
 //    b. Create a function averageRating to calculate the average rating of a product.
+// function rateProduct(product_id){
+//     for (let key in products){
+//       let m = (products[key]._id)
+//       if(m==product_id){
+//         let s= (products[key].ratings)
+//         AvgRate = 0
+//         count = 0
+//       for(let A in s){
+//         AvgRate= AvgRate+s[A].rate
+//         if(s[A].rate=Number){
+//           count++
+//         }
+//       }
+//       console.log(`Avg rating for perticular user : ${AvgRate/count}`)
+//       }
+//     }
+//   }
+//   rateProduct('hedfcg')
+
 // 4. Product Likes:
 //    Create a function likeProduct to like a product if it’s not already liked, or to remove the like if it was already liked.
-
-
-
-// Example of using Set to count occurrences
-// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-// const uniqueLanguages = new Set(langArray);
-// const languageCounts = [];
-// for (let lang of uniqueLanguages) {
-//     const filteredLangs = langArray.filter((el) => el === lang);
-//     languageCounts.push({ lang, count: filteredLangs.length });
+// function likeProduct(productlike){
+// for(let key in productlike){
+//   let checklike = (productlike[key].likes)
+// if(checklike.length>0){
+//   console.log((productlike[key].likes))
 // }
-// console.log(languageCounts)
+// else {
+//   console.log("likes have no value")
+// }
+// }
+// }
+// (likeProduct(products))// this programe is for check all object at single time i also make it for a single id
+

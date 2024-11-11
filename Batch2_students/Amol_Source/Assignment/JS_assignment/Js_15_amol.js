@@ -2121,22 +2121,25 @@
         currency: 'Botswana pula'
     }
 ]
+module.exports = countries;
+
+
 
 // const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-// const uniqueLanguages = new Set(langArray);
-// const languageCounts = [];
-// for (let lang of uniqueLanguages) {
-//     const filteredLangs = langArray.filter((el) => el === lang);
-//     languageCounts.push({ lang, count: filteredLangs.length });
-// }
-// console.log(languageCounts)
+const uniqueLanguages = new Set(langArray);
+const languageCounts = [];
+for (let lang of uniqueLanguages) {
+    const filteredLangs = langArray.filter((el) => el === lang);
+    languageCounts.push({ lang, count: filteredLangs.length });
+}
+console.log(languageCounts)
 
 //1 How many languages are there in the countries object file.
 // kk=[]
 // for (let i of countries){
 //  kk.push(...i.languages)  
 // }
-// console.log(new Set(kk).size)// output = 112
+//console.log(new Set(kk))//.size)// output = 112
 
 // *** Use the countries data to find the 10 most spoken languages:
 // check = []
