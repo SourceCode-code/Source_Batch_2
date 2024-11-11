@@ -4,13 +4,13 @@
 // 1. Destructure and assign the elements of `constants` array to the following variables:
 //    ```javascript
 //    const constants = [2.72, 3.14, 9.81, 37, 100];
-//    const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants;
+//
 //    ```
 
 // 2. Destructure and assign the elements of `countries` array to the following variables:
 //    ```javascript
 //    const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
-//    const [fin, est, sw, den, nor] = countries;
+// 
 //    ```
 
 // 3. Destructure the `rectangle` object by its properties or keys:
@@ -21,7 +21,7 @@
 //      area: 200,
 //      perimeter: 60
 //    };
-//    const { width, height, area, perimeter } = rectangle;
+//  
 //    ```
 
 // Exercises: Level 2
@@ -37,13 +37,8 @@
 //      { name: 'Martha', scores: 80, skills: ['HTM', 'CSS', 'JS'], age: 18 },
 //      { name: 'Thomas', scores: 90, skills: ['HTM', 'CSS', 'JS'], age: 20 }
 //    ];
-//    users.forEach(({ name, scores, skills, age }) => {
-//      console.log(name, scores, skills, age);
-//    });
+//   
 //    ```
 
 // 2. Find the persons who have less than two skills:
-//    ```javascript
-//    const usersWithLessThanTwoSkills = users.filter(({ skills }) => skills.length < 2);
-//    console.log(usersWithLessThanTwoSkills);
-//    ```
+
