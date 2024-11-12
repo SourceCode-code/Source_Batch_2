@@ -7,16 +7,20 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 //1 create an empty set
 let newSet = new Set()
 console.log(newSet)
+console.log("-------ex.lev-1-ans.1---------")
+
 //2 Create a set containing 0 to 10 using loop
 let Arr = [1,2,3,4,5,6,7,8,9,10]
 let NewSet = new Set(Arr)
 for (let i  = 0; i < 11; i++) {
     console.log(i)
 }
-
+console.log("-------ex.lev-1-ans.2---------")
 //3 Remove an element from a set
 NewSet.delete(2)
 console.log(NewSet)
+console.log("-------ex.lev-1-ans.3---------")
+
 //4 Clear a set
 NewSet.clear()
 //5 Create a set of 5 string elements from array
@@ -26,6 +30,7 @@ for (let i of Str){
     Str1.add(i)
 }
 console.log(Str1)
+console.log("-------ex.lev-1-ans.4---------")
 
 //6 Create a map of countries and number of characters of a country
 let Countries = [["Bahamas","Nassau"],
@@ -40,8 +45,7 @@ let Countries = [["Bahamas","Nassau"],
 let Countries1 = new Map(Countries)
 console.log(Countries1)
 console.log(Countries1.size)
-
-
+console.log("-------ex.lev-1-ans.5---------")
 
 
 
@@ -51,17 +55,20 @@ console.log(Countries1.size)
 //1 Find a union b
 let c = [...a,...b]
 console.log(new Set (c))
+console.log("-------ex.lev-2-ans.1---------")
 
 //2 Find a intersection b
 setA = new Set(a);
 setB = new Set(b);
 Intersection = a.filter((el =>setB.has(el)))
 console.log(new Set (Intersection))
+console.log("-------ex.lev-2-ans.2--------")
 
 //3 Find a with b
 intersection1 = a.filter((el)=>!setB.has(el))
 intersection2 = b.filter((el)=>!setA.has(el))
 console.log(new Set ([...intersection1,...intersection2]))
+console.log("-------ex.lev-2-ans.3---------")
 
 // Exercises:Level 3
 

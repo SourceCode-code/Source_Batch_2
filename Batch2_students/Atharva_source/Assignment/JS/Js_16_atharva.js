@@ -14,7 +14,7 @@ console.log("----------ans.1------------------")
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
 const [fin, est, sw, den, nor] = countries;
 console.log(fin, est, sw, den, nor);
-console.log("--------------ans.2---------------")
+console.log("----------ans.2------------------")
 
 
 // 3. Destructure the `rectangle` object by its properties or keys:
@@ -28,7 +28,7 @@ const rectangle = {
 };
 const { width: wi, height: he, area: ar, perimeter: pe } = rectangle;
 console.log(wi, he, ar, pi)
-console.log("-----------------ans.3---------------")
+console.log("----------ans.3------------------")
 
 
 // Exercises: Level 2
@@ -53,7 +53,7 @@ const users = [
 for (let key in users) {
     console.log(users[key].name, users[key].scores, users[key].skills, users[key].age)
 }
-console.log("----------------Ans.4--------------------")
+console.log("----------ans.4------------------")
 //    ```
 
 // 2. Find the persons who have less than two skills:
@@ -70,4 +70,4 @@ for  (let key in users) {
     }
 }
 console.log(usersWithLessThanTwoSkills)
-console.log("--------------------ans.5-----------")
+console.log("----------ans.5------------------")

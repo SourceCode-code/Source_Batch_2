@@ -63,8 +63,6 @@ let Mperson = [];
 for (let key in users) {
     if (users[key]['skills'].length >= mostskills) {
         mostskills = users[key]['skills'].length;
-        //    mostSkillsUser = key
-        //    Mperson.push(mostSkillsUser)
     }
 }
 for (let key in users) {
@@ -103,11 +101,11 @@ console.log("------------1.3---------")
 //MERN stack \\
 let MernStack = []
 for (let key in users) {
-    if (users[key]['skills'].includes('MongoDB','Express','React','Node'))
+    if (users[key]['skills'].includes('MongoDB', 'Express', 'React', 'Node'))
         MernStack.push(key)
 }
 console.log(MernStack);
-console.log("-----------------------------1.4------------------------")
+console.log("------------1.4---------")
 // 5. Add your own details to the users object without modifying the original object.
 users['atharva'] = {
     email: 'atharvapandit84@gmail.com',
@@ -117,17 +115,17 @@ users['atharva'] = {
     points: 40,
 }
 console.log(users);
-console.log("----------------1.5-----------------------------")
+console.log("------------1.5---------")
 // 6. Retrieve all keys (properties) in the users object.
 for (let key in users) {
     console.log(users[key])
 }
-console.log("----------------------------1.6-------------------")
+console.log("------------1.6---------")
 // 7. Retrieve all values in the users object.
 for (let key in users) {
     console.log(users[key])
 }
-console.log("--------------------------1.7---------------------")
+console.log("------------1.7---------")
 // Question 2: Working with a Countries Object
 // Using a countries object, write a program that prints:
 // - Country name
@@ -142,7 +140,7 @@ let Countries = {
     LanguagesSpoken: 'Hindi, English, Telugu, Tamil, Kannada, Malayalam',
 }
 console.log(Countries)
-console.log("---------------------------2.1---------------------------")
+console.log("------------2.1---------")
 
 // Question 3: Creating a personAccount Object
 // Create an object literal named personAccount with the following properties and methods:
@@ -177,7 +175,7 @@ function totalIncome() {
     console.log(sum);
 }
 totalIncome()
-console.log("------------3.1--------------")
+console.log("------------3.1---------")
 
 // - totalExpense(): Calculate and return the total expenses.
 function TotalExpenses() {
@@ -202,7 +200,7 @@ console.log("------------3.2--------------")
 
 //display account details\\
 console.log(personAccount)
-console.log("---------------------------3.3---------------------------")
+console.log("------------3.3---------")
 
 //addIncome \\
 personAccount.incomes = [
@@ -217,7 +215,7 @@ personAccount.expenses = [
     { description: "waterBill", amount: 750 }
 ]
 console.log(personAccount);
-console.log("-----------------------3.4, 3.5---------------------")
+console.log("------------3.4 and 3.5---------")
 
 //Account Balance \\
 
@@ -256,7 +254,7 @@ if (signUp1) {
 else {
     console.log("Create a New user ")
 }
-console.log("-----------------------4.1-------------------")
+console.log("------------4.1---------")
 // 2. Sign In Function: Create a function signIn to allow a user to log into the application.
 function signIn(password1) {
     let approveId = [];
