@@ -28,15 +28,42 @@ for (let i of Str){
 console.log(Str1)
 
 //6 Create a map of countries and number of characters of a country
+let Countries = [["Bahamas","Nassau"],
+["Bahrain","Manama"],
+["Bangladesh","Dhaka"],
+["Barbados","Bridgetown"],
+["Belarus","Minsk"],
+["Belgium","Brussels"],
+["Belize","Belmopan"],
+["Bulgaria","Sofia"]
+]
+let Countries1 = new Map(Countries)
+console.log(Countries1)
+console.log(Countries1.size)
+
+
+
+
+
 
 // Exercises:Level 2
 
 //1 Find a union b
+let c = [...a,...b]
+console.log(new Set (c))
+
 //2 Find a intersection b
+setA = new Set(a);
+setB = new Set(b);
+Intersection = a.filter((el =>setB.has(el)))
+console.log(new Set (Intersection))
+
 //3 Find a with b
+intersection1 = a.filter((el)=>!setB.has(el))
+intersection2 = b.filter((el)=>!setA.has(el))
+console.log(new Set ([...intersection1,...intersection2]))
 
 // Exercises:Level 3
-
 
 //1 How many languages are there in the countries object file.
 
@@ -44,7 +71,8 @@ console.log(Str1)
 
 // output be like this --->
 // Your output should look like this
-console.log(mostSpokenLanguages(countries, 10))
+//console.log(mostSpokenLanguages(countries, 10))
+
 [
     { English: 91 },
     { French: 45 },
@@ -2084,3 +2112,13 @@ const countries = [
         currency: 'Botswana pula'
     }
 ]
+
+
+//1 How many languages are there in the countries object file.
+jk=[]
+for (let i of countries){
+ jk.push(...i.languages)  
+}
+console.log(new Set(jk).size)
+console.log("-----i.1------")// output = 112
+// *** Use the countries data to find the 10 most spoken languages:
