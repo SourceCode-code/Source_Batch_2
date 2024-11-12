@@ -93,6 +93,18 @@ for (let i = 1; i <= 10; i++) {
 }
 // Output: 1 4 9 16 25 36 49 64 81 100
 
+// ------------------------ Looping with 'in' and 'of' ------------------------
+
+// 'for...in' is used to iterate over the keys of an object.
+for (let key in obj) {
+    console.log(`${key}: ${obj[key]}`);
+}
+
+// 'for...of' is used to iterate over the values in an array.
+let numbersArray = [10, 20, 30];
+for (let value of numbersArray) {
+    console.log(value);
+}
 
 
 //----------------------------------------more examples for logic buliding ---------
