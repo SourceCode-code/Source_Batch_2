@@ -2125,14 +2125,14 @@ module.exports = countries;
 
 
 
-// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-const uniqueLanguages = new Set(langArray);
-const languageCounts = [];
-for (let lang of uniqueLanguages) {
-    const filteredLangs = langArray.filter((el) => el === lang);
-    languageCounts.push({ lang, count: filteredLangs.length });
-}
-console.log(languageCounts)
+// // const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+// const uniqueLanguages = new Set(langArray);
+// const languageCounts = [];
+// for (let lang of uniqueLanguages) {
+//     const filteredLangs = langArray.filter((el) => el === lang);
+//     languageCounts.push({ lang, count: filteredLangs.length });
+// }
+// console.log(languageCounts)
 
 //1 How many languages are there in the countries object file.
 // kk=[]
