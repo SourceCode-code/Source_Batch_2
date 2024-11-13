@@ -1,126 +1,50 @@
+// without distrucring
+ let arr=[1,2,3,4,5,6,7,8,9,,10];
+let num1=arr[0];
+let num2=arr[1];
+let num3=arr[2];
+let num4=arr[3];
+let  num5=arr[4];
+let  num6=arr[5];
+let  num7=arr[6];
+let  num8=arr[7];
+let  num9=arr[8];
+let  num10=arr[9];
+let  num11=arr[10];
+console.log(num1,num2,num3,num4,num5,num6,num7,num8,num9,num10);
+//distrucring 
+let [number1,number2,number3,number4,number5]=arr
+console.log(number1,number2,number3,number4,number5);
+//distrucring with string array
+let names=["adesh","mayur","nagnath","gauri"]
+let[a1,a2,a3,a4]=names;
+console.log(a1,a2,a3,a4);
 
-//number
-let age =50
-let age2=40
-console.log("my age is", typeof age);
-console.log("my age is",typeof age2);
+//nested array
+let subjest=[
+           ["english","spanish","french","arbian"],
+            ["marathi","hindi","tamil","kannada"]
+        ];
 
-let x=10
-let y=20
-console.log(x);
-console.log(y);
+  let [other,our]=subjest;
+  console.log(other);
+  console.log(our);     
+  
+  //skipin areas
+  let color=[1,2,3,4,5];
+  let[c1, , ,c4]=color;
+  console.log(c1,c4);
+  //adding value
 
-let num = 0.4;
-let num1 = 0.5;
-
-console.log(Math.round(num));
-console.log(Math.round(num1));
-
-let q = 5.9;
-console.log(Math.ceil(q));
-
-let d=5.2
-console.log(Math.floor(d))
-
-let t=7.5
-console.log(Math.random(t));
-
-let r=5.6
-
-console.log(Math.round(r));
-console.log(Math.random(r));
-console.log(Math.floor(r));
-console.log(Math.ceil(r));
-
-//strings methods
-let ct= 'india is great country';
-console.log(ct.toUpperCase());
-console.log(ct.replace('great','good'));
-console.log(ct.substring(0,5));
-console.log(ct.match('is'));
-console.log(ct.length);
-console.log(ct[7]);
-
-//concatination
-
-let firstname="adesh"
-let middlename="vyankat"
-let lastname="devkar"
-let fullname= firstname+"  "+middlename+"  "+lastname;
-console.log(fullname);
-//es6
-
-
-let a= "i\nam/ lear\n to\n java"
-console.log(a);
-
-// (\t) - Tab (used to add 8 spaces):
-let str9 = 'adesh\tdevkar';
-console.log(str9);
-
-
-let str12= 'adesh\"tdevkar\"';
-console.log(str9);
-
-let sandesh= "adershvyankatdevkar";
-console.log(sandesh[sandesh.length-1]);
-
-//specifi chartecter ondex
-console.log(sandesh[10]);
-
-//upeercase
-
-console.log(sandesh.toUpperCase());
-
-console.log(sandesh.toUpperCase().toLowerCase().toUpperCase());
-
-console.log(sandesh.toUpperCase().length);
-
-//substr
-
-console.log(sandesh.substr(0,6));
-console.log(sandesh.substring(6,9));
-//split
-let ad= "adesh vyabnakt devkar";
-console.log(ad.split (" "));
-
-console.log(ad.split("v"));
-
-console.log(ad.indexOf("y"));
-
-console.log(ad.replace('a','z'));
-
-//startwitch
-
-console.log(ad.startsWith('a'));
-//enswith
-
-
-
-console.log(ad.endsWith('k'));
-
-console.log(ad.match("devkar"));
-
-
-
-//conversion
-
-let x1=100
-let x2="200"
-
-consaole.log(x2+x1);
-
-let x3 =parseInt(x2);
-console.log(x3+x1);
-//nunber to string
-
-let num3 = 7020400749;
-let num4 = num3.toString();
-console.log(typeof num4);
-
-
-//arithmatic
-
-let xx=6
-let x11=8
-console(xx+xx1);
+  let hrr=[undefined,"adesh","amol"];
+  let[num22="vaibhav",num23,num24]=hrr;
+  console.log(num22,num23,num24);
+  //loop with distrucring
+  let statecapitalArray=[
+     ["maharashtra","mumbai"],
+     ["goa","panji"],
+     ["bihar","patna"],
+     ["asam","dispur"]
+  ];
+  for (let[state,capital] of statecapitalArray)
+    console.log(`${state}: ${capital}`);
