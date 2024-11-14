@@ -78,7 +78,7 @@
 //         scores: [85, 80,85,80]
 //       }
 //     ]
-
+//------- pending till we get json topic 
 //4 Copy the student object to newStudent without mutating the original object.
 // In the new object add the following ?
 // Add Bootstrap with level 8 to the front end skill sets

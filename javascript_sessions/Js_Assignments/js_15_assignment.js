@@ -26,28 +26,28 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 
 // output be like this --->
 // Your output should look like this
-console.log(mostSpokenLanguages(countries, 10))
-[
-    { English: 91 },
-    { French: 45 },
-    { Arabic: 25 },
-    { Spanish: 24 },
-    { Russian: 9 },
-    { Portuguese: 9 },
-    { Dutch: 8 },
-    { German: 7 },
-    { Chinese: 5 },
-    { Swahili: 4 },
-    { Serbian: 4 }
-]
+// console.log(mostSpokenLanguages(countries, 10))
+// [
+//     { English: 91 },
+//     { French: 45 },
+//     { Arabic: 25 },
+//     { Spanish: 24 },
+//     { Russian: 9 },
+//     { Portuguese: 9 },
+//     { Dutch: 8 },
+//     { German: 7 },
+//     { Chinese: 5 },
+//     { Swahili: 4 },
+//     { Serbian: 4 }
+// ]
 
-// Your output should look like this
-console.log(mostSpokenLanguages(countries, 3))
-[
-    { English: 91 },
-    { French: 45 },
-    { Arabic: 25 }
-]
+// // Your output should look like this
+// console.log(mostSpokenLanguages(countries, 3))
+// [
+//     { English: 91 },
+//     { French: 45 },
+//     { Arabic: 25 }
+// ]
 
 
 
@@ -2066,3 +2066,39 @@ const countries = [
         currency: 'Botswana pula'
     }
 ]
+
+// Function to find the number of unique languages
+function countUniqueLanguages(countries) {
+    const languageSet = new Set();
+    countries.forEach(country => country.languages.forEach(language => languageSet.add(language)));
+    return languageSet.size;
+}
+
+// Function to find the most spoken languages
+function mostSpokenLanguages(countries, limit) {
+    const languageCount = {};
+
+    // Count each language's occurrence across countries
+    countries.forEach(country => {
+        country.languages.forEach(language => {
+            languageCount[language] = (languageCount[language] || 0) + 1;
+        });
+    });
+
+    // Sort languages by their occurrence in descending order
+    const sortedLanguages = Object.entries(languageCount)
+        .map(([language, count]) => ({ [language]: count }))
+        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
+
+    // Return the top 'limit' most spoken languages
+    return sortedLanguages.slice(0, limit);
+}
+
+// Output the number of unique languages
+console.log("Number of unique languages:", countUniqueLanguages(countries));
+
+// Output the top 10 most spoken languages
+console.log(mostSpokenLanguages(countries, 10));
+
+// Output the top 3 most spoken languages
+console.log(mostSpokenLanguages(countries, 3));
