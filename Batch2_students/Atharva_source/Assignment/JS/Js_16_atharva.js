@@ -70,7 +70,7 @@ for (let key in users) {
     }
 }
 console.log(usersWithLessThanTwoSkills)
-console.log("----------ans.5------------------")
+console.log("----------ex.level-2-ans.2------------------")
 
 
 //LEVEL 3
@@ -86,6 +86,7 @@ console.log("----------ans.5------------------")
   //console.log(Name, skills, jsScore, reactScore)
 const  i =[name, skills,[, , jsScore, reactScore]] = student
 console.log(i)
+console.log("----------ex-lev-3-ans1--------------")
   //David (4) ["HTM", "CSS", "JS", "React"] 90 95
 
 
@@ -97,18 +98,43 @@ const students = [
 ]
 
 //console.log(convertArrayToObject(students))
-[
-    {
-        name: 'David',
-        skills: ['HTM', 'CSS', 'JS', 'React'],
-        scores: [98, 85, 90, 95]
-    },
-    {
-        name: 'John',
-        skills: ['HTM', 'CSS', 'JS', 'React'],
-        scores: [85, 80, 85, 80]
-    }
+// [
+//     {
+//         name: 'David',
+//         skills: ['HTM', 'CSS', 'JS', 'React'],
+//         scores: [98, 85, 90, 95]
+//     },
+//     {
+//         name: 'John',
+//         skills: ['HTM', 'CSS', 'JS', 'React'],
+//         scores: [85, 80, 85, 80]
+//     }
+// ]
+
+
+// const students = [
+//     ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+//     ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+// ]
+
+function  convertArrayToObject(arr){
+    return arr.map(([name,skills,scores]) => ({
+        name,
+        skills,
+        scores
+    }))
+}
+console.log(convertArrayToObject([
+    ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+    ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
 ]
+))
+console.log("-----------ex.lev-3-Ans.3-----------------")
+
+
+
+
+
 
 
 
@@ -165,3 +191,4 @@ const students = [
 //       dataScience: ['Python','R','D3.js','SQL']
 //     }
 //   }
+
