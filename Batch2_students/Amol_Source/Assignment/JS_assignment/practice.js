@@ -97,7 +97,7 @@
 // console.log(now.getFullYear())
 // console.log(now.getHours())
 // console.log(now.getMonth()+1)
-// let now = new Date()
+//let now = new Date()
 // // console.log(typeof(now))
 // let nowHour = now.getHours()
 // let nowHour1 = nowHour<=10 ? `0${nowHour}`: nowHour
@@ -115,8 +115,8 @@
 // let month1= String(month).padStart(2,0)
 // let year = now.getFullYear()
 
-// let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
-// console.log(Indiatime)
+ //let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
+ //console.log(Indiatime)
 
 // let Date1 = new Date
 // let samor = Date1.getDate()
@@ -176,6 +176,7 @@
 // let OddNum = (Math.round(Math.random()*(75-15)+15))
 // console.log((2*OddNum))
 
+
 // 12. Create a string variable `str = 'Hello, World!'` and use an escape character to insert a tab between the words "Hello," and "World!" and log the result.
 // let str = 'Hello\tWorld!'
 // console.log(str)
@@ -205,7 +206,7 @@
 
 // Example: For "2024-10-01" and "2024-10-10", the function should return 9.
 // let new1 = new Date("2024-10-01")
-// let new2 = new Date("2024-10-10",)
+// let new2 = new Date("2024-10-10")
 // let diff = (new2-new1)
 // console.log((diff)/(1000*60*60*24))
 
@@ -216,14 +217,14 @@
 // console.log(date.getMonth())
 
 
-// let year =2021
+// let year =1700
 // if( year % 4==0){
 //     if(year % 100 ==0){
 //         if(year%400 ==0){
 //             console.log(`${year} is a not leap year`)
 //         }
 //         else{
-//             console.log( `${year}its not leap year`)
+//             console.log( `${year} its leap year`)
 //         }
 //     }
 //     else{
@@ -297,7 +298,7 @@
 //     console.log('please check the condition')
 // }
 
-// let number = 1
+// let number = 12
 // switch (number) {
 //     case 1 : console.log(`${number} is first day`)
 //     break;
@@ -322,8 +323,7 @@
 //         case 11 : console.log(`${number} is eleventh day`)
 //         break;
 //     default: console.log("enter valid number")
-
-// }
+//  }
 
 // Write a function that takes a temperature in Celsius and returns whether it’s cold, mild, or hot:
 
@@ -401,7 +401,6 @@
 // }
 
 //Grade Evaluation: Write a program that takes a letter grade (A, B, C, D, F) as input and returns a message about the performance (e.g., "Excellent", "Good", "Average", "Poor", "Fail"). Use a switch statement for this.
-
 // let Grade = 'E'
 // switch(Grade){
 // case'A': console.log(`you get grade ${Grade} Excellent`)
@@ -462,7 +461,10 @@
 // console.log(str1.toString().split('').reverse().join(""))
 
 // reverse name
-// let fullName = "Amol Kantital Jadhav"
+//let fullName = "Amol Kantital Jadhav"
+// let k = fullName.split("").reverse().join("")
+// console.log(k)
+//method 2
 // let lname = fullName.length
 // let fullName1 = ""
 // for(i=lname;i>=0;i--){
@@ -486,8 +488,7 @@
 //     chat += amolJ[i]
 // }
 // console.log(chat)
-// str = " hello i am learning javascript and currently i am seeing the topic loops"
-// let str1 = str.split(' ')
+//let str1 = str.split(' ')
 // let longestWord = " "
 // for(i=0;i<=str1.length-1;i++){
 //     if(str1[i].length>longestWord.length)
@@ -569,38 +570,197 @@
 //       longestWord = str1[i]
 //   }
 // }
-// console.log(longestWord)
-let Myname= "Amol kantilal jadhav"
-let Myname1 = Myname.length
-let vovo = ""
-let vovels ="aeiou"
-for(i=0;i<Myname1;i++){
-  if(vovels.includes(Myname[i])){
-    vovo+= Myname.charAt(i)
-  }
+// // console.log(longestWord)
+// let Myname= "Amol kantilal jadhav"
+// let Myname1 = Myname.length
+// let vovo = ""
+// let vovels ="aeiou"
+// for(i=0;i<Myname1;i++){
+//   if(vovels.includes(Myname[i])){
+//     vovo+= Myname.charAt(i)
+//   }
   
-}
-console.log(vovo,vovo.length)
+// }
+// console.log(vovo,vovo.length)
 
 
+/****************************************** */
+/*********** Functions********************* */
+// function fullname(){
+//   console.log("Amol kantilal jadhav")
+// }
+// fullname()
 
 
+// function check(a,b){
+// console.log(a+b)
+// console.log(a-b)
+// console.log(a/b)
+// }
+// check()
+
+// function Fullname(name,mifname,sirname){
+//   return `${name} ${mifname} ${sirname}`
+// }
+// let amol = Fullname("amol","kantilal","jadhav")
+// console.log(amol)
+
+// function Fullname(name,mifname,sirname){
+//   return `${name} ${mifname} ${sirname}`
+// }
+// Fullname("amol","kantilal","jadhav")
+// console.log(Fullname("amol","kantilal","jadhav").toUpperCase())
 
 
+// let aaa= function (firstName,middlename,lastName){
+//   return  `${firstName} ${middlename} ${lastName}`
+// }
+
+// console.log(aaa("","","amol"))
+
+// let K = ['Fullname','Amol', 24, 'kantilal', 'jadhav', 9767004310, true ]
+
+// let Fullname = "amol kantilal jadhav"
+// longestword = ""
+// Name = Fullname.split(" ")
+// for (i=0;i<Name.length;i++){
+// if(Name[i].length>longestword.length){
+// longestword=Name[i]
+//   }
+// }
+// console.log(longestword)
+// str = " hello i am learning javascript and currently i am seeing the topic loops"
+// let str1 = str.split(' ')
+// let longestWord= ''
+// for(let i = 0;i<str1.length;i++){
+//   if(str1[i].length > longestWord.length){
+//       longestWord = str1[i]
+//   }
+// }
+// // console.log(longestWord)
+
+// let date = new Date
+// let curDate = date.toLocaleString("en-gb",{timeZoneName:"short"})//  from time zon u can get full date with time
+// console.log(curDate)
+
+// str = "Amol KanTilal Jadhav"
+// let uppercase = str.match(/[A-Z]/g)||[]
+// let lowwercase = str.match(/[a-z]/g)||[]
+// console.log(uppercase.join())
+// console.log(lowwercase.join())
+
+//5 Declare a function name swapValues. This function swaps value of x to y.
+// function swapvalue(x,y){
+//   let swap = x
+//   x=y
+//   y=swap
+//   return (`x=>${x}   y=>${y}`)
+
+// }
+// console.log(swapvalue(3,4))
+
+// function change(array){
+//   for (i=0;i<=array.length;i++){
+//     j=0;
+//   }
+
+// }
+// change([1,2,3,4,5,6,,8,9])
+
+// function eveenodd(num){
+// evencount = 0
+// oddcount = 0
+//   for(i=0;i<=num;i++){
+//     if(i%2==0){
+//       evencount++
+//     }
+//     else{
+//       oddcount++
+//     }
+//   }
+//   console.log(evencount,oddcount)
+// }
+// eveenodd(100)
+
+// let str = " im am become AUTOMATION TESTENGINEER in January"
+// let uppercase = (str.match(/[A-Z]/g)||[]).join('')
+// let lowercase = (str.match(/[a-z]/g)||[]).join('')
+// console.log(uppercase,uppercase.length)
+// console.log(lowercase,lowercase.length)
+
+// function Random(num){
+// let Tandom = []
+// for(i=0;i<=num;i++){
+// let a = Math.round(Math.random()*16777215).toString(16).padStart(7,"0")
+// Tandom.push(a)
+// }
+// return Tandom
+// }
+// console.log(Random(10))
+
+// function Shuffilearray(array){
+//   for(i=array.length-1;i>=0;i--){
+//     j = Math.round(Math.random()*(i+1));
+//     array[i],array[j]=array[j],array[i]
+//   }
+//   return array
+// }
+// console.log(Shuffilearray([1,2,3,4,5,6,7,8,9]))
+
+// function Factorial(num){
+//   factor = 1
+// for(i=1;i<=num;i++){
+//   factor*=i
+// }
+// return factor
+// }
+// console.log(Factorial([3]))
+
+// function palindrome(array){
+// let k  = array.split("").reverse().join('')
+// console.log(k)
+// }palindrome("AMMA")
+
+// function fizzBuzz() {
+//   for (let i = 1; i <= 100; i++) {
+//       if (i % 3 === 0 && i % 5 === 0) {
+//           console.log("FizzBuzz");
+//       } else if (i % 3 === 0) {
+//           console.log("Fizz");
+//       } else if (i % 5 === 0) {
+//           console.log("Buzz");
+//       } else {
+//           console.log(i);
+//       }
+//   }
+// }
+
+// fizzBuzz();
+
+// function removeDuplicates(arr) {
+//   return [...new Set(arr)];
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]))
+
+// 14 Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
+// function modifyArray(array){
+//  let M =  array.splice(1,4)
+//     return M
+// }
+// console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
+// let a =  [97854726, 1, 5, 50, 60, 700, 800, 900, 5024, 65445, 28522, 138561, 7891];
+// a.sort((a,b)=>{return a-b})
+// console.log(a)
+// star = 1
+// for (i=5;i>=0;i--){
+//   console.log(" ".repeat(i)+"#".repeat(star))
+//   star +=2
+// }
+ //var a =
+ 
+ let str = "amol Kantilal Jadhav"
+let check 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 

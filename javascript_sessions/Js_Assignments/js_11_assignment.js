@@ -9,8 +9,7 @@
  *    numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
  *
  * 4) Find the sum of all elements in the array.
- *    numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
- *
+ 
  * 5) Get all values in the array that are greater than 5.
  *    numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
  *
