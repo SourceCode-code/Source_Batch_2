@@ -39,7 +39,7 @@ console.log(lenofc); // 10
 let getarr = ofc.slice(0, 6);
 console.log(getarr);
 // Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
-let mixedDataTypes = ["lenovo", 678, 'true', '',]
+let mixedDataTypes = ["lenovo", 678, 'true', '','&&']
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 
@@ -135,5 +135,16 @@ console.log(ttu);
 // Find the middle country(ies) in the countries array
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
 
-
+function RandomMacAddress(){
+  let randommac =''
+  for(let i=0;i<6;i++){
+      let random = Math.round(Math.random()*256).toString(16).padStart(2,'0')
+      randommac+=(random)
+      if(i<5){
+          randommac += ":"
+      }
+  }
+  return  randommac;
+}
+console.log(RandomMacAddress(1));
 

@@ -95,25 +95,46 @@
 // }
 
 //2 A junior developer structure student name, skills and score in array of arrays which may not easy to read.
-// Destructure the following array name to name, skills array to skills, scores array to scores,JavaScript score to jsScore and React score to reactScore variable in one line.
+// Destructure the following array name to name, skills array to skills, scores array to scores,
+//JavaScript score to jsScore and React score to reactScore variable in one line.
 
-  const student1 = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
-  let [val1,val2,val3,val4]=reactScore
-console.log(reactScore)
-  let [name, jsScore,[reactScore:hk]]=student1
+//   const student1 = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+// let [name, skill1,Score]=student1
+// let[HTMLscore,CSSscore,JSscore,ReactScore]=Score
+//   console.log([name, skill1,Score],JSscore,ReactScore)
   //console.log(name,jsScore,reactScore)
   //David (4) ["HTM", "CSS", "JS", "React"] 90 95
 
 
 //3 Write a function called convertArrayToObject which can convert the array to a structure object.
 
-    // const students = [
-    //     ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-    //     ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
-    //   ]
+const students = [
+  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+];
+function convertArrayToObject(student){
+let k = []
+for (key in student){
+  for (let i of (students[key])){
+    k.push(i)
+  }
+}
+let obj = {
+  name:k[0],
+  skills:k[1],
+  scores:k[2]
+}
+let obj2 = {
+  name:k[3],
+  skills:k[4],
+  scores:k[5]
+}
+console.log([obj,obj2])
+}
+convertArrayToObject(students)
 
-    // console.log(convertArrayToObject(students))
-    // [
+// console.log(convertArrayToObject(students))
+    // out put = [
     //   {
     //     name: 'David',
     //     skills: ['HTM','CSS','JS','React'],
@@ -172,8 +193,8 @@ student.skills.dataScience.push("SQL")
 //Copy the student object to newStudent without mutating the original object.
 //console.dir(student, { depth: null });
 
-// The copied object output should look like this:
 
+// The copied object output should look like this:
 //     {
 //     name: 'David',
 //     age: 25,
@@ -196,4 +217,14 @@ student.skills.dataScience.push("SQL")
 //       ],
 //       dataScience: ['Python','R','D3.js','SQL']
 //     }
-//   }
+//   }   
+// let x = [1, 2, 3, 4, 5,2,3,4,5,6]; //  try to ask in session what if we want to extarct duplicate numbers
+// let k = x.filter((el,index)=>{
+//   return x.indexOf(el)!==index
+// })
+// console.log(k)
+// Filter out companies which have more than one 'o' without using the filter method
+//let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+
+
