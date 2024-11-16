@@ -474,7 +474,18 @@ console.log(UUU.match("tutorial")); /*[
     index: 21,
     input: 'This is a javascript tutorial',
     groups: undefined
-  ] */
+  ] */  
+
+let iot = "aethist ,jain , kills, bottles, athlete";
+let fg= "";
+let count = 0;
+let vowels = "aeiou";
+for (let i = 0; i<iot.length; i++){
+  if (vowels.includes(iot[i]));
+  fg =+ iot[i];
+  count++;
+}
+console.log(`the number of vowels in the string are ${fg} and the count is ${count}`);
 
 
 
@@ -578,4 +589,4 @@ console.log(UUU.match("tutorial")); /*[
 
 
 
- */
+ 

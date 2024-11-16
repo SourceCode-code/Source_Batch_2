@@ -80,27 +80,27 @@ console.log("-------ex.lev-2-ans.3---------")
 // Your output should look like this
 //console.log(mostSpokenLanguages(countries, 10))
 
-[
-    { English: 91 },
-    { French: 45 },
-    { Arabic: 25 },
-    { Spanish: 24 },
-    { Russian: 9 },
-    { Portuguese: 9 },
-    { Dutch: 8 },
-    { German: 7 },
-    { Chinese: 5 },
-    { Swahili: 4 },
-    { Serbian: 4 }
-]
+// [
+//     { English: 91 },
+//     { French: 45 },
+//     { Arabic: 25 },
+//     { Spanish: 24 },
+//     { Russian: 9 },
+//     { Portuguese: 9 },
+//     { Dutch: 8 },
+//     { German: 7 },
+//     { Chinese: 5 },
+//     { Swahili: 4 },
+//     { Serbian: 4 }
+//]
 
 // Your output should look like this
-console.log(mostSpokenLanguages(countries, 3))
-[
-    { English: 91 },
-    { French: 45 },
-    { Arabic: 25 }
-]
+// console.log(mostSpokenLanguages(countries, 3))
+// [
+//     { English: 91 },
+//     { French: 45 },
+//     { Arabic: 25 }
+// ]
 
 
 
@@ -2122,10 +2122,43 @@ const countries = [
 
 
 //1 How many languages are there in the countries object file.
-jk=[]
-for (let i of countries){
- jk.push(...i.languages)  
-}
-console.log(new Set(jk).size)
-console.log("-----i.1------")// output = 112
-// *** Use the countries data to find the 10 most spoken languages:
+// jk=[]
+// for (let i of countries){
+//  jk.push(...i.languages)  
+// }
+// console.log(new Set(jk).size)
+// console.log("-----i.1------")// output = 112
+// *** Use the countries data to find the 10 most spoken languages: 
+
+
+
+ function mostSpokenLanguages(countries, limit) {
+        const languageCount = {}
+        
+        countries.forEach(country => {
+            country.languages.forEach(language => {
+                languageCount[language] = (languageCount[language] || 0) + 1
+            });
+        })
+        const sortedLanguages = Object.entries(languageCount).map(([language, count]) => ({ [language]: count })).sort((a, b) => Object.values(b)[0] - Object.values(a)[0])
+        return sortedLanguages.slice(0, limit)
+    }
+
+    console.log(mostSpokenLanguages(countries , 10))
+
+
+
+//     function mostSpokenLanguages(countries, limit){
+//         const languageCount ={}
+
+//         countries.forEach(country =>{
+//             country.languages.forEach(language =>{
+//                 languageCount[language] = (languageCount[language] || 0) +  1
+
+//             });
+//     })
+
+//     const sortedLanguages =Object.entries(languageCount).map(([language, count])=>({ [language] : [count]})).sort((a,b)=>Object.values(b)[0] - Object.values(a)[0])
+//     return sortedLanguages.slice(0, limit)
+// }
+// console.log("------------111-----------")
