@@ -403,14 +403,38 @@
 // Exercises: Level 3
 
 // 1 Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
-
-// userIdGeneratedByUser()
+// function  userIdGeneratedByUser(){
+// stri =""
+// for (i=0;i<=5;i++){
+// let gen = (Math.random()*10).toString(16).substr(1,6)
+// stri+=gen
+// }
+// let check = (stri.split("."))
+// check.shift()
+// check.forEach((el)=>{
+//     console.log(el)
+// })
+// }
+//  userIdGeneratedByUser()
 // 'kcsy2
 // SMFYb
 // bWmeq
 // ZXOYh
 // 2Rgxf
 // '
+// function  userIdGeneratedByUser(){
+//     stri =""
+//     for (i=0;i<=5;i++){
+//     let gen = (Math.random()*10).toString(16)
+//     stri+=gen
+//     }
+//     check = stri.split(".")
+//     check.shift()
+//     check.forEach((el)=>{
+//     console.log(el)
+//     })
+//     }
+//      userIdGeneratedByUser()
 // userIdGeneratedByUser()
 // '1GCSgPLMaBAVQZ26
 // YD7eFwNQKNs7qXaT
@@ -471,12 +495,12 @@
 //     let g = '#'+ Math.round(Math.random()*16777215).toString(16)
 //     let  k = (`${r},${b},${g}`)
 //       array.push(r)
-      
 //     }
 //     return array
 // }
 // console.log(generateColors(1))
 
+// Method 2
 // function generateColors1(num){
 //     let array = ("")
 //     for(i=0;i<num;i++){
@@ -488,7 +512,6 @@
 //       if(i<2){
 //         array+= ","
 //       }
-      
 //     }
 //     return array
 // }
@@ -504,18 +527,19 @@
 // for (i=array.length-1;i>0;i--){
 //     j = Math.floor(Math.random()*(i+1));// at this line ";" when i applied that, then only i get the output
 //     [array[i],array[j]]=[array[j],array[i]]   
-//     // original array    // shuffules array
+//     // original array // shuffules array
 // }
 // return array
 // }
 // console.log(ShuffleArray([1,2,3,4,5,6,7,8,9]))
+// Method 2
+
 
 // 9 Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 // function factorial(wholeNumber){
 // let fact = 1
 //     for(i=1;i<=wholeNumber;i++){
 //     fact=fact*i
-   
 // }
 // console.log(fact)
 // }
@@ -628,17 +652,20 @@
 
 
 // 19 Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
-// function randomArray(array){
-// let RanNum = []
-//     for(i=0;i<=array.length-1;i++){
-//     let Check = Math.floor(Math.random()*array[i])
-//     RanNum.push(Check)
+
+// function randomArray(){
+// let Ran = ""
+// for(i=0;i<=10;i++){
+// let Check = Math.floor(Math.random()*10)
+// if(!Ran.includes(Check))
+//     Ran+=Check
 // }
-// console.log(RanNum.splice(1,7))
+// console.log(Ran.split("").splice(1,9))
 // }
-// randomArray([0,1,2,3,4,5,6,7,8,9])
+// randomArray()
 // sevenRandomNumbers()
-// [(1, 4, 5, 7, 9, 8, 0)]///not geting random numbers
+// [(1, 4, 5, 7, 9, 8, 0)]///not geting random numbers/// using new Set () u can get the ans
+
 
 // 20 Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 // function reverseCountries(countries){

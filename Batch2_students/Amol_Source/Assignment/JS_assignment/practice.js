@@ -759,8 +759,4 @@
 // }
  //var a =
  
- let str = "amol Kantilal Jadhav"
-let check 
-
-
  

@@ -82,8 +82,7 @@ let { firstName, lastName, age, experience, skills, position } = obj;
 console.log(firstName, lastName, age, experience, skills, position);
 
 // Renaming Variables during Destructuring
-let { firstName: fn, lastName: ln, age
-    : ag, experience: ex, skills: sk, position: pos } = obj;
+let { firstName: fn, lastName: ln, age: ag, experience: ex, skills: sk, position: pos } = obj;
 console.log(fn, ln, ag, ex, sk, pos);
 
 // Destructuring specific items from an array inside an object

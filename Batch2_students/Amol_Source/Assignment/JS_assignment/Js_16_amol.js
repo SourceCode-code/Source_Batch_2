@@ -108,30 +108,43 @@
 
 //3 Write a function called convertArrayToObject which can convert the array to a structure object.
 
-const students = [
-  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
-];
-function convertArrayToObject(student){
-let k = []
-for (key in student){
-  for (let i of (students[key])){
-    k.push(i)
-  }
-}
-let obj = {
-  name:k[0],
-  skills:k[1],
-  scores:k[2]
-}
-let obj2 = {
-  name:k[3],
-  skills:k[4],
-  scores:k[5]
-}
-console.log([obj,obj2])
-}
-convertArrayToObject(students)
+// const students = [
+//   ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+//   ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+// ];
+
+// function convertArrayToObject(arr){
+// return arr.map(([name,skills,score])=>({
+
+//   name,
+//   skills,
+//   score
+// }))
+
+// }
+// console.log(convertArrayToObject(students))
+
+// Method 2
+// function convertArrayToObject(student){
+// let k = []
+// for (key in student){
+//   for (let i of (students[key])){
+//     k.push(i)
+//   }
+// }
+// let obj = {
+//   name:k[0],
+//   skills:k[1],
+//   scores:k[2]
+// }
+// let obj2 = {
+//   name:k[3],
+//   skills:k[4],
+//   scores:k[5]
+// }
+// console.log([obj,obj2])
+// }
+// convertArrayToObject(students)
 
 // console.log(convertArrayToObject(students))
     // out put = [
@@ -223,8 +236,6 @@ student.skills.dataScience.push("SQL")
 //   return x.indexOf(el)!==index
 // })
 // console.log(k)
-// Filter out companies which have more than one 'o' without using the filter method
-//let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 
 
 
