@@ -424,4 +424,74 @@ console.log("-------pattern of numbers-------")
 
 
 
+//loop to return element greater than 5 or 7 \\
+let jj = [1,2,3,4,5,6,7,8];
+let result = [];
+for (let i = 0; i<jj.length; i++){
+    if(jj[i]>=5){
+        result.push(jj[i]);
+    }
+}
+console.log(result)
+console.log("----result------")
 
+
+//using filter method \\
+let yy = jj.filter((el)=>{
+    return el >7
+})
+console.log(yy)
+
+let zz = jj.forEach((el)=>{
+    return el>7
+})
+console.log(zz)
+console.log("----zz")
+
+
+let ARRAY = [1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585];
+let LargestNumber = 0;
+for (let i =0; i<=ARRAY.length; i++){
+    if(ARRAY[i]>LargestNumber){
+        LargestNumber = ARRAY[i]
+    }
+}
+console.log(LargestNumber)
+
+
+
+//code for the following pattern
+
+    //   *
+    //  ***
+    // *****
+    //  ***
+    //   *
+
+
+
+
+    let kj = [1,1,2,3,1,2]
+ let Result = [];
+ for(let i =0; i< kj.length; i++){
+    if(!Result.includes(kj[i])){
+        Result.push(kj[i])
+    }
+ }
+ console.log(Result)
+
+ let str = "I love javascript";
+ let longestword = "";
+ for(let i=0; i<=str.length; i++){
+    if(str[i]> longestword){
+        longestword = str[i]
+    }
+ }
+ console.log(longestword) 
+
+
+//  let uv = Math.floor(Math.random()* (9.3-5.3 ) + 5.3 );
+//  console.log(uv)
+
+ let randomNumber = Math.random() * (9.3 - 5.3) + 5.3;
+console.log(randomNumber);
