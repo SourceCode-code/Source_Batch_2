@@ -759,4 +759,5 @@
 // }
  //var a =
  
- 
+ let name = "Amol kantilal Jadhav "
+ console.log(name.match(/^/g))
