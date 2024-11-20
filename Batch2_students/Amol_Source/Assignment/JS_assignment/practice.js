@@ -759,5 +759,10 @@
 // }
  //var a =
  
- let name = "Amol kantilal Jadhav "
- console.log(name.match(/^/g))
+ let name = "Amol kantilal Jadhav 123 "
+ 
+console.log(name.match(/\d+/g))
+//  console.log(name.search(/av/gi))
+
+//  let str17 = "I AM LEARNING JS , LEARNING CYPRESS, LEARNING PLAYWRIGHT";
+// console.log(str17.match(/learning/gi))//.length)
