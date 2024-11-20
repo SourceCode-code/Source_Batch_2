@@ -102,7 +102,7 @@ console.log(str3.replace(/@#/gi,""))
 // \n --> newline 
 // \t --> tab key 
 // \' --> single quotes
-// \" --> double quotes 
+// \" --> double quotes     
 // \d --> gets the numbers form the string (0-9)
 // \D --> cofrims string doesnt not contain any numbers
 
@@ -120,7 +120,7 @@ console.log(str3.replace(/@#/gi,""))
 // |: Either or
 // r'apple|banana' mean either of an apple or a banana
 // (): Capture and group 
-
+// \w+ : matches sequences of word characters
 
 let str4 = " apple and banaana are fruits and a old chilce says Apple a day keeps doctor away"
 
