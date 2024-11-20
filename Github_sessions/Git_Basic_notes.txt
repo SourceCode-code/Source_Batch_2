@@ -7,10 +7,10 @@ bitbucket ------- 10                              -- altsain
 
 
 untarck ---->                                stagging --------->                      github
-                                               middle env                           
-local
+local                                        middle env                               website
+
                                                                                                
-deletleed not recovered 
+deleteled not recovered 
 
 
 echo "# Source_Batch_2" >> README.md

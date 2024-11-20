@@ -11,10 +11,7 @@
 let text = "He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month"
 
 let Numbers = text.match(/\d+/g).map(Number);
-let monthlySalary = 4000;
-let annualBonus = 10000;
-let onlineCourses = 5500;
-let totalIncome = monthlySalary + annualBonus + onlineCourses;
+let totalIncome = (Numbers[0]+ Numbers[2]) * 12 + Numbers[1];
 console.log(`the total income is :- ${totalIncome}`);
 console.log("-----ex.level.1-Ans.1----------")
 
@@ -26,12 +23,11 @@ sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
 distance = 12
 */
 
-let points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8'];
-let sortedPoints = [-4, -3, -1, -1, 0, 2, 4, 8]
-let maxDistance = Math.max(...sortedPoints);
-let minDistance = Math.min(...sortedPoints);
-let distBetweenTwoFurthest = maxDistance - minDistance
-console.log(`the distance between the two furthest particles is :- ${distBetweenTwoFurthest}`)
+let text1= "The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles";
+let Number1 = text1.match(/-?\d+/g).map(Number)
+let sortedPoints = Number1.map(Number).sort((a, b) => a - b);
+let distance = sortedPoints[sortedPoints.length-1]-sortedPoints[0];
+console.log(`the distance between the two furthest particles is :   ${distance}`)
 console.log("-----ex.level.1-Ans.2----------")
 
 /* Have tried this points problem through different method , Not sure this is valid */
@@ -48,7 +44,43 @@ console.log("-----ex.level.1-Ans.2----------")
 // is_valid_variable('firstname') # True
 
 
+// ```javascript
+// function tenMostFrequentWords(paragraph, n = 10) {
+//     let words = paragraph.toLowerCase().split(/\s+/);
+//     let wordCount = {};
+//     words.forEach(word => {
+//         word = word.replace(/[^\w]/g, '');
+//         if (wordCount[word]) {
+//             wordCount[word]++;
+//         } else {
+//             wordCount[word] = 1;
+//         }
+//     })
 
+//     let sortedWords = Object.keys(wordCount).sort((a, b) => wordCount[b] - wordCount[a]);
+//     let result = [];
+//     for (let i = 0; i < n && i < sortedWords.length; i++) {
+//         result.push({ word: sortedWords[i], count: wordCount[sortedWords[i]] });
+//     }
+//     return result;
+// }
+
+// function cleanText(text) {
+//     return text.replace(/[^a-zA-Z0-9\s]/g, '').toLowerCase();
+// }
+
+// function mostFrequentWords(text, n = 3) {
+//     let cleanedText = cleanText(text);
+//     return tenMostFrequentWords(cleanedText, n);
+// }
+
+// let paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`;
+// console.log(tenMostFrequentWords(paragraph));
+
+// let sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`;
+// console.log(cleanText(sentence));
+// console.log(mostFrequentWords(sentence));
+// ```
 // Exercises: Level 2
 
 // 1 Write a function called tenMostFrequentWords which get the ten most frequent word from a string?

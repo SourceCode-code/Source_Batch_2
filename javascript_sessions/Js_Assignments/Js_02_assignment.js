@@ -17,8 +17,6 @@ let gravity = 9.81;
 // Medium Questions:
 
 // 3. Generate a random number between 1 and 10 (inclusive) and print it.
-let randomNum = Math.floor(Math.random() * 10) + 1;
-console.log(randomNum);
 // Hint: Use Math.random() and Math.floor() to generate random numbers.
 
 // 4. What is the output of rounding the number 5.7 using Math.ceil() and Math.floor()? 
@@ -43,6 +41,7 @@ console.log(randomBetween(10, 20));
 
 // 8 generate a random number between 5.5-9.3
 //Example: randomFloat(5.5, 9.3) should generate a random float between 5.5 and 9.3.
+
 
 
 // 9. Given a number `x = 1234.56789`, write code to round this number to 2 decimal places. that is x=1234.57

@@ -585,8 +585,11 @@ console.log(`the number of vowels in the string are ${fg} and the count is ${cou
 
 
 
+<<<<<<< HEAD
 
 
 
 
  
+=======
+>>>>>>> 8f51fb88ca5e67c2c166f782b0fa633386e16d46

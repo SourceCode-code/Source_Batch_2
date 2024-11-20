@@ -68,4 +68,4 @@ console.log("Fristname"+ first_name, "Lastname"+ last_name,"Maritalstatus"+ mari
 // Q no.10 Declare two variables myAge and yourAge and assign them initial values and log to the console.
 let myAge = 25;
 let yourAge = 30;
-console.log("My_Age",myAge,"Your_Age",yourAge);
+console.log("My_Age",myAge,"Your_Age",yourAge); 
