@@ -38,7 +38,7 @@
 
 // paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
 // function tenMostFrequentWords(para,limit){
-//     mostLang = para.split(" ")
+//    mostLang = para.split(" ")
 //     mostRepeated = {}
 //     mostLang.forEach((word)=>{
 //         (mostRepeated[word]) = (mostRepeated[word]||0)+1
@@ -109,3 +109,12 @@
 // ```js
 //  console.log(mostFrequentWords(cleanedText))
 //  [{word:'I', count:3}, {word:'teaching', count:2}, {word:'teacher', count:2}]
+
+//ask anout .(dot Character) if string of  word so we have to put 6 dot or jsut 1 donggt
+// also ? thid operatter
+// \b use for with example
+// ask about Spread and rest operater
+
+//\d: Matches any digit (equivalent to [0-9]).
+//\w: Matches any word character (letters, digits, and underscores, equivalent to [a-zA-Z0-9_]).
+//\s: Matches any whitespace character (space, tab, newline).

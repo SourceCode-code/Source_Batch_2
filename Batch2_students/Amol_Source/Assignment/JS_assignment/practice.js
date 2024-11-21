@@ -716,8 +716,8 @@
 // }
 // console.log(Factorial([3]))
 
-// function palindrome(array){
-// let k  = array.split("").reverse().join('')
+// function palindrome(name){
+// let k  = name.split("").reverse().join('')
 // console.log(k)
 // }palindrome("AMMA")
 
@@ -759,10 +759,29 @@
 // }
  //var a =
  
- let name = "Amol kantilal Jadhav 123 "
- 
-console.log(name.match(/\d+/g))
-//  console.log(name.search(/av/gi))
+//  let name = "Amol kantilal amol Jadhav 123amol "
+//  console.log(name.search(/lal/gi))
 
 //  let str17 = "I AM LEARNING JS , LEARNING CYPRESS, LEARNING PLAYWRIGHT";
-// console.log(str17.match(/learning/gi))//.length)
+// console.log(str17.match(/learning/gi))//.length
+
+//assignment no. 13:- 1,6,8,10,16,19 and assignment no.15 = level 3 all question
+
+let s = "hello@@ my hie how Amol na@@me hello is A@@kash 12345678"
+console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
+
+
+array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
+check = array.map((el,index,arr)=>{
+  return el.toUpperCase()
+})
+console.log(check)
+
+numArray = [12,14,1,5,16,14,19]
+newarray = []
+for (let i=0;i<=numArray.length-1;i++){
+  newarray.push(numArray[i]+2)
+  
+}
+let newval = newarray.sort((a,b)=>{return b-a})
+console.log(newarray[newarray.length-1])
