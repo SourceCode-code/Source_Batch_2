@@ -479,6 +479,7 @@ console.log(LargestNumber)
     }
  }
  console.log(Result)
+ console.log("--11--")
 
  let str = "I love javascript";
  let longestword = "";
@@ -492,6 +493,3 @@ console.log(LargestNumber)
 
 //  let uv = Math.floor(Math.random()* (9.3-5.3 ) + 5.3 );
 //  console.log(uv)
-
- let randomNumber = Math.random() * (9.3 - 5.3) + 5.3;
-console.log(randomNumber);
