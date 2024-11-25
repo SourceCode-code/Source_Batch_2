@@ -3,8 +3,6 @@
 /**high order functions are the functions which takes other function as a parameter or 
  * as a returning value */
 
-
-
 // there are two type of high order function
 //1) Callback Function -->
 /**call back functions are the function which can be passed as a parameter to other function*/

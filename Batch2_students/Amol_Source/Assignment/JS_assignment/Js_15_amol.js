@@ -2171,18 +2171,18 @@ module.exports = countries;
 //     { Serbian: 4 }
 // ]
 
-function mostSpokenLanguages(countries, limit) {
-let langaugeC = {}
-for (let key of countries){
-    for (let lang of key.languages){
-        langaugeC[lang]=(langaugeC[lang]||0)+1
-    }
-}
-let check = Object.entries(langaugeC).map(([langaugeC,count])=>({[langaugeC]:count})).sort((a,b)=>Object.values(b)[0]-Object.values(a)[0])
-return check.slice(0,limit)
+// function mostSpokenLanguages(countries, limit) {
+// let langaugeC = {}
+// for (let key of countries){
+//     for (let lang of key.languages){
+//         langaugeC[lang]=(langaugeC[lang]||0)+1
+//     }
+// }
+// let check = Object.entries(langaugeC).map(([langaugeC,count])=>({[langaugeC]:count})).sort((a,b)=>Object.values(b)[0]-Object.values(a)[0])
+// return check.slice(0,limit)
 
-}
-console.log(mostSpokenLanguages(countries, 5))
+// }
+// console.log(mostSpokenLanguages(countries, 5))
 
 // // Filter out companies which have more than one 'o' without using the filter method
 // let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
