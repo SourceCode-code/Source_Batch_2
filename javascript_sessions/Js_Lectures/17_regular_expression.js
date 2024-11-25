@@ -17,7 +17,7 @@
  * g: a gobal flag which means it will search in the whole text pattern
  * i: this is a case insenetive flag ( that is it will search the pattern in upper as well as lower case)
  * m : multiline (allows to search in multi line )
- * 
+ * `    
  */
 
 

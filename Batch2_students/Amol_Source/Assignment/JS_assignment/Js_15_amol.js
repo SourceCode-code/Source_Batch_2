@@ -23,7 +23,7 @@
 // let str = ['Amol',"Kantilal","Jadhav","Age-24","unmarried"]
 // let str1 = new Set()
 // for(let i of str){
-//     str1.add(i)
+//     str1.add(i)   
 // }
 // console.log(str1)
 
@@ -2125,21 +2125,21 @@ module.exports = countries;
 
 
 
-// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
-const uniqueLanguages = new Set(langArray);
-const languageCounts = [];
-for (let lang of uniqueLanguages) {
-    const filteredLangs = langArray.filter((el) => el === lang);
-    languageCounts.push({ lang, count: filteredLangs.length });
-}
-console.log(languageCounts)
+// // const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+// const uniqueLanguages = new Set(langArray);
+// const languageCounts = [];
+// for (let lang of uniqueLanguages) {
+//     const filteredLangs = langArray.filter((el) => el === lang);
+//     languageCounts.push({ lang, count: filteredLangs.length });
+// }
+// console.log(languageCounts)
 
 //1 How many languages are there in the countries object file.
 // kk=[]
 // for (let i of countries){
 //  kk.push(...i.languages)  
 // }
-//console.log(new Set(kk))//.size)// output = 112
+// console.log(new Set(kk))//.size)// output = 112
 
 // *** Use the countries data to find the 10 most spoken languages:
 // check = []
@@ -2170,3 +2170,69 @@ console.log(languageCounts)
 //     { Swahili: 4 },
 //     { Serbian: 4 }
 // ]
+// function mostSpokenLanguages(countries, limit) {
+// let langaugeC = {}
+// for (let key of countries){
+//     for (let lang of key.languages){
+//         langaugeC[lang]=(langaugeC[lang]||0)+1
+//     }
+// }
+// let check = Object.entries(langaugeC).map(([langaugeC,count])=>({[langaugeC]:count})).sort((a,b)=>Object.values(b)[0]-Object.values(a)[0])
+// return check.slice(0,limit)
+
+// }
+// console.log(mostSpokenLanguages(countries, 5))
+
+// // Filter out companies which have more than one 'o' without using the filter method
+// let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+// let result = []
+
+// for (let i = 0; i < company.length; i++) {
+
+//   let count = 0;
+// console.log(company[i])
+//   // we have to find occurance of letter o 
+//   for (let char of company[i].toLowerCase()) {
+//     if (char === "o") {
+//       count++
+//     }
+//   }
+//   if (count > 1) {
+//     result.push(company[i])
+//   }
+// }
+
+// console.log(result)
+// Object with an array property and retrieving specific elements from it
+const profiles = [
+    { firstName: "Vihaan", lastName: "Mehta", age: 28, experience: 6, skills: ["TypeScript", "CI/CD"], position: "Automation Tester" },
+    { firstName: "Rohan", lastName: "Joshi", age: 29, experience: 11, skills: ["TypeScript", "JavaScript", "Cypress", "Docker"], position: "Technical Lead" },
+    { firstName: "Vihaan", lastName: "Deshmukh", age: 32, experience: 1, skills: ["Python", "TypeScript"], position: "Software Engineer" },
+    { firstName: "Ishaan", lastName: "Pandey", age: 31, experience: 14, skills: ["Python", "Cypress"], position: "Systems Engineer" },
+    { firstName: "Ishaan", lastName: "Deshmukh", age: 25, experience: 1, skills: ["Java", "Playwright", "JavaScript", "SQL"], position: "Systems Engineer" },
+    { firstName: "Rohan", lastName: "Joshi", age: 33, experience: 3, skills: ["JavaScript", "Java", "Docker", "TypeScript"], position: "Full-Stack Developer" },
+    { firstName: "Pranav", lastName: "Joshi", age: 24, experience: 2, skills: ["JavaScript", "GitHub Actions", "Playwright", "TypeScript"], position: "Data Analyst" },
+    { firstName: "Rohan", lastName: "Nayak", age: 24, experience: 10, skills: ["JavaScript", "GitHub Actions", "Playwright"], position: "Backend Developer" },
+    { firstName: "Arjun", lastName: "Nayak", age: 36, experience: 4, skills: ["Java", "Playwright", "Docker"], position: "Systems Engineer" },
+    { firstName: "Vikram", lastName: "Joshi", age: 34, experience: 1, skills: ["Python", "GitHub Actions"], position: "Full-Stack Developer" }
+  ];
+  
+  //console.log(profiles);
+let arr = [1, 2, 4, 5, 6, 7, 4, 6, 2];
+
+
+
+// let check2 = arr.filter((el,index,arr)=>{
+// return (arr.indexOf(el)!==index)
+// }
+// )
+// console.log(check2)
+
+// ;
+// let arr1 = ["amol","kantilal","jadhav","kiran","Diyu","Amol","kantilal","jadhav"]
+// let duplicates = arr1.filter((el, index, array) => {
+//     return array.indexOf(el) !== index
+//   });
+  
+//   console.log(duplicates);

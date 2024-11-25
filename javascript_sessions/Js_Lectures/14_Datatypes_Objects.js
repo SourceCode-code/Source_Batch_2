@@ -120,7 +120,8 @@ profiles.forEach(profile => {
 });
 
 // Filter profiles for persons with more than 3 years of experience
-let experiencedProfiles = profiles.filter(profile => profile.experience > 3);
+let experiencedProfiles = profiles.filter((profile) => 
+  {profile.experience > 3})
 console.log(experiencedProfiles);
 
 // Explanation:

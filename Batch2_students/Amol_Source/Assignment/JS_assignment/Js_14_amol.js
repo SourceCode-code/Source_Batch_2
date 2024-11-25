@@ -271,19 +271,19 @@ const users = {
 // Question 3: Creating a personAccount Object
 // Create an object literal named personAccount with the following properties and methods:
 
-// let personAccount = {
-//   firstName: "Amol",
-//   lastName: " Jadhav",
-//   incomes: [
-//     { description: "job", amount: 55000 },
-//     { description: "business", amount: 100000 }
-//   ],
-//   expenses: [
-//     {description :"Rent",amount :12000},
-//      {description : "travel",amount: 3000},
-//       {description : "food",amount: 7000 }
-//   ]
-// }
+let personAccount = {
+  firstName: "Amol",
+  lastName: " Jadhav",
+  incomes: [
+    { description: "job", amount: 55000 },
+    { description: "business", amount: 100000 }
+  ],
+  expenses: [
+    {description :"Rent",amount :12000},
+     {description : "travel",amount: 3000},
+      {description : "food",amount: 7000 }
+  ]
+}
 
 
 // Properties:
@@ -294,14 +294,14 @@ const users = {
 
 // Methods:
 // - totalIncome(): Calculate and return the total income.
-// function totalIncome(){
-//   sumofIncome = 0
-// let y =personAccount.incomes
-// for (let i in y){
-//   sumofIncome=sumofIncome+(y[i].amount)
-// }
-// }totalIncome()
-// console.log(sumofIncome)
+function totalIncome(){
+  sumofIncome = 0
+let y =personAccount.incomes
+for (let i in y){
+  sumofIncome=sumofIncome+(y[i].amount)
+}
+}totalIncome()
+console.log(sumofIncome)
 
 // - totalExpense(): Calculate and return the total expenses.
 // function totalExpense(){
