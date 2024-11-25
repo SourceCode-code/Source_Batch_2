@@ -95,7 +95,7 @@ console.log(skill1, skill2); // Output: TypeScript CI/CD
 // - Dot Notation: Use when accessing object properties directly by their name. It is clear and easy to read.
 console.log(obj.firstName);  // Output: Vihaan
 
-// - Bracket Notation: Use when accessing properties dynamically or when the property name includes special characters.
+// - Bracket Notation: Use when accessing per operties dynamically or when the property name includes special characters.
 // Example: Accessing properties with a variable
 let property = "lastName";
 console.log(obj[property]);  // Output: Mehta
@@ -180,7 +180,7 @@ for (const { name, capital, languages, population, flag, currency } of EXP) {
 let arr2= [1,2,3,47,5,6,7,8,9]
 
 console.log(...arr2)  //1 2 3 47 5 6 7 8 9
-
+ 
 let [NUM1,NUM2,...rest]=arr2
 
 console.log(NUM1,NUM2,rest)

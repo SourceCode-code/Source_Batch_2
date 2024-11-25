@@ -211,17 +211,17 @@ const countries = [
     }]
 
 
-// function mostSpokenLanguages(countries, limit) {
-//     const languageCount = {}
-//     //
-//     countries.forEach(country => {
-//         country.languages.forEach(language => {
-//             languageCount[language] = (languageCount[language] || 0) + 1
-//         });
-//     })
-//     const sortedLanguages = Object.entries(languageCount).map(([language, count]) => ({ [language]: count })).sort((a, b) => Object.values(b)[0] - Object.values(a)[0])
-//     return sortedLanguages.slice(0, limit)
-// }
+function mostSpokenLanguages(countries, limit) {
+    const languageCount = {}
+
+    countries.forEach(country => {
+        country.languages.forEach(language => {
+            languageCount[language] = (languageCount[language] || 0) + 1
+        });
+    })
+    const sortedLanguages = Object.entries(languageCount).map(([language, count]) => ({ [language]: count })).sort((a, b) => Object.values(b)[0] - Object.values(a)[0])
+    return sortedLanguages.slice(0, limit)
+}
 
 // // const countries = [
 // //     {
