@@ -11,7 +11,7 @@
 /*
  1: SCRUM
  2: FEATURE DRIVEN DEVELOPMENT
- 3:CRYSTAL METHODOLOGY
+ 3: CRYSTAL METHODOLOGY
  4: EXTREME PROGRAMMING
  5: DYNAMIC SOFTWARE DEVELOPMENT METHOD
  6: LEAN SOFTWARE DEVELOPMENT 
@@ -26,13 +26,13 @@
               B SCRUM Master 
               C SCRUM TEAM 
             
-              A Product Owner : a:  The Process of Scrum starts with PRODUCT OWNER. 
+              A Product Owner : a: The Process of Scrum starts with PRODUCT OWNER. 
                                 b: Product owner gets the input from the End user /StakeHolder and introduces the Product Backlog 
 
               B: Scrum Master : A :Same as Project manager of that project .
                                 B: Scrum Master is responsible for setting of the metting of SPRINT MEETING.
-                                c:Removes any obstacles in the project .
-                                D:He coaches the team & Motivate.
+                                c: Removes any obstacles in the project .
+                                D: He coaches the team & Motivate.
                                 E: He is responsible to resolve any implementation and distraction for the Developer and QA Team . 
 
               C: SCRUM TEAM : A: It consists of QA + Dev Team.
@@ -87,7 +87,8 @@ what needs to be done today?
 
 The sprint review meeting has held at the end of each sprint to determine the added functionality. 
 It is set up mainly to get feedback from the product owner and other project stakeholders. 
-It helps to ensure that the delivered increment is meeting the required business expectation or some revision is required with the Product Backlog based on the feedback. 
+It helps to ensure that the delivered increment is meeting the required business expectation or 
+some revision is required with the Product Backlog based on the feedback. 
 The feedback helps to improve team productivity towards the Product Backlog in a future Sprint.
 
 
@@ -107,8 +108,7 @@ Here, the Product Owner and the Development Team co-operate together on the deta
 
 6: Conclusion : 
 Scrum ceremonies are a very important part of the Agile Scrum framework. 
-They help to create a rhythm in the team to maximize their productivity, increases the team collaboration, maintain transparency,
- and injects the scope to inspect and adapt to the way they go. They provide the platform to the team members to learn continuously and improve from each other.
+They help to create a rhythm in the team to maximize their productivity, increases the team collaboration, maintain transparency, and injects the scope to inspect and adapt to the way they go. They provide the platform to the team members to learn continuously and improve from each other.
 
 
 

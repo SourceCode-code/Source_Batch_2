@@ -85,9 +85,7 @@
 // Num %= 80
 // console.log(Num)
 
-// let a =10
-// let b = ++a + a++ + a++
-// console.log(b)
+
 
 // console.log(0)
 // let now = new Date();
@@ -216,6 +214,9 @@
 // date.setMonth(date1 -7)
 // console.log(date.getMonth())
 
+// let date = new Date()
+// let curdate =(date.toLocaleString('en',{day:"2-digit",month:"long",year:"numeric",hour:"2-digit",minute:"2-digit"})) 
+// console.log(curdate)
 
 // let year =1700
 // if( year % 4==0){
@@ -257,20 +258,20 @@
 // console.log(Amol1.toLocaleString(`en`, { month: 'long'}))
 // AMOL = date.toLocaleString('en',{month:"long"})
 
-// let Pappa = 10
-// console.log(String(Pappa).padStart(20,0))
-// console.log(Pappa<=15?`0${Pappa}`: Pappa)
+//  let Pappa = 10
+// console.log(String(Pappa).padStart(4,0))
+// console.log(Pappa<10?`0${Pappa}`: Pappa)
 
-// let Long = 'maiohoifdifbovhdosvlvovfohkvboxncohcbounskvohzofcbixncllnxoiuag'
-// console.log(Long.trimStart())
-// console.log(Long.length)
+// let Long = 'maiohoifdifbovhdosvlvovfohkvboxncohcbounskvohzofcbixncllnxoiuag        '
+// console.log(Long.trim())
+// console.log(Long.trim().length)
 
 // let Amol ="Amol"
 // console.log((Amol=="amol"&& Amol ==="Amol"));
 
 // let Slice= "Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript"
 // console.log(Slice.indexOf('S'));
-// let Num = 88
+// let Num = 83
 // if (Num % 2 == 0) {
 //     console.log(`${Num} is a even number`)
 // }
@@ -298,9 +299,9 @@
 //     console.log('please check the condition')
 // }
 
-// let number = 12
+// let number = "amol"
 // switch (number) {
-//     case 1 : console.log(`${number} is first day`)
+//     case 'Amol' : console.log(`${number} is first day`)
 //     break;
 //     case 2 : console.log(`${number} is second day`) 
 //     break;
@@ -318,10 +319,10 @@
 //     break;
 //     case 9 : console.log(`${number} is ninth day`)
 //     break;
-//     case 10 : console.log(`${number} is tenth day`)
-//         break;
-//         case 11 : console.log(`${number} is eleventh day`)
-//         break;
+//     case 'amol' : console.log(`${number} is tenth day`)
+//      break;
+//     case 11 : console.log(`${number} is eleventh day`)
+//     break;
 //     default: console.log("enter valid number")
 //  }
 
@@ -347,8 +348,8 @@
 // }
 
 // let Mark = 50
-// let MArks = (Mark>=50 && Mark<=100)
-// if (MArks == true){
+
+// if (Mark >50){
 //     console.log('you are pass')
 // }
 // else{
@@ -366,7 +367,7 @@
 // console.log("After replacing 'a' with 'z':", newStr1);
 
 //Simple Calculator: Create a simple calculator that takes two numbers and an operator (+, -, *, /) as input and returns the result. Use a switch statement to perform the calculation based on the operator.
-// let operator = '%'
+// let operator = '/'
 // let num = 34
 // let num1 = 65
 // switch(operator){
@@ -767,21 +768,98 @@
 
 //assignment no. 13:- 1,6,8,10,16,19 and assignment no.15 = level 3 all question
 
-let s = "hello@@ my hie how Amol na@@me hello is A@@kash 12345678"
-console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
-
-
 array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
-check = array.map((el,index,arr)=>{
-  return el.toUpperCase()
-})
-console.log(check)
+// check = array.map((el,index,arr)=>{
+//   return el.toUpperCase()
+// })
+// console.log(check)
 
-numArray = [12,14,1,5,16,14,19]
-newarray = []
-for (let i=0;i<=numArray.length-1;i++){
-  newarray.push(numArray[i]+2)
-  
-}
-let newval = newarray.sort((a,b)=>{return b-a})
-console.log(newarray[newarray.length-1])
+let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
+//console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
+//console.log(/amol\b/.test(s))
+//console.log(s.match(/[aeiou]/gi))
+
+let x = [1, 2, 3, 4, 5];
+let y = [4, 5, 6, 7, 8];
+let NewX = new Set(x)
+let Newy = new Set (y)
+let checck = x.filter((el)=> !Newy.has(el))
+//console.log(checck)
+
+// let countryCapitalArray = [
+//   ["India", "Delhi"],
+//   ["USA", "Washington DC"],
+//   ["England", "London"]
+// ];
+// let countryCapitalArray1 = new Map(countryCapitalArray)
+// countryCapitalArray1.set("wagholi","haveli")
+
+// console.log(countryCapitalArray1.get("India"))\
+
+// let city  = ['sangamner','A.nagar','pune','nashik','sangamner','tuljapur','sangamner','A.nagar','pune','sangamner',]
+// let filtciy = new Set (city)
+// let multicheck = []
+// for(let cit of filtciy){
+//   let kk = city.filter((el)=>el===cit)
+//   multicheck.push({cit,count:kk.length})
+// }
+// console.log(multicheck)
+
+
+
+
+
+// let str = "he$llo I a%m le*arning JavaScr%ipt and curr$ently I am s&eeing the t#opicloops";
+// console.log(str.replace(/[^\w+\s\b]/gi,''))
+
+//let str2 = "i am learning python, a123455555nd i am also la22222erning the basiceeee of python, Python is a easy langauge \
+//i would reccommmend everyone to learn Python"
+// function checkonetwo(str2){
+// let clean = (str2.replace(/[^a-z]/gi,""))//.toLowerCase())
+// let word={}
+// for(let el of clean){
+//   (word[el]=(word[el]||0)+1)
+// }
+// return Object.entries(word).map(([el,count])=>({el,count})).sort((a,b)=>b.count-a.count).splice(0,10)
+// } console.log(checkonetwo("hello my name is a23233mol kantilal jadhav hello 0902323232986"))
+
+// function mostFrequentWords(sentence,limit){
+//   let splitedsentence = sentence.match(/\b\w+\b/g)
+// mostrepeated = {}
+// splitedsentence.forEach((word)=>{
+// (mostrepeated[word]=(mostrepeated[word]||0)+1)
+// })
+// return Object.entries(mostrepeated).map(([word,count])=>({word,count})).sort((a,b)=>b.count-a.count).slice(0,limit)
+
+// }
+// console.log(mostFrequentWords(cleanSentence,20))
+
+// function mostoccurance(str4,limit){
+//   let cleanSentence = str4.replace(/\d+/gim,"")
+//   let cleanSentence2 = cleanSentence.match(/\b\w+\b/gim)
+//   let mostrepeated={}
+//   cleanSentence2.forEach((word)=>{
+// (mostrepeated[word])=(mostrepeated[word]||0)+1
+//   })
+//   return  Object.entries(mostrepeated).map(([word,count])=>({word,count})).sort((a,b)=>b.count-a.count).slice(0,limit)
+// }
+// console.log(mostoccurance("i am learning python, a123455555nd i am also la22222erning the basiceeee of python, Python is a easy langauge \
+// i would reccommmend everyone to learn Python\
+// amol kantilal jadhav",10))
+
+//question for session
+// function check(arr1,arr2){
+// return [...arr1,...arr2]
+// }
+// console.log(check([1, 3, 5],[2, 4, 6]))
+// let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+// let www = []
+// count = 0
+// for (let key of company){
+//   let oCount = (key.match(/o/g) ||0).length;
+//     if(oCount>1){
+//       www.push(key)
+//     }
+//   }
+//   console.log(www)
+

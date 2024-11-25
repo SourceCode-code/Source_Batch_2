@@ -135,16 +135,5 @@ console.log(ttu);
 // Find the middle country(ies) in the countries array
 // Divide the countries array into two equal arrays. If the countries array is not even, add one more country to the first half.
 
-function RandomMacAddress(){
-  let randommac =''
-  for(let i=0;i<6;i++){
-      let random = Math.round(Math.random()*256).toString(16).padStart(2,'0')
-      randommac+=(random)
-      if(i<5){
-          randommac += ":"
-      }
-  }
-  return  randommac;
-}
-console.log(RandomMacAddress(1));
+
 

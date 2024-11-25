@@ -6,6 +6,7 @@
 // Set --> A collection of unique values
 // Example:
 let arr = [1, 2, 4, 5, 6, 7, 4, 6, 2];
+console.log(arr.sort((a,b)=>{return a-b}))
 console.log(new Set(arr)); // Set { 1, 2, 4, 5, 6 }
 
 // Declaring a Set
