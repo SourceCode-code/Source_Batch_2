@@ -4,14 +4,14 @@
 //const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const products = [
-    { product: 'banana', price: 3 },
-    { product: 'mango', price: 6 },
-    { product: 'potato', price: '' },
-    { product: 'avocado', price: 8 },
-    { product: 'coffee', price: 10 },
-    { product: 'tea', price: '' },
-]
+// const products = [
+//     { product: 'banana', price: 3 },
+//     { product: 'mango', price: 6 },
+//     { product: 'potato', price: '' },
+//     { product: 'avocado', price: 8 },
+//     { product: 'coffee', price: 10 },
+//     { product: 'tea', price: '' },
+// ]
 
 // 1 Define a callback function before you use it in forEach, map, filter or reduce.
 // callback function is nothing but we can use another function as parameter for peresent function
@@ -91,7 +91,7 @@ const products = [
 // 15 Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 // function getStringLists(array){
 // let check = []
-// array.forEach((el)=>{
+// array.map((el)=>{
 //    if(typeof(el)=="string"){
 //     check.push(el)
 //    }
@@ -107,7 +107,12 @@ const products = [
 // console.log(sumNum)
 
 
-// 17 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries // we will try this latter 
+// 17 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries.
+// countries.splice(4,0,"and")
+// let check  = countries.reduce((el,index,arr)=>{
+//     return el+" "+index
+// })
+// console.log(`${check} are north European countries`)
 
 // 18 Explain the difference between some and every
 // some = it gives boolean answers(i.e = true and Flase ) in some it check the condition for someof (any) element can satisfy the condition or not
@@ -147,8 +152,6 @@ const products = [
 //  })
 //  console.log(Findcounrty)
 
-
-
 // Level 2
 
 // 1 Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
@@ -171,10 +174,23 @@ const products = [
 
 // 2 Find the sum of price of products using only reduce reduce(callback))
 // Method 1
-// let SumArray = (products.price).reduce((el,index,acc)=>{
-//     return (el)
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: '' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+]
+
+// let totalinco = products.map((el,index,arr)=>{
+// return el.price
 // })
-// console.log(SumArray)
+// let finalsum = totalinco.reduce((el,index,arr)=>{
+//     return el+Number (index)
+// })
+// console.log(finalsum) //  im not able to solve from only reduce method ..
+
 // Method 2
 // let totalPrice = products.reduce((el,index)=>{
 //     if(!isNaN(index.price)&&index.price!==""){
@@ -186,7 +202,7 @@ const products = [
 
 
 // 3 Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
-// const countries = require('./Js_15_amol')
+const countries = require('./Js_15_amol')
 // function categorizeCountries1(array){
 // return array.map((el)=>{
 //     return (el.name)
@@ -196,7 +212,7 @@ const products = [
 
 // function comanpattern(array1){
 //  let checkcountries= []
-//     array1.forEach((el)=>{
+//     array1.map((el)=>{
 //      if(String(el).includes('land')){
 //         checkcountries.push(el)
 //      }
@@ -214,25 +230,60 @@ const products = [
 // }(comanpattern(countriesName))
 
 
-// method for 2nd Function...
-// function comanpattern(array1){
-//     let checkcountries= []
-//        array1.forEach((el)=>{
-//        let check2 =  String(el).includes('land')//&&'ia'&& 'island'&&'stan') // for that i have to put individual  patter.
-//        if(check2==true){
-//            checkcountries.push(el)
-//        }
-//         })
-//         console.log(checkcountries)
-//    }
-   
-//    (comanpattern(countriesName))
-// 4 Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
-// 5 Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
-// 6 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
-// 7 Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
- 
+// 4 Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country
+// function mostusedchar(){
+//     mostchar = {}
+//     countries.forEach((el)=>{
+//         charletter = el.name[0].toUpperCase()
+//         mostchar[charletter]=(mostchar[charletter]||0)+1
+//     })
+//      return Object.entries(mostchar).map(([word,count])=>({word,count})).sort()//(a,b)=>(a.count-b.count))
+// }
+// console.log(mostusedchar(countries))
+
+
+// 5 Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+//  function getFirstTenCountries(array){
+//           return array.slice(0,10).map((el)=>{
+//             return(el.name)
+//  })
+//  }
+//  console.log(getFirstTenCountries(countries))
+
+
+// 6 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
+//  function getFirstTenCountries(array){
+//           return array.slice(array.length-11,array.length).map((el)=>{
+//             return(el.name)
+//  })
+//  }
+//  console.log(getFirstTenCountries(countries))
+
+// 7 Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+// function mostrepeatedletter(country,limit){
+// checkletter= {}
+// country.map((el)=>{
+//     let word =  el.name[0].toUpperCase()
+//     checkletter[word]=(checkletter[word]||0)+1
+// })
+//  return Object.entries(checkletter).map(([word,count])=>({word,count})).sort((a,b)=>(b.count-a.count)).slice(0,limit)
+
+// }
+// console.log(mostrepeatedletter(countries,1))
+
+//  trying to push the naes which is start with S
+// function sortedcoutry(check){
+//     sorted  = []
+// countries.forEach((el)=>{
+// num = (el.name).match(/[^S]/gi)
+// if (num.length>=0){
+//     sorted.push(el.name)
+// }
+// })
+// console.log(sorted)
+
+// }sortedcoutry(mostrepeatedletter)
 
 // Level 3
 
@@ -267,5 +318,22 @@ const products = [
 // Variance: 17.5
 // Standard Deviation: 4.2
 // Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+
+
+// let str = "aaabbbccbbccaad"
+// let check3 =str.split("")
+// let k= 2
+// checkObj = {}
+
+// for (let i in check3){
+//     checkObj[check3[i]]=(checkObj[check3[i]]||0)+1
+// }
+// rev =" "
+// for (let key in str){
+//  if(checkObj[key]>=k) {
+//      rev+=key
+//  }
+// }
+// console.log(rev)
 
 
