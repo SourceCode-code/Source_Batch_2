@@ -17,6 +17,14 @@ const products = [
 
 // 1 Define a callback function before you use it in forEach, map, filter or reduce.
 
+let Numbers = [20,30,40,50]
+
+function printNumbers(Number){
+    console.log(Number);
+}
+
+Numbers.forEach(printNumbers)
+console.log("-----ex.lev-1. Ans-1--------")
 
 // 2 Use forEach to console.log each country in the countries array.
 countries.forEach(country=>{
@@ -76,11 +84,9 @@ let pricesWithValues = products.filter(product=>product.price > 0)
 console.log(pricesWithValues)
 console.log("-----ex.lev.1 Ans14-------")
 // 15 Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-// function getStringLists(arr){
-//     return arr.filter(item=>typeof item === 'string')
-// }
-// console.log(getStringLists([1,2,3,'a','b','c']))
-// console.log("-----ex.lev.1 Ans.15-----")
+function getStringLists(arr){
+    
+}
 // 16 Use reduce to sum all the numbers in the numbers array.
 let sumOfNumbers = numbers.reduce((acc, current) => acc + current, 0)
 console.log(sumOfNumbers)
@@ -122,15 +128,241 @@ console.log("-----ex.lev.1 Ans22------")
 let totalPrice = products.map(product => product.price).filter(price => price > 0).reduce(( acc, current) => acc + current, 0)   //acc (accumulator) starts at 0, and current is each price from the filtered array.
 console.log(`the Total Price is: ${totalPrice}`)
 console.log("-------ex.lev2.Ans-1---------")
+
 // 2 Find the sum of price of products using only reduce reduce(callback))
-let TotalProducts = products.reduce((acc,item) => acc + item.price, 0)
+let TotalProducts = products.reduce((acc,item) => {
+    const price  = parseFloat(item.price) || 0; 
+    return acc + price 
+}, 0)
 console.log(`The Sum of price of Products is: ${TotalProducts}`)
-console.log("-------ec.lev-2. Ans2---------") // wrong
+console.log("-------ec.lev-2. Ans2---------") // 27
+
+
 // 3 Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
+function categorizeCountries(countries, pattern){
+    return countries.filter(country => country.toLowerCase().includes(pattern.toLowerCase()))
+}
+console.log(categorizeCountries(countries, 'land','ia', 'island','stan'))
+console.log("-------ex.lev2.Ans3---------")
+
 // 4 Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
+function countLetter(countries){
+    let result = []
+    countries.forEach(country => {                                            //looping through each country
+        let firstLetter = country[0].toLowerCase()                           // getting the first letter of the country, by extracting the first character of the string and converting it to lower case
+        if(result.find(item => item.letter === firstLetter)){                //checking if the "firstletter already exists"
+            result.find(item => item.letter === firstLetter).count += 1      //updating the count  if the letter exists
+        }
+        else{
+            result.push({letter:firstLetter, count:1})                      // adding a new object if the letter does not exist 
+        }
+    })
+    return result
+}
+console.log(countLetter(countries))
+console.log("-----ex.lev-2. Ans4-------")
+
+
 // 5 Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+const countries1 = [
+    {
+        name: 'Afghanistan',
+        capital: 'Kabul',
+        languages: ['Pashto', 'Uzbek', 'Turkmen'],
+        population: 27657145,
+        flag: 'https://restcountries.eu/data/afg.svg',
+        currency: 'Afghan afghani'
+    },
+    {
+        name: 'Åland Islands',
+        capital: 'Mariehamn',
+        languages: ['Swedish'],
+        population: 28875,
+        flag: 'https://restcountries.eu/data/ala.svg',
+        currency: 'Euro'
+    },
+    {
+        name: 'Albania',
+        capital: 'Tirana',
+        languages: ['Albanian'],
+        population: 2886026,
+        flag: 'https://restcountries.eu/data/alb.svg',
+        currency: 'Albanian lek'
+    },
+    {
+        name: 'Algeria',
+        capital: 'Algiers',
+        languages: ['Arabic'],
+        population: 40400000,
+        flag: 'https://restcountries.eu/data/dza.svg',
+        currency: 'Algerian dinar'
+    },
+    {
+        name: 'American Samoa',
+        capital: 'Pago Pago',
+        languages: ['English', 'Samoan'],
+        population: 57100,
+        flag: 'https://restcountries.eu/data/asm.svg',
+        currency: 'United State Dollar'
+    },
+    {
+        name: 'Andorra',
+        capital: 'Andorra la Vella',
+        languages: ['Catalan'],
+        population: 78014,
+        flag: 'https://restcountries.eu/data/and.svg',
+        currency: 'Euro'
+    },
+    {
+        name: 'Angola',
+        capital: 'Luanda',
+        languages: ['Portuguese'],
+        population: 25868000,
+        flag: 'https://restcountries.eu/data/ago.svg',
+        currency: 'Angolan kwanza'
+    },
+    {
+        name: 'Anguilla',
+        capital: 'The Valley',
+        languages: ['English'],
+        population: 13452,
+        flag: 'https://restcountries.eu/data/aia.svg',
+        currency: 'East Caribbean dollar'
+    },
+    {
+        name: 'Antarctica',
+        capital: '',
+        languages: ['English', 'Russian'],
+        population: 1000,
+        flag: 'https://restcountries.eu/data/ata.svg',
+        currency: 'Australian dollar'
+    },
+    {
+        name: 'Antigua and Barbuda',
+        capital: "Saint John's",
+        languages: ['English'],
+        population: 86295,
+        flag: 'https://restcountries.eu/data/atg.svg',
+        currency: 'East Caribbean dollar'
+    },
+    {
+        name: 'Argentina',
+        capital: 'Buenos Aires',
+        languages: ['Spanish', 'Guaraní'],
+        population: 43590400,
+        flag: 'https://restcountries.eu/data/arg.svg',
+        currency: 'Argentine peso'
+    },
+    {
+        name: 'Armenia',
+        capital: 'Yerevan',
+        languages: ['Armenian', 'Russian'],
+        population: 2994400,
+        flag: 'https://restcountries.eu/data/arm.svg',
+        currency: 'Armenian dram'
+    },
+    {
+        name: 'Aruba',
+        capital: 'Oranjestad',
+        languages: ['Dutch', '(Eastern) Punjabi'],
+        population: 107394,
+        flag: 'https://restcountries.eu/data/abw.svg',
+        currency: 'Aruban florin'
+    },
+    {
+        name: 'Australia',
+        capital: 'Canberra',
+        languages: ['English'],
+        population: 24117360,
+        flag: 'https://restcountries.eu/data/aus.svg',
+        currency: 'Australian dollar'
+    },
+    {
+        name: 'Austria',
+        capital: 'Vienna',
+        languages: ['German'],
+        population: 8725931,
+        flag: 'https://restcountries.eu/data/aut.svg',
+        currency: 'Euro'
+    },
+    {
+        name: 'Azerbaijan',
+        capital: 'Baku',
+        languages: ['Azerbaijani'],
+        population: 9730500,
+        flag: 'https://restcountries.eu/data/aze.svg',
+        currency: 'Azerbaijani manat'
+    },
+    {
+        name: 'Bahamas',
+        capital: 'Nassau',
+        languages: ['English'],
+        population: 378040,
+        flag: 'https://restcountries.eu/data/bhs.svg',
+        currency: 'Bahamian dollar'
+    },
+    {
+        name: 'Bahrain',
+        capital: 'Manama',
+        languages: ['Arabic'],
+        population: 1404900,
+        flag: 'https://restcountries.eu/data/bhr.svg',
+        currency: 'Bahraini dinar'
+    },
+    {
+        name: 'Bangladesh',
+        capital: 'Dhaka',
+        languages: ['Bengali'],
+        population: 161006790,
+        flag: 'https://restcountries.eu/data/bgd.svg',
+        currency: 'Bangladeshi taka'
+    },
+    {
+        name: 'Barbados',
+        capital: 'Bridgetown',
+        languages: ['English'],
+        population: 285000,
+        flag: 'https://restcountries.eu/data/brb.svg',
+        currency: 'Barbadian dollar'
+    },
+    {
+        name: 'Belarus',
+        capital: 'Minsk',
+        languages: ['Belarusian', 'Russian'],
+        population: 9498700,
+        flag: 'https://restcountries.eu/data/blr.svg',
+        currency: 'New Belarusian ruble'
+    }
+]
+function getFirstTenCountries(countries1){
+    let firstTen =countries1.slice(0,10)
+    return firstTen    
+}
+console.log(getFirstTenCountries(countries1))
+console.log("-----ex.lev-2. Ans5-------")
 // 6 Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
+
+
+function getLastTenCountries(countries1){
+    let lastTen = countries1.slice(-10)
+    return lastTen
+}
+console.log(getLastTenCountries(countries1))
+console.log("-----ex.lev-2 Ans.6------")
 // 7 Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+function findMostUsedInitial(countries){
+    let count = {}                                //obj to track the count of each initial 
+
+    countries.forEach(country=>{ 
+        let initial = country[0].toLowerCase()      // extract the first letter and convert it to lower case
+        count[initial] = (count[initial] || 0) + 1  //increment count for the initial
+    });
+    return Object.entries(count).map(([initial, count ])=>({initial , count})).sort((a,b)=>b.count - a.count)     //converting the 'count' object to array, sorting it by frequency, and returning the result 
+
+}
+console.log(findMostUsedInitial(countries))
+console.log("------ex.lev-2 Ans.7---------")
+
 
  
 
@@ -171,3 +403,45 @@ console.log("-------ec.lev-2. Ans2---------") // wrong
 
  
 
+
+//Akshay's question \\
+//let bc = "aaabbbccbccaadd";
+
+// function filterString(inputString, k) {
+//     const charCount = {};
+    
+//     for (const char of inputString) {
+//         charCount[char] = (charCount[char] || 0) + 1;
+//     }
+
+//     let filteredChars = '';
+    
+//     for (const char of inputString) {
+//         if (charCount[char] >= k) {
+//             filteredChars += char;
+//         }
+//     }
+    
+//     const reversedOutput = filteredChars.split('').reverse().join('');
+//     return reversedOutput;
+// }
+
+// const inputString = "pilot";
+// const k = 2;
+
+// const output = filterString(inputString, k);
+// console.log(output);  
+// console.log("----") 
+
+// function FilterString(inputString,k){
+//     let char = 'aabbccdd';
+//     let charCount = {}
+
+//     inputString.forEach(charCount=>{
+//         charCount[char] = (charCount[char] || 0) + 1
+//     })
+   
+//     const reversedOutput = Object.entries(charCount).map(([char,count])=>({char,count})).sort((a,b)=> Object.values(b)[0] - Object.values(a)[0])
+//     return reversedOutput.slice(0,limit)
+// }
+// console.log(FilterString(inputString,k))

@@ -192,8 +192,48 @@ for(let key in data){
 
 // example  array=[ {hbd},{hsdbcd}]
 
+// methods in objects
+
+//Object.assign() --> it will copy the object without modfiying it the orignal object
+
+let viaahn=  {
+  firstName: "Vihaan",
+  lastName: "Mehta",
+  age: 28,
+  experience: 6,
+  skills: ["TypeScript", "CI/CD"],
+  position: "Automation Tester"
+}
+
+console.log("```````````````````````````````````````````")
+let person1 = Object.assign({},viaahn)
+console.log(person1)
 
 
+console.log("```````````````````````````````````````````")
+
+//Objects.keys()--> to get the keys or properties of an object as an array we use this method 
+
+let keyarr=Object.keys(viaahn)
+
+console.log(keyarr)
+
+
+// object.values --> to get the values of an object as an array we use this method
+
+let valarr=Object.values(viaahn)
+
+console.log(valarr)
+
+// object.entries -->to get the keys and values  of an object as an array we use this method
+
+let entarr=Object.entries(viaahn)
+
+console.log(entarr)
+
+// hasownPropertry() -->checks whether the property exsiting
+
+console.log(viaahn.hasOwnProperty("skills"))
 
  const profiles = [
     {
@@ -279,6 +319,7 @@ for(let key in data){
   ];
 
 
+
 console.log(profiles)
 // sort this data 
 
@@ -354,3 +395,11 @@ console.log(above3)
 //  vihan metha has experince of 3 years  his current position is autoamtion testor and his skills include   skills: [ 'TypeScript', 'CI/CD' ],
 
 
+// {
+//   //       "firstName": "Arjun",
+//   //       "lastName": "Nayak",
+  //       age: 36,
+  //       experience: 4,
+  //       skills: [ 'Java', 'Playwright', 'Docker' ],
+  //       position: 'Systems Engineer'
+  //     }
