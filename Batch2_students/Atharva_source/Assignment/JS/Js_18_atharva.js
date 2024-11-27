@@ -357,7 +357,7 @@ function findMostUsedInitial(countries){
         let initial = country[0].toLowerCase()      // extract the first letter and convert it to lower case
         count[initial] = (count[initial] || 0) + 1  //increment count for the initial
     });
-    return Object.entries(count).map(([initial, count ])=>({initial , count})).sort((a,b)=>b.count - a.count)     //converting the 'count' object to array, sorting it by frequency, and returning the result 
+    return Object.entries(count).map(([initial, count ])=>({initial , count})).sort((a,b) => b.count - a.count)     //converting the 'count' object to array, sorting it by frequency, and returning the result 
 
 }
 console.log(findMostUsedInitial(countries))
@@ -444,4 +444,6 @@ console.log("------ex.lev-2 Ans.7---------")
 //     const reversedOutput = Object.entries(charCount).map(([char,count])=>({char,count})).sort((a,b)=> Object.values(b)[0] - Object.values(a)[0])
 //     return reversedOutput.slice(0,limit)
 // }
-// console.log(FilterString(inputString,k))
+// console.log(FilterString(inputString,k)) 
+
+
