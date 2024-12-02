@@ -58,7 +58,7 @@ let y = "newvalue";
 console.log(y); // Outputs: "newvalue"
 
 // 2) Block Scope:
-if (true) {
+if (true) {  
   let a = 456;
   console.log(a); // 456 (local variable inside the block)
 }

@@ -37,7 +37,7 @@
 // let {width:wd,height:ht,area:ar,perimeter:pr}=rectangle
 // console.log(wd,ht,ar,pr)
 
-// we dont use array methods here like=> forEach,filter abd all
+// we dont use array methods here like=> forEach,filter and all
 
 //Method 3
 // measurements = []

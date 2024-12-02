@@ -40,7 +40,7 @@ let companyArray = ["Google", "Amazon", "Microsoft", "Oracle"];
 let companySet = new Set();
 for (let company of companyArray) {
     companySet.add(company);
-}
+}x
 console.log(companySet); // Set { 'Google', 'Amazon', 'Microsoft', 'Oracle' }
 
 // Deleting values from a Set

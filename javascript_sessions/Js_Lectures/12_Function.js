@@ -84,7 +84,6 @@ console.log(siddhantInfo.toUpperCase());
 function fullNameDeclarative(firstName, middleName, lastName) {
   return `${firstName} ${middleName} ${lastName}`;
 }
-
 console.log(fullNameDeclarative("Siddhant", "Arjun", "Gadakh"));
 
 // 2. Expression function type.

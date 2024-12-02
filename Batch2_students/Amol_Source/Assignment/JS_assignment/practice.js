@@ -1,13 +1,17 @@
 
+// rest and spread 
+// high order functiion
+// reg ex^
+//  using reduce how we can itterate on prices - assignment no.18
 
 /* mquestionost important */
 
-const fruits = ['apple', 'banana', 'orange', 'apple', 'banana'];
-const count = fruits.reduce((acc, fruit) => {
-  acc[fruit] = (acc[fruit] || 0) + 1;
-  return acc;
-}, {});
-console.log(count);  
+// const fruits = ['apple', 'banana', 'orange', 'apple', 'banana'];
+// const count = fruits.reduce((acc, fruit) => {
+//   acc[fruit] = (acc[fruit] || 0) + 1;
+//   return acc;
+// }, {});
+// console.log(count);  
 // O// let Amol= 'Amol kantilal Jadhav'
 // let sirName= 'Jadhav'
 // let Job = 'Best Automation tester'
@@ -123,8 +127,8 @@ console.log(count);
 // let month1= String(month).padStart(2,0)
 // let year = now.getFullYear()
 
- //let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
- //console.log(Indiatime)
+//let Indiatime = now.toString("en",{day:"2-digit",month:"2-digit",year:"numeric",nowHour:"2-digit",nowMin:"2-digit",nowSec:"2-digit"})
+//console.log(Indiatime)
 
 // let Date1 = new Date
 // let samor = Date1.getDate()
@@ -504,7 +508,7 @@ console.log(count);
 // for(i=0;i<=str1.length-1;i++){
 //     if(str1[i].length>longestWord.length)
 //         longestWord =str1[i]
-   
+
 //     }
 //      console.log(longestWord)
 
@@ -515,13 +519,13 @@ console.log(count);
 //     console.log(i)// for break the loop we console inside the braket, if we console outside the braket it will shw only one outout
 // }
 // for(i=1;i<=10;i++){
-   
+
 //      if(i==5)
 //         break
 //      console.log(i)
 // }
 
-  // 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+// 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 //   let num1 = 0
 // for(i=0;i<=100;i+=2){
 //     num1+=i
@@ -590,7 +594,7 @@ console.log(count);
 //   if(vovels.includes(Myname[i])){
 //     vovo+= Myname.charAt(i)
 //   }
-  
+
 // }
 // console.log(vovo,vovo.length)
 
@@ -768,8 +772,8 @@ console.log(count);
 //   console.log(" ".repeat(i)+"#".repeat(star))
 //   star +=2
 // }
- //var a =
- 
+//var a =
+
 //  let name = "Amol kantilal amol Jadhav 123amol "
 //  console.log(name.search(/lal/gi))
 
@@ -792,8 +796,8 @@ let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
 let x = [1, 2, 3, 4, 5];
 let y = [4, 5, 6, 7, 8];
 let NewX = new Set(x)
-let Newy = new Set (y)
-let checck = x.filter((el)=> !Newy.has(el))
+let Newy = new Set(y)
+let checck = x.filter((el) => !Newy.has(el))
 //console.log(checck)
 
 // let countryCapitalArray = [
@@ -873,3 +877,268 @@ let checck = x.filter((el)=> !Newy.has(el))
 //   }
 //   console.log(www)
 
+// function mostrepeatedword(str,limit){
+//   remove= str.replace(/"^ "/gi,"")
+//   console.log(remove)
+// let clensentence = remove.split(" ")
+// mostword = {}
+// clensentence.forEach((el)=>{
+// mostword[el]=(mostword[el]||0)+1
+// })
+// return Object.entries(mostword).map(([word,count])=>({word,count})).sort((a,b)=>(a.count-b.count))//.slice(0,limit)
+
+// }
+// console.log(mostrepeatedword("my name amol amol is amol ol kantilal jadhav age is 25 now im get a class for automation test engineer may name is amol kantilal jadhav",3))
+
+// const languages = ["English", "Spanish", "French", "English", "Spanish", "German", "French"]
+// function mostrepeatedchar(langauge){ 
+// let check1 = {}
+// langauge.forEach((el)=>{
+//   let newcheck = el//[0]
+//   check1[newcheck]=(check1[newcheck]||0)+1
+// })
+// return Object.entries(check1).map(([word,count])=>({word,count})).sort()//(a,b)=>(a.count-b.count))
+// }
+// console.log(mostrepeatedchar(["English", "Spanish", "French", "English", "Spanish", "German", "French"]))
+
+// let unique = new Set()
+// unique.add(1)
+// unique.add('1')
+// unique.add("Amol")
+// unique.delete('1')
+// console.log(unique.has("Amol"))
+
+// console.log(unique)
+
+// let names = [["fullname","amol"],["middlename","kantilal"],["lastnmae","jadhav"]]
+// let check =new Map(names)
+// check.delete("fullname")//,"no single")
+// console.log(check)
+
+// let arr1 = ["amol","kantilal","jadhav","kiran","Diyu","Amol","kantilal","jadhav"]
+// let nums = [1,2,4,5,6,8,9,19,12,14,1,2,3,4,4,5]
+
+// let duplicates = nums.filter((el, index, array) => {
+//     return nums.indexOf(el) !== index
+//   });
+
+//   console.log(duplicates);
+
+// let str = "amol amol amol amol Kantilal Jadhav"
+// let repeted = 8
+// function mostoccuredword(str){
+//   {let check  = str.split("")
+//   mostletter = {}
+//   check.forEach((el)=>{
+//     mostletter[el]=(mostletter[el]||0)+1
+//   })
+// return Object.entries(mostletter).map(([word,count])=>({word,count})).sort()
+//   }
+// }
+// let sorted  = mostoccuredword("amol amol amol amol Kantilal Jadhav")
+// console.log(sorted)
+
+// sorted.forEach((el)=>{
+//   if(el.count==repeted){
+//     console.log(el)
+//   }
+// })
+// /********************************************************************************************************************** */
+// // Good Method 
+// function MostRepitingChara(str10, num) {
+//   {
+//       let check = str10.split("")
+//       repetchara = {}
+//       check.forEach((ele) => {
+//           repetchara[ele] = (repetchara[ele] || 0) + 1
+//       })
+//      console.log(repetchara)
+//   }
+//   for (let x in repetchara) {
+//       if (repetchara[x] === num) {
+//           console.log()
+//       }
+//   }
+// }
+// console.log(MostRepitingChara("Siddhant Gadakh", 2))
+// /********************************************************************************************************************** */
+// function numgame(num,power){
+//   return num**power
+// }
+// console.log (numgame(5,2))
+// console.log (numgame(5,3))
+// console.log (numgame(5,4))
+
+//  let str4 = " App@@@@le and24 Ban45aana2322 are Frui@t67s and A Old chil#ce says A@pple a day keeps doctor away"
+// console.log(str4.match(/[A-Z]/g))
+// let str2 = "i am learning python, and i am also laerning the basic Of python, Python is a easy langauge \
+// i would reccommmend everyone to learn Python"
+// console.log(str2.match(/^A-Z/g))
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $i1223s nothi3333ng; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+// //console.log(sentence.replace(/[^a-zA-z\s]/gi,""))///  if we mention inside the bracket it will clear as per condition and it will gives up normal string
+// console.log(sentence.replace(/[^a-zA-Z\s]/gi,""))// it will gives always array // if we apply without bracket it will gives join numbers// also if we use ^ inside bracket it will gives us expect from condition we aply
+/********************************************************************************************** */
+//all game is on[^ ] expext from, and []with them that ..do operation
+// Match is alway gives us aray
+// replace alwaygives us string (keep in mind \s to use)
+//when we use regex always keep in mind that caraet^ is for negation means opposite the condition and \d+\w+\s\b\b tahts are the shortcut to use in strin nf for search the patter
+
+/********************************************************************************************************************** */
+// Destucturing:-
+
+//  let [a=5,b=6]=[3]
+//  console.log(a,b)
+
+//  let okJ = [1,2,3,4,5,6,7,8,9,10]
+//  let okh = [...okJ,5,4]
+//  console.log(okh)
+//  let kkko = {a:1,B:3,c:4}
+//  let jjj = {...kkko,d:4}
+// console.log(jjj)
+
+// let num = [1,2,3,4]
+// sum=(a,b,c,d)=>a*b*c*d
+// console.log(sum(...num))
+// function sum(a,b,...aar){
+//   console.log(a,b)
+//   return aar.reduce((el,index)=> el+index)
+// }
+// console.log(sum(1,2,3,4,5,6))
+// let check = (k) => {
+//   let check2 = (l) => {
+//     let check3 = (m) => {
+//       return m*l*k
+//     }
+// return check3
+//  }
+//   return check2
+// }
+// console.log(check(1)(2)(3))
+
+// function checkmsg(){
+//   console.log("checkpurpose")
+// }
+// setInterval(checkmsg,2000)
+
+// function checkpurpose(){
+// console.log("check setTimeout")
+// }
+// setTimeout(checkpurpose,3000)
+
+
+// const higherorder = n => {
+//   const dosomething = m => {
+//       const dowhatever = t => {
+//           return 2 * n + 3 * m + t
+//       }
+//       return dowhatever
+//   }
+//   return dosomething
+// }
+
+// console.log(higherorder(2)(3)(10)) //23
+// function printY() {
+//     const y = 100;
+//     console.log(y); // 100 (local variable inside the function)
+//   }printY()
+
+//   function printZ() {
+//     const y = 250;
+//     console.log(y); // 250 (local variable inside the function)
+//   }printZ()
+
+// let a = [1, 2, 3, 4, 5];
+// let b = [4, 5, 6, 7, 8];
+// AA = new Set(a)
+// BB = new Set(b)
+// let cross = a.filter((el)=>!BB.has(el))
+// let cross1 = b.filter((el)=>!AA.has(el))
+// console.log([...cross,...cross1])
+
+// function mostwprd(langArray){
+// mostoxxured = {}
+// langArray.forEach((el)=>{
+// mostoxxured[el]=(mostoxxured[el]||0)+1
+// })
+// return Object.entries(mostoxxured).map(([word,count])=>({word,count})).sort()
+// }
+// console.log(mostwprd(["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"]))
+
+/**************************************** 
+//problemm for reapeted numbber
+// let uniequal = new Set(num)
+// count ={}
+// num.map((el)=>{
+//   count[el]=(count[el]||0)+1
+// })
+// repeated=[]
+// diff =[]
+// for (let i of uniequal){
+// if(count[i]>1){
+//   repeated.push(i)
+// }else{
+//   diff.push(i)
+// }
+// }
+// console.log(repeated)
+// console.log(diff)*/
+// mm = [1,2,3,4,5]
+// let setOne = new Set(mm);
+// //setOne.clear(); // Set(0) {}
+// console.log(setOne)
+
+// let num = [1,2,3,4,5,6,7,8,9]
+// let num2 = [1,2,3,4,5,6,8,9,10,12,11]
+// let NUM = new Set(num)
+// let NUM2 = new Set(num2)
+// let diff = num.filter((el)=>!NUM2.has(el))
+// let diff2 = num2.filter((el)=>!NUM.has(el))
+// console.log(new Set(diff))
+// console.log(new Set(diff2))
+
+// let viaahn=  {
+//     firstName: "Vihaan",
+//     lastName: "Mehta",
+//     age: 28,
+//     experience: 6,
+//     skills: ["TypeScript", "CI/CD"],
+//     position: "Automation Tester"
+//   }
+  
+//   let kk = Object.entries(viaahn)
+//   console.log(kk)
+// let countryCapitalArray = [
+//     ["India", "Delhi"],
+//     ["USA", "Washington DC"],
+//     ["England", "London"]
+// ];
+// for (let [ country,capital] of countryCapitalArray){
+//     console.log(`${country} ${capital}`)
+// }
+// let str = ["amol","kantilal","jadhav"]
+// let check  = ([...str,967004310])
+// console.log(check)
+
+
+/****************************************************** missing numbers********************************* */
+// let input = [3,0,1]
+// Corrected = []
+// for(let i=0;i<=3;i++){
+// Corrected.push(i)
+// }
+// let missingnumber = Corrected.filter((el)=>!input.includes(el))
+// console.log(missingnumber)
+
+
+//  method 2
+// function MissingNumber(Array){
+//     Array.sort((a,b)=> a-b);
+//     for(let i=0;i<=Array.length;i++){
+//       if(Array[i]!==i){
+//         return i
+//       }
+//     }
+    
+//     }
+//     const  Input = [3,0,1];
+//     console.log(MissingNumber(Input))

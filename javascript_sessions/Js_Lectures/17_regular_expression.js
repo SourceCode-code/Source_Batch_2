@@ -122,7 +122,6 @@ console.log(str3.replace(/@#/gi,""))
 
 let str4 = " apple and banaana are fruits and a old chilce says Apple a day keeps doctor away"
 
-
 // console.log(str4.match(/apple/gi).length)
 console.log(str4.match(/[Aa]pple/g))
 
