@@ -1,21 +1,69 @@
 // Exercises:Level 1
 
-const a = [4, 5, 8, 9]
-const b = [3, 4, 5, 7]
-const democountries = ['Finland', 'Sweden', 'Norway']
 
-//1 create an empty set
-//2 Create a set containing 0 to 10 using loop
-//3 Remove an element from a set
-//4 Clear a set
+// //1 create an empty set
+// let newSet = new Set()
+// console.log(newSet)
+
+// //2 Create a set containing 0 to 10 using loop
+// let array = [0,1,2,3,4,5,6,7,8,9,10]
+// let Newset = new Set(array)
+// for (let i of Newset){// we have to use proper assertions like => in/of
+//     console.log(i)
+// }
+// //3 Remove an element from a set
+// Newset.delete(2)
+// console.log(Newset)
+
+// //4 Clear a set
+// Newset.clear()
+// console.log(Newset)
+
 //5 Create a set of 5 string elements from array
+// let str = ['Amol',"Kantilal","Jadhav","Age-24","unmarried"]
+// let str1 = new Set()
+// for(let i of str){
+//     str1.add(i)   
+// }
+// console.log(str1)
+
 //6 Create a map of countries and number of characters of a country
+// let countries = [["Afghanistan","Kabul"],
+// ["Albania","Tirana"],
+// ["Algeria","Algiers"],
+// ["Andorra","Andorra la Vella"],
+// ["Angola","Luanda"],
+// ["Antigua and Barbuda","St. John's"],
+// ["Argentina","Buenos Aires"],
+// ["Armenia","Yerevan"],
+// ["Australia","Canberra"],
+// ["Austria","Vienna"],
+// ["Azerbaijan","Baku"]]
+// let countries1 = new Map(countries) 
+// console.log(countries1)
+// console.log(countries1.size)
 
 // Exercises:Level 2
+// const a = [4, 5, 8, 9]
+// const b = [3, 4, 5, 7]
+// const democountries = ['Finland', 'Sweden', 'Norway']
 
-//1 Find a union b
-//2 Find a intersection b
-//3 Find a with b
+// //1 Find a union b
+// let c = [...a,...b]
+// console.log(new Set(c))
+
+// //2 Find a intersection b
+// setA = new Set(a)
+// setB = new Set(b)
+// intersection = a.filter((el)=>setB.has(el))
+// console.log(new Set (intersection))
+
+// //3 Find a with b
+// intersection1 = a.filter((el)=>!setB.has(el))
+// intersection2 = b.filter((el)=>!setA.has(el))
+// console.log(new Set ([...intersection1,...intersection2]))
+
+
 
 // Exercises:Level 3
 
@@ -27,7 +75,7 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 // output be like this --->
 // Your output should look like this
 // console.log(mostSpokenLanguages(countries, 10))
-// [
+// 
 //     { English: 91 },
 //     { French: 45 },
 //     { Arabic: 25 },
@@ -40,6 +88,14 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 //     { Swahili: 4 },
 //     { Serbian: 4 }
 // ]
+// const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+// const uniqueLanguages = new Set(langArray);
+// const languageCounts = [];
+// for (let lang of uniqueLanguages) {
+//     const filteredLangs = langArray.filter((el) => el === lang);
+//     languageCounts.push({ lang, count: filteredLangs.length });
+// }
+// console.log(languageCounts)
 
 // // Your output should look like this
 // console.log(mostSpokenLanguages(countries, 3))
@@ -51,9 +107,8 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 
 
 
-
 // data for question  
-const countries = [
+ const countries = [
     {
         name: 'Afghanistan',
         capital: 'Kabul',
@@ -2060,45 +2115,124 @@ const countries = [
     {
         name: 'Zimbabwe',
         capital: 'Harare',
-        languages: ['English', 'Shona', 'Northern Ndebele'],
+        languages: ['English', 'Shona', 'Northern Ndebele',],
         population: 14240168,
         flag: 'https://restcountries.eu/data/zwe.svg',
         currency: 'Botswana pula'
     }
 ]
+module.exports = countries;
 
-// Function to find the number of unique languages
-function countUniqueLanguages(countries) {
-    const languageSet = new Set();
-    countries.forEach(country => country.languages.forEach(language => languageSet.add(language)));
-    return languageSet.size;
-}
 
-// Function to find the most spoken languages
-function mostSpokenLanguages(countries, limit) {
-    const languageCount = {};
 
-    // Count each language's occurrence across countries
-    countries.forEach(country => {
-        country.languages.forEach(language => {
-            languageCount[language] = (languageCount[language] || 0) + 1;
-        });
-    });
+// // const langArray = ["English", "Spanish", "French", "English", "Spanish", "German", "French", "English"];
+// const uniqueLanguages = new Set(langArray);
+// const languageCounts = [];
+// for (let lang of uniqueLanguages) {
+//     const filteredLangs = langArray.filter((el) => el === lang);
+//     languageCounts.push({ lang, count: filteredLangs.length });
+// }
+// console.log(languageCounts)
 
-    // Sort languages by their occurrence in descending order
-    const sortedLanguages = Object.entries(languageCount)
-        .map(([language, count]) => ({ [language]: count }))
-        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
+//1 How many languages are there in the countries object file.
+// kk=[]
+// for (let i of countries){
+//  kk.push(...i.languages)  
+// }
+// console.log(new Set(kk))//.size)// output = 112
 
-    // Return the top 'limit' most spoken languages
-    return sortedLanguages.slice(0, limit);
-}
+// *** Use the countries data to find the 10 most spoken languages:
+// check = []
+// for (let i of countries){
+// check.push(...i.languages)
+// langset = (new Set (check))
 
-// Output the number of unique languages
-console.log("Number of unique languages:", countUniqueLanguages(countries));
+// for (let i of countries){
+//    allLang = i.languages
 
-// Output the top 10 most spoken languages
-console.log(mostSpokenLanguages(countries, 10));
+//  console.log(allLang.filter(langset))
+// }
+// }
 
-// Output the top 3 most spoken languages
-console.log(mostSpokenLanguages(countries, 3));
+// output be like this --->
+// Your output should look like this
+// console.log(mostSpokenLanguages(countries, 10))
+// 
+//     { English: 91 },
+//     { French: 45 },
+//     { Arabic: 25 },
+//     { Spanish: 24 },
+//     { Russian: 9 },
+//     { Portuguese: 9 },
+//     { Dutch: 8 },
+//     { German: 7 },
+//     { Chinese: 5 },
+//     { Swahili: 4 },
+//     { Serbian: 4 }
+// ]
+// function mostSpokenLanguages(countries, limit) {
+// let langaugeC = {}
+// for (let key of countries){
+//     for (let lang of key.languages){
+//         langaugeC[lang]=(langaugeC[lang]||0)+1
+//     }
+// }
+// let check = Object.entries(langaugeC).map(([langaugeC,count])=>({[langaugeC]:count})).sort((a,b)=>Object.values(b)[0]-Object.values(a)[0])
+// return check.slice(0,limit)
+
+// }
+// console.log(mostSpokenLanguages(countries, 5))
+
+// // Filter out companies which have more than one 'o' without using the filter method
+// let company = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+// let result = []
+
+// for (let i = 0; i < company.length; i++) {
+
+//   let count = 0;
+// console.log(company[i])
+//   // we have to find occurance of letter o 
+//   for (let char of company[i].toLowerCase()) {
+//     if (char === "o") {
+//       count++
+//     }
+//   }
+//   if (count > 1) {
+//     result.push(company[i])
+//   }
+// }
+
+// console.log(result)
+// Object with an array property and retrieving specific elements from it
+const profiles = [
+    { firstName: "Vihaan", lastName: "Mehta", age: 28, experience: 6, skills: ["TypeScript", "CI/CD"], position: "Automation Tester" },
+    { firstName: "Rohan", lastName: "Joshi", age: 29, experience: 11, skills: ["TypeScript", "JavaScript", "Cypress", "Docker"], position: "Technical Lead" },
+    { firstName: "Vihaan", lastName: "Deshmukh", age: 32, experience: 1, skills: ["Python", "TypeScript"], position: "Software Engineer" },
+    { firstName: "Ishaan", lastName: "Pandey", age: 31, experience: 14, skills: ["Python", "Cypress"], position: "Systems Engineer" },
+    { firstName: "Ishaan", lastName: "Deshmukh", age: 25, experience: 1, skills: ["Java", "Playwright", "JavaScript", "SQL"], position: "Systems Engineer" },
+    { firstName: "Rohan", lastName: "Joshi", age: 33, experience: 3, skills: ["JavaScript", "Java", "Docker", "TypeScript"], position: "Full-Stack Developer" },
+    { firstName: "Pranav", lastName: "Joshi", age: 24, experience: 2, skills: ["JavaScript", "GitHub Actions", "Playwright", "TypeScript"], position: "Data Analyst" },
+    { firstName: "Rohan", lastName: "Nayak", age: 24, experience: 10, skills: ["JavaScript", "GitHub Actions", "Playwright"], position: "Backend Developer" },
+    { firstName: "Arjun", lastName: "Nayak", age: 36, experience: 4, skills: ["Java", "Playwright", "Docker"], position: "Systems Engineer" },
+    { firstName: "Vikram", lastName: "Joshi", age: 34, experience: 1, skills: ["Python", "GitHub Actions"], position: "Full-Stack Developer" }
+  ];
+  
+  //console.log(profiles);
+let arr = [1, 2, 4, 5, 6, 7, 4, 6, 2];
+
+
+
+// let check2 = arr.filter((el,index,arr)=>{
+// return (arr.indexOf(el)!==index)
+// }
+// )
+// console.log(check2)
+
+// ;
+// let arr1 = ["amol","kantilal","jadhav","kiran","Diyu","Amol","kantilal","jadhav"]
+// let duplicates = arr1.filter((el, index, array) => {
+//     return array.indexOf(el) !== index
+//   });
+  
+//   console.log(duplicates);

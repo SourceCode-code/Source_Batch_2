@@ -95,7 +95,7 @@ console.log(skill1, skill2); // Output: TypeScript CI/CD
 // - Dot Notation: Use when accessing object properties directly by their name. It is clear and easy to read.
 console.log(obj.firstName);  // Output: Vihaan
 
-// - Bracket Notation: Use when accessing properties dynamically or when the property name includes special characters.
+// - Bracket Notation: Use when accessing per operties dynamically or when the property name includes special characters.
 // Example: Accessing properties with a variable
 let property = "lastName";
 console.log(obj[property]);  // Output: Mehta
@@ -112,3 +112,132 @@ let numbersArray = [10, 20, 30];
 for (let value of numbersArray) {
     console.log(value);
 }
+
+
+
+//----------------------------
+// examples on destructing 
+// spread 
+
+const rect = {
+    height: 20,
+    width: 10
+}
+
+let perimeter = 2 * (rect.height + rect.width)
+
+console.log(perimeter)
+
+// creating functions without using destruture 
+function calculateperimeter(rectangle) {
+    return 2 * (rectangle.height + rectangle.width)
+}
+
+console.log((calculateperimeter(rect)))
+
+//---------------------------------------------
+
+// creating function using destructure 
+
+function peri({ height, width }) {
+    return 2 * (height + width)
+}
+
+console.log(peri(rect))
+
+
+//------------------loops in destructing a object 
+
+const EXP = [{
+    name: 'Afghanistan',
+    capital: 'Kabul',
+    languages: ['Pashto', 'Uzbek', 'Turkmen'],
+    population: 27657145,
+    flag: 'https://restcountries.eu/data/afg.svg',
+    currency: 'Afghan afghani'
+}, {
+    name: 'Afghanistan',
+    capital: 'Kabul',
+    languages: ['Pashto', 'Uzbek', 'Turkmen'],
+    population: 27657145,
+    flag: 'https://restcountries.eu/data/afg.svg',
+    currency: 'Afghan afghani'
+}]
+
+
+// console.log(name, capital, languages, population, flag, currency)
+
+for (const { name, capital, languages, population, flag, currency } of EXP) {
+    console.log(name, capital, languages, population, flag, currency)
+}
+
+
+//---------------------------------------------------------------------------------------
+
+//Spread operator
+// how is spread operator denoted (...name)
+
+let arr2= [1,2,3,47,5,6,7,8,9]
+
+console.log(...arr2)  //1 2 3 47 5 6 7 8 9
+ 
+let [NUM1,NUM2,...rest]=arr2
+
+console.log(NUM1,NUM2,rest)
+
+// spread opertor is used to copy array
+
+const even =[2,4,6,8,10,12,14,16,18,20]
+
+let EVENNUMBERS=[...even]
+
+console.log(EVENNUMBERS)
+
+let odd=[1,3,5,7,9,11,13,15,17,19,21]
+
+let ODD=[...odd]
+
+console.log(ODD)
+
+let wholenumbers=[...EVENNUMBERS,...ODD]
+
+console.log(wholenumbers)
+
+//-------------------------------------------------------------------
+
+//spread opertor is used to modify or add new value in object
+
+// let afg={
+//     name: 'Afghanistan',
+//     capital: 'Kabul',
+//     languages: ['Pashto', 'Uzbek', 'Turkmen'],
+//     population: 27657145,
+//     flag: 'https://restcountries.eu/data/afg.svg',
+//     currency: 'Afghan afghani'
+// }
+
+// const AFG={...afg,currency:"dollars"}
+
+// console.log(AFG)
+//--------------------------------------------------------------------------
+//spread opertor can be used as multiple parameter in a function
+
+function sumofnum(...args){
+    console.log(args)
+ }
+
+ sumofnum(1,2,3,4,5,6,78,8,9,524)
+//--------------------------------------------------------------
+
+ function sumofnum(...args){
+  let sum =0
+  for(const num of args){
+    sum+=num
+  }
+  return sum
+ }
+
+console.log( sumofnum(1,2,3,4,5,6,78,8,9,524))
+console.log(sumofnum(1,2))
+console.log(sumofnum(1,2,3,4,5,6,7,8,9,10))
+

@@ -5,20 +5,72 @@ const b = [3, 4, 5, 7]
 const democountries = ['Finland', 'Sweden', 'Norway']
 
 //1 create an empty set
+let newSet = new Set()
+console.log(newSet)
+console.log("-------ex.lev-1-ans.1---------")
+
 //2 Create a set containing 0 to 10 using loop
+let Arr = [1,2,3,4,5,6,7,8,9,10]
+let NewSet = new Set(Arr)
+for (let i  = 0; i < 11; i++) {
+    console.log(i)
+}
+console.log("-------ex.lev-1-ans.2---------")
 //3 Remove an element from a set
+NewSet.delete(2)
+console.log(NewSet)
+console.log("-------ex.lev-1-ans.3---------")
+
 //4 Clear a set
+NewSet.clear()
 //5 Create a set of 5 string elements from array
+let Str = ["Atharva", "Vijay","Pandit", "Age: 25", "Single"]
+let Str1 = new Set()
+for (let i of Str){
+    Str1.add(i)
+}
+console.log(Str1)
+console.log("-------ex.lev-1-ans.4---------")
+
 //6 Create a map of countries and number of characters of a country
+let Countries = [["Bahamas","Nassau"],
+["Bahrain","Manama"],
+["Bangladesh","Dhaka"],
+["Barbados","Bridgetown"],
+["Belarus","Minsk"],
+["Belgium","Brussels"],
+["Belize","Belmopan"],
+["Bulgaria","Sofia"]
+]
+let Countries1 = new Map(Countries)
+console.log(Countries1)
+console.log(Countries1.size)
+console.log("-------ex.lev-1-ans.5---------")
+
+
+
 
 // Exercises:Level 2
 
 //1 Find a union b
+let c = [...a,...b]
+console.log(new Set (c))
+console.log("-------ex.lev-2-ans.1---------")
+
 //2 Find a intersection b
+setA = new Set(a);
+setB = new Set(b);
+Intersection = a.filter((el =>setB.has(el)))
+console.log(new Set (Intersection))
+console.log("-------ex.lev-2-ans.2--------")
+
 //3 Find a with b
+intersection1 = a.filter((el)=>!setB.has(el))
+intersection2 = b.filter((el)=>!setA.has(el))
+console.log(new Set ([...intersection1,...intersection2]))
+console.log("-------ex.lev-2-ans.3---------")
 
 // Exercises:Level 3
-
 
 //1 How many languages are there in the countries object file.
 
@@ -26,7 +78,8 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 
 // output be like this --->
 // Your output should look like this
-// console.log(mostSpokenLanguages(countries, 10))
+//console.log(mostSpokenLanguages(countries, 10))
+
 // [
 //     { English: 91 },
 //     { French: 45 },
@@ -39,9 +92,9 @@ const democountries = ['Finland', 'Sweden', 'Norway']
 //     { Chinese: 5 },
 //     { Swahili: 4 },
 //     { Serbian: 4 }
-// ]
+//]
 
-// // Your output should look like this
+// Your output should look like this
 // console.log(mostSpokenLanguages(countries, 3))
 // [
 //     { English: 91 },
@@ -2067,38 +2120,45 @@ const countries = [
     }
 ]
 
-// Function to find the number of unique languages
-function countUniqueLanguages(countries) {
-    const languageSet = new Set();
-    countries.forEach(country => country.languages.forEach(language => languageSet.add(language)));
-    return languageSet.size;
-}
 
-// Function to find the most spoken languages
-function mostSpokenLanguages(countries, limit) {
-    const languageCount = {};
+//1 How many languages are there in the countries object file.
+// jk=[]
+// for (let i of countries){
+//  jk.push(...i.languages)  
+// }
+// console.log(new Set(jk).size)
+// console.log("-----i.1------")// output = 112
+// *** Use the countries data to find the 10 most spoken languages: 
 
-    // Count each language's occurrence across countries
-    countries.forEach(country => {
-        country.languages.forEach(language => {
-            languageCount[language] = (languageCount[language] || 0) + 1;
-        });
-    });
 
-    // Sort languages by their occurrence in descending order
-    const sortedLanguages = Object.entries(languageCount)
-        .map(([language, count]) => ({ [language]: count }))
-        .sort((a, b) => Object.values(b)[0] - Object.values(a)[0]);
 
-    // Return the top 'limit' most spoken languages
-    return sortedLanguages.slice(0, limit);
-}
+ function mostSpokenLanguages(countries, limit) {
+        const languageCount = {}
+        
+        countries.forEach(country => {
+            country.languages.forEach(language => {
+                languageCount[language] = (languageCount[language] || 0) + 1
+            });
+        })
+        const sortedLanguages = Object.entries(languageCount).map(([language, count]) => ({ [language]: count })).sort((a, b) => Object.values(b)[0] - Object.values(a)[0])
+        return sortedLanguages.slice(0, limit)
+    }
 
-// Output the number of unique languages
-console.log("Number of unique languages:", countUniqueLanguages(countries));
+    console.log(mostSpokenLanguages(countries , 10))
 
-// Output the top 10 most spoken languages
-console.log(mostSpokenLanguages(countries, 10));
 
-// Output the top 3 most spoken languages
-console.log(mostSpokenLanguages(countries, 3));
+
+//     function mostSpokenLanguages(countries, limit){
+//         const languageCount ={}
+
+//         countries.forEach(country =>{
+//             country.languages.forEach(language =>{
+//                 languageCount[language] = (languageCount[language] || 0) +  1
+
+//             });
+//     })
+
+//     const sortedLanguages =Object.entries(languageCount).map(([language, count])=>({ [language] : [count]})).sort((a,b)=>Object.values(b)[0] - Object.values(a)[0])
+//     return sortedLanguages.slice(0, limit)
+// }
+// console.log("------------111-----------")

@@ -3,34 +3,35 @@
 // Exercises: Level 1
 
 // 1 Declare a function fullName and it print out your full name. 
-function fullname(){
-    let firstname ="atharva";
-    let middlename="vijay";
+function fullname() {
+    let firstname = "atharva";
+    let middlename = "vijay";
     let lastname = "pandit";
     console.log(`my full name is ${firstname} ${middlename} ${lastname}`);
 }
-fullname(); 
+fullname();
 
 console.log("----ex-level-1;Ans.1-----------")
 
 
 // 2 Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
-function FullName(FirstName, LastName){
+function FullName(FirstName, LastName) {
 
     return `${FirstName} ${LastName}`
 }
-console.log(FullName("Atharva","Pandit"));
+console.log(FullName("Atharva", "Pandit"));
 console.log("----ex-level-1;Ans.2-----------")
+
 // 3 Declare a function addNumbers and it takes two two parameters and it returns sum.
-function addNumbers(num1, num2){
+function addNumbers(num1, num2) {
     let sumofnumbers = num1 + num2;
     return `${sumofnumbers}`
 }
-console.log(addNumbers(num1 =  95, num2 = 97));
+console.log(addNumbers(num1 = 95, num2 = 97));
 console.log("----ex-lev-1;Ans.3-------------")
 
 // 4 An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
-function AreaOfRectangle(length,breadth){
+function AreaOfRectangle(length, breadth) {
     let area = length * breadth;
     return `${area}`
 }
@@ -39,37 +40,37 @@ console.log("---ex-lev-1;ans.4----------")
 
 
 // 5 A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
-function PerimeterOfRectangle(Length, Breadth){
-    let perimeter =  2 * (Length + Breadth);
+function PerimeterOfRectangle(Length, Breadth) {
+    let perimeter = 2 * (Length + Breadth);
     return `${perimeter}`
 
 }
-console.log(PerimeterOfRectangle(Length=23, Breadth = 25));
+console.log(PerimeterOfRectangle(Length = 23, Breadth = 25));
 console.log("-------ex-lev-1; Ans.5-------------")
 
 // 6 A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
-function VolOfRectPrism(LengtH, BreadtH, HeighT){
+function VolOfRectPrism(LengtH, BreadtH, HeighT) {
     let Volume = LengtH * BreadtH * HeighT;
     return `${Volume}`
 }
-console.log(VolOfRectPrism(LengtH = 15, BreadtH = 18, HeighT =20));
+console.log(VolOfRectPrism(LengtH = 15, BreadtH = 18, HeighT = 20));
 console.log("------ex-lev-1; Ans.6----------")
 // 7 Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
-function AreaOfCircle(pi, Radius, radius){
+function AreaOfCircle(pi, Radius, radius) {
     let Area = pi * Radius * radius;
     return `${Area}`
 }
 console.log(AreaOfCircle(pi = 3.14, Radius = 12, radius = 9));
 console.log("------ex-lev-1; Ans.7---------------")
 // 8 Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
-function CircumferenceOfCirc(Pi, RADIUS){
+function CircumferenceOfCirc(Pi, RADIUS) {
     let Circumference = 2 * Pi * RADIUS;
     return `${Circumference}`
 }
 console.log(CircumferenceOfCirc(Pi = 14, RADIUS = 15));
 console.log("-----------ex-lev-1;Ans.8------------")
 // 9 Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
-function  DensityOfSubstance(Mass, Volume){
+function DensityOfSubstance(Mass, Volume) {
     let Density = Mass / Volume;
     return `${Density}`
 }
@@ -77,32 +78,32 @@ console.log(DensityOfSubstance(Mass = 40, Volume = 25));
 console.log("----ex-lev-1; Ans.9----------")
 
 // 10 Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
-function  SpeedOfMovingObject(Distance, Time){
-    let  Speed = Distance / Time;
+function SpeedOfMovingObject(Distance, Time) {
+    let Speed = Distance / Time;
     return `${Speed}`
 }
 console.log(SpeedOfMovingObject(Distance = 75, Time = 30));
 console.log("----ex-lev-1;Ans.10------------")
 
 // 11 Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
-function WeightOfSubstance(Mass, Gravity){
+function WeightOfSubstance(Mass, Gravity) {
     let Weight = Mass * Gravity;
-    return  `${Weight}`
+    return `${Weight}`
 }
-console.log(WeightOfSubstance(Mass = 30,  Gravity = 9.8));
+console.log(WeightOfSubstance(Mass = 30, Gravity = 9.8));
 console.log("--ex-lev-1; Ans.11-----------------")
 
 // 12 Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
-function convertCelsiusToFahrenheit(Celsius){
-     let formula =  (Celsius * 9/5) + 32;
-     return `${formula}`;
+function convertCelsiusToFahrenheit(Celsius) {
+    let formula = (Celsius * 9 / 5) + 32;
+    return `${formula}`;
 }
-console.log(convertCelsiusToFahrenheit(45 *  9/5 + 32));
+console.log(convertCelsiusToFahrenheit(45 * 9 / 5 + 32));
 console.log("--------ex-lev-1; Ans.12-----------")
 
 // 13 Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
-function BmI(weight, height){
-    let bmi = weight /  (height * height);
+function BmI(weight, height) {
+    let bmi = weight / (height * height);
     return `${bmi}`
 }
 console.log(BmI(weight = 60, height = 30));
@@ -114,23 +115,23 @@ console.log("--------ex-lev-1; Ans.13-----------")
 // Obese: BMI is 30 or more
 
 // 14 Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-function  checkSeason(month){
+function checkSeason(month) {
     if (month >= 3 && month <= 5) {
         return "Spring";
-        }
-        else if (month >= 6 && month <= 8) {
-        return "Summer";
-        }
-        else if (month >= 9 && month <= 11) {
-        return "Autumn"
-        }
     }
-    console.log(checkSeason(4));
+    else if (month >= 6 && month <= 8) {
+        return "Summer";
+    }
+    else if (month >= 9 && month <= 11) {
+        return "Autumn"
+    }
+}
+console.log(checkSeason(4));
 console.log("----ex-lev-1;Ans.14-------------")
 
 // 15 Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
-function findMax(first,second, third){
-    
+function findMax(first, second, third) {
+
 }
 // console.log(findMax(0, 10, 5))
 // 10
@@ -141,14 +142,14 @@ function findMax(first,second, third){
 // Exercises: Level 2
 
 // 1 Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
-function solveLinEquation(){
+function solveLinEquation() {
     let A = 4;
     let B = 6;
     let X = 9;
     let Y = 7;
     let C = 2;
-    let equation = A * X + B * Y + C ;
-   console.log(`the linear Equation is ${equation}`)
+    let equation = A * X + B * Y + C;
+    console.log(`the linear Equation is ${equation}`)
 }
 solveLinEquation();
 console.log("----ex-lev-2; Ans1---------")
@@ -162,21 +163,21 @@ console.log("----ex-lev-2; Ans1---------")
 // console.log(solveQuadratic(1, -1, 0)) //{1, 0}
 
 //Wrong implementation \\ Solve Again\\\\
-function  solveQuadratic(a1,b1,c1){
-    let x =9;
-    let d  = a1 * x * 2 + b1 * x + c1;
+function solveQuadratic(a1, b1, c1) {
+    let x = 9;
+    let d = a1 * x * 2 + b1 * x + c1;
     console.log(`the quadratic equation is ${d}`);
 }
-solveQuadratic(2,5,11);
+solveQuadratic(2, 5, 11);
 console.log("----ex-level-2; Ans.2----------")
 
 
 // 3 Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
-function printArray([]){
+function printArray([]) {
 
 }
 // 4 Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
-function showDateTime(){
+function showDateTime() {
     let date = new Date();
     let day = date.getDate();
     let month = date.getMonth();
@@ -184,10 +185,10 @@ function showDateTime(){
     let minutes = date.getMinutes();
     let hours = date.getHours();
 
-    let padDayFormat = String(day).padStart(2,'0');
-    let padMonthFormat = String(month).padStart(2,'0');
-    let padminutes = String(minutes).padStart(2,'0');
-    let padhours = String(hours).padStart(2,'0');
+    let padDayFormat = String(day).padStart(2, '0');
+    let padMonthFormat = String(month).padStart(2, '0');
+    let padminutes = String(minutes).padStart(2, '0');
+    let padhours = String(hours).padStart(2, '0');
     console.log(`${padDayFormat}/${padMonthFormat}/${year} ${padhours}:${padminutes}`);
 }
 showDateTime();
@@ -196,15 +197,15 @@ console.log("----ex-level-2; Ans.4---------")
 // 08/01/2020 04:08
 
 // 5 Declare a function name swapValues. This function swaps value of x to y.
-function swapValues(x,y){
+function swapValues(x, y) {
     let temp = x;
     x = y;
     y = temp;
-    return (x,y);
+    return (x, y);
 }
 let x = 7;
 let y = 8;
-console.log((swapValues(x,y)));
+console.log((swapValues(x, y)));
 console.log("x:", y, "y:", x);
 console.log("------ex-lev-2;Ans.5-----------------")
 
@@ -212,15 +213,15 @@ console.log("------ex-lev-2;Ans.5-----------------")
 // swapValues(4, 5) // x = 5, y = 4
 
 // 6 Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
-function reversearray(reverse){
+function reversearray(reverse) {
     let Arr = [];
-    for(i = reverse.length-1;i>=0;i--){
+    for (i = reverse.length - 1; i >= 0; i--) {
         Arr.push(reverse[i]);
     }
     console.log(Arr);
 }
-reversearray([1,2,3,4,5]);
-reversearray(['A','B','C'])
+reversearray([1, 2, 3, 4, 5]);
+reversearray(['A', 'B', 'C'])
 console.log("---ex-lev-2; Ans.6---------")
 
 // console.log(reverseArray([1, 2, 3, 4, 5]))
@@ -229,80 +230,137 @@ console.log("---ex-lev-2; Ans.6---------")
 // //['C', 'B', 'A']
 
 // 7 Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
-function capitalizeArray(ARRAY){
-    let arr = ['a','b','c','d','e'];
-    let yj ="";
-    for (i=0;i<arr.length;i++){
-        ARRAY += arr[i].toUpperCase()+"";
+function capitalizeArray(ARRAY) {
+    let arr = ['a', 'b', 'c', 'd', 'e'];
+    let yj = "";
+    for (i = 0; i < arr.length; i++) {
+        ARRAY += arr[i].toUpperCase() + "";
     }
     console.log(yj);
 }
 capitalizeArray(['atharva']);
 console.log("--ex-lev-2; Ans.7-----------")
 // 8 Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
-function addItem(item){
+function addItem(item) {
     item.unshift("mobilename");
-    return  item;
+    return item;
 }
-console.log(addItem(['iqoo 9pro','motog']));
+console.log(addItem(['iqoo 9pro', 'motog']));
 console.log("---ex-lev-2;Ans.8---------")
 // 9 Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-function reoveItem(Item){
+function removeItem(Item) {
     Item.pop();
     return Item
 }
-console.log(reoveItem(['car','mobile','asset']));
+console.log(removeItem(['car', 'mobile', 'asset']));
 console.log("----ex---lev-2; Ans.9-----------")
 // 10 Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
-function sumOfNumbers(number){
+function sumOfNumbers(number) {
     let sum = 0;
-    for(i=0;i<=number.length-1;i++){
+    for (i = 0; i <= number.length - 1; i++) {
         sum = number[i] + sum;
     }
     return sum;
 }
-console.log(sumOfNumbers([3,9,12,18,36]));
+console.log(sumOfNumbers([3, 9, 12, 18, 36]));
 console.log("----ex--lev-2;Ans,10------------")
 // 11 Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
-function sumOfOdds(Number){
+function sumOfOdds(Number) {
     let sumOfOdd = 0;
-    for(i=0;i<=Number.length-1;i++){
+    for (i = 0; i <= Number.length - 1; i++) {
         sumOfOdd += Number[i];
     }
-    return  sumOfOdd;
+    return sumOfOdd;
 }
-console.log(sumOfOdds([2,3,4,5,6,7,8]));
+console.log(sumOfOdds([2, 3, 4, 5, 6, 7, 8]));
 console.log("---ex-level-2; Ans.11---------")
 // 12 Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
-function sumOfEven(number){
+function sumOfEven(number) {
     let sumeveN = 0;
-    for( i=0;i<=number.length-1;i++){
+    for (i = 0; i <= number.length - 1; i++) {
         sumeveN += number[i];
     }
     return sumeveN;
 }
-console.log(sumOfEven([1,2,3,4,5,6,7,8,9,10,11]));
+console.log(sumOfEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]));
 console.log("------ex-lev-2; Ans.12-----------")
 // 13 Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
-// function evensAndOdds(integer){
-//     let evenodd = 0;
-//     let count = 0;
-//     for(i=0;i<integer.length-1;i++){
-//         if()
-//     }
-// }
+function evensAndOdds(positiveinteger) {
+    let even = 0;
+    let odd = 0;
+    for (i = 0; i <= positiveinteger; i++) {
+        if (i % 2 === 0) {
+            even++;
+        }
+        else {
+            odd++;
+        }
+    }
+    return {
+        even, odd
+    }
+}
+console.log(evensAndOdds(100));
+console.log("-----ex-lev-2; Ans.13--------");
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
 
 // 14 Write a function which takes any number of arguments and return the sum of the arguments
-
+function sumofArg(args) {
+    let sum = 0;
+    for (i = 0; i <= args.length - 1; i++) {
+        sum += args[i];
+    }
+    return sum;
+}
+console.log(sumofArg([1, 2, 3]));
+console.log(sumofArg([1, 2, 3, 4]));
+console.log("---ex-lev-2;Ans.14----------------")
 // sum(1, 2, 3) // -> 6
 // sum(1, 2, 3, 4) // -> 10
 
 // 15 Writ a function which generates a randomUserIp.
+function randomuserIp() {
+    let a = Math.round(Math.random() * 256);
+    let b = Math.round(Math.random() * 256);
+    let c = Math.round(Math.random() * 256);
+    let d = Math.round(Math.random() * 256);
+    let e = Math.round(Math.random() * 256);
+    console.log(`${a}.${b}.${c}.${d}.${e}`);
+}
+console.log("-----ex-lev-2; Ans.15-------")
+return randomuserIp();
+
+
+//Method 2 :- 
+
+// function RandomUserIp(){
+//     let user = "";
+//     for(i=0;i<4;i++){
+//         let user1 = Math.round(Math.random()*256)
+//         user += user1
+//         if(i<4){
+//             user += "."
+//         }
+//     }
+//     return user;
+// }
+// console.log(RandomUserIp());
 
 // 16 Write a function which generates a randomMacAddress
+function RandomMacAddress() {
+    let randommac = ''
+    for (let i = 0; i < 6; i++) {
+        let random = Math.round(Math.random() * 256).toString(16).padStart(2, '0')
+        randommac += (random)
+        if (i < 5) {
+            randommac += ":"
+        }
+    }
+    return randommac;
+}
+//console.log(RandomMacAddress(1));
 
 // 17 Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 
@@ -374,17 +432,55 @@ console.log("------ex-lev-2; Ans.12-----------")
 //   'Not Found'
 
 // 15  Write a function called isPrime, which checks if a number is prime number.
+function isPrime() {
+    for (let num = 2; num <= 100; i++) {
+        let isprime = true
+        for (let i = 2; i < Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                isprime = false;
+                break;
+            }
+            if (isprime) {
+                console.log(num)
+            }
+        }
+    }
+    console.log(isPrime(13));
+}
+
 
 // 16 Write a functions which checks if all items are unique in the array.
 
 // 17 Write a function which checks if all the items of the array are the same data type.
-
+function checkDataType() {
+    let arr = [1, 99, 76, 89];
+    let dataType = typeof arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] !== dataType) {
+            console.log('Not all items are the same data type');
+            return;
+        }
+    }
+}
 // 18 JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
 // 19 Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 
 // sevenRandomNumbers()
 // [(1, 4, 5, 7, 9, 8, 0)]
+function UniqueNumbers() {
+    let uniqueNum = [];
+    while (uniqueNum.length < 7) {
+        let random = Math.floor(Math.random() * 10);
+
+        if (!uniqueNum.includes(random)) {
+            uniqueNum.push(random);
+        }
+        return uniqueNum;
+    }
+    console.log(UniqueNumbers())
+}
+console.log("--------ex.lev-3,Ans-19-----------")
 
 // 20 Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 
