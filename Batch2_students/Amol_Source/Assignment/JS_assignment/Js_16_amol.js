@@ -15,7 +15,7 @@
 //    ```
 
 // 2. Destructure and assign the elements of `countries` array to the following variables:
-//    ```javascript
+//```javascript
 //const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
  //const [fin, est, sw, den, nor] = countries;
  //method 2
@@ -37,7 +37,7 @@
 // let {width:wd,height:ht,area:ar,perimeter:pr}=rectangle
 // console.log(wd,ht,ar,pr)
 
-// we dont use array methods here like=> forEach,filter abd all
+// we dont use array methods here like=> forEach,filter and all
 
 //Method 3
 // measurements = []
@@ -47,10 +47,10 @@
 // console.log(measurements)
 
 // Exercises: Level 2
-
-// 1. Iterate through the `users` array and get all the keys of each object using destructuring:
+// 1.Iterate through the `users` array and get all the keys of each object using destructuring:
 //    ```javascript
-//  const users = [
+//  const users = 
+//     [
 //      { name: 'Brook', scores: 75, skills: ['HTML', 'CSS', 'JS'], age: 16 },
 //      { name: 'Alex', scores: 80, skills: ['HTML', 'CSS', 'JS'], age: 18 },
 //      { name: 'David', scores: 75, skills: ['HTML', 'CSS'], age: 22 },
@@ -219,7 +219,7 @@ student.skills.dataScience.push("SQL")
 //         {skill: 'React',level: 9},
 //         {skill: 'BootStrap',level: 8}
 //       ],
-//       backEnd: [
+//  backEnd:[
 //         {skill: 'Node',level: 7},
 //         {skill: 'GraphQL',level: 8},
 //         {skill: 'Express',level: 9}

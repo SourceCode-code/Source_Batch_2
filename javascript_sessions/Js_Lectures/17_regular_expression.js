@@ -10,7 +10,6 @@
 //pattern --> a patteren could be a text or any form of pattern which have some simliarity 
 
 // emails --> @gmail.com
-
 //Flags --> flags are optional parameter in an regex which deteremine the type of searching
 
 /**
@@ -72,7 +71,6 @@ console.log(str17.match(/learning/gi).length) // Output: [ 'LEARNING', index: 5,
 console.log(str.search(/am/gi))
 console.log(str17.search(/learn/gi))
 
-
 //replace()-->change the word in a string 
 
 let str2 = "i am learning python, and i am also laerning the basic of python, Python is a easy langauge \
@@ -111,7 +109,7 @@ console.log(str3.replace(/@#/gi,""))
 //^:--> starts with 
 //$:--> ends with
 //*:--> occurance 
-//+: --> one more time (charcter should once or more than that )
+//+: --> one more time (charcter should once or more than that)
 //?: --> zero or one time 
 // \b --> its matches the staring or ending of a word
 // {3}: Exactly 3 characters
@@ -123,7 +121,6 @@ console.log(str3.replace(/@#/gi,""))
 // \w+ : matches sequences of word characters
 
 let str4 = " apple and banaana are fruits and a old chilce says Apple a day keeps doctor away"
-
 
 // console.log(str4.match(/apple/gi).length)
 console.log(str4.match(/[Aa]pple/g))

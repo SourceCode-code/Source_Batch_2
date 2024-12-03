@@ -28,7 +28,7 @@
 // console.log(str1)
 
 //6 Create a map of countries and number of characters of a country
-// let countries = [["Afghanistan","Kabul"],
+// let countries2 = [["Afghanistan","Kabul"],
 // ["Albania","Tirana"],
 // ["Algeria","Algiers"],
 // ["Andorra","Andorra la Vella"],
@@ -39,13 +39,13 @@
 // ["Australia","Canberra"],
 // ["Austria","Vienna"],
 // ["Azerbaijan","Baku"]]
-// let countries1 = new Map(countries) 
-// console.log(countries1)
-// console.log(countries1.size)
+// let countries3 = new Map(countries2) 
+// console.log(countries3)
+// console.log(countries3.size)
 
 // Exercises:Level 2
-// const a = [4, 5, 8, 9]
-// const b = [3, 4, 5, 7]
+const a = [4, 5, 8, 9]
+const b = [3, 4, 5, 7]
 // const democountries = ['Finland', 'Sweden', 'Norway']
 
 // //1 Find a union b
@@ -2170,6 +2170,7 @@ module.exports = countries;
 //     { Swahili: 4 },
 //     { Serbian: 4 }
 // ]
+
 // function mostSpokenLanguages(countries, limit) {
 // let langaugeC = {}
 // for (let key of countries){
