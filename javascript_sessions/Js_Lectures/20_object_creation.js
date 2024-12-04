@@ -25,6 +25,7 @@ let amol_details = new Details ("amol","jadhav",28)
 
 console.log(amol_details)
 console.log(sid_details)
+console.log("--Ans1--")
 
 
 //3 factory function 
@@ -39,8 +40,8 @@ age
 let sid_details2= new Details2("siddhant","gadakh",26)
 let amol_details2 = new Details2 ("amol","jadhav",28)
 
-console.log(amol_details)
-console.log(sid_details)
+console.log(amol_details2)
+console.log(sid_details2)
 
 
 // ----------------------------------------------------------------------

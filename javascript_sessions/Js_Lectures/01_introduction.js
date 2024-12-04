@@ -117,3 +117,20 @@ console.log(lastName1);
 // ----------------------------
 // - Primitive Data Types: Fixed values that cannot be changed.
 // - Non-Primitive Data Types: User-defined structures that can be updated or manipulated.
+
+// let Array = [3,0,1]
+
+
+///question by akshay \\\
+// function MissingNumber(Array){
+// Array.sort((a,b)=> a-b);
+// for(let i=0;i<=Array.length;i++){
+//   if(Array[i]!==i){
+//     return i
+//   }
+// }
+
+// }
+// const  Input = [3,0,1];
+// console.log(MissingNumber(Input))
+// console.log("--MissingNum---")
