@@ -1104,7 +1104,7 @@ let checck = x.filter((el) => !Newy.has(el))
 //     skills: ["TypeScript", "CI/CD"],
 //     position: "Automation Tester"
 //   }
-  
+
 //   let kk = Object.entries(viaahn)
 //   console.log(kk)
 // let countryCapitalArray = [
@@ -1138,7 +1138,85 @@ let checck = x.filter((el) => !Newy.has(el))
 //         return i
 //       }
 //     }
-    
+
 //     }
 //     const  Input = [3,0,1];
 //     console.log(MissingNumber(Input))
+
+// let myinfo = `{
+// "firstname":"AMOL", 
+// "MiddleName":" Kantilal",
+// "lastName":"Jadhav",
+// "coNum":9767004310,
+// "Age" : 24
+// }` // take care you should not miss any " " ,: ,and ,  for that it should be must clear and distingt..
+// let check = JSON.parse(myinfo)//,[firstname,lastName]) we have to do it manualy
+// console.log(check)
+
+// let newinfo = {
+//     firstname: 'AMOL',
+//     MiddleName: ' Kantilal',
+//     lastName: 'Jadhav',
+//     coNum: 9767004310,
+//     Age: 24
+//   }
+//   let check2= JSON.stringify(newinfo,['firstname','MiddleName'])
+//   console.log(check2)
+
+// function Personalinfo(Firstname,middlename,lastname){
+//     this.Firstname = Firstname
+//     this. middlename = middlename
+//     this. lastname = lastname
+// }
+// let amolinfo = new Personalinfo("amol","Kantilal","jadhav")
+// console.log(amolinfo)
+
+// function vikkasinfo(firstname,middlename,lastname){
+//     return{
+//     firstname:firstname,
+//     middlename:middlename,
+//     lastname:lastname
+//     }
+// }
+// let vikas = new vikkasinfo("Vikas","Kantilal","Jadhav")
+// console.log(vikas)
+
+// best example to understand returning function
+// function firstfuction(A) {
+//     function secondFunction(B) {
+//         function thirdFunction(C) {
+//             return A*2+B**2+C**5
+//         }
+//         return thirdFunction
+//     }
+//     return secondFunction
+// } 
+// console.log(firstfuction(2)(3)(4))
+
+// function fisrtcheck(k){
+//     return "amol"
+// }
+
+// function namecheck(kk){
+// return kk+" Jadhav"
+// }
+// console.log(namecheck(fisrtcheck()))
+
+
+// function flatarray(arra1,arra2){
+   
+//  return [...arra1,...arra2]
+
+// }
+// console.log(flatarray([1,2,3,4,5,6],[7,8,9]))
+
+
+function Personalinfo(firstname,middlename,lastname){
+    return{
+        firstname,
+        middlename,
+        lastname
+    }
+}
+let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
+console.log(amolinfo)
