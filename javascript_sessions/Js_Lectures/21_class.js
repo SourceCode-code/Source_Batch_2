@@ -38,6 +38,8 @@ constructor(firstname,middlename,lastname,age){
 
 }
 
+let dd = new Details()
+console.log(dd)
 let sidDetails= new Details("siddhant","arjun","gadakh",25)
 
 console.log(sidDetails)
