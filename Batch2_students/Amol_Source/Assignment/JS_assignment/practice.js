@@ -1204,19 +1204,84 @@ let checck = x.filter((el) => !Newy.has(el))
 
 
 // function flatarray(arra1,arra2){
-   
+
 //  return [...arra1,...arra2]
 
 // }
 // console.log(flatarray([1,2,3,4,5,6],[7,8,9]))
 
 
-function Personalinfo(firstname,middlename,lastname){
-    return{
-        firstname,
-        middlename,
-        lastname
-    }
-}
-let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
-console.log(amolinfo)
+// function Personalinfo(firstname,middlename,lastname){
+//     return{
+//         firstname,
+//         middlename,
+//         lastname
+//     }
+// }
+// let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
+// let vikasinfo = new Personalinfo("Vikas",'Kantilal',"Jadhav")
+// console.log(amolinfo,vikasinfo)
+
+// function Personalinfo(firstname,middlename,lastname){
+
+//         this.firstname=firstname
+//         this.middlename=middlename
+//         this.lastname=lastname
+
+// }
+// let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
+// let vikasinfo = new Personalinfo("Vikas",'Kantilal',"Jadhav")
+// console.log(amolinfo)
+
+// class Personalinfo {
+//     constructor(firstname="givenname", middlename="givenMiddlename",lastname="GivenLastName",age="givenage",country="givencountry"){
+//         this.firstname=firstname,
+//         this.middlename=middlename,
+//         this.lastname=lastname
+//         this.age = age
+//         this.country=country  
+//     }
+// } 
+// let cross = new Personalinfo()
+// console.log(cross)
+// let amolinfo = new Personalinfo("Amol","kantilal","Jadhav",24,"India")
+// console.log(amolinfo)
+
+
+//  the concept of object with stringify, parse,  factory function with fucntion constructer in a single example....
+// function Personalinfo(firstname, middlename, lastname) {
+//     return{
+//         firstname,
+//         middlename,
+//         lastname
+//     }
+// }
+// let person3 = new Personalinfo("Amol", "Kantilal", "Jadhav")
+// console.log(person3)
+// let check = JSON.stringify(person3)
+// console.log(check)
+// let check2 = JSON.parse(check)
+// console.log(check2)
+
+// function Printumnber(num){
+// if(num<=100){
+//     console.log(num)
+//     Printumnber(num+1)
+// }
+// }
+// Printumnber(0)
+
+// let name = "amolj6897@gmail.com"
+// let remaingstr =name.substring(4,20)
+// let check = (name.substring(0,4))
+// reverse = ""
+// for(let i = check.length-1; i >=0;i--){
+//     reverse+=check[i]
+// }
+// console.log(`${remaingstr} ${reverse}`)
+
+
+
+
+
+
