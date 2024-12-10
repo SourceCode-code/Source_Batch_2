@@ -28,16 +28,14 @@ console.log(person1)
 
 //ES6 class object -->
 
-class Details {
-    constructor(firstname, middlename, lastname, age) {
-        this.firstname = firstname
-        this.middlename = middlename
-        this.lastname = lastname
-        this.age = age
-    }
-
+class Details{
+constructor(firstname,middlename,lastname,age){
+    this.firstname=firstname
+    this.middlename =middlename
+    this.lastname=lastname
+    this.age=age
 }
-
+}
 let dd = new Details()
 console.log(dd)
 let sidDetails = new Details("siddhant", "arjun", "gadakh", 25)
@@ -59,7 +57,7 @@ class Person {
     }
 
 }
-
+//module.export = Person
 
 
 
