@@ -1280,7 +1280,7 @@ let checck = x.filter((el) => !Newy.has(el))
 // }
 // console.log(`${remaingstr} ${reverse}`)
 
-// //  Methods of class // Function Stter and getter
+// // //  Methods of class // Function Stter and getter
 // class personalInfo{
 //     constructor(firstName="noname", Middlename="NomiddleName", Lastname="NolastName"){
 //  this.firstName=firstName,
@@ -1328,5 +1328,21 @@ let checck = x.filter((el) => !Newy.has(el))
 // sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interes12344ting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
 
 // console.log(sentence.replace(/[\w+\s]/gi,""))
+
+// let str = "my name is amol kantila jadhav"
+// console.log(str.match(/[^amol]/gi))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
