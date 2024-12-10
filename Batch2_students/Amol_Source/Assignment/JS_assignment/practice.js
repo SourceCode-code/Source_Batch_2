@@ -1269,7 +1269,7 @@ let checck = x.filter((el) => !Newy.has(el))
 //     Printumnber(num+1)
 // }
 // }
-// Printumnber(0)
+// Printumnber(0)(
 
 // let name = "amolj6897@gmail.com"
 // let remaingstr =name.substring(4,20)
@@ -1280,8 +1280,53 @@ let checck = x.filter((el) => !Newy.has(el))
 // }
 // console.log(`${remaingstr} ${reverse}`)
 
+// //  Methods of class // Function Stter and getter
+// class personalInfo{
+//     constructor(firstName="noname", Middlename="NomiddleName", Lastname="NolastName"){
+//  this.firstName=firstName,
+//  this.Middlename=Middlename,
+//  this.Lastname=Lastname
+//     }
+//     amol(){    // function
+//         let amolfirstlast= this.firstName+" "+this.Lastname
+//         return amolfirstlast  
+//      }
 
+//      get get_middlename(){ //  getter
+//         return this.Middlename
+//      }
 
+//      set set_firstname(newname){  //  setter
+//        return this.firstName = newname
+//      }
+//      set set_age(Age){  // when we have to add somthing to class
+//        return this.age = Age
+//      }
+     
+// }
+// let empty = new personalInfo()
+// console.log(empty)
+// let amolInfo = new personalInfo("amol","Kantilal","Jadhav")
+// console.log(amolInfo)
+// console.log(amolInfo.amol())
+// console.log(amolInfo.get_middlename)
+// amolInfo.set_firstname="AMOL"
+// console.log(amolInfo)
+// amolInfo.set_age = 25
+// console.log(amolInfo)
 
+//    let year  =2021
+//    heck  = (year%4==0&&year%100!==0||year%400==0)
+// console.log(heck)
+// if (heck == true){
+//    console.log("this is a leap year")
+// }
+// else{
+//    console.log(" this is not a leap year")
+// }
+
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interes12344ting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+
+// console.log(sentence.replace(/[\w+\s]/gi,""))
 
 
