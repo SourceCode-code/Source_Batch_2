@@ -59,7 +59,7 @@ class Person {
     }
 
 }
-module.export = Person
+
 
 
 
@@ -137,3 +137,45 @@ console.log(sid_perosonal)
 
 
 //---------------------------------------------------------------------------------//
+
+class personal_Details1 {
+    constructor(firstname, middlename, lastname, age) {
+        this.firstname = firstname
+        this.middlename = middlename
+        this.lastname = lastname
+        this.age = age
+    }
+
+    displayfullname() {
+        const fullname = this.firstname + " " + this.middlename + " " + this.lastname
+        return fullname
+    }
+
+    get get_age() {
+        return this.age
+    }
+
+    set set_age(Age) {
+        this.age = Age
+    }
+
+    static ShowDate(){
+        let date = new Date()
+let fulltime = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
+        return fulltime
+
+    }
+
+    static showtime(){
+        let date = new Date()
+        let fulltime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+return fulltime
+    }
+}
+
+
+
+console.log(personal_Details1.ShowDate()) //10/12/2024
+console.log(personal_Details1.showtime())
+// static methods are also used as uitility function 
+
