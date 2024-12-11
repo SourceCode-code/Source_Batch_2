@@ -11,7 +11,11 @@
 let text = "He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month"
 
 let Numbers = text.match(/\d+/g).map(Number);
+<<<<<<< HEAD
 let totalIncome = (Numbers[0]+ Numbers[2]) * 12 + Numbers[1];
+=======
+let totalIncome = (Numbers[0] + Numbers[2]) * 12 + Numbers[1];
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 console.log(`the total income is :- ${totalIncome}`);
 console.log("-----ex.level.1-Ans.1----------")
 
@@ -23,10 +27,17 @@ sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
 distance = 12
 */
 
+<<<<<<< HEAD
 let text1= "The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles";
 let Number1 = text1.match(/-?\d+/g).map(Number)
 let sortedPoints = Number1.map(Number).sort((a, b) => a - b);
 let distance = sortedPoints[sortedPoints.length-1]-sortedPoints[0];
+=======
+let text1 = "The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles";
+let Number1 = text1.match(/-?\d+/g).map(Number)
+let sortedPoints = Number1.map(Number).sort((a, b) => a - b);
+let distance = sortedPoints[sortedPoints.length - 1] - sortedPoints[0];
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 console.log(`the distance between the two furthest particles is :   ${distance}`)
 console.log("-----ex.level.1-Ans.2----------")
 
@@ -44,7 +55,11 @@ console.log("-----ex.level.1-Ans.2----------")
 // is_valid_variable('firstname') # True
 
 function is_valid_variable(variable) {
+<<<<<<< HEAD
     let regex  = /[^a-zA-z_$/][/^a-zA-Z_$0-9]*$/
+=======
+    let regex = /[^a-zA-z_$/][/^a-zA-Z_$0-9]*$/
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
     return regex.test(variable)
 }
 
@@ -74,7 +89,11 @@ console.log("------Ex.levl.2-Ans-----------")
 
 // 1 Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
 
+<<<<<<< HEAD
   let  Paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+=======
+let Paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 //     console.log(tenMostFrequentWords(paragraph))
 //     [
 //     {word:'love', count:6},
@@ -115,7 +134,11 @@ console.log("------Ex.levl.2-Ans-----------")
 
 // METHOD 1\\
 
+<<<<<<< HEAD
 function tenMostFrequentWords(paragraph, n =10) {
+=======
+function tenMostFrequentWords(paragraph, n = 10) {
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
     let words = paragraph.toLowerCase().split(/\s+/);
     let wordCount = {};
     words.forEach(word => {
@@ -148,7 +171,11 @@ function TenMostFrequentWords(Paragraph) {
         WordsCount[Words] = (WordsCount[Words] || 0) + 1
     })
 
+<<<<<<< HEAD
     return Object.entries(WordsCount).map(([Words,count])=>({Words,count})).sort((a,b)=>b.count - a.count).slice(0,10)
+=======
+    return Object.entries(WordsCount).map(([Words, count]) => ({ Words, count })).sort((a, b) => b.count - a.count).slice(0, 10)
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 };
 console.log(TenMostFrequentWords('I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love'))
 console.log("-----ex.lev.2.Method-2----------")
@@ -163,6 +190,7 @@ console.log("-----ex.lev.2.Method-2----------")
 //   console.log(cleanText(sentence))
 //  I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
 //  ```
+<<<<<<< HEAD
 function clean(text){
     //const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
     return  text.replace(/[^\w\s]/g, "")
@@ -170,6 +198,15 @@ function clean(text){
 }
 let cleanedText = clean('%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`')
     console.log(cleanedText)
+=======
+function clean(text) {
+    //const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+    return text.replace(/[^\w\s]/g, "")
+
+}
+let cleanedText = clean('%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`')
+console.log(cleanedText)
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 console.log("--------ex.lev.3.Ans-1---------------")
 
 // 2. Write a function which find the most frequent words. After cleaning, count three most frequent words in the string.
@@ -178,6 +215,7 @@ console.log("--------ex.lev.3.Ans-1---------------")
 //  console.log(mostFrequentWords(cleanedText))
 //  [{word:'I', count:3}, {word:'teaching', count:2}, {word:'teacher', count:2}]
 
+<<<<<<< HEAD
 function mostFrequentWords(paragraph,limit){
     const words = paragraph.toLowerCase().match(/\b\w+\b/g)
     let wordsCount = {}
@@ -189,3 +227,19 @@ function mostFrequentWords(paragraph,limit){
 }
 console.log(mostFrequentWords(cleanedText,10))
 console.log("-------ex.levl.3.Ans-2-----------")
+=======
+function mostFrequentWords(paragraph, limit) {
+    const words = paragraph.toLowerCase().match(/\b\w+\b/g)
+    let wordsCount = {}
+
+    words.forEach(words => {
+        wordsCount[words] = (wordsCount[words] || 0) + 1
+    })
+    return Object.entries(wordsCount).map(([words, count]) => ({ words, count })).sort((a, b) => b.count - a.count).slice(0, limit)
+}
+console.log(mostFrequentWords(cleanedText, 10))
+console.log("-------ex.levl.3.Ans-2-----------")
+
+
+
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
