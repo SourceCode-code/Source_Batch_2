@@ -53,10 +53,34 @@ class Statistics{
     }
     median(){
         let a = this.data.sort((a,b)=>a-b)
-        return a[12]
+        return a[12] //taking length /2 as median index
     }
+    mode(){
+        let frequency = {}
+        for(let i = 0; i < this.data.length; i++){
+            frequency[this.data[i]] = (frequency[this.data[i]] || 0) + 1
+        }
+        let maxCount = Math.max(...Object.values(frequency))
+        let modes = Object.keys(frequency).filter(key => frequency[key] === maxCount)
+        return modes
+    }
+
+    //about variance and standard deviation ; Did not understand what needs to be done exactly ;need help
+
 }
 
+const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+
+const stats =new  Statistics(ages)
+
+console.log('Count:', stats.count());
+console.log('Max:', stats.max());
+console.log('Min:', stats.min());
+console.log('Sum :', stats.sum());
+console.log('Mean:', stats.mean());
+console.log('Median:', stats.median());
+console.log('Mode:', stats.mode());
+console.log("------Answer-1---------")
 
 
 
