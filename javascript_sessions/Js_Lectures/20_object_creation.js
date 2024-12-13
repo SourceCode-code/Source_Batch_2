@@ -25,6 +25,7 @@ let amol_details = new Details("amol", "jadhav", 28)
 
 console.log(amol_details)
 console.log(sid_details)
+console.log("--Ans1--")
 
 
 //3 factory function 
