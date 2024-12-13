@@ -1264,12 +1264,12 @@ let checck = x.filter((el) => !Newy.has(el))
 // console.log(check2)
 
 // function Printumnber(num){
-// if(num<=100){
-//     console.log(num)
+// if(num<=50){
+//     console.log(num*2)
 //     Printumnber(num+1)
 // }
 // }
-// Printumnber(0)(
+// Printumnber(0)
 
 // let name = "amolj6897@gmail.com"
 // let remaingstr =name.substring(4,20)
@@ -1331,6 +1331,164 @@ let checck = x.filter((el) => !Newy.has(el))
 
 // let str = "my name is amol kantila jadhav"
 // console.log(str.match(/[^amol]/gi))
+
+//code for Answer 2 ; assignment 21  :  atharvas Method
+// class  personAccount{
+//     constructor(firstName,lastName  ){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.incomes = []
+//         this.expenses = []
+//     }
+
+//     addIncome(description,amount){
+//          this.incomes.push({description:description,amount:amount})
+//     }
+//     addExpense(description,amount){
+//         this.expenses.push({description:description,amount:amount})
+//     }
+
+//     get totalIncome(){
+//         return this.incomes.reduce((total , income)=>total + income.amount)
+//     }
+//     get totalExpense(){
+//         return this.expenses.reduce((total,expense)=>total + expense.amount)
+//     }
+
+//     get accountBalance(){
+//         return this.totalIncome - this.totalExpense
+//     }   
+
+//     accountInfo(){
+//         return  `
+//         Account holder : ${this.firstName} ${this.lastName}
+//         Total Income : ${this.totalIncome}
+//         Total Expense: ${this.totalExpense}
+//         Account Balance: ${this.accountBalance}`
+//     }
+
+
+// }
+// const myAccount = new personAccount('Joel ','Corry')
+// myAccount.addIncome('salary',50000)
+// myAccount.addIncome('Food Stall',6000)
+
+// myAccount.addExpense('Car EMI',4000)
+// myAccount.addExpense('Light Bills',4000,'fuel',750)
+
+// console.log(`Total Income: ${myAccount.totalIncome}`);
+// console.log(`Total Expense: ${myAccount.totalExpense}`);
+// console.log(`Account Balance : ${myAccount.accountBalance}`);
+// console.log(myAccount)
+
+
+//let date = new Date()
+// let futureDate = date.getDate()
+// date.setDate(futureDate+23)
+// console.log(date.getDate())
+
+// let futureMonth = date.getMonth()+1
+// date.setMonth(futureMonth+13)
+// console.log(date.getMonth())
+
+// let futureYear = date.getFullYear()
+// date.setFullYear(futureYear+23)
+// console.log(date.getFullYear())
+// let humanreadale = date.toLocaleString("en-gb",{day:"2-digit",weekday:"long",month:"2-digit",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// console.log(humanreadale)
+
+// let str = "my name is amol kantilal jadhav"
+// let str1 = str.split(" ")
+// longest  = " "
+// for(let i = 0;i<=str1.length-1;i++){
+//     if(longest.length<str1[i].length)
+//     {
+//       longest=str1[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+// let str = "my name is amol kantilal jadhav"
+// console.log(str.match(/[aeiou]/gi))
+
+// let personalInfo = {fistname:"Amol",
+//     Middlename:"Kantilal",
+//     Lastname:"Jadhav"
+// }
+// amolInfo = JSON.stringify(personalInfo)
+// console.log(amolInfo)
+
+
+//let date = new Date()
+// let futureDate = date.getDate()
+// date.setDate(futureDate+23)
+// console.log(date.getDate())
+
+// let futureMonth = date.getMonth()+1
+// date.setMonth(futureMonth+13)
+// console.log(date.getMonth())
+
+// let futureYear = date.getFullYear()
+// date.setFullYear(futureYear+23)
+// console.log(date.getFullYear())
+// let humanreadale = date.toLocaleString("en-gb",{day:"2-digit",weekday:"long",month:"2-digit",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// console.log(humanreadale)
+
+// let date = new Date()
+// // let humanreadale = date.toLocaleString("en-gb",{weekday:"long",month:"long",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// // console.log(humanreadale)
+// let curdate = date.getDate()
+// date.setDate(curdate+40)
+// console.log(date.getDate())
+//(****************************************** Method for occurance of Words **************************)
+// let str = "hello my name is Amol Kantilal jadhav"
+// let str1 = str.split("")
+// mystring = {}
+// for(let key of str1){
+// mystring[key]=(mystring[key]||0)+1
+// }
+// let check = Object.entries(mystring).map(([word,count])=>({word,count})).sort((a,b)=>(b.count-a.count))
+// console.log(check)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
