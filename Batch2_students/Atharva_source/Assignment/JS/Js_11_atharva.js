@@ -34,7 +34,7 @@ numaarry=[1,2,3,4,5,6,7,8,9]
 //get me the largest number and the smallest number form the array 
 // array=[1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585]
 
-let ARRAY = [1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585];
+ let ARRAY = [1,2,3,4,5,6,7,8,9,11,22,55,88,9,99,44,55,2587452,256852,0,12585];
 let SmallestNumber = 0;
 for(let i=0; i>=ARRAY.length; i++){
     if(ARRAY[i]>= SmallestNumber){
@@ -51,6 +51,7 @@ for (let i =0; i<=ARRAY1.length; i++){
     }
 }
 console.log("the LargestNumber is",LargestNumber);
+
 
 console.log("-----------------1----------------------")
 
@@ -213,12 +214,8 @@ console.log(joi);
 
 
 
-
-
 //Q.2.
 let Arr2 = [1, 2, 4 , 7, 15, 22, 25];
-
-
 
 
 let ib = "americans call roti as the tortilla and they  call the naan as the pita";

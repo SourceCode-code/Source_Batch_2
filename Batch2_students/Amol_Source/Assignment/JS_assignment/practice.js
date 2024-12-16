@@ -1242,7 +1242,7 @@ let checck = x.filter((el) => !Newy.has(el))
 //     skills: ["TypeScript", "CI/CD"],
 //     position: "Automation Tester"
 //   }
-  
+
 //   let kk = Object.entries(viaahn)
 //   console.log(kk)
 // let countryCapitalArray = [
@@ -1338,8 +1338,215 @@ console.log(name.match(/\d+/g))
 //         return i
 //       }
 //     }
-    
+
 //     }
 //     const  Input = [3,0,1];
 //     console.log(MissingNumber(Input))
+<<<<<<< HEAD
 >>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
+=======
+
+// let myinfo = `{
+// "firstname":"AMOL", 
+// "MiddleName":" Kantilal",
+// "lastName":"Jadhav",
+// "coNum":9767004310,
+// "Age" : 24
+// }` // take care you should not miss any " " ,: ,and ,  for that it should be must clear and distingt..
+// let check = JSON.parse(myinfo)//,[firstname,lastName]) we have to do it manualy
+// console.log(check)
+
+// let newinfo = {
+//     firstname: 'AMOL',
+//     MiddleName: ' Kantilal',
+//     lastName: 'Jadhav',
+//     coNum: 9767004310,
+//     Age: 24
+//   }
+//   let check2= JSON.stringify(newinfo,['firstname','MiddleName'])
+//   console.log(check2)
+
+// function Personalinfo(Firstname,middlename,lastname){
+//     this.Firstname = Firstname
+//     this. middlename = middlename
+//     this. lastname = lastname
+// }
+// let amolinfo = new Personalinfo("amol","Kantilal","jadhav")
+// console.log(amolinfo)
+
+// function vikkasinfo(firstname,middlename,lastname){
+//     return{
+//     firstname:firstname,
+//     middlename:middlename,
+//     lastname:lastname
+//     }
+// }
+// let vikas = new vikkasinfo("Vikas","Kantilal","Jadhav")
+// console.log(vikas)
+
+// best example to understand returning function
+// function firstfuction(A) {
+//     function secondFunction(B) {
+//         function thirdFunction(C) {
+//             return A*2+B**2+C**5
+//         }
+//         return thirdFunction
+//     }
+//     return secondFunction
+// } 
+// console.log(firstfuction(2)(3)(4))
+
+// function fisrtcheck(k){
+//     return "amol"
+// }
+
+// function namecheck(kk){
+// return kk+" Jadhav"
+// }
+// console.log(namecheck(fisrtcheck()))
+
+
+// function flatarray(arra1,arra2){
+
+//  return [...arra1,...arra2]
+
+// }
+// console.log(flatarray([1,2,3,4,5,6],[7,8,9]))
+
+
+// function Personalinfo(firstname,middlename,lastname){
+//     return{
+//         firstname,
+//         middlename,
+//         lastname
+//     }
+// }
+// let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
+// let vikasinfo = new Personalinfo("Vikas",'Kantilal',"Jadhav")
+// console.log(amolinfo,vikasinfo)
+
+// function Personalinfo(firstname,middlename,lastname){
+
+//         this.firstname=firstname
+//         this.middlename=middlename
+//         this.lastname=lastname
+
+// }
+// let amolinfo = new Personalinfo("amol",'Kantilal',"Jadhav")
+// let vikasinfo = new Personalinfo("Vikas",'Kantilal',"Jadhav")
+// console.log(amolinfo)
+
+// class Personalinfo {
+//     constructor(firstname="givenname", middlename="givenMiddlename",lastname="GivenLastName",age="givenage",country="givencountry"){
+//         this.firstname=firstname,
+//         this.middlename=middlename,
+//         this.lastname=lastname
+//         this.age = age
+//         this.country=country  
+//     }
+// } 
+// let cross = new Personalinfo()
+// console.log(cross)
+// let amolinfo = new Personalinfo("Amol","kantilal","Jadhav",24,"India")
+// console.log(amolinfo)
+
+
+//  the concept of object with stringify, parse,  factory function with fucntion constructer in a single example....
+// function Personalinfo(firstname, middlename, lastname) {
+//     return{
+//         firstname,
+//         middlename,
+//         lastname
+//     }
+// }
+// let person3 = new Personalinfo("Amol", "Kantilal", "Jadhav")
+// console.log(person3)
+// let check = JSON.stringify(person3)
+// console.log(check)
+// let check2 = JSON.parse(check)
+// console.log(check2)
+
+// function Printumnber(num){
+// if(num<=100){
+//     console.log(num)
+//     Printumnber(num+1)
+// }
+// }
+// Printumnber(0)(
+
+// let name = "amolj6897@gmail.com"
+// let remaingstr =name.substring(4,20)
+// let check = (name.substring(0,4))
+// reverse = ""
+// for(let i = check.length-1; i >=0;i--){
+//     reverse+=check[i]
+// }
+// console.log(`${remaingstr} ${reverse}`)
+
+// // //  Methods of class // Function Stter and getter
+// class personalInfo{
+//     constructor(firstName="noname", Middlename="NomiddleName", Lastname="NolastName"){
+//  this.firstName=firstName,
+//  this.Middlename=Middlename,
+//  this.Lastname=Lastname
+//     }
+//     amol(){    // function
+//         let amolfirstlast= this.firstName+" "+this.Lastname
+//         return amolfirstlast  
+//      }
+
+//      get get_middlename(){ //  getter
+//         return this.Middlename
+//      }
+
+//      set set_firstname(newname){  //  setter
+//        return this.firstName = newname
+//      }
+//      set set_age(Age){  // when we have to add somthing to class
+//        return this.age = Age
+//      }
+     
+// }
+// let empty = new personalInfo()
+// console.log(empty)
+// let amolInfo = new personalInfo("amol","Kantilal","Jadhav")
+// console.log(amolInfo)
+// console.log(amolInfo.amol())
+// console.log(amolInfo.get_middlename)
+// amolInfo.set_firstname="AMOL"
+// console.log(amolInfo)
+// amolInfo.set_age = 25
+// console.log(amolInfo)
+
+//    let year  =2021
+//    heck  = (year%4==0&&year%100!==0||year%400==0)
+// console.log(heck)
+// if (heck == true){
+//    console.log("this is a leap year")
+// }
+// else{
+//    console.log(" this is not a leap year")
+// }
+
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interes12344ting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+
+// console.log(sentence.replace(/[\w+\s]/gi,""))
+
+// let str = "my name is amol kantila jadhav"
+// console.log(str.match(/[^amol]/gi))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ac36c0648aa73e1885a5ba2fab993f23be164a8f
