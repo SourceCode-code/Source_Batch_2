@@ -29,43 +29,110 @@
 
 // show me a example of promise 
 
-let pro = new Promise((resloves, rejected) => {
-    let success = false
-    if (success === true) {
-        resloves("the operation has been success")
-    }
-    else {
-        rejected("error try again")
-    }
-}).then((message) => {
-    console.log(message)
-}).catch((error) => {
-    console.log(error)
-})
+// let pro = new Promise((resloves, rejected) => {
+//     let success = false
+//     if (success === true) {
+//         resloves("the operation has been success")
+//     }
+//     else {
+//         rejected("error try again")
+//     }
+// }).then((message) => {
+//     console.log(message)
+// }).catch((error) => {
+//     console.log(error)
+// })
 
 
 
-// example of using a promise --
-// find if a person has multiple skills
+// // example of using a promise --
+// // find if a person has multiple skills
 
 
-const sk = new Promise((resloves, rejected) => {
-    setTimeout(() => {
-        let arr = ["HTML", "CSS", "JS", "NODE"]
-        if (arr.length > 1) {
-            resloves(arr)
-        }
-        else {
-            rejected("something went wrong")
-        }
-    }, 2000)
-})
+// const sk = new Promise((resloves, rejected) => {
+//     setTimeout(() => {
+//         let arr = ["HTML", "CSS", "JS", "NODE"]
+//         if (arr.length > 1) {
+//             resloves(arr)
+//         }
+//         else {
+//             rejected("something went wrong")
+//         }
+//     }, 2000)
+// })
 
 
-//----------------------------------------------
+// //----------------------------------------------
 
-sk.then((message) => {
-    console.log(message)
-}).catch((error) => {
-    console.log(error)
-})
+// sk.then((message) => {
+//     console.log(message)
+// }).catch((error) => {
+//     console.log(error)
+// })
+
+//-------------------------------------------------------------------------
+
+
+// 1 callback hell --
+
+//let create a program to create an instagram 
+console.log("_______________________________ async opeing instagram____________________")
+
+// handling async using promise 
+
+function userregistration(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(`The ${user} has been register now`)
+            resolve(user)
+        }, 3000)
+    })
+
+}
+
+// function to send otp 
+
+function SendOTPToUSER(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log('the otp was sucessfuly registor for user')
+            resolve(user)
+        }, 2000)
+
+
+    })
+}
+
+//set perefences 
+
+function fetchuserperfrences(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(`the perfrences for ${user} have been registor `)
+            resolve(user)
+        }, 4000)
+    })
+}
+
+function startuseracitivity(user) {
+    return new Promise((resolve) => {
+
+
+        setTimeout(() => {
+            console.log(`start the use`)
+            resolve(user)
+        }, 500)
+    })
+}
+
+
+
+userregistration("SID")
+    .then(SendOTPToUSER)
+    .then(fetchuserperfrences)
+    .then(startuseracitivity)
+    .then((message) => {
+        console.log(message)
+    })
+
+// async and await -->
