@@ -137,3 +137,68 @@ console.log(`Total Expense: ${myAccount.totalExpense}`);
 console.log(`Account Balance : ${myAccount.accountBalance}`);
 
 console.log(myAccount)
+
+
+//Example of PROMISE using callback Hell\\
+function replZomato(user){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log("Open the Application")
+            resolve(user)
+        },3000)
+        
+    })
+}
+
+function selectRest(user){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log(`Select the Restaurant from which ${user} want to order Food`)
+            resolve(user)
+        },3000)  
+    })
+}
+
+function order(user){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log("Select the food to be ordered")
+            resolve(user)
+        },3500)
+    })
+}
+
+function entAdd(user){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log("Please enter the address ")
+            resolve(user)
+        },3500)
+    })
+}
+
+function orderPlaced(user){
+    return new Promise((resolve)=>{
+        console.log("The order has been placed and it will be delivered soon within the estimated time")
+        resolve(user)
+    },4000)
+}
+
+function rate(user){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log("Please rate the food and the service")
+            resolve(user)
+        },4500)
+    })
+}
+
+replZomato("Rick")
+.then(selectRest)
+.then(order)
+.then(entAdd)
+.then(orderPlaced)
+.then(rate)
+.then((message)=>{
+    console.log(message)
+})
