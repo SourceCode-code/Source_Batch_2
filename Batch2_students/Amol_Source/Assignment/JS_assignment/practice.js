@@ -1751,6 +1751,93 @@ let checck = x.filter((el) => !Newy.has(el))
 
 
 
+// let pro = new Promise((resolve,rejected)=>{
+//     let condi = true
+//     if(condi!==true){
+//         resolve("program will executed")
+//     }
+//     else{
+//         rejected("somthing gets wrong")
+//     }
+// })
+// .then((message)=>{
+//     console.log(message)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+// let anotherchecck = new Promise((resolved,rejected)=>{
+//     setTimeout(()=>{
+//         let name = "amol"
+//         if(name.endsWith("a")){
+//             resolved("the given string is starts with a")
+//         }
+//         else{
+//             rejected("the given string is not starts with a")
+//         }
+//     },1000)
+// }).then((message)=>{
+//     console.log(message)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+
+// let Str = "jadhav"
+// let name2 = Str.toLowerCase()
+
+// switch(name2){
+// case "amol": console.log(" name match in all directtion")
+// break
+// case "jadhav": console.log("Name Match with Sirname") 
+// break
+// case "Kantilal": console.log("NAme match with middlename")
+// break
+// default:console.log("Please enter  Valid name")
+// } 
+
+// let DAY = "sunday"
+// let updateday = DAY.toLowerCase()
+// switch(updateday){
+//     case"monday": console.log(`its ${updateday}`)
+//     break
+//     case "tuesday":console.log(`its ${updateday}`)
+//     break
+//     case"wednesday":console.log(`its ${updateday}`)
+//     break
+//     case "thursday":console.log(`its ${updateday}`)
+//     break
+//     case " friday":console.log(`its weedend,${updateday}`)
+//     break
+//     case"saturday":console.log(`its,holiday ${updateday}`)
+//     break
+//     case "sunday":console.log(`its ${updateday}`)
+//     break
+//     default:console.log(`enter Valid Day`)
+
+// }
+
+
+
+//  Switch Case
+// let day = "MonDAY"
+
+// let day1 = day.toLowerCase()
+
+// switch(day1){
+//     case "monday": 
+//     case "tuesday":
+//     case "Wednesday":
+//     case"thursday":
+//     case"friday":console.log(`${day} its a working day`)
+//     break
+//     case"saturday":console.log(`${day} its a weekend day`)
+//     break
+//     case " sunday":console.log(`${day} its a working day`)
+//     break
+//     default:console.log(`enter valid day`)
+// }
+
 
 
 

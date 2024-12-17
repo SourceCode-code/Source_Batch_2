@@ -131,4 +131,29 @@ console.log("_______________________________ sync opeing instagram______________
 
 
 //------------------------------------------------------
+//general -->
+
+
+/**
+ * create a program to replicate zomato 
+ * 
+ * open app
+ * select restarut 
+ * select food
+ * order food 
+ * enter addres
+ * pay for the order thourgh upi
+ * get the foood
+ * place review 
+ */
+
+
+//------------------------------------------------------------
+
+
+//// promises --> cypress --> async --> made sync  default by promises
+
+//promise --> human uses promises to get something done in span of time 
+
+// 1  your promise will get fullfilled 
 
