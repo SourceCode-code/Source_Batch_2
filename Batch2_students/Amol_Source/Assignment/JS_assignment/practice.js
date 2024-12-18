@@ -1837,6 +1837,92 @@ let checck = x.filter((el) => !Newy.has(el))
 //     break
 //     default:console.log(`enter valid day`)
 // }
+/************************************ promises and async and await************************************************* */
+// function userregistration(user){
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//         console.log(`The ${user} has been register now`)
+//         resolve(user)
+//         }, 3000)
+//     })
+// }
+
+// // function to send otp 
+// function SendOTPToUSER(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log('the otp was sucessfuly registor for user')
+//             resolve(user)
+//         }, 2000)
+//     })
+// }
+
+// //set perefences 
+// function fetchuserperfrences(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log(`the perfrences for ${user} have been registor `)
+//             resolve(user)
+//         },4000)
+//     })
+// }
+// function startuseracitivity(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log(`start the use`)
+//             resolve(user)
+//         }, 500)
+//     })
+// }
+// userregistration("SID")
+//     .then(SendOTPToUSER)
+//     .then(fetchuserperfrences)
+//     .then(startuseracitivity) // this is function wright if we use () then we get async output and without that we get ans sync
+//     .then((message) => {
+//         console.log(message)
+//     }) //  this msg is linked with
+
+/*************************************************** Async and Await************************************************/
+    // function delay(ms) {
+    //     return new Promise((resolve) => {
+    //         setTimeout(() => {
+    //             resolve(` waiting for ${ms} time for stabity`)
+    //         }, ms)
+    
+    //     })
+    // }
+    
+    //   async function getdata() {
+    //     console.log("step 1 start")
+    //     const wait = await delay(3000)
+    //     console.log("step2 :begin",wait)
+    //     console.log("step 3 : end ")
+    // }
+
+    // getdata()
+
+    
+//eg.2
+
+// function firstcheck(time){
+//     return new Promise((resolve)=>{
+//         setTimeout(() => {
+//             console.log(`check${time}`)
+//             resolve()
+//         }, time);
+//     })
+// }
+// async function checkfirst(){
+// console.log("step1:- first step towards async")
+// let timechck = await firstcheck(3000)
+// console.log(`step2:- again check`, timechck)
+// console.log(`step3:- end of check`)
+// }
+// checkfirst()
+
+
+
+
 
 
 
