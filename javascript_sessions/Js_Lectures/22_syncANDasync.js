@@ -33,16 +33,15 @@ console.log("hello")
 
 
 //---------------------------------------------------------------------------------------------------
-
 console.log("_______________________________ example of sync code____________________")
-console.log("Step 1 - start the testcases")
-console.log("Step 2: exceute the code ")
-console.log("Step 3:get the results ")
-console.log("Step 4: generate reports  ")
+console.log("Step 1: start the testcases")
+console.log("Step 2: exceute the code")
+console.log("Step 3: get the results")
+console.log("Step 4: generate reports")
 
 console.log("_______________________________ example of async code____________________")
 
-// console.log("Step 1 - start the testcases")
+// console.log(" Step 1 : start the testcases ")
 
 // setTimeout(() => {
 //     console.log("Step 2: exceute the code ")
@@ -71,7 +70,6 @@ function userregistration(user, callback) {
 }
 
 // function to send otp 
-
 function SendOTPToUSER(user, callback) {
     setTimeout(() => {
         console.log('the otp was sucessfuly registor for user')

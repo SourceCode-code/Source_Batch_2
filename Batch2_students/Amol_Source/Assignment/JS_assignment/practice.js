@@ -1920,6 +1920,42 @@ let checck = x.filter((el) => !Newy.has(el))
 // }
 // checkfirst()
 
+// new Promise((resolve,reject)=>{
+//     let num= 4
+//     if(num>0){
+//       resolve("number is greater than that")
+//     }
+//     else{
+//     reject("please check number")
+// }
+    
+//    })
+//    .then((message)=>{
+//      console.log(message)
+//    }).catch((error)=>{
+//      console.log(error)
+//    })
+
+
+// function check2(name){
+//     return console.log(`${name} this is myname`)
+// }
+
+// function againchech(check2,name){
+// console.log("checking purpose")
+//}againchech(check2("amol"))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
