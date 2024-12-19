@@ -788,17 +788,17 @@ array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
 // })
 // console.log(check)
 
-let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
-//console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
-//console.log(/amol\b/.test(s))
-//console.log(s.match(/[aeiou]/gi))
+// let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
+// //console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
+// //console.log(/amol\b/.test(s))
+// //console.log(s.match(/[aeiou]/gi))
 
-let x = [1, 2, 3, 4, 5];
-let y = [4, 5, 6, 7, 8];
-let NewX = new Set(x)
-let Newy = new Set(y)
-let checck = x.filter((el) => !Newy.has(el))
-//console.log(checck)
+// let x = [1, 2, 3, 4, 5];
+// let y = [4, 5, 6, 7, 8];
+// let NewX = new Set(x)
+// let Newy = new Set(y)
+// let checck = x.filter((el) => !Newy.has(el))
+// //console.log(checck)
 
 // let countryCapitalArray = [
 //   ["India", "Delhi"],
