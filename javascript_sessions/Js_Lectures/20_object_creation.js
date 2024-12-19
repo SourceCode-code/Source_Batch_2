@@ -6,7 +6,6 @@ let personaldetails = {
     age: 26
 }
 
-
 //-----------------------------------------------
 //method to use to create objects 
 //2 function constructor 

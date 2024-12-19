@@ -27,20 +27,16 @@ async function hello() {
 
 }
 async function Sayhello() {
-
     let world = await hello()
     console.log(world)
 }
 
 Sayhello()//hello
-
 //-----------------------------------------------
-
 
 const sq = async function (n) {
     return n * n
 }
-
 // console.log(sq(2))
 
 async function getsqaure(n) {
@@ -108,10 +104,6 @@ function fetchuserperfrences(user) {
     })
 }
 
-function startuseracitivity(user) {
-    return new Promise((resolve) => {
-
-
         setTimeout(() => {
             console.log(`start the use`)
             resolve(user)
@@ -168,5 +160,4 @@ runinsta("sid")
 async function say(){
       await console.log("hiiii")
 }
-
 say()

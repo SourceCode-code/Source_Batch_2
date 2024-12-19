@@ -126,7 +126,6 @@
 //  */
 
 let num4 = -10
-
 switch (true) {
     // case 1 when number is positve
     case num4 > 0: console.log(` the given number is ${num4} is positive `);
