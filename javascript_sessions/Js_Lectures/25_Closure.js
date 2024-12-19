@@ -64,3 +64,23 @@ function createCounter(){
 let co = createCounter()
 
 co()
+
+
+
+const fetchCountryData = async ()=>{
+    try{
+        const response = await fetch('https://restcountries.com/v2/all')
+        const countries = await response.json();
+        countries.forEach(({name,capital,languages,population,area})=>{
+            console.log(`Country :${name}`)
+            console.log(`Capital: ${capital } `)
+            console.log(`Languages: ${languages.map((lang =>lang.name))} `)
+            console.log(`Population: ${population} `)
+            console.log(`Area: ${area}sq km `)
+            console.log('------------//----------')
+        });
+    }catch (error){
+        console.log('Error fetching data:', error.message)
+    }
+};
+fetchCountryData()
