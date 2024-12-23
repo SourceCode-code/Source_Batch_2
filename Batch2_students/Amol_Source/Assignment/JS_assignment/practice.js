@@ -788,17 +788,17 @@ array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
 // })
 // console.log(check)
 
-let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
-//console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
-//console.log(/amol\b/.test(s))
-//console.log(s.match(/[aeiou]/gi))
+// let s = "hello@@ my hie how Amolskiki na@@me hello is A@@kash1234567"
+// //console.log(s.replace(/[^a-zA-Z0-9\s]/gi,""))
+// //console.log(/amol\b/.test(s))
+// //console.log(s.match(/[aeiou]/gi))
 
-let x = [1, 2, 3, 4, 5];
-let y = [4, 5, 6, 7, 8];
-let NewX = new Set(x)
-let Newy = new Set(y)
-let checck = x.filter((el) => !Newy.has(el))
-//console.log(checck)
+// let x = [1, 2, 3, 4, 5];
+// let y = [4, 5, 6, 7, 8];
+// let NewX = new Set(x)
+// let Newy = new Set(y)
+// let checck = x.filter((el) => !Newy.has(el))
+// //console.log(checck)
 
 // let countryCapitalArray = [
 //   ["India", "Delhi"],
@@ -1264,12 +1264,12 @@ let checck = x.filter((el) => !Newy.has(el))
 // console.log(check2)
 
 // function Printumnber(num){
-// if(num<=100){
-//     console.log(num)
+// if(num<=50){
+//     console.log(num*2)
 //     Printumnber(num+1)
 // }
 // }
-// Printumnber(0)(
+// Printumnber(0)
 
 // let name = "amolj6897@gmail.com"
 // let remaingstr =name.substring(4,20)
@@ -1302,7 +1302,7 @@ let checck = x.filter((el) => !Newy.has(el))
 //      set set_age(Age){  // when we have to add somthing to class
 //        return this.age = Age
 //      }
-     
+
 // }
 // let empty = new personalInfo()
 // console.log(empty)
@@ -1331,6 +1331,657 @@ let checck = x.filter((el) => !Newy.has(el))
 
 // let str = "my name is amol kantila jadhav"
 // console.log(str.match(/[^amol]/gi))
+
+//code for Answer 2 ; assignment 21  :  atharvas Method
+// class  personAccount{
+//     constructor(firstName,lastName  ){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.incomes = []
+//         this.expenses = []
+//     }
+
+//     addIncome(description,amount){
+//          this.incomes.push({description:description,amount:amount})
+//     }
+//     addExpense(description,amount){
+//         this.expenses.push({description:description,amount:amount})
+//     }
+
+//     get totalIncome(){
+//         return this.incomes.reduce((total , income)=>total + income.amount)
+//     }
+//     get totalExpense(){
+//         return this.expenses.reduce((total,expense)=>total + expense.amount)
+//     }
+
+//     get accountBalance(){
+//         return this.totalIncome - this.totalExpense
+//     }   
+
+//     accountInfo(){
+//         return  `
+//         Account holder : ${this.firstName} ${this.lastName}
+//         Total Income : ${this.totalIncome}
+//         Total Expense: ${this.totalExpense}
+//         Account Balance: ${this.accountBalance}`
+//     }
+
+
+// }
+// const myAccount = new personAccount('Joel ','Corry')
+// myAccount.addIncome('salary',50000)
+// myAccount.addIncome('Food Stall',6000)
+
+// myAccount.addExpense('Car EMI',4000)
+// myAccount.addExpense('Light Bills',4000,'fuel',750)
+
+// console.log(`Total Income: ${myAccount.totalIncome}`);
+// console.log(`Total Expense: ${myAccount.totalExpense}`);
+// console.log(`Account Balance : ${myAccount.accountBalance}`);
+// console.log(myAccount)
+
+
+//let date = new Date()
+// let futureDate = date.getDate()
+// date.setDate(futureDate+23)
+// console.log(date.getDate())
+
+// let futureMonth = date.getMonth()+1
+// date.setMonth(futureMonth+13)
+// console.log(date.getMonth())
+
+// let futureYear = date.getFullYear()
+// date.setFullYear(futureYear+23)
+// console.log(date.getFullYear())
+// let humanreadale = date.toLocaleString("en-gb",{day:"2-digit",weekday:"long",month:"2-digit",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// console.log(humanreadale)
+
+// let str = "my name is amol kantilal jadhav"
+// let str1 = str.split(" ")
+// longest  = " "
+// for(let i = 0;i<=str1.length-1;i++){
+//     if(longest.length<str1[i].length)
+//     {
+//       longest=str1[i]
+//     }
+// }
+// console.log(longest)
+
+
+
+// let str = "my name is amol kantilal jadhav"
+// console.log(str.match(/[aeiou]/gi))
+
+// let personalInfo = {fistname:"Amol",
+//     Middlename:"Kantilal",
+//     Lastname:"Jadhav"
+// }
+// amolInfo = JSON.stringify(personalInfo)
+// console.log(amolInfo)
+
+
+//let date = new Date()
+// let futureDate = date.getDate()
+// date.setDate(futureDate+23)
+// console.log(date.getDate())
+
+// let futureMonth = date.getMonth()+1
+// date.setMonth(futureMonth+13)
+// console.log(date.getMonth())
+
+// let futureYear = date.getFullYear()
+// date.setFullYear(futureYear+23)
+// console.log(date.getFullYear())
+// let humanreadale = date.toLocaleString("en-gb",{day:"2-digit",weekday:"long",month:"2-digit",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// console.log(humanreadale)
+
+// let date = new Date()
+// // let humanreadale = date.toLocaleString("en-gb",{weekday:"long",month:"long",year:"numeric",hour:"2-digit",hourCycle:"h12",minute:"2-digit",second:"2-digit"})
+// // console.log(humanreadale)
+// let curdate = date.getDate()
+// date.setDate(curdate+40)
+// console.log(date.getDate())
+//(****************************************** Method for occurance of Words **************************)
+// let str = "hello my name is Amol Kantilal jadhav"
+// let str1 = str.split("")
+// mystring = {}
+// for(let key of str1){
+// mystring[key]=(mystring[key]||0)+1
+// }
+// let check = Object.entries(mystring).map(([word,count])=>({word,count})).sort((a,b)=>(b.count-a.count))
+// console.log(check)
+
+
+// function personalInfo(user,callback){
+//     setTimeout(()=>{
+//  console.log(`hello my name is ${user}`)
+//  callback()
+//     },3000)
+
+// }
+// function AfterinFo(){
+//     console.log("This is the callback function.");
+// }
+// personalInfo("Amol",AfterinFo)
+
+
+//general -->
+
+
+/**
+ * create a program to replicate zomato 
+ * 
+ * open app
+ * select restarut 
+ * select food
+ * order food 
+ * enter addres
+ * pay for the order thourgh upi
+ * get the foood
+ * place review 
+ */
+// function openApp(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} opens the app`)
+//         callback()
+//     }, 1000)
+// }
+
+// function selectRestaurant(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} should select the Restaurant`)
+//         callback()
+//     }, 2000)
+// }
+
+// function selectFood(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} will select food from the menu`)
+//         callback()
+//     }, 3000)
+// }
+
+// function orderFood(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} ordered food whichever he want`)
+//         callback()
+//     }, 4000)
+// }
+
+// function enterAddress(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} enter the delivery address`)
+//         callback()
+//     }, 2000);
+// }
+
+// function PaymentMethod(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} pay for the order thourgh upi`)
+//         callback()
+//     }, 1000)
+// }
+
+// function ReciveFood(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} get the food`)
+//         callback()
+//     }, 3000)
+// }
+
+// function review(user, callback) {
+//     setTimeout(() => {
+//         console.log(`${user} place review`)
+//         callback()
+//     }, 1000)
+// }
+// openApp("Amol", () => {
+//     selectRestaurant("Amol", () => {
+//         selectFood("Amol", () => {
+//             orderFood("Amol", () => {
+//                 enterAddress("Amol", () => {
+//                     PaymentMethod("Amol", () => {
+//                         ReciveFood("Amol", () => {
+//                             review("Amol", () => {
+//                                 console.log("the program was successfully excueted")
+//                             })
+//                         })
+//                     })
+//                 })
+//             })
+//         })
+//     })
+// })
+/***************************************************( Promise)****************************************************** */
+
+// const promiseOne = new Promise(function (resolve, reject) {
+//     //  Do an async task
+//     // DB calls , crypography,network replated
+//     setTimeout(function () {
+//         console.log(`async task is completed`)
+//         resolve() //  to connect resolve paratmeter and .then function 
+//     }, 1000)
+// })
+// promiseOne.then(function () {
+//     console.log(`promise consume`)
+// })
+
+// new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         console.log("async Task 2")
+//         resolve()
+//     }, 1000)
+// }).then(function () {
+//     console.log(`async 2 resolve`)
+// })
+
+// const Promisethree = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         resolve({ username: "Amol", email: "Amolj6896@gmail.com" })
+//     }, 1000)
+// })
+// Promisethree.then(function (User) {
+//     console.log(User)
+// })
+
+// const PromiseFour = new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//         let error = false
+//         if (!error) {
+//             resolve({ username: "Amol", password: "Amol@123" })
+//         }
+//         else {
+//             reject("Error:Somthing went Wrong")
+//         }
+//     }, 1000);
+// })
+// PromiseFour.then((user)=>{
+//     console.log(user)
+//     return user.username
+// }).then((username)=>{
+//     console.log(username)
+// }).catch(function(error){
+// console.log(error) //  this process is nothing but chaining
+// }).finally(()=>{
+//     console.log(`The promise is either resolve or rejected`)
+// })
+
+
+// const promisefive = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         let error = true
+//         if (!error) {
+//             resolve({ username: "Javascript", password: "Amol@123" })
+//         }
+//         else {
+//             reject("Error:JS went Wrong")
+//         }
+//     }, 1000);
+// })
+
+// async function consumePromisefive(){
+//     try {
+//     const response = await promisefive
+//     console.log(response)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// consumePromisefive()
+
+// // using try and Catch
+
+// async function getallUser(){
+//    try {
+//     const response = await fetch ('https://jsonplaceholder.typicode.com/users')
+//     const data = await response.json() //  we use await  here its take a time to catch
+//     console.log(data)
+//    } catch (error) {
+//     console.log(`Error:-${error}`)
+//    }
+// }
+// getallUser()
+
+// // now using .then .catch
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then((response)=>{
+//     return response.json()
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>console.log(error))
+/******************************************** end of promise******************************************************* */
+
+// function generatefibonacci(n){
+//     let nums = []
+// let a =0 
+// let b = 1
+// for (let i=0;i<=n;i++){
+//     nums.push(a)
+// let next=a+b;
+// a=b;
+// b=next;
+// }
+// return nums
+// }
+// console.log(generatefibonacci(10))
+
+// best example to understand returning function
+// function firstfuction(A){
+//     function secondFunction(B){
+//         function thirdFunction(C){
+//             return A*2+B**2+C**5
+//         }
+//         return thirdFunction
+//     }
+//     return secondFunction
+// } 
+// console.log(firstfuction(2)(3)(4))
+
+
+// function firstfunction(A){
+//     function secondFunction(B){
+//         function thirdFunction(C){ 
+//             return A+B+C
+//         }
+//         return thirdFunction
+//     }
+// return secondFunction
+// }
+// let finalfunction = firstfunction(2)(3)(4)
+
+// it will continue showing the out with respect to time whichever is mention..
+// function myName(){
+//     console.log("Amol")
+// }
+// setInterval(myName,2000) 
+
+// //  Settimeout =  it will throw output with a perticular time (in milisecond)
+// function lastname(){
+//     console.log("Jadhav")
+// }
+// setTimeout(lastname,3000)
+
+// //object to JSON
+
+// let Myinfo = {
+// firstname : " Amol",
+// middlename :"Kantilal",
+// lastname : "Jadhav"
+// }
+
+// let AmolInfo = JSON.stringify(Myinfo)
+// console.log(AmolInfo)
+
+
+// //JOSN to Obj
+
+// let Myinfo1 = `{
+//     "firstname" : " Amol",
+//     "middlename" :"Kantilal",
+//     "lastname" : "Jadhav"
+//     }`
+
+//     let amolINFOO = JSON.parse(Myinfo1)
+//     console.log(amolINFOO)
+
+
+
+// let user1={
+//     firstname:"asabeneh",
+//     lastname:"yeta",
+//     country:"finland",
+//     city:"helsinki",
+//     email:"alex@alex.com",
+//     skills:["html","css","js"],
+//     age:35,
+//     islogin:true
+// }
+// let personalInfo = JSON.stringify(user1,['firstname','lastname','country'])
+// console.log(personalInfo)
+
+
+// const personAccount = require("./Js_14_amol")
+// console.log(personAccount)
+
+//  we will continue from 
+
+
+
+// let pro = new Promise((resolve,rejected)=>{
+//     let condi = true
+//     if(condi!==true){
+//         resolve("program will executed")
+//     }
+//     else{
+//         rejected("somthing gets wrong")
+//     }
+// })
+// .then((message)=>{
+//     console.log(message)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+// let anotherchecck = new Promise((resolved,rejected)=>{
+//     setTimeout(()=>{
+//         let name = "amol"
+//         if(name.endsWith("a")){
+//             resolved("the given string is starts with a")
+//         }
+//         else{
+//             rejected("the given string is not starts with a")
+//         }
+//     },1000)
+// }).then((message)=>{
+//     console.log(message)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+
+// let Str = "jadhav"
+// let name2 = Str.toLowerCase()
+
+// switch(name2){
+// case "amol": console.log(" name match in all directtion")
+// break
+// case "jadhav": console.log("Name Match with Sirname") 
+// break
+// case "Kantilal": console.log("NAme match with middlename")
+// break
+// default:console.log("Please enter  Valid name")
+// } 
+
+// let DAY = "sunday"
+// let updateday = DAY.toLowerCase()
+// switch(updateday){
+//     case"monday": console.log(`its ${updateday}`)
+//     break
+//     case "tuesday":console.log(`its ${updateday}`)
+//     break
+//     case"wednesday":console.log(`its ${updateday}`)
+//     break
+//     case "thursday":console.log(`its ${updateday}`)
+//     break
+//     case " friday":console.log(`its weedend,${updateday}`)
+//     break
+//     case"saturday":console.log(`its,holiday ${updateday}`)
+//     break
+//     case "sunday":console.log(`its ${updateday}`)
+//     break
+//     default:console.log(`enter Valid Day`)
+
+// }
+
+
+
+//  Switch Case
+// let day = "MonDAY"
+
+// let day1 = day.toLowerCase()
+
+// switch(day1){
+//     case "monday": 
+//     case "tuesday":
+//     case "Wednesday":
+//     case"thursday":
+//     case"friday":console.log(`${day} its a working day`)
+//     break
+//     case"saturday":console.log(`${day} its a weekend day`)
+//     break
+//     case " sunday":console.log(`${day} its a working day`)
+//     break
+//     default:console.log(`enter valid day`)
+// }
+/************************************ promises and async and await************************************************* */
+// function userregistration(user){
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//         console.log(`The ${user} has been register now`)
+//         resolve(user)
+//         }, 3000)
+//     })
+// }
+
+// // function to send otp 
+// function SendOTPToUSER(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log('the otp was sucessfuly registor for user')
+//             resolve(user)
+//         }, 2000)
+//     })
+// }
+
+// //set perefences 
+// function fetchuserperfrences(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log(`the perfrences for ${user} have been registor `)
+//             resolve(user)
+//         },4000)
+//     })
+// }
+// function startuseracitivity(user) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log(`start the use`)
+//             resolve(user)
+//         }, 500)
+//     })
+// }
+// userregistration("SID")
+//     .then(SendOTPToUSER)
+//     .then(fetchuserperfrences)
+//     .then(startuseracitivity) // this is function wright if we use () then we get async output and without that we get ans sync
+//     .then((message) => {
+//         console.log(message)
+//     }) //  this msg is linked with
+
+/*************************************************** Async and Await************************************************/
+    // function delay(ms) {
+    //     return new Promise((resolve) => {
+    //         setTimeout(() => {
+    //             resolve(` waiting for ${ms} time for stabity`)
+    //         }, ms)
+    
+    //     })
+    // }
+    
+    //   async function getdata() {
+    //     console.log("step 1 start")
+    //     const wait = await delay(3000)
+    //     console.log("step2 :begin",wait)
+    //     console.log("step 3 : end ")
+    // }
+
+    // getdata()
+
+    
+//eg.2
+
+// function firstcheck(time){
+//     return new Promise((resolve)=>{
+//         setTimeout(() => {
+//             console.log(`check${time}`)
+//             resolve()
+//         }, time);
+//     })
+// }
+// async function checkfirst(){
+// console.log("step1:- first step towards async")
+// let timechck = await firstcheck(3000)
+// console.log(`step2:- again check`, timechck)
+// console.log(`step3:- end of check`)
+// }
+// checkfirst()
+
+// new Promise((resolve,reject)=>{
+//     let num= 4
+//     if(num>0){
+//       resolve("number is greater than that")
+//     }
+//     else{
+//     reject("please check number")
+// }
+    
+//    })
+//    .then((message)=>{
+//      console.log(message)
+//    }).catch((error)=>{
+//      console.log(error)
+//    })
+
+
+// function check2(name){
+//     return console.log(`${name} this is myname`)
+// }
+
+// function againchech(check2,name){
+// console.log("checking purpose")
+//}againchech(check2("amol"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

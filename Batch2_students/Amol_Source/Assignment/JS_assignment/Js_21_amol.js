@@ -124,16 +124,16 @@ class PersonAccount {
 
 }
 let AmolInfo = new PersonAccount("Amol", "Jadhav", "Saving-type", "incomes", "exprences")
-console.log(AmolInfo.AccounInfo())
-console.log(AmolInfo.totalIncome())
-console.log(AmolInfo.totalExpense())
+console.log("Account info:-",AmolInfo.AccounInfo())
+console.log("current Income:-",AmolInfo.totalIncome())
+console.log("current Expense:-",AmolInfo.totalExpense())
 let addinco = AmolInfo.incomes["freelance"] = 22000
-console.log(AmolInfo) //  added income source
+console.log("Income Added:-",AmolInfo) //  added income source
 let addexpe = AmolInfo.expenses["EMI"] = 20000
-console.log(AmolInfo) //  added Expence 
-console.log(AmolInfo.updatedtotalIncome()) //  updated income
-console.log(AmolInfo.updatedtotalExpense()) //  updated expenses
-console.log(AmolInfo. accountBalance()) //  we get current balance
+console.log("Expences Added:-",AmolInfo) //  added Expence 
+console.log("Updated Income:-",AmolInfo.updatedtotalIncome()) //  updated income
+console.log("Updated Expense:-",AmolInfo.updatedtotalExpense()) //  updated expenses
+console.log("Total Balance :- ",AmolInfo. accountBalance()) //  we get current balance
 
 
 
