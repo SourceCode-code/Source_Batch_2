@@ -94,18 +94,14 @@ console.log("---------Ans.2-Ex.lev-3------------")
 //3 Read the countries api and count total number of languages in the world used as officials.
 const countLanguage = async ()=>{
     const response = await fetch('https://restcountries.com/v2/all')
-    const lang = await response.json()
-    new Promise((resolve)=>{
-        let countries = lang.map((el)=>el.languages)
-        let count = countries.reduce((acc,el)=>{
-            return acc + Object.values(el).length
-        },0)
-        resolve(count)
-    }).then((message)=>{
-        console.log(message)
-    }).catch((error)=>{
-        console.log(error)
-    })
+    const countries = await response.json()
+    let lang = new Set()
+    for (let key of countries){
+        let lang  = key.languages
+        lang.forEach((el)=>{
+            lang.add(el.name)   
+        })
+    }
 }
 countLanguage()
 
