@@ -1946,9 +1946,29 @@ array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
 //}againchech(check2("amol"))
 
 
+// function createCounter(){
+//     let count=0
 
+//     return function (){
+//         count ++
+//         console.log(count)
+//     }
+// }
 
+// let co = createCounter()
 
+// co()
+// async function hello(n) {
+
+//     return n*n
+
+// }
+// async function Sayhello() {
+//     let world = await hello(3)
+//     console.log(world)
+// }
+
+// Sayhello()
 
 
 

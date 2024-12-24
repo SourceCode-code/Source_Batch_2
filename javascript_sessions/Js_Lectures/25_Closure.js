@@ -1,19 +1,19 @@
 //closure --> if inner function acess the outer function variable then it is called as closure
 
 
-// function outer(){
+function outer(){
 
-// let count =0 
+let count =0 
 
-// function inner(){
-//     count ++
-//     return count
-// }
-// return inner()
+function inner(){
+    count ++
+    return count
+}
+return inner()
 
-// }
-// let hh= outer()
-// console.log(hh)
+}
+let hh= outer()
+console.log(hh)
 
 // console.log(hh)
 

@@ -160,8 +160,6 @@ return fulltime
     }
 }
 
-
-
 console.log(personal_Details1.ShowDate()) //10/12/2024
 console.log(personal_Details1.showtime())
 // static methods are also used as uitility function 

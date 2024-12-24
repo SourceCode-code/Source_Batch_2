@@ -17,8 +17,64 @@
  */
 
 
-//-------------------------------
+//------------------------------------------------ Inheritance----------------------------------
+// inhertiance --- > 
+/**
+ * Inheritance in JavaScript allows one class to inherit properties and methods from another class,
+ *  promoting code reusability and creating a hierarchical relationship between classes.
+ */
+//paraent --> 
+class Animal{
+    constructor(name){
+        this.name = name
+    }
 
+    eat(){
+        console.log(`the ${this.name} is eating`)
+    }
+}
+
+// what is super keyword --> when you have to access the property of a parent in a child class you use super keyword  
+
+class Dog extends Animal{
+    constructor(name,breed){
+        super(name)
+        this.breed = breed
+    }
+
+    brak(){
+        console.log(`${this.name} is braking`)
+    }
+}
+
+
+const myDog = new Dog("Buddy","Golden Retriver")
+
+
+myDog.brak() // this is a porperty of dog class
+myDog.eat() // buddy eating
+// let myDog = new Animal("dog")
+
+// console.log(myDog.eat())
+
+class cat extends Animal {
+    constructor (name,breed){
+
+    super(name)
+    this.breed= breed
+
+    }
+
+    meow()
+{
+    console.log(`${this.name} is meowing and  needs milk`)
+}
+}
+
+let mycat = new cat("tom","persain")
+
+mycat.meow()
+mycat.eat()
 
 
 
