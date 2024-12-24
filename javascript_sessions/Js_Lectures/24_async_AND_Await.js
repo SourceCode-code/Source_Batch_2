@@ -22,9 +22,7 @@
  */
 
 async function hello() {
-
     return "hello"
-
 }
 async function Sayhello() {
     let world = await hello()
