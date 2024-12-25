@@ -59,13 +59,8 @@ function createCounter(){
         console.log(count)
     }
 }
-
-
 let co = createCounter()
-
 co()
-
-
 
 const fetchCountryData = async ()=>{
     try{
