@@ -1970,64 +1970,64 @@ array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
 
 // Sayhello()
 //-----------------------------------------------------------inheritance--------------------------------------------
-class myinfo{
-    constructor(firstname){
-        this.firstname=firstname
-    }
-    Name(){
-        console.log(`This is my nickname ${this.firstname}`)
-    }
-}
-class updateinfo extends myinfo {
-    constructor(firstname,lastname){
-        super(firstname)
-        this.lastname=lastname
-    }
-    fullname(){
-        console.log(`This is my firstname ${this.firstname} and my sirname is ${this.lastname}`)
-    }
-}
+// class myinfo{
+//     constructor(firstname){
+//         this.firstname=firstname
+//     }
+//     Name(){
+//         console.log(`This is my nickname ${this.firstname}`)
+//     }
+// }
+// class updateinfo extends myinfo {
+//     constructor(firstname,lastname){
+//         super(firstname)
+//         this.lastname=lastname
+//     }
+//     fullname(){
+//         console.log(`This is my firstname ${this.firstname} and my sirname is ${this.lastname}`)
+//     }
+// }
 
-class finalname extends updateinfo{ //  always insure that u are extendedfrom pervious class
+// class finalname extends updateinfo{ //  always insure that u are extendedfrom pervious class
     
-    constructor(firstname,middlename,lastname){
-        super(firstname,lastname) // if we have to add new function then always keep in mind that the updated or pervious constructor should be mention in super key word
-        this.middlename=middlename
-    }
-    capiname(){
-       console.log(`my fullname is ${this.firstname} ${this.middlename} ${this.lastname}`) 
-    }
-}
-class alternatename extends finalname{ //  this is the example of overriding
-    constructor(nickname){
-        super(nickname)
-        this.nickname=nickname
-    }
-    capiname(){
-        console.log(`my fullname is ${this.firstname} ${this.middlename} ${this.lastname}`)
-    }
-}
-let check = new alternatename("Golu")
-check.capiname()
-check.Name()
-check.fullname()
-// example of overloading:- when you define multiple function with same name but different parameter it is called as overloading 
+//     constructor(firstname,middlename,lastname){
+//         super(firstname,lastname) // if we have to add new function then always keep in mind that the updated or pervious constructor should be mention in super key word
+//         this.middlename=middlename
+//     }
+//     capiname(){
+//        console.log(`my fullname is ${this.firstname} ${this.middlename} ${this.lastname}`) 
+//     }
+// }
+// class alternatename extends finalname{ //  this is the example of overriding
+//     constructor(nickname){
+//         super(nickname)
+//         this.nickname=nickname
+//     }
+//     capiname(){
+//         console.log(`my fullname is ${this.firstname} ${this.middlename} ${this.lastname}`)
+//     }
+// }
+// let check = new alternatename("Golu")
+// check.capiname()
+// check.Name()
+// check.fullname()
+// // example of overloading:- when you define multiple function with same name but different parameter it is called as overloading 
 
-function myname(name,middlename,lastname){
-    if(arguments.length===1){
-        console.log(`this is my firstname ${name}`)
-    }
-    else if(arguments.length===2){
-        console.log(`this is my firstname ${name} and ${middlename}`)
-    }
+// function myname(name,middlename,lastname){
+//     if(arguments.length===1){
+//         console.log(`this is my firstname ${name}`)
+//     }
+//     else if(arguments.length===2){
+//         console.log(`this is my firstname ${name} and ${middlename}`)
+//     }
 
-    else{
-        console.log(`this is my fullname ${name} ${middlename} ${lastname}`)
-    }
-}
- myname("Amol","Kantilal","Jaddhav")
- myname("Amol","Jaddhav")
- myname("Amol")
+//     else{
+//         console.log(`this is my fullname ${name} ${middlename} ${lastname}`)
+//     }
+// }
+//  myname("Amol","Kantilal","Jaddhav")
+//  myname("Amol","Jaddhav")
+//  myname("Amol")
  
 // ------------------------------end of Inheritance andd overriding and overloading--------------------------------------
 // recursion
@@ -2038,6 +2038,8 @@ function myname(name,middlename,lastname){
 // console.log(startnum(5))
 
 // --------------------------- end of recursion
+
+
 
 
 

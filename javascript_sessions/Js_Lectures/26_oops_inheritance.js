@@ -25,7 +25,7 @@
  */
 //paraent --> 
 class Animal {
-    constructor(name) {
+    constructor(name){
         this.name = name
     }
     eat() {
@@ -123,4 +123,8 @@ function greet(name, age) {
 
 greet("sid")
 greet("sid", 26)
+
+
+
+
 

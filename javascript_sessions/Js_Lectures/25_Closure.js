@@ -21,9 +21,6 @@ console.log(hh)
 
 // // more example --------------->
 
-
-
-
 // function outerFunction(){
 //     let count =0
 //     function plusOne(){
