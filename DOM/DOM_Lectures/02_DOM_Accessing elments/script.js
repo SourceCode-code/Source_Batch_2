@@ -63,3 +63,5 @@ const idselect= document.querySelector("#heading2")
 //formula -->  tagname[attribute="value"]
 
 // example --h2[id="heading2"]
+
+
