@@ -35,7 +35,7 @@ class Animal {
 
 // what is super keyword --> when you have to access the property of a parent in a child class you use super keyword  
 
-class Dog extends Animal {
+class Dog extends Animal{
     constructor(name, breed) {
         super(name)
         this.breed = breed
@@ -85,7 +85,6 @@ class Animal {
         console.log("animal make sound")
     }
 }
-
 class dog extends Animal {
     constructor(breed) {
         super(breed)
@@ -108,7 +107,6 @@ console.log(mydog)
 //as overloading 
 
 // 
-
 function greet(name, age) {
 
     if (arguments.length === 1) {
