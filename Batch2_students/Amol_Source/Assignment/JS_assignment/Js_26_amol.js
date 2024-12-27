@@ -95,26 +95,60 @@ class Statistics{
         this.ages=ages
     }
     count(){
-        console.log(this.ages.length)
+        return this.ages.length
     }
     sum(){
-        let Total = this.ages.reduce((el,index)=>el+index)
-        console.log(Total)
+        return this.ages.reduce((el,index)=>el+index)
+        
     }
     min(){
-        console.log(Math.min(...this.ages))
+        return Math.min(...this.ages)
     }
     max(){
-        console.log(Math.max(...this.ages))
+        return Math.max(...this.ages)
     }
+    range(){
+        return this.max()-this.min()
+    }
+    mean(){
+        return Math.round(this.sum()/this.count())
+    }
+    median(){
+      let medi =Math.round(this.count()/2)
+      return this.ages[medi]
+    }
+    mode (){
+        let array={}
+        this.ages.forEach((value)=>{
+         array[value]=(array[value]||0)+1
+        })
+        return Object.entries(array).sort((a,b)=>b[1]-a[1]).slice(0,1)
+    }
+    var(){
+        console.log("not able to solve")
+    }
+    std(){
+
+    }
+    freqDist(){
+
+    }
+
+
+
 
 
 }
-let Operation = new Statistics([31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26])
-Operation.count()
-Operation.sum()
-Operation.min()
-Operation.max()
+let Operation = new Statistics([31,26,34,37,27,26,32,32,26,27,27,24,32,33,27,25,26,38,37,31,34,24,33,29,26])
+console.log(Operation.count())
+console.log(Operation.sum())
+console.log(Operation.min())
+console.log(Operation.max())
+console.log(Operation.range())
+console.log(Operation.mean())
+console.log(Operation.median())
+console.log(Operation.mode())
+
 
 
 // console.log('Count:', statistics.count()) // 25
@@ -145,3 +179,53 @@ Operation.max()
 
 
 // Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+class PersonAccount{
+    constructor(firstname, lastname, incomes, expenses){
+this.firstname=firstname,
+this.lastname=lastname,
+this.incomes = { job: 65000, overtime: 20000 }
+this.expenses = { Rent: 15000, Mess: 5000, travel: 3000 }
+    }
+
+    totalincome(){
+        return  Object.values(this.incomes).reduce((el,index)=>el+index)
+
+    }
+    totalExpense(){
+        return Object.values(this.expenses).reduce((el,index)=>el+index)
+        
+    }
+    Accountholder(){
+        return `Account holder name:"${this.firstname} ${this.lastname}"`
+    }
+
+    set addinco(newinco){
+        console.log(this.incomes=newinco)
+    }
+    set addexp(newEXP){
+        console.log(this.expenses=this.expenses)
+    }
+    updatedinco(){
+     return Object.values(this.incomes).reduce((el,index)=>el+index)
+    }
+    updatedExpe(){
+        return Object.values(this.expenses).reduce((el,index)=>el+index)
+      
+    }
+    AccountBalance(){
+        return this.updatedinco()-this.updatedExpe()
+    }
+
+}
+let AccounInfo=new PersonAccount("Amol","Jadhav")
+console.log(AccounInfo.totalincome())
+console.log(AccounInfo.totalExpense())
+console.log(AccounInfo.Accountholder())
+let newinco= AccounInfo.incomes["buisness"]=200000
+let newEXP = AccounInfo.expenses['buisnesscost']=75000
+//console.log(AccounInfo)
+console.log(AccounInfo.updatedinco())
+console.log(AccounInfo.updatedExpe())
+console.log(AccounInfo.AccountBalance())
+
+

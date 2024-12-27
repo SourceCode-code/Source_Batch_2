@@ -82,8 +82,6 @@ const account = BankACcount(100)
 account.deposit(50)
 account.withdraw(125)
 account.checkbalance()
-
-
 //--------------------------------------------------------------------------
 
 
