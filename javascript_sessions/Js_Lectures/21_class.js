@@ -7,7 +7,6 @@
  * 
  * 
  */
-
 let obj = {
     hello: "hi",
     sampleobj: "object"
@@ -18,7 +17,6 @@ let obj = {
 class person {
     //code 
 }
-
 
 let person1 = new person()
 
@@ -46,27 +44,18 @@ console.log(sidDetails)
 
 class Person {
     constructor(name = "admin", lastname = "givenadimn", year = "givenyear", country = "given country") {
-
         this.name = name
         this.lastname = lastname
         this.year = year
         this.country = country
-
-
-
     }
-
 }
 //module.export = Person
 
-
-
 let d = new Person()
-
 console.log(d)
 
 let sid2 = new Person("sid", "gadakh", "1999", "India")
-
 console.log(sid2)
 
 // class methods -----------> 
@@ -170,8 +159,6 @@ let fulltime = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`
 return fulltime
     }
 }
-
-
 
 console.log(personal_Details1.ShowDate()) //10/12/2024
 console.log(personal_Details1.showtime())

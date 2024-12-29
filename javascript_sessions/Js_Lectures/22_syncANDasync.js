@@ -12,7 +12,6 @@ console.log(">>>>>>")
 
 // anscyncorus--> the code which is easy to complie or which gets compile first it gets to the out puts first
 
-
 console.log("hello")
 console.log("world") ///
 console.log("!!!!!!")
@@ -34,16 +33,15 @@ console.log("hello")
 
 
 //---------------------------------------------------------------------------------------------------
-
 console.log("_______________________________ example of sync code____________________")
-console.log("Step 1 - start the testcases")
-console.log("Step 2: exceute the code ")
-console.log("Step 3:get the results ")
-console.log("Step 4: generate reports  ")
+console.log("Step 1: start the testcases")
+console.log("Step 2: exceute the code")
+console.log("Step 3: get the results")
+console.log("Step 4: generate reports")
 
 console.log("_______________________________ example of async code____________________")
 
-// console.log("Step 1 - start the testcases")
+// console.log(" Step 1 : start the testcases ")
 
 // setTimeout(() => {
 //     console.log("Step 2: exceute the code ")
@@ -72,7 +70,6 @@ function userregistration(user, callback) {
 }
 
 // function to send otp 
-
 function SendOTPToUSER(user, callback) {
     setTimeout(() => {
         console.log('the otp was sucessfuly registor for user')
@@ -132,7 +129,6 @@ console.log("_______________________________ sync opeing instagram______________
 
 
 //------------------------------------------------------
-
 //general -->
 
 
@@ -158,3 +154,4 @@ console.log("_______________________________ sync opeing instagram______________
 //promise --> human uses promises to get something done in span of time 
 
 // 1  your promise will get fullfilled 
+

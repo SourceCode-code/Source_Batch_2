@@ -284,7 +284,7 @@ let personAccount = {
       {description : "food",amount: 7000 }
   ]
 }
-
+module.exports = personAccount;
 
 // Properties:
 // - firstName

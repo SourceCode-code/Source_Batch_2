@@ -1,31 +1,25 @@
 //------------------------------------------------------------
-
-
 //// promises --> cypress --> async --> made sync  default by promises
 
 //promise --> human uses promises to get something done in span of time 
 
-// 1  your promise will get fullfilled 
-//2 your promise will get rejected 
-//3 pending state --> 
+//1 your promise will get fullfilled
+//2 your promise will get rejected
+//3 pending state -->
 
-
-//in js --> promise is way to handle async code operation in js 
+//in js --> promise is way to handle async code operation in js
 //it allows user or developer to handle asycn code to get a success full operation 
 
 // 3 states in promises 
 
 /**
- * 
  * 1 pending --> inital stage (not started yet)
  * 2 fullfilled --> operation has been successfully done 
  * 3 rejection --> operation has failed 
  */
 
-
 // show me a example of promise 
 // explain -->
-
 
 // show me a example of promise 
 
@@ -75,19 +69,17 @@
 
 // 1 callback hell --
 
-//let create a program to create an instagram 
-console.log("_______________________________ async opeing instagram____________________")
+//let create a program to create an instagram
+console.log("_______________________________async opeing instagram____________________")
 
 // handling async using promise 
-
-function userregistration(user) {
+function userregistration(user){
     return new Promise((resolve) => {
         setTimeout(() => {
             console.log(`The ${user} has been register now`)
             resolve(user)
         }, 3000)
     })
-
 }
 
 // function to send otp 
@@ -98,26 +90,22 @@ function SendOTPToUSER(user) {
             console.log('the otp was sucessfuly registor for user')
             resolve(user)
         }, 2000)
-
-
     })
 }
 
 //set perefences 
 
-function fetchuserperfrences(user) {
+function fetchuserperfrences(user){
     return new Promise((resolve) => {
         setTimeout(() => {
             console.log(`the perfrences for ${user} have been registor `)
             resolve(user)
-        }, 4000)
+        },4000)
     })
 }
 
 function startuseracitivity(user) {
     return new Promise((resolve) => {
-
-
         setTimeout(() => {
             console.log(`start the use`)
             resolve(user)
