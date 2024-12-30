@@ -24,12 +24,11 @@
  *  promoting code reusability and creating a hierarchical relationship between classes.
  */
 //paraent --> 
-class Animal{
+class Animal {
     constructor(name){
         this.name = name
     }
-
-    eat(){
+    eat() {
         console.log(`the ${this.name} is eating`)
     }
 }
@@ -37,18 +36,18 @@ class Animal{
 // what is super keyword --> when you have to access the property of a parent in a child class you use super keyword  
 
 class Dog extends Animal{
-    constructor(name,breed){
+    constructor(name, breed) {
         super(name)
         this.breed = breed
     }
 
-    brak(){
+    brak() {
         console.log(`${this.name} is braking`)
     }
 }
 
 
-const myDog = new Dog("Buddy","Golden Retriver")
+const myDog = new Dog("Buddy", "Golden Retriver")
 
 
 myDog.brak() // this is a porperty of dog class
@@ -58,25 +57,20 @@ myDog.eat() // buddy eating
 // console.log(myDog.eat())
 
 class cat extends Animal {
-    constructor (name,breed){
-
-    super(name)
-    this.breed= breed
-
+    constructor(name, breed) {
+        super(name)
+        this.breed = breed
     }
 
-    meow()
-{
-    console.log(`${this.name} is meowing and  needs milk`)
-}
+    meow() {
+        console.log(`${this.name} is meowing and  needs milk`)
+    }
 }
 
-let mycat = new cat("tom","persain")
+let mycat = new cat("tom", "persain")
 
 mycat.meow()
 mycat.eat()
-
-
 
 
 
@@ -91,7 +85,6 @@ class Animal {
         console.log("animal make sound")
     }
 }
-
 class dog extends Animal {
     constructor(breed) {
         super(breed)
@@ -101,9 +94,6 @@ class dog extends Animal {
     speak() {
         console.log("dog barks")
     }
-
-
-
 }
 
 let mydog = new dog("lab")
@@ -117,7 +107,6 @@ console.log(mydog)
 //as overloading 
 
 // 
-
 function greet(name, age) {
 
     if (arguments.length === 1) {
@@ -131,7 +120,7 @@ function greet(name, age) {
 }
 
 greet("sid")
-greet("sid",26)
+greet("sid", 26)
 
 
 

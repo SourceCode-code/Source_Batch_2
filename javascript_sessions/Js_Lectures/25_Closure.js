@@ -21,9 +21,6 @@ console.log(hh)
 
 // // more example --------------->
 
-
-
-
 // function outerFunction(){
 //     let count =0
 //     function plusOne(){
@@ -59,13 +56,8 @@ function createCounter(){
         console.log(count)
     }
 }
-
-
 let co = createCounter()
-
 co()
-
-
 
 const fetchCountryData = async ()=>{
     try{

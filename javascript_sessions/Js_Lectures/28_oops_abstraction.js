@@ -3,7 +3,7 @@
 // inheritance --> child inherits parent property 
 
 // abstraction --> this is used to make the code neet and clean and the main puropse is to 
-//                 hid the implementation of details  it simplifies complicated systems
+//                 hide the implementation of details  it simplifies complicated systems
 
 
 //why abstraction -->
@@ -77,14 +77,11 @@ function BankACcount(initailbalance) {
 
 }
 
-
 const account = BankACcount(100)
 
 account.deposit(50)
 account.withdraw(125)
 account.checkbalance()
-
-
 //--------------------------------------------------------------------------
 
 

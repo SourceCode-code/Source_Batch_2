@@ -103,7 +103,7 @@ class PersonAccount {
     }
     set set_inco(addinco) {  //  here we add new income
         this.incomes = addinco
-        return addedinfo
+        return addinco
     }
     set set_expe(addexpe) {  //  here we add new Expence
         this.expenses = addexpe

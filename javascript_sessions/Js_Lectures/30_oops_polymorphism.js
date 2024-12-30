@@ -1,6 +1,6 @@
 // polymorphism --> polymorphism is a core oops concept which allows object of different types 
 // to be treated as if they are object of same type 
-//
+// 
 // in js polymorphsim enables methods with same name to behave differently based on the 
 // object context in which they are invoked
 
@@ -91,7 +91,6 @@ processPayment(){
 
  let ppay= new Paypal()
  ppay.processPayment()
-
 
 // const payment = [new CreditCardPayment(),new UPI(),new Paypal]
 

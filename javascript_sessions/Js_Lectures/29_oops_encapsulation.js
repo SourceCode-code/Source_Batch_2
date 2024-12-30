@@ -6,13 +6,11 @@
 /**
  *  1 to control the access to data 
  *  2 to protect the object state by preventing unauthorise access
- * 3 to make your code organised and easier to maintain
+ *  3 to make your code organised and easier to maintain
  * 
  */
 
-
 //example -->
-
 
 class Person{
  #age // private varaible 
@@ -32,13 +30,11 @@ class Person{
 
  canvote(){
     return this.#isAdult()?"he Can vote":" he cannot vote"
-
  }
 
 }
 
 let person = new Person("Amol",25)
-
 console.log(person.getDetails())
 console.log(person.canvote())
 

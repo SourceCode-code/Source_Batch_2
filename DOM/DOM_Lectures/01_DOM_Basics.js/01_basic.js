@@ -12,7 +12,7 @@
  * 
  * 1 access and maniplaute element
  * 
- * 2 changes in tne webpage dynmaic 
+ * 2 changes in the webpage dynmaic 
  * 
  * 
  * 
@@ -57,12 +57,9 @@ there different type of nodes or bracnhes
  * 
  * break down of a normal elemnet in dom 
  * 
- * <tagname>   attriubte       atrribute  = "value"                        atrribute  = "value"
+ * <tagname>   attriubte       atrribute  = "value"                       atrribute  = "value"
  *    |           |              |        |    |
  * <input     data-v-1f99f73c  class      = "oxd-input oxd-input--active" type="password" name="password" placeholder="Password">
- * 
- * 
- * 
  * 
  * 
  * example 2 
