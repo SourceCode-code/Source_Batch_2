@@ -32,7 +32,7 @@ class circle extends shape{
 }
 
 
-class rectangle extends shape{
+class rectangle extends shape {
 
     constructor (width, height){
         super();

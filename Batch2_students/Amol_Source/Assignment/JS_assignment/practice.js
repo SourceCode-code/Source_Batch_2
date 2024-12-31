@@ -2039,13 +2039,36 @@ array = ['vaibhav', 'sneha', 'siddhant', 'shrinivas', 'athrava', 'Amol']
 
 // --------------------------- end of recursion
 
+// console.log(" Step 1 : start the testcases ")
+
+// setTimeout(() => {
+//     console.log("Step 2: exceute the code ")
+// }, 3000)
+
+// console.log("Step 3:get the results ")
+// console.log("Step 4: generate reports  ")
 
 
 
+// async function myname(){
+//     let str = "amol Kantilal jadhav"
+//     for(i=0;i<=str.length-1;i++)
+//     await new Promise((resolve)=>{
+//      setTimeout(resolve,3000)
+//      console.log(str[i])
+//     } )
+// }myname()
 
-
-
-
+async function say(){
+return "Amol jadhva"
+   
+}
+async function name() {
+    let check = await say()
+    setTimeout(()=>{console.log("HeLLO")},4000)
+    console.log(check)
+}
+name()
 
 
 

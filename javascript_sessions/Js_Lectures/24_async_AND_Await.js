@@ -32,7 +32,7 @@ async function Sayhello() {
 Sayhello()//hello
 //-----------------------------------------------
 
-const sq = async function (n) {
+async function sq(n) {
     return n * n
 }
 // console.log(sq(2))
@@ -49,17 +49,13 @@ getsqaure(2)
 //---------------------
 
 async function delayprint(){
-
 for(let i =0;i<10;i++){
-
-    await new Promise((resolve) => {
+    await new Promise((resolve)=>{
         setTimeout(resolve,1000)
         console.log(i)
     })
 }
-
 }
-
 delayprint()
 
 
