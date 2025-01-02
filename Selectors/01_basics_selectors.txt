@@ -1,0 +1,72 @@
+// CSS Selectors --> the pattern used to select the  elements 
+// thumb rule --> if you want any elemnt to be selector and performed action that element should be unique
+
+how are elements defined in DOM
+tagname  attribute=value           id ="value"  >text </tagname>
+<button type="reset"               id="resetbtn">Reset</button>
+
+// basics selectors 
+
+tagname--> 
+for tagname just write the tagname  
+
+
+class --> 
+there are two ways of using of finding selector by class 
+
+[class="container"] -- way 1 
+
+.container --> way2 
+ 
+ for a elment containg multiple classes in a single attribute you should find by 2 ways
+ // dirsctly used way 1
+[class="nav-searchbar search-big nav-bluebeacon"]
+
+// for finding with . 
+
+steps :-
+1 paste value 
+2 add dot in the start
+3 replace the spaces with dot
+
+
+id  --> 
+to find a id you can use way 1 
+[id="resetbtn"]
+
+way2 
+
+used # before the value 
+example ==> #resetbtn
+
+attribute and value--> 
+to get an elemnt by attribute and value 
+
+simply follow step 
+
+1 select a attribute and value
+2 paste it in find bar and add []
+
+general formula --> general formula is a mixture of tagname and attribute value 
+
+tagname[attribute="value"] // this is a general formula 
+
+
+
+
+
+traveling 
+sbiling selectors 
+dynamic selectors 
+partials selectors 
+
+
+// learning selectors -->
+
+tagname
+
+class
+
+id
+
+attribute and value 
