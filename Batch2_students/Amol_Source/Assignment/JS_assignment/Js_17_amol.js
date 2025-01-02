@@ -36,6 +36,19 @@
 
 // 1 Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
 
+<<<<<<< HEAD
+// paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+// function tenMostFrequentWords(para,limit){
+//     mostLang = para.split(" ")
+//     mostRepeated = {}
+//     mostLang.forEach((word)=>{
+//         (mostRepeated[word]) = (mostRepeated[word]||0)+1
+//     })
+//     return Object.entries(mostRepeated).map(([word,count])=>({word,count})).sort((a,b)=>b.count-a.count).splice(0,limit)
+
+// }
+// console.log(tenMostFrequentWords(paragraph,10))
+=======
 paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
 function tenMostFrequentWords(para,limit){
     const mostLang = para.match(/\b\w+\b/g)
@@ -48,6 +61,7 @@ function tenMostFrequentWords(para,limit){
 
 }
 console.log(tenMostFrequentWords(paragraph,10))
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 
 //     console.log(tenMostFrequentWords(paragraph))
 //     [
@@ -88,6 +102,30 @@ console.log(tenMostFrequentWords(paragraph,10))
 // Exercises: Level 3
 
 // 1. Write a function which cleans text. Clean the following text. After cleaning, count three most frequent words in the string.
+<<<<<<< HEAD
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+// function cleanText(sent){
+// return sent.replace(/[^\w\s]/gi,"")// ^
+// } 
+// cleanSentence = cleanText(sentence)
+// console.log(cleanSentence)
+//  I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
+//  ```
+// 2. Write a function which find the most frequent words. After cleaning, count three most frequent words in the string.
+// function mostFrequentWords(sentence,limit){
+//     let splitedsentence = sentence.split(" ")
+// mostrepeated = {}
+// splitedsentence.forEach((word)=>{
+// (mostrepeated[word]=(mostrepeated[word]||0)+1)
+// })
+// return Object.entries(mostrepeated).map(([word,count])=>({word,count})).sort((a,b)=>b.count-a.count).slice(0,limit)
+
+// }
+// console.log(mostFrequentWords(cleanSentence,3))
+// ```js
+//  console.log(mostFrequentWords(cleanedText))
+//  [{word:'I', count:3}, {word:'teaching', count:2}, {word:'teacher', count:2}]
+=======
 sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
 function cleanText(sent){
 return sent.replace(/[^\w\s]/gi,"")// ^
@@ -119,3 +157,4 @@ console.log(mostFrequentWords(cleanSentence,20))
 //\d: Matches any digit (equivalent to [0-9]).
 //\w: Matches any word character (letters, digits, and underscores, equivalent to [a-zA-Z0-9_]).
 //\s: Matches any whitespace character (space, tab, newline).
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8

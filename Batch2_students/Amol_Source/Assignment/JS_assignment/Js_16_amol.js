@@ -15,7 +15,11 @@
 //    ```
 
 // 2. Destructure and assign the elements of `countries` array to the following variables:
+<<<<<<< HEAD
+//    ```javascript
+=======
 //```javascript
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 //const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway'];
  //const [fin, est, sw, den, nor] = countries;
  //method 2
@@ -37,7 +41,11 @@
 // let {width:wd,height:ht,area:ar,perimeter:pr}=rectangle
 // console.log(wd,ht,ar,pr)
 
+<<<<<<< HEAD
+// we dont use array methods here like=> forEach,filter abd all
+=======
 // we dont use array methods here like=> forEach,filter and all
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 
 //Method 3
 // measurements = []
@@ -47,10 +55,17 @@
 // console.log(measurements)
 
 // Exercises: Level 2
+<<<<<<< HEAD
+
+// 1. Iterate through the `users` array and get all the keys of each object using destructuring:
+//    ```javascript
+//  const users = [
+=======
 // 1.Iterate through the `users` array and get all the keys of each object using destructuring:
 //    ```javascript
 //  const users = 
 //     [
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 //      { name: 'Brook', scores: 75, skills: ['HTML', 'CSS', 'JS'], age: 16 },
 //      { name: 'Alex', scores: 80, skills: ['HTML', 'CSS', 'JS'], age: 18 },
 //      { name: 'David', scores: 75, skills: ['HTML', 'CSS'], age: 22 },
@@ -219,7 +234,11 @@ student.skills.dataScience.push("SQL")
 //         {skill: 'React',level: 9},
 //         {skill: 'BootStrap',level: 8}
 //       ],
+<<<<<<< HEAD
+//       backEnd: [
+=======
 //  backEnd:[
+>>>>>>> 442a081c17af8a7fc5e0a8b831a05bfda7dcd0c8
 //         {skill: 'Node',level: 7},
 //         {skill: 'GraphQL',level: 8},
 //         {skill: 'Express',level: 9}
