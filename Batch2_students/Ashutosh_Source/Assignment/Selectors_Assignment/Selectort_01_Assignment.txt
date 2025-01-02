@@ -1,0 +1,51 @@
+URL = https://www.flipkart.com/
+
+1. Element [Sesarch Bar]
+find element by tagname
+----Not possible by tagname
+find element by class name
+[class="Pke_EE"]
+.Pke_EE
+find element by id
+---Not possible
+find element by attribute and value
+[placeholder="Search for Products, Brands and More"]
+find the element by general formula
+input[placeholder="Search for Products, Brands and More"]
+
+2. Element [Login button]
+find element by tagname
+---Not possible
+find element by class
+[class="H6-NpN _3N4_BX"]
+.H6-NpN _3N4_BX
+find the element by id
+---- Not possible
+find the element by attribute and value
+[alt="Chevron"]
+find the element by genaral formula
+img[alt="Chevron"]
+
+3. Element []
+find the element by tagname
+--- Not possible
+find element by class
+[class="_3RX0a-"]
+find the element by id
+---- Not possible
+find the element by attribute and value
+[src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"]
+find emement by genaral formula
+img[src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"]
+
+4. Element 
+find element by tagname
+-----not possible
+find the element by classes
+----Not possible
+find the element bu ID 
+----Not possible
+find the element by attribute and value
+[src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"]
+find the element by general formula
+img[src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"]
