@@ -1745,16 +1745,42 @@
 // let arr = [1, [2, [3, [4, 5]]],[67],[4],[5], 6]
 // let chek= arr.flat(Infinity)
 // console.log(chek)
-sum=0
-let arr = [1,2,3,4,5,6,7,8,9]
-for(let i=0;i<arr.length;i++){
-    sum+=arr[i]
-}
-console.log(sum)
+// sum=0
+// let arr = [1,2,3,4,5,6,7,8,9]
+// for(let i=0;i<arr.length;i++){
+//     sum+=arr[i]
+// }
+// console.log(sum)
 
+// for (let num=2;num<=100;num++){
+//       let isprime = true;
+//         for(let i=2;i<Math.sqrt(num);i++){
+//             if(num%i==0){
+//                 isprime =false;
+//                 break;
+//            }
+//     }
+//             if(isprime){
+//                 console.log(num)
+//             }
+//  }
+let str5 = "This regualar experssion session conducted on 19 NOV , 2024 "
+console.log(str5.match(/\d+/gi)) // fo using + to get join value
 
+// paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+// function tenMostFrequentWords(para,limit){
+//     const mostLang = para.match(/\b\w+\b/gi)
+//    console.log(mostLang)
+//     mostRepeated = {}
+//     mostLang.forEach((word)=>{
+//         (mostRepeated[word]) = (mostRepeated[word]||0)+1
+//     })
+//     return Object.entries(mostRepeated).map(([word,count])=>({word,count})).sort((a,b)=>b[1]-a[1]).splice(0,limit)
 
-
+// }
+// console.log(tenMostFrequentWords(paragraph,10))
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+// console.log(sentence.replace(/[^\w\s]/gi,""))
 
 
 
