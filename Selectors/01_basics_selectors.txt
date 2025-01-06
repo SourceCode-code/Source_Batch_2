@@ -55,10 +55,71 @@ tagname[attribute="value"] // this is a general formula
 
 
 
-traveling 
-sbiling selectors 
-dynamic selectors 
-partials selectors 
+traveling --> DOM is a resprsentation of html webpage in a boweser --> which 
+pranet and child  
+
+travsing --> the method of getting selectors in which you travel form a parent or any parent to require element 
+there are 2 way to indicate travlling form parent to child 
+
+1 you can use > sign between 2 elements 
+ [class="thumbnail"]>[aria-label="Page navigation example"]>[class="pagination traversal-pagination"]>li
+
+ 2 you can use space in between 2 element
+[class="thumbnail"] [aria-label="Page navigation example"] [class="pagination traversal-pagination"] li
+
+
+// you can only travel form  any parent to its  child 
+
+
+sbiling selectors  ---> when you have  sbiling elemnts with same tag you need to use nth-child() method
+
+syntax ->
+
+:nth-child(number of sbiling)
+
+
+//thumb rule --> to use nth child the element must be sbiling 
+
+dynamic selectors & partials selectors   --> when the selector are  changing you need to tackle this by geeting selector in 2 ways 
+
+1 use travsing and travel form parent to child tagname 
+
+2 use partical selectors 
+
+-->
+
+// starts with --> ^
+
+example 
+[class^="_1sFryS"]
+
+here the sign compares the starting selector only 
+
+// ends with --> $
+
+here the sign compare the ending selector only 
+
+[class$="_2x2Mmc"]
+
+
+
+
+// table--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // learning selectors -->

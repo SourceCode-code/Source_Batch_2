@@ -1787,3 +1787,92 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 
 
 
+// class Animal {
+
+//     speak() {
+//         console.log("animal make sound")
+//     }
+// }
+// class dog extends Animal {
+//     constructor(breed) {
+//         super(breed)
+//         this.breed = breed
+
+//     }
+//     speak() {
+//         console.log("dog barks")
+//     }
+// }
+
+// let mydog = new dog("lab")
+
+// mydog.speak()
+// //console.log(mydog)
+
+// function sumtoN(n){
+//     if(n===1)return 1;
+// return n+sumtoN(n-1)
+// }
+// console.log(sumtoN(5)) // 
+// console.log(sumtoN(3))
+
+// class car {
+
+//     #startEngine() {
+//         console.log("the engine has be started ")
+//     }
+
+
+//     start() {
+//         this.#startEngine()
+//         console.log("the car is ready to drive ")
+//     }
+// }
+
+// const myCar = new car()
+
+// myCar.start()
+
+
+// sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+// let cleansentence = sentence.replace(/[^\w+\s]/gi,"").split(" ")
+// mostrepeate={}
+// for(let word of cleansentence){
+//     mostrepeate[word]=(mostrepeate[word]||0)+1
+// }                                                                                              //  you make mistake here
+// let check= Object.entries(mostrepeate).map(([word,count])=>({word,count})).sort((a,b)=>{return a.count-b.count}).splice(0,3)
+// console.log(check)
+
+ class checkdetails{
+    constructor(name,fullname,lastname){
+        this.name=name
+        this.fullname=fullname
+        this.lastname=lastname
+    }
+
+SayHello(){
+    console.log(`my name is ${this.name}`)
+
+}
+get get_name(){
+    console.log(this.name)
+}
+}
+let check= new checkdetails("amol","Kantilal","Jadhav")
+check.SayHello()
+check.get_name
+
+// check = `{
+// "Fullname":"amol",
+// "Lastname":"Jadhav"
+// }`
+// let ch = JSON.parse(check)
+// console.log(ch)
+
+// check2  = {
+//     name1:"amol",
+//     middlename:"Kantilal",
+//     lastname:" Jadhav"
+// }
+// let kk = JSON.stringify(check2,["name1"])
+// console.log(kk)

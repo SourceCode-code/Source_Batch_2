@@ -51,7 +51,7 @@ function BankACcount(initailbalance) {
 
     return {
 
-        deposit(amount) {
+        deposit(amount) {//50
             if (amount > 0) {
                 balance += amount
                 console.log(`your amount ${amount} has been deposited and your total balance is ${balance}`)
@@ -64,7 +64,7 @@ function BankACcount(initailbalance) {
                 console.log(`your amount ${amount} has been withdraw your total balance is ${balance}`)
             }
             else {
-                console.log("insuffienct funds ")
+                console.log("insuffienct funds")
             }
 
 
@@ -79,7 +79,7 @@ function BankACcount(initailbalance) {
 
 const account = BankACcount(100)
 
-account.deposit(50)
+account.deposit(50) 
 account.withdraw(125)
 account.checkbalance()
 //--------------------------------------------------------------------------

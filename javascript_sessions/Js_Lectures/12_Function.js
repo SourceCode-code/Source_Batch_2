@@ -1,5 +1,4 @@
 // Functions ---> To make your code dynamic and reusable, you use functions.
-
 // Example without functions:
 let a = 10;
 let b = 20;
