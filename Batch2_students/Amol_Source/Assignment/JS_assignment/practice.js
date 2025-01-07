@@ -1843,24 +1843,24 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // let check= Object.entries(mostrepeate).map(([word,count])=>({word,count})).sort((a,b)=>{return a.count-b.count}).splice(0,3)
 // console.log(check)
 
- class checkdetails{
-    constructor(name,fullname,lastname){
-        this.name=name
-        this.fullname=fullname
-        this.lastname=lastname
-    }
+//  class checkdetails{
+//     constructor(name,fullname,lastname){
+//         this.name=name
+//         this.fullname=fullname
+//         this.lastname=lastname
+//     }
 
-SayHello(){
-    console.log(`my name is ${this.name}`)
+// SayHello(){
+//     console.log(`my name is ${this.name}`)
 
-}
-get get_name(){
-    console.log(this.name)
-}
-}
-let check= new checkdetails("amol","Kantilal","Jadhav")
-check.SayHello()
-check.get_name
+// }
+// get get_name(){
+//     console.log(this.name)
+// }
+// }
+// let check= new checkdetails("amol","Kantilal","Jadhav")
+// check.SayHello()
+// check.get_name
 
 // check = `{
 // "Fullname":"amol",
@@ -1876,3 +1876,64 @@ check.get_name
 // }
 // let kk = JSON.stringify(check2,["name1"])
 // console.log(kk)
+// let chek2 = `{
+// "firstname":"Amol",
+// "Middlename":"Kantilal",
+// "Lastname":"Jadhav"
+// }`
+// let che = JSON.parse(chek2)
+// console.log(che)
+
+//function creation 
+
+// function  mydetails(name,middlename,lastname){
+//     this.name=name
+//     this.middlename=middlename
+//     this.lastname=lastname
+// }
+// let check = new mydetails("Amol","Kantilal","Jadhav")
+// console.log(check)
+
+//  factory function 
+// function  mydetails(name,middlename,lastname){
+//     return{
+//         name,
+//         middlename,
+//         lastname
+//  }
+// }
+// let check = new mydetails("Amol","Kantilal","Jadhav")
+// console.log(check)
+
+// class mydetails{ 
+//     constructor(name,middlename,lastname){
+//         this.name=name,
+//         this.middlename=middlename,
+//         this.lastname=lastname
+//     }
+// fisrtname(){
+//     console.log(this.name)
+// }
+// get get_lastname(){
+//     console.log(this.lastname)
+// }
+// set set_last(last){ //  littlebit confusing to understand.. first we have to add the value to given objet
+//     console.log(this.lastname=last)
+// }
+// static randomnumber(){ //  foric statick method u have to call it on main class whichever u creted.
+//    console.log( Math.floor(Math.random()*10))
+// }
+// set set_fisrtname(first){
+//     console.log(this.name=first)
+// }
+// }
+
+// let check= new mydetails("Amol","Kantilal","Jadhav")
+// console.log(check)
+// check.fisrtname()
+// check.get_lastname
+// check.set_last="JADHAV"
+// check.set_last
+// check.set_fisrtname="AMOL"
+// check.set_fisrtname
+// mydetails.randomnumber() //  
