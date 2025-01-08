@@ -2,7 +2,6 @@
 
 // the dom is a fundamental concept in web development that allows you to interact with html
 
-
 /**
  * what is dom -->
  * 

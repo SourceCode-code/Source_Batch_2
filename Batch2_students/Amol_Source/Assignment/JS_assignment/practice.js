@@ -1937,3 +1937,66 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // check.set_fisrtname="AMOL"
 // check.set_fisrtname
 // mydetails.randomnumber() //  
+
+// new Promise((resolve,reject)=>{
+// setTimeout(() => {
+//     let name = "amol"
+//     if(name.length<5){
+//         resolve(console.log("length is less than 5"))
+//     }
+//     else{
+//         reject(console.log("Legth is greater than 5"))
+//     }
+// }, 2000);
+// })
+// .then((msg)=>{
+//     console.log(msg)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
+// async function hello(){
+//     return "hello"
+// }
+// async function newhello(){
+//     let check = await hello()
+//     console.log(check)
+// }
+// newhello()
+
+// function myname(){
+// console.log("this is my name")
+// } myname()
+
+// function myname(name){
+//     console.log(`this ${name}`)
+// } myname("Amol")
+
+// function muname(name){
+// return name
+// }
+// console.log(muname("Amol"))
+//*************************************Recursion***************************************************************
+// function sum(n){
+//     if(n==1)return 1
+//     return n+sum(n-1)
+// }
+// console.log(sum(5))
+// sum(1) = 1
+// sum(2) = 2 + 1 = 3
+// sum(3) = 3 + 3 = 6
+// sum(4) = 4 + 6 = 10
+// sum(5) = 5 + 10 = 15
+
+// function factors(n){
+//     if(n==1) return 1
+//     return n+factors(n-1)
+// }
+// console.log(factors(10))
+/*************************i infosys question***************************** */
+// let arra1= [1,2]
+// let arra2 = arra1.slice()
+// arra2[0]=42
+// //console.log(arra1)
+// console.log(arra2)
+l

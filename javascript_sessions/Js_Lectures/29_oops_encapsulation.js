@@ -9,7 +9,6 @@
  *  3 to make your code organised and easier to maintain
  * 
  */
-
 //example -->
 
 class Person{
