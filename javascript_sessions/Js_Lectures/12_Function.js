@@ -29,7 +29,7 @@ console.log("Modulus:", c % d);
 /**
  * Syntax for a function:
  *
- * function functionName(parameter) {
+ * function functionName(parameter){
  *   // Code
  * }
  *

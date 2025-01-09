@@ -7,7 +7,7 @@ const catsAPI = 'https://api.thecatapi.com/v1/breeds'
 const fetchCountryData2 = async () => {
     const response = await fetch('https://restcountries.com/v2/all')
     const countries = await response.json();
-    new Promise((resolve, reject) => {
+    new Promise((resolve, reject) =>{
         let kk = countries.map(({ name, capital, languages, population, area }) => {
            return{ 
             countryName:name,

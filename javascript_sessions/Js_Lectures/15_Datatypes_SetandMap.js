@@ -18,7 +18,7 @@ let setOfLanguages = new Set(languages);
 console.log(setOfLanguages); // Set { 'English', 'Spanish', 'French', 'German' }
 
 // Looping through a Set
-for (const lang of setOfLanguages) {
+for (const lang of setOfLanguages){
     console.log(lang);
 }
 // Output:

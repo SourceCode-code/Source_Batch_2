@@ -1999,4 +1999,83 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // arra2[0]=42
 // //console.log(arra1)
 // console.log(arra2)
-l
+// class Myself{
+// constructor(firstname,middlename,lastname){
+//     this.firstname=firstname,
+//     this.middlename=middlename,
+//     this.lastname=lastname
+// }
+//  #name(){
+//     return this.firstname
+//  }
+
+//  lastnane(){
+//  console.log(this.#name(),this.lastname)
+//  }
+// }
+// class updated extends Myself{
+//     constructor(firstname,middlename,lastname,age){
+//         super(firstname,middlename,lastname)
+//         this.age=age
+//     }
+//     #amolage(){
+//         return this.age
+//     }
+//     #amolfirstname(){
+//         return this.firstname
+//     }
+//     #amollastname(){
+//         return this.lastname
+//     }
+//     ageandname(){
+//         console.log(this.#amolfirstname(), this.#amollastname(), this.#amolage())
+
+//     }
+// }
+// let check = new updated("Amol","Kantilal","Jadhav",25)
+// check.ageandname()
+// const student = {
+//     firstName:'Asabeneh',
+//     lastName:'Yetayehe',
+//     age:250,
+//     isMarried:true,
+//     skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
+//   }
+//   //1 Change skills array to JSON using JSON.stringify()
+//   let check = JSON.stringify(student,["skills"])
+//   console.log(check)
+
+//
+//(****************************************** Method for occurance of Words **************************)
+// let str = "hello my name is Amol Kantilal jadhav"
+// let str1 = str.split("")
+// mystring = {}
+// for(let key of str1){
+// mystring[key]=(mystring[key]||0)+1
+// }
+// let check = Object.entries(mystring).map(([word,count])=>({word,count})).sort((a,b)=>(b.count-a.count))
+// console.log(check)
+// ########################################aanother way ####################################
+// let str = "my name is amol kantila jadhav im from sangamner dist nagar i have completed my graduation from pune university"
+// const obj={}
+// for (let x of str){
+//     if(obj[x]){
+//         obj[x]+=1
+//     }
+//     else{
+//         obj[x]=1
+//     }
+// }
+// for(let y in obj){
+//     if(obj[y]==1){
+//         console.log(y)
+//     }
+// }
+
+
+let arr = [1,2,3,4,5,6,7,8,9,1,2,3]
+let arraq= [1,2,3,4]
+let arra1 = new Set(arr)
+let arrq=new Set(arraq)
+dublicate =arr.filter((el)=>arrq.has(el))
+console.log(new Set(dublicate))

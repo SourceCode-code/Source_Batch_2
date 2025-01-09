@@ -79,9 +79,7 @@ let tatacurv = {
 
 // tatacurv["battery_warrenty":"2years"]
 tatacurv["battery_warrenty"] = "2years"
-
 console.log(tatacurv)
-
 
 //3 upadting exsiting value 
 
@@ -393,7 +391,6 @@ console.log(above3)
 
 // object assignment 
 //  vihan metha has experince of 3 years  his current position is autoamtion testor and his skills include   skills: [ 'TypeScript', 'CI/CD' ],
-
 
 // {
 //   //       "firstName": "Arjun",
