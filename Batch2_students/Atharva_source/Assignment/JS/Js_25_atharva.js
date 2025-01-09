@@ -38,6 +38,7 @@ console.log("-------Answer.2-----------")
 
 // Exercises: Level 3
 // Create a personAccount out function. It has firstname, lastname, incomes, expenses inner variables. It has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance inner functions. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+console.log("-------Answer.3-----------")
 function PersonAccount(){
     firstName = "James"
     lastName = "Hype"
@@ -85,4 +86,3 @@ console.log(Outer.addIncome)
 console.log(Outer.addExpense)
 console.log(Outer.accountBalance)
 
-console.log("-------Answer.3-----------")
