@@ -185,3 +185,11 @@ for(let rows=0;rows<=n;rows++){
 // ****
 // ***
 // **
+
+//16) check if the given string is a palindrome 
+let str1="racecar"
+
+
+// true 
+//false
+
