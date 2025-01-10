@@ -72,7 +72,7 @@ console.log("Ans of Qes No.9.2",3>0 && 4>7);
 // 10. Figure out the result of the following comparison expressions without using `console.log()` first, then confirm the result using `console.log()`:
 //write the output in the comments 
 console.log("Ans of Qes No.10",4 > 3);        // true    . 4 is greater than 3
-console.log("Ans of Qes No.10.1",4 >= 3);     //true     . 4 is greater and equal to 3 
+console.log("Ans of Qes No.10.1",4 >= 3);     //true     . 4 is greater or equal to 3 
 console.log("Ans of Qes No.10.2",4 < 3);      //false    . 3 is not greater than 4 
 console.log("Ans of Qes No.10.3",4 <= 3);     //false    . 3 is not greater and equal to 4 
 console.log("Ans of Qes No.10.4",4 == 4);     //true     . here e check only value
@@ -91,16 +91,16 @@ console.log("Ans of Qes No.11",Z);
 
 // 12. Evaluate the following expressions and confirm with `console.log()`:
 //write the output in the comments 
-console.log("Ans of Qes No.12",4 > 3 && 10 < 12);   // true. here is both condition true
+console.log("Ans of Qes No.12",4 > 3 && 10 < 12);     // true. here is both condition true
 console.log("Ans of Qes No.12.1",4 > 3 && 10 > 12);   // flase. here the 10>12 condition as fail thats why flase in AND oprtaion
 console.log("Ans of Qes No.12.2",4 > 3 || 10 < 12);   // true .  here is OR oprtaion thats why if one is true then its output is true
 console.log("Ans of Qes No.12.3",4 > 3 || 10 > 12);   // true .  here is one condition is true thats why its output is true in OR oprators
-console.log("Ans of Qes No.12.4",!(4 > 3));            //flase. bcoz ! showa always opposite output (Condition is true)but !
-console.log("Ans of Qes No.12.5",!(4 < 3));            //true . bcoz ! show always opposite output (Condition is Flase)but !
-console.log("Ans of Qes No.12.6",!(false));            //true .  ! always show opposite output
-console.log("Ans of Qes No.12.7",!(4 > 3 && 10 < 12)); // flase . both condition is true but due to ! itd output is False
-console.log("Ans of Qes No.12.8",!(4 > 3 && 10 > 12)); // True. in AND oprator if one condition is false then out put ill be flase . but ! oprator its true .
-console.log("Ans of Qes No.12.9",!(4 === '4'));        // true . condition is fail but due to ! opratoe is shows true
+console.log("Ans of Qes No.12.4",!(4 > 3));           // flase. bcoz ! showa always opposite output (Condition is true)but !
+console.log("Ans of Qes No.12.5",!(4 < 3));           // true . bcoz ! show always opposite output (Condition is Flase)but !
+console.log("Ans of Qes No.12.6",!(false));           // true .  ! always show opposite output
+console.log("Ans of Qes No.12.7",!(4 > 3 && 10 < 12));// flase . both condition is true but due to ! itd output is False
+console.log("Ans of Qes No.12.8",!(4 > 3 && 10 > 12));// True. in AND oprator if one condition is false then out put ill be flase . but ! oprator its true .
+console.log("Ans of Qes No.12.9",!(4 === '4'));       // true . condition is fail but due to ! opratoe is shows true
 
 // 13. Check if there is no 'on' in both 'dragon' and 'python'.
 let dragon = 'dragon';

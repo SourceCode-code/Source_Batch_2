@@ -1,0 +1,117 @@
+/// Notes on Agile and Scrum Methodology \\\\
+
+// Definintion :  Agile methodology or Agile model is a combination of iterative and incremental process .
+              
+
+//Iterative : Breaking the product into small  part & this is provided into sprint 
+              //(SPRINT: Repeating same process again & again)
+// Incremental : New Feature is implemented at the beginning & then more new features are added to existing software.
+
+// METHODOLOGIES Of AGILE : 
+/*
+ 1: SCRUM
+ 2: FEATURE DRIVEN DEVELOPMENT
+ 3: CRYSTAL METHODOLOGY
+ 4: EXTREME PROGRAMMING
+ 5: DYNAMIC SOFTWARE DEVELOPMENT METHOD
+ 6: LEAN SOFTWARE DEVELOPMENT 
+
+ // OUT OF ALL These Methodologies , only SCRUM is used NOWADAYS
+
+ // SCRUM : 1 :IT IS A AGILE DEVELOPMENT METHOD WHICH CONCENTRATES ON HOW TO MANAGE TASKS WITH TEAM BASED DEVELOPMENT ENVIRONMENT 
+           2: SCRUM Itself is a FRAMEWORK for effective team collaboration in complex Project.
+
+           3: SCRUM Consists of Three Roles : 
+              A Product Owner 
+              B SCRUM Master 
+              C SCRUM TEAM 
+            
+              A Product Owner : a: The Process of Scrum starts with PRODUCT OWNER. 
+                                b: Product owner gets the input from the End user /StakeHolder and introduces the Product Backlog 
+
+              B: Scrum Master : A :Same as Project manager of that project .
+                                B: Scrum Master is responsible for setting of the metting of SPRINT MEETING.
+                                c: Removes any obstacles in the project .
+                                D: He coaches the team & Motivate.
+                                E: He is responsible to resolve any implementation and distraction for the Developer and QA Team . 
+
+              C: SCRUM TEAM : A: It consists of QA + Dev Team.
+                              B:Scrum Team Manages its own work an organizes to complete the work in particular sprint. 
+                              C: Team May consist of DESIGNER , DEVELOPER and TESTER
+             
+              D: SPRINT :  A:Sprint is a short, time-bound period of time when a development team works to complete a set of tasks.
+                           B:Sprint is the time period of 2-3 weeks during which a PRODUCT OWNER , SCRUM MASTER , SCRUM TEAM to develop 
+                              a software product 
+                           C:Generally, it is for 2-4 weeks depending upon the complexity of the project.
+                           D:Change request is applicable in the PRODUCT BACKLOG but not in the SPRINT  
+
+
+The Architecture  of AGILE  :
+
+Stake holder >> Product owner >> product backlog >> estimation >> Sprint backlog >> user stories >> summary report >> closure report 
+
+
+CEREMONIES IN AGILE : 
+
+
+1: Sprint Planning :    
+  The Sprint Planning answers the following questions.
+
+What are we going to work on in the upcoming Sprint?
+How are we going to work to deliver it?
+It is required from the team members to have a shared goal 
+and commitment before the beginning of the current Sprint composed 
+of the list of deliverable items that the team plans to work on during 
+that specific Sprint. The team can further break down these items into tasks, 
+typically no bigger than 2 days’ worth of work or the story points
+
+
+
+
+2: Daily Stand-up-Scrum meeting  :
+
+
+A daily Scrum stand-up meeting has set up after completion of the planning of the backlog items in the sprint. 
+The scrum meeting is hosted by the Scrum Master which is usually a 15-minute stand-up meeting. 
+It helps to coordinate the work among the team members and establishes the team work visibility in the Sprint. 
+The daily stand-up scrum meeting has the following three agendas for every team member.
+
+what’s done on the prior day?
+What are the impediments?
+what needs to be done today?
+
+
+
+3: Sprint Review meeting  :
+
+
+The sprint review meeting has held at the end of each sprint to determine the added functionality. 
+It is set up mainly to get feedback from the product owner and other project stakeholders. 
+It helps to ensure that the delivered increment is meeting the required business expectation or 
+some revision is required with the Product Backlog based on the feedback. 
+The feedback helps to improve team productivity towards the Product Backlog in a future Sprint.
+
+
+
+4: Sprint Retrospective meeting : 
+The sprint Retrospectives meeting can typically last for 90 minutes where the key focus is to help the team to incorporate continuous improvement into the team culture and Sprint rhythm. 
+The Scrum Team gathers to reflect on their previous Sprint and figure out dos and don’ts in order to improve as a team by asking the following questions.
+
+what went well?
+what did not go well?
+what can be improved?
+
+5: Sprint Backlog refinement  :
+The product Backlog refinement is the process through which the team can add details, estimate, and order to items in the Product Backlog. 
+Here, the Product Owner and the Development Team co-operate together on the details of Product Backlog items. The deliverable items are reviewed and revised.
+ It is an ongoing activity, and it is not restricted to be a time-boxed event unless the goal has achieved. However, the use of time-boxing is a good practice.
+
+6: Conclusion : 
+Scrum ceremonies are a very important part of the Agile Scrum framework. 
+They help to create a rhythm in the team to maximize their productivity, increases the team collaboration, maintain transparency, and injects the scope to inspect and adapt to the way they go. They provide the platform to the team members to learn continuously and improve from each other.
+
+
+
+
+
+

@@ -179,7 +179,7 @@ some imp notes
 condition 1 :if the value of vaiable is too much smaller than the quetiont then it shows as it is number in output.
 condition 2 :if the asssign value is even then output is 0
 condition 3 :if the value odd number then output will always be the 1
-condition 4 :if the value is near to the quetiont then ialaay show the remainng minus value 
+condition 4 :if the value is near to the quetiont then it alway show the remainng minus value 
      e.g let Num = 87 
     Num %= 80
     console.log(Num)

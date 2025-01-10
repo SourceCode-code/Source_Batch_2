@@ -70,6 +70,7 @@ for(let i=0;i<=10;i++){
 //   *
 
 
+
 //2
 
 // ****
@@ -90,3 +91,18 @@ for(let i=0;i<=10;i++){
 // 222
 // 33
 // 4
+
+
+
+
+//16) check if the given string is a palindrome 
+let str="racecar"
+
+
+// true 
+//false
+
+//17) print the longest word form the given string
+
+// str = " hello i am learning javascript and currently i am seeing the topic loops"
+

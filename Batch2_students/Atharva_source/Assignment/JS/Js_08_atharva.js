@@ -45,15 +45,6 @@ console.log(`${StrDay} ${TodayDate1} ${StrMonth} ${ThisYear} ${time1}:${min1} `)
 
 
 
-
-
-
-
-
-
-
-
-
 /* 
 Question 3: 
 Calculate how many days are left until a specific date (input: 'YYYY-MM-DD').
@@ -96,15 +87,58 @@ console.log(LeapYearCheck);
 
 
 
-//--------------------------------------------------------------------------------------------//////////////
+// //--------------------------------------------------------------------------------------------//////////////
 
 
 
 
 
+// // let date = new Date();
+
+// // let curTime = date.getHours();
+// // let curMin  = date.getMinutes();
+// // let curSec = date.getSeconds();
+
+// // let AmPm = curTime >=12 ? "PM": "AM";
+// // curHours = curTime % 12 ;
+// // curHours = curHours ? curHours : 12;
+// // let paddedTime = String(curHours).padStart(2,'0');
+// // let paddedMin = String(curMin).padStart(2,'0');
+// // console.log(`${paddedTime}:${paddedMin}:${curSec} ${AmPm}`);
+
+
+// // let curGermantime = date.toLocaleString("en", {
+// //     timeZone: 'CET',
+// //     day:"2-digit",
+// //     month:"2-digit",
+// //     year:"numeric",
+// //     hour:"2-digit",
+// //     min:"2-digit",
+// //     second:"2-digit",
+// // });
+// // console.log("German Timezone:", curGermantime);
+
+// let manipulateddate = new Date();
+// // let futuredate = manipulateddate.getDate();
+// // manipulateddate.setDate(futuredate + 5);
+// // console.log(manipulateddate.getDate());
+
+// // let futuremonth = manipulateddate.getDate();
+// // manipulateddate.setDate(futuremonth + 2);
+// // console.log(manipulateddate.getMonth()+1); 
+
+// let year = manipulateddate.getFullYear();
+// manipulateddate.setFullYear(year + 2);
+// console.log(manipulateddate.getFullYear()); 
 
 
 
 
+// let hour = 18;
+// if (hour <= 18) {
+//     console.log(greeting = 'good day');
+// }else {
+//     console.log('hour is greater than 18');
+// } 
 
 

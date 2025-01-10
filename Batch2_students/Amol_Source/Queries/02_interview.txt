@@ -1,0 +1,10 @@
+// what is hot fix,
+// what is agile mmethodlogy
+// what is scum and product owner 
+// what is smoke snity and regression retesting
+// wahat is bug realses what is bug leakage
+// what is adhock testing and what is exploratoe=ry testing
+// what is compatibilty testing
+// how many members in your Team 
+// which kind of testing you gonna Take 
+// how many testcase did you written in day - auto only 1 and manual -30 to 40

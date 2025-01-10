@@ -1,0 +1,138 @@
+// CSS Selectors --> the pattern used to select the  elements 
+// thumb rule --> if you want any elemnt to be selector and performed action that element should be unique
+
+how are elements defined in DOM
+tagname  attribute=value           id ="value"  >text </tagname>
+<button type="reset"               id="resetbtn">Reset</button>
+
+// basics selectors 
+
+tagname--> 
+for tagname just write the tagname  
+
+
+class --> 
+there are two ways of using of finding selector by class 
+
+[class="container"] -- way 1 
+
+.container --> way2 
+ 
+ for a elment containg multiple classes in a single attribute you should find by 2 ways
+ // dirsctly used way 1
+[class="nav-searchbar search-big nav-bluebeacon"]
+
+// for finding with . 
+
+steps :-
+1 paste value 
+2 add dot in the start
+3 replace the spaces with dot
+
+
+id  --> 
+to find a id you can use way 1 
+[id="resetbtn"]
+
+way2 
+
+used # before the value 
+example ==> #resetbtn
+
+attribute and value--> 
+to get an elemnt by attribute and value 
+
+simply follow step 
+
+1 select a attribute and value
+2 paste it in find bar and add []
+
+general formula --> general formula is a mixture of tagname and attribute value 
+
+tagname[attribute="value"] // this is a general formula 
+
+
+
+
+
+traveling --> DOM is a resprsentation of html webpage in a boweser --> which 
+pranet and child  
+
+travsing --> the method of getting selectors in which you travel form a parent or any parent to require element 
+there are 2 way to indicate travlling form parent to child 
+
+1 you can use > sign between 2 elements 
+ [class="thumbnail"]>[aria-label="Page navigation example"]>[class="pagination traversal-pagination"]>li
+
+ 2 you can use space in between 2 element
+[class="thumbnail"] [aria-label="Page navigation example"] [class="pagination traversal-pagination"] li
+
+
+// you can only travel form  any parent to its  child 
+
+
+sbiling selectors  ---> when you have  sbiling elemnts with same tag you need to use nth-child() method
+
+syntax ->
+
+:nth-child(number of sbiling)
+
+
+//thumb rule --> to use nth child the element must be sbiling 
+
+
+
+dynamic selectors & partials selectors   --> when the selector are  changing you need to tackle this by geeting selector in 2 ways 
+
+1 use travsing and travel form parent to child tagname 
+
+2 use partical selectors 
+
+-->
+
+// starts with --> ^
+
+example 
+[class^="_1sFryS"]
+
+here the sign compares the starting selector only 
+
+// ends with --> $
+
+here the sign compare the ending selector only 
+
+[class$="_2x2Mmc"]
+
+
+
+
+// table--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// learning selectors -->
+
+tagname
+
+class
+
+id
+
+attribute and value 
+
+
+

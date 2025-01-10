@@ -97,11 +97,11 @@ Question 4:
 Check if a current  year is a leap year.
 */
 
-let currentYear = new Date().getFullYear();
+//let currentYear = new Date().getFullYear();
 
-// Check if the current year is a leap year
-let isLeapYear = (currentYear % 4 === 0 && currentYear % 100 !== 0) || (currentYear % 400 === 0);
-let leapYearStatus = isLeapYear ? "is" : "is not";
-console.log(`The current year, ${currentYear}, ${leapYearStatus} a leap year.`);
+// // Check if the current year is a leap year
+// let isLeapYear = (currentYear % 4 === 0 && currentYear % 100 !== 0) || (currentYear % 400 === 0);
+// let leapYearStatus = isLeapYear ? "is" : "is not";
+// console.log(`The current year, ${currentYear}, ${leapYearStatus} a leap year.`);
 
 

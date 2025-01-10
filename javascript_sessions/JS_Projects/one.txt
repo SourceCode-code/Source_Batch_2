@@ -1,0 +1,1 @@
+THis is a folder for all the js projects to be developed in the class
