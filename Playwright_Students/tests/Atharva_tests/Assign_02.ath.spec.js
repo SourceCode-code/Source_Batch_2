@@ -225,3 +225,4 @@ test("Test the radiobuttons and checkbox", async({browser})=>{
     // assertion for checkbox 3 selected
     await expect(page.locator('input[value="option3"][type="checkbox"]')).toBeChecked()
 })
+
