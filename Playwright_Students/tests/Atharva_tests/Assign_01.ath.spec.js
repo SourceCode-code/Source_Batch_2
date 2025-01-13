@@ -29,3 +29,5 @@ test("Contact Details Page",async({browser})=>{
     await page.locator('[name="message"]').fill("hola123")
     await expect(page.locator('[name="message"]')).toHaveValue("hola123")
 })
+
+
