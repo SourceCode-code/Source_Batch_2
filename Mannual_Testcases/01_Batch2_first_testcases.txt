@@ -1,42 +1,19 @@
-const { test, expect } = require("@playwright/test");
-const exp = require("constants");
+testcases name :- 01_batch2_verify the successful sumbission of details.spec.js
 
-test("01_batch2_verify the successful sumbission of details", async ({ browser }) => {
+step1 :- visit the url -->https://webdriveruniversity.com/Contact-Us/contactus.html
+step2 :- ck("CONTACT US") the the page heading 
+step3 :- +("siddhant") the firstname 
+step 4 :- verify the first value in the inputbox 
 
-    const Context = await browser.newContext()
-    const page = await Context.newPage()
+step5 :- fill ("gadakh") the lastname 
+step 6 :- verify the lastname value in the inputbox 
 
-    // visiting the given url
-    await page.goto("https://webdriveruniversity.com/Contact-Us/contactus.html")
-    //verify the heading text 
-    await expect(page).toHaveTitle("WebDriver | Contact Us")
-    //enter firstname 
-    await page.locator('input[name="first_name"]').fill("Siddhant")
-    //verify the value enetred in firstname 
-    await expect(page.locator('input[name="first_name"]')).toHaveValue("Siddhant")
-    //enter lastname 
-    await page.locator('input[name="last_name"]').fill("gadakh")
-    //verify the value enetred in lastname 
-    await expect(page.locator('input[name="last_name"]')).toHaveValue("gadakh")
-    //enter emial 
-    await page.locator('input[name="email"]').fill("sidgadakh@gmail.com")
-    //verify the value enetred in emial 
-    await expect(page.locator('input[name="email"]')).toHaveValue("sidgadakh@gmail.com")
-    //enter firstname 
-    await page.locator('[name="message"]').fill("text123")
-    //verify the value enetred in commnet 
-    await expect(page.locator('[name="message"]')).toHaveValue("text123")
+step7 :- fill the emailname ("sidgadakh@gmail.com") 
+step 8 :- verify the email value in the inputbox 
 
+step 9 :- fill the commnet box  ("text123")
+step 10:- verify the commnet box value in the inputbox 
 
+step 11 :- click submit  
+step 12 :-the message first value ("Thank You for your Message!")
 
-
-
-
-
-
-
-
-
-
-
-})
