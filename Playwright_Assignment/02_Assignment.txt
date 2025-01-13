@@ -9,3 +9,4 @@ https://demo.guru99.com/test/radio.html
 
 //4 create and automated for radio btn and checkboxes  
 https://rahulshettyacademy.com/AutomationPractice/
+
