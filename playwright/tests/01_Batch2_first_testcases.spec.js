@@ -26,17 +26,10 @@ test("01_batch2_verify the successful sumbission of details", async ({ browser }
     await page.locator('[name="message"]').fill("text123")
     //verify the value enetred in commnet 
     await expect(page.locator('[name="message"]')).toHaveValue("text123")
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //click on the btn submit
+    await page.locator('input[type="submit"]').click()
+    //verify the sumbit message 
+   let sumbittext= await page.locator('[id="contact_reply"] h1').textContent()
+   console.log(sumbittext)
+    await expect(sumbittext).toEqual("Thank You for your Message!")
 })

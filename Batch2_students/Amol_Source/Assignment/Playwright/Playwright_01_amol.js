@@ -3,8 +3,8 @@
 * using tagName (whatever tagname)
 * using class( using square braket and (.)sung dot with remove space)
 *using id( using Square bracket or using # (hashtag))
-* using attribute ( that is [attribute Name = " attribute value"])
-* using general formula(tagname[attribute="attribute Value"])
+* using attribute ( that is [attribute Name = "attribute value"])
+* using general formula(tagname[attribute= "attribute Value"])
 */
 
 //flipcart website = https://www.flipkart.com/
