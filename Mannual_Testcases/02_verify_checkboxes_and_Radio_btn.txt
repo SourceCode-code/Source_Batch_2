@@ -1,0 +1,15 @@
+
+testcases name :- 01_batch2_verify the functionalty of the Checkboxes.js
+
+step1 :- visit the url -->https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html
+step2 :- ck(WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)") the the page heading
+verify the heading above checkbox ---> Checkboxe(s) 
+step3 :-in checkbox select option 3 and 4
+step 4 :- verify checkbox selected for option 1 and 4
+
+step5 :- unselect checbox 4 and verify its unselected
+step 6 :- in checkbox select option 3
+step7 :- verify checkbox selected for option 1 and 3
+
+step 8 :- uncheck all the checkboxs
+

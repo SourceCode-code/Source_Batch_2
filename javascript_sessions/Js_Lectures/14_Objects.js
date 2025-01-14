@@ -213,14 +213,12 @@ console.log("```````````````````````````````````````````")
 //Objects.keys()--> to get the keys or properties of an object as an array we use this method 
 
 let keyarr=Object.keys(viaahn)
-
 console.log(keyarr)
 
 
 // object.values --> to get the values of an object as an array we use this method
 
 let valarr=Object.values(viaahn)
-
 console.log(valarr)
 
 // object.entries -->to get the keys and values  of an object as an array we use this method

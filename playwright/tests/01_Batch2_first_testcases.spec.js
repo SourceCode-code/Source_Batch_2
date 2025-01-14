@@ -33,3 +33,5 @@ test("01_batch2_verify the successful sumbission of details", async ({ browser }
    console.log(sumbittext)
     await expect(sumbittext).toEqual("Thank You for your Message!")
 })
+
+

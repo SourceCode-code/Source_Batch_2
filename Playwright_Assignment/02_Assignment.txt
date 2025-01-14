@@ -1,0 +1,12 @@
+// 1 https://letcode.in/radio 
+created a testcases and automated it 
+
+//2 create a test case for radio btn 
+// https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html
+
+//3 create and automated this page 
+https://demo.guru99.com/test/radio.html
+
+//4 create and automated for radio btn and checkboxes  
+https://rahulshettyacademy.com/AutomationPractice/
+
