@@ -1,0 +1,6 @@
+1 create mannual testcase and automated for 
+
+https://letcode.in/dropdowns
+
+2  autoamte and create testcases
+https://rahulshettyacademy.com/AutomationPractice/
