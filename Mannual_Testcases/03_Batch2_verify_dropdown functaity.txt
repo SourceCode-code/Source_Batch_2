@@ -1,0 +1,14 @@
+
+testcases name :- 03_Batch2_verify_dropdown functaity.txt
+
+step1 :- visit the url -->https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html
+step2 :- ck(WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)") the the page heading
+verify the heading above checkbox ---> Checkboxe(s) 
+step3 :-select in 1 dropdown value python
+step 4 :- verify selected value
+
+step5 -select in 2 dropdown value Testng
+step 6 :- verify selected value
+step7 :- select in 3 dropdown value JS
+
+step 8 :-verify selected value
