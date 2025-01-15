@@ -199,6 +199,8 @@ test("Test the radiobuttons and checkbox", async({browser})=>{
     await page.locator('input[value="radio1"]').check()
     // assertion for the radiobutton 1
     await expect(page.locator('input[value="radio1"]')).toBeChecked()
+    // uncheck the selected button 
+    await expect(page.locator('input[value="radio1"]')).not.toBeChecked()
 
     // step5:- verify the radiobutton 2
     await page.locator('input[value="radio2"]').check()
