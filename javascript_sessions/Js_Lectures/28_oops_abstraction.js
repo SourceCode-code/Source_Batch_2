@@ -5,7 +5,6 @@
 // abstraction --> this is used to make the code neet and clean and the main puropse is to 
 //                 hide the implementation of details  it simplifies complicated systems
 
-
 //why abstraction -->
 /**
  * 
@@ -14,11 +13,11 @@
  * 3 redcuce the complexcity for the user 
  */
 
-// Js doesnt have bulit in mechanism for abstarction like other langauges like java C#
-// howeevr you can acheive abstarction through various techinques 
+// Js doesnt have bulit in 
+// mechanism for abstarction like other langauges like java C#
+// howeevr you can acheive abstarction through various techinques.
 
-
-// how can you can you use abstarction in js 
+// how can you can you use abstarction in js
 
 // you will define class and use public and private methods to control access
 //# will represnt the method as private 
@@ -26,18 +25,14 @@
 //example --> 
 
 class car {
-
-    #startEngine() {
+    #startEngine(){
         console.log("the engine has be started ")
     }
-
-
-    start() {
+    start(){
         this.#startEngine()
         console.log("the car is ready to drive ")
     }
 }
-
 const myCar = new car()
 
 myCar.start()
@@ -51,7 +46,7 @@ function BankACcount(initailbalance) {
 
     return {
 
-        deposit(amount) {
+        deposit(amount) {//50
             if (amount > 0) {
                 balance += amount
                 console.log(`your amount ${amount} has been deposited and your total balance is ${balance}`)
@@ -64,7 +59,7 @@ function BankACcount(initailbalance) {
                 console.log(`your amount ${amount} has been withdraw your total balance is ${balance}`)
             }
             else {
-                console.log("insuffienct funds ")
+                console.log("insuffienct funds")
             }
 
 
@@ -79,7 +74,7 @@ function BankACcount(initailbalance) {
 
 const account = BankACcount(100)
 
-account.deposit(50)
+account.deposit(50) 
 account.withdraw(125)
 account.checkbalance()
 //--------------------------------------------------------------------------

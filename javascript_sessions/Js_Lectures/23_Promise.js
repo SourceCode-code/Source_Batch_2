@@ -46,7 +46,7 @@
 // const sk = new Promise((resloves, rejected) => {
 //     setTimeout(() => {
 //         let arr = ["HTML", "CSS", "JS", "NODE"]
-//         if (arr.length > 1) {
+//         if (arr.length > 1){
 //             resloves(arr)
 //         }
 //         else {
@@ -65,8 +65,6 @@
 // })
 
 //-------------------------------------------------------------------------
-
-
 // 1 callback hell --
 
 //let create a program to create an instagram

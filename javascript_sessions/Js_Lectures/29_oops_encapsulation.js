@@ -9,13 +9,12 @@
  *  3 to make your code organised and easier to maintain
  * 
  */
-
 //example -->
 
 class Person{
  #age // private varaible 
 
- constructor(name , age){
+ constructor(name ,age){
     this.name = name 
     this.#age =age
  }

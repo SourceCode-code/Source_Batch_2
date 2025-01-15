@@ -29,10 +29,11 @@ class circle extends shape{
     getArea(){
         return Math.PI *this.radius**2
     }
+
 }
 
 
-class rectangle extends shape{
+class rectangle extends shape {
 
     constructor (width, height){
         super();
@@ -45,9 +46,7 @@ class rectangle extends shape{
         return this.width * this.height
     }
 }
-
-
-const shapes =[new circle(10),new rectangle(50,10)]
+const shapes = [new circle(10),new rectangle(50,10)]
 
 shapes.forEach((shape)=>console.log(shape.getArea()))
 
@@ -60,14 +59,12 @@ class Payment {
 processPayment(){
     throw new Error ("processPayment must be implemented")
 }
-
 }
 
 class CreditCardPayment extends Payment{
 processPayment(){
     console.log("processing your cerdit card payment")
 }
-
 
 }
 

@@ -1,0 +1,43 @@
+Bug Report 1:
+
+Title: First Name and Last Name fields accept numbers on Contact Us page
+
+Description: The First Name and Last Name fields on the Contact Us page at https://webdriveruniversity.com/Contact-Us/contactus.html are accepting numeric input, which should not be allowed.
+
+Steps to Reproduce:
+Go to the Contact Us page: https://webdriveruniversity.com/Contact-Us/contactus.html
+In the First Name field, enter a number (e.g., "12345").
+In the Last Name field, enter a number (e.g., "67890").
+Submit the form.
+Expected Result: The First Name and Last Name fields should only accept alphabetic characters and display an error if numbers are entered.
+
+Actual Result: The First Name and Last Name fields accept numeric input and allow the form to be submitted.
+
+Environment:
+
+OS/Version: [e.g., Windows 10]
+Browser: [e.g., Chrome 94]
+Severity: Medium
+
+Bug Report 2:
+
+Title: No character limit on First Name and Last Name fields on Contact Us page
+
+Description: The First Name and Last Name fields on the Contact Us page at https://webdriveruniversity.com/Contact-Us/contactus.html do not have a character limit, allowing users to input an excessive number of characters.
+
+Steps to Reproduce:
+
+Go to the Contact Us page: https://webdriveruniversity.com/Contact-Us/contactus.html
+In the First Name field, enter a long string of characters (e.g., "JohnDoeJohnDoeJohnDoe...").
+In the Last Name field, enter a long string of characters (e.g., "SmithSmithSmithSmith...").
+Submit the form.
+Expected Result: The First Name and Last Name fields should have a character limit (e.g., 50 characters) to prevent excessive input.
+
+Actual Result: There is no character limit, and the form accepts an unlimited number of characters.
+
+Environment:
+OS/Version: [e.g., Windows 10]
+Browser: [e.g., Chrome 94]
+
+Severity: Medium
+

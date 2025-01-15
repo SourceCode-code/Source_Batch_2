@@ -79,9 +79,7 @@ let tatacurv = {
 
 // tatacurv["battery_warrenty":"2years"]
 tatacurv["battery_warrenty"] = "2years"
-
 console.log(tatacurv)
-
 
 //3 upadting exsiting value 
 
@@ -215,14 +213,12 @@ console.log("```````````````````````````````````````````")
 //Objects.keys()--> to get the keys or properties of an object as an array we use this method 
 
 let keyarr=Object.keys(viaahn)
-
 console.log(keyarr)
 
 
 // object.values --> to get the values of an object as an array we use this method
 
 let valarr=Object.values(viaahn)
-
 console.log(valarr)
 
 // object.entries -->to get the keys and values  of an object as an array we use this method
@@ -393,7 +389,6 @@ console.log(above3)
 
 // object assignment 
 //  vihan metha has experince of 3 years  his current position is autoamtion testor and his skills include   skills: [ 'TypeScript', 'CI/CD' ],
-
 
 // {
 //   //       "firstName": "Arjun",

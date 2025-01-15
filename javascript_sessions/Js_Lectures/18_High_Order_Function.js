@@ -32,7 +32,7 @@ const higherorder = n => {
     return dosomething
 }
 
-console.log(higherorder(2)(3)(10)) //23
+console.log(higherorder(2)(3)(10))//23
 
 // forEach method uses callback function
 

@@ -32,7 +32,7 @@ async function Sayhello() {
 Sayhello()//hello
 //-----------------------------------------------
 
-const sq = async function (n) {
+async function sq(n) {
     return n * n
 }
 // console.log(sq(2))
@@ -49,17 +49,13 @@ getsqaure(2)
 //---------------------
 
 async function delayprint(){
-
 for(let i =0;i<10;i++){
-
-    await new Promise((resolve) => {
+    await new Promise((resolve)=>{
         setTimeout(resolve,1000)
         console.log(i)
     })
 }
-
 }
-
 delayprint()
 
 
@@ -86,8 +82,6 @@ function SendOTPToUSER(user) {
             console.log('the otp was sucessfuly registor for user')
             resolve(user)
         }, 2000)
-
-
     })
 }
 
@@ -148,12 +142,9 @@ async function runinsta(user) {
     console.log("your account has been created and now is ready to use ")
 }
 
-
 runinsta("sid")
 
-
 //
-
 
 async function say(){
       await console.log("hiiii")

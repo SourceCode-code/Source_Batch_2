@@ -1,6 +1,5 @@
 //closure --> if inner function acess the outer function variable then it is called as closure
 
-
 function outer(){
 
 let count =0 
@@ -50,7 +49,6 @@ console.log(hh)
 
 function createCounter(){
     let count=0
-
     return function (){
         count ++
         console.log(count)

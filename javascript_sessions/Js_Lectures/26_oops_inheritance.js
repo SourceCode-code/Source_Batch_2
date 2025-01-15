@@ -10,7 +10,7 @@
 
 // where will you use this as automation testor --->
 /**
- * This concepts helps you created the better POM (Page object model )frame 
+ * This concepts helps you created the better POM (Page object model)frame 
  * this framework can be used in cypress , playwright , selnium , and other tools  
  * 
  * (** in interview they will only ask te theory in rare cases they might ask an example )
@@ -44,6 +44,7 @@ class Dog extends Animal{
     brak() {
         console.log(`${this.name} is braking`)
     }
+
 }
 
 
@@ -107,7 +108,7 @@ console.log(mydog)
 //as overloading 
 
 // 
-function greet(name, age) {
+function greet(name, age,number) {
 
     if (arguments.length === 1) {
         console.log(`hello ${name} !`)
@@ -116,11 +117,14 @@ function greet(name, age) {
     else if (arguments.length === 2) {
         console.log(`hello ${name} you are ${age} years old`)
     }
+   
 
 }
 
 greet("sid")
 greet("sid", 26)
+greet("sid", 26,976004310)
+
 
 
 

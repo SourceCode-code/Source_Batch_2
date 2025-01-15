@@ -27,11 +27,9 @@ const h1 = document.getElementsByTagName("h1")
 
 // by development perpesctive
 //first
-
 const classselector = document.getElementsByClassName("heading")
 
 // method 2 
-
 const clselect= document.querySelector(".heading")
 
 //------------------------------------------------------------------------------

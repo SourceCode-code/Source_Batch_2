@@ -42,7 +42,6 @@ console.log(regex1)  //     /siddhant/gi
 
 let regex3= /siddhant/gim
 
-
 // methods in regex 
 
 //1) test(): returns true of false and check wheater the string contains the word

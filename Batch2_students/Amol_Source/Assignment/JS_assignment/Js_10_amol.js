@@ -67,6 +67,7 @@
 //     console.log(i)
 // }
 
+
 // //   // 7) Use for loop to iterate from 0 to 100 and print only odd numbers
 // for(let i = 0;i<+50;i++){
 //     console.log((2*i)+1)
@@ -75,10 +76,10 @@
 //     console.log((i+1))
 // }
 
+
 // //8) Use for loop to iterate from 0 to 100 and print only prime numbers // the numbers which are self divisible and only by 1   
 // for (let num=2;num<=100;num++){
-//   let isprime = true;
-
+//   let isprime = true 
 //     for(let i=2;i<Math.sqrt(num);i++){
 //         if(num%i==0){
 //             isprime =false;
@@ -89,13 +90,11 @@
 //             console.log(num)
 //         }
 //     }
-
-// //   // 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+// 9) Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 // let num = 0
 // for(let i=0;i<=100;i++){
 //     console.log(num+=i)
 // } // for thi ans i use chat gpt please explain..
-
 
 
 // //10) Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.

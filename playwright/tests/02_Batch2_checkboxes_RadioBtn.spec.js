@@ -5,8 +5,6 @@ test("02_Batch2_checkboxes_RadioBtn", async ({ browser }) => {
     const Context = await browser.newContext() //opens a fresher 
     const page = await Context.newPage() // opens a new page 
 
-
-
     // visit the url
     await page.goto("https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html")
     //verify title of the page 

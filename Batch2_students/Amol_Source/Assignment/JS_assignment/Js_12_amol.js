@@ -12,8 +12,8 @@ const countries = [
     'Japan',
     'Kenya',
   ];
-  
-  const webTechs = [
+
+  const webTechs =[
     'HTML',
     'CSS',
     'JavaScript',

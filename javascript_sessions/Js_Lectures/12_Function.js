@@ -1,5 +1,4 @@
 // Functions ---> To make your code dynamic and reusable, you use functions.
-
 // Example without functions:
 let a = 10;
 let b = 20;
@@ -30,7 +29,7 @@ console.log("Modulus:", c % d);
 /**
  * Syntax for a function:
  *
- * function functionName(parameter) {
+ * function functionName(parameter){
  *   // Code
  * }
  *
