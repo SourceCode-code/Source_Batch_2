@@ -12,3 +12,11 @@ step 6 :- verify selected value
 step7 :- select in 3 dropdown value JS
 
 step 8 :-verify selected value
+
+
+testcases name :- 03_Batch2_verify_ dynamic dropdown
+
+step 1 : visit https://rahulshettyacademy.com/AutomationPractice/
+step2 :enter practial text in dynamic dropdown
+step 3 : click on full text
+step 4 : verify the  selected value in dropdown
