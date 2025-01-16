@@ -170,12 +170,13 @@ test("Test the radiobuttons and checkboxes", async({browser})=>{
     await page.locator('input[type="checkbox"][value="checkbox2"]').check()
     // assertion for the checkbox 2
     await expect(page.locator('input[type="checkbox"][value="checkbox2"]')).toBeChecked()
+    await page.locator('input[type="checkbox"][value="checkbox2"]').uncheck()
 
     // step8:- verify the checkbox 3 selected
     await page.locator('input[type="checkbox"][value="checkbox3"]').check()
     // assertion for the checkbox 3
     await expect(page.locator('input[type="checkbox"][value="checkbox3"]')).toBeChecked()
-
+    await page.locator('input[type="checkbox"][value="checkbox3"]').uncheck()
 })
 
 // 4: test for radiobutton
@@ -199,6 +200,8 @@ test("Test the radiobuttons and checkbox", async({browser})=>{
     await page.locator('input[value="radio1"]').check()
     // assertion for the radiobutton 1
     await expect(page.locator('input[value="radio1"]')).toBeChecked()
+    // uncheck the selected button 
+    // await expect(page.locator('input[value="radio1"]')).not.toBeChecked()
 
     // step5:- verify the radiobutton 2
     await page.locator('input[value="radio2"]').check()
@@ -225,3 +228,4 @@ test("Test the radiobuttons and checkbox", async({browser})=>{
     // assertion for checkbox 3 selected
     await expect(page.locator('input[value="option3"][type="checkbox"]')).toBeChecked()
 })
+
