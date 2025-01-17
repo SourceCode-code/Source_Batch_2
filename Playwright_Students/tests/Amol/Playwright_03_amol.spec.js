@@ -305,3 +305,92 @@ test ("Rahulshetty :-of dropdwon at rahulshetty acadamychecking the functionalit
     await expect (page.locator('[id="dropdown-class-example"]')).toHaveValue("option3")
 
 })
+
+
+//dynamic dropdown assignment -->
+
+//1 visit and write mannual testcase and automate dynamic dropdown to select ireland
+//-> 
+//https://rahulshettyacademy.com/AutomationPractice/
+
+test("verify Dynamic dropdown for Rahulshetty",async ({browser})=>{
+    const Contex =await browser.newContext()
+    const page = await Contex.newPage()
+
+    await page.goto("https://rahulshettyacademy.com/AutomationPractice/")
+    await expect(page).toHaveTitle("Practice Page")
+
+    // verify the subheader of dynamic locater
+    let check = await page.locator('[id="select-class-example"] legend').textContent()
+    await expect(check).toContain("Suggession Class Example")
+    
+    // select the elemnt for get the value
+    await page.locator('[id="autocomplete"]').fill("ire")
+
+    // wait for selectors that is related the context
+    await page.waitForSelector('[id="ui-id-1"]')
+
+    //  verify the number of elements are present
+    let numOfcontex = await page.locator('[class="ui-menu-item"] div').count()
+    console.log(numOfcontex)
+    // ittrate through
+    for(let i=0;i<=numOfcontex;i++){
+        // verify the number of elemnet is related contex for subjected initials
+        let text = await page.locator('[class="ui-menu-item"] div').nth(i).textContent()
+        console.log(text)
+        //  check the condition is matching or not through out the loops
+        if(text=="Ireland"){
+              await page.locator('[class="ui-menu-item"] div').nth(i).click()
+              break
+         }
+    }
+   // wait for 3 seconds
+    await page.waitForTimeout(3000)
+  // verify for Exact selected country 
+    await expect (page.locator('[id="autocomplete"]')).toHaveValue("Ireland")
+
+})
+
+
+
+//2 visit filpkart and in dynmiac dropdown select iphone 15
+
+test("Flipkart:- verify Dynamic dropdown for Flipkart",async ({browser})=>{
+    const Contex =await browser.newContext()
+    const page = await Contex.newPage()
+
+    await page.goto("https://www.flipkart.com/")
+    await expect(page).toHaveTitle("Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!")
+    
+    await page.locator('[class="Pke_EE"]').fill("iphone 15")
+    
+    await page.waitForSelector('div[class="col-12-12 BnmXvV"]')
+
+     // let options = await page.locator('div[class="x6GwIv _2Ipp17"] span[class="-niSoj"] ').count()
+    //  console.log(options)
+    // for (let i = 0; i < options; i++) {
+    //     let text = await page.locator('[class="AgOexi"]').nth(i).textContent()
+    //     console.log(text)
+    //     if (text === "iphone 15"){
+    //         await page.locator('[class="AgOexi"]').nth(i).click()
+    //         break
+    //     }
+    // }
+    // //static wait for stability
+    // await page.waitForTimeout(3000)
+    // //verify the selected value 
+    // await expect(page.locator('[class="Pke_EE"]')).toHaveValue("iphone 15")
+
+})
+
+//3 visit red bus and select from wakad to homwtown 
+//https://www.redbus.in/
+
+test ("Redbus:- checking the Functionality of Dynamic dropdown",async({browser})=>{
+    const Contex = await browser.newContext()
+    const page = await Contex.newPage()
+
+    await page.goto("https://www.redbus.in/")
+
+    //await expect(page).toHaveTitle("www.googletagmanager.com")
+})

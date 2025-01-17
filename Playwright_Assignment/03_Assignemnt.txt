@@ -4,3 +4,15 @@ https://letcode.in/dropdowns
 
 2  autoamte and create testcases
 https://rahulshettyacademy.com/AutomationPractice/
+
+//-----------------------------------------------------------
+dynamic dropdown assignment -->
+
+1 visit and write mannual testcase and automate dynamic dropdown to select ireland
+-> 
+https://rahulshettyacademy.com/AutomationPractice/
+
+2 visit filpkart and in dynmiac dropdown select iphone 15
+
+3 visit red bus and select from wakad to homwtown 
+https://www.redbus.in/
