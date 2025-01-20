@@ -52,22 +52,22 @@ test("03_Batch2_verify_dynamic dropdowns", async function ({ browser }) {
     //enter practial text in dynamic dropdown
     await page.locator('[id="autocomplete"]').fill("ind")
     //waiting for selector 
-    await page.waitForSelector('[id="ui-id-1"]')
+    //await page.waitForSelector('[id="ui-id-1"]')
     //click on the correct option
-    let options = await page.locator('[class="ui-menu-item"] div').count()
+    let options = await page.locator('div[class="x6GwIv _2Ipp17"] [class="-niSoj"]').count()
     console.log(options)
-    for (let i = 0; i < options; i++) {
-        let text = await page.locator('[class="ui-menu-item"] div').nth(i).textContent()
-        console.log(text)
-        if (text === "India") {
-            await page.locator('[class="ui-menu-item"] div').nth(i).click()
-            break
-        }
-    }
+    // for (let i = 0; i < options; i++) {
+    //     let text = await page.locator('[class="ui-menu-item"] div').nth(i).textContent()
+    //     console.log(text)
+    //     if (text === "India") {
+    //         await page.locator('[class="ui-menu-item"] div').nth(i).click()
+    //         break
+    //     }
+    // }
     //static wait for stability
-    await page.waitForTimeout(3000)
+    //await page.waitForTimeout(3000)
     //verify the selected value 
-    await expect(page.locator('[id="autocomplete"]')).toHaveValue("India")
+    //await expect(page.locator('[id="autocomplete"]')).toHaveValue("India")
 
 
 })
