@@ -198,6 +198,14 @@ for(let rows=0;rows<=n;rows++){
 // ***
 // **
 
+<<<<<<< HEAD
+//16) check if the given string is a palindrome 
+let str1="racecar"
+
+
+// true 
+//false
+=======
 
 
 //---------------------------------------
@@ -309,4 +317,5 @@ console.log(`the vowels in the string are ${rstr} and the total count of vowels 
 
 
 
+>>>>>>> 58c7d5ca0ede83f7e63e9126b7e10ba2257651cc
 

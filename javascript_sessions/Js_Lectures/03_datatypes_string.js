@@ -92,4 +92,4 @@ console.log(str10);
 let str11 = "Hello, my name is \"Siddhant\"";
 console.log(str11);
 
-// Note: Always use escape characters carefully to handle special characters or multi-line strings effectively.
+// Note: Always use escape characters carefully to handle special characters or multi-line strings effectively

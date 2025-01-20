@@ -32,6 +32,12 @@
 //   // 9    81    729
 //   // 10   100   1000
 
+for(let i=0;i<=10;i++){
+    console.log(`${i}${i*i}${i**3}`);
+
+}
+
+
 //   // 6) Use for loop to iterate from 0 to 100 and print only even numbers
 
   
