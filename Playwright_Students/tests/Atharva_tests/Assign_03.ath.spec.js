@@ -539,3 +539,21 @@ test('Test the dropdown of flipkart', async({browser})=>{
     // options 
     let text = await page.locator('').count()
 })
+
+
+
+test('test the keyboard actions', async({browser})=>{
+
+    const Context = await browser.newContext()
+    const page = await Context.newPage()
+
+    await page.goto("https://demoqa.com/text-box")
+
+    await page.locator('[placeholder="Current Address"]').fill('the elegance park, ravet, pune')
+
+    await page.keyboard.press('Control+A')
+    await page.keyboard.press('Control+C')
+
+    await page.locator('[id="permanentAddress"]').click()
+    await page.keyboard.press('Control+V')
+})
