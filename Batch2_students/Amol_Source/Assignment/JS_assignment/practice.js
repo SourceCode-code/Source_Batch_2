@@ -4,6 +4,8 @@
 // reg ex^
 //  using reduce how we can itterate on prices - assignment no.18
 
+const { rejects } = require("assert")
+
 /* mquestionost important */
 
 // const fruits = ['apple', 'banana', 'orange', 'apple', 'banana'];
@@ -2073,9 +2075,24 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // }
 
 
-let arr = [1,2,3,4,5,6,7,8,9,1,2,3]
-let arraq= [1,2,3,4]
-let arra1 = new Set(arr)
-let arrq=new Set(arraq)
-dublicate =arr.filter((el)=>arrq.has(el))
-console.log(new Set(dublicate))
+// let arr = [1,2,3,4,5,6,7,8,9,1,2,3]
+// let arraq= [1,2,3,4]
+// let arra1 = new Set(arr)
+// let arrq=new Set(arraq)
+// dublicate =arr.filter((el)=>arrq.has(el))
+// console.log(new Set(dublicate))
+
+new Promise((resolve,reject)=>{
+    let check = true
+    if(check==false){
+        resolve(("this is ok"))
+    }
+    else{
+        reject(("this is not ok"))
+    }
+})
+.then((msg)=>{
+    console.log(msg)
+}).catch((error)=>{
+    console.log(error)
+})
