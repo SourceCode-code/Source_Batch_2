@@ -1,0 +1,14 @@
+//1 automate and write mannual testcases for following sceriono
+
+https://webdriveruniversity.com/Contact-Us/contactus.html
+
+1  validate the functionalty of reset btn 
+2  vaild the mandatory feild 
+3  valid the email feild 
+
+//2 automated the login flow 
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+// create a positive login follow
+// create a negative login flow 
