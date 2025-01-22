@@ -1,10 +1,11 @@
 
+
 // rest and spread 
 // high order functiion
 // reg ex^
 //  using reduce how we can itterate on prices - assignment no.18
 
-const { rejects } = require("assert")
+const { rejects, strict } = require("assert")
 
 /* mquestionost important */
 
@@ -2082,17 +2083,17 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // dublicate =arr.filter((el)=>arrq.has(el))
 // console.log(new Set(dublicate))
 
-new Promise((resolve,reject)=>{
-    let check = true
-    if(check==false){
-        resolve(("this is ok"))
-    }
-    else{
-        reject(("this is not ok"))
-    }
-})
-.then((msg)=>{
-    console.log(msg)
-}).catch((error)=>{
-    console.log(error)
-})
+// new Promise((resolve,reject)=>{
+//     let check = true
+//     if(check==false){
+//         resolve(("this is ok"))
+//     }
+//     else{
+//         reject(("this is not ok"))
+//     }
+// })
+// .then((msg)=>{
+//     console.log(msg)
+// }).catch((error)=>{
+//     console.log(error)
+// })

@@ -1,12 +1,12 @@
 //locotor--> css
 const { test, expect } = require("@playwright/test")
 
-//getbyAltText()--> alt atrribute value 
+//getbyAltText()--> alt atrribute value
 //getByLabel()--> get locotor by label name 
 // getByPlaceholder --> gets the place holder 
 //getByRole --> gets the selector by role 
 //getByTestId --> data test id attribute 
-//getByText --> texts 
+//getByText --> texts
 // getByTitle()--> get the selector by title value 
 //.locator
 
@@ -17,8 +17,7 @@ test("verify getbyAltText selector", async ({ page }) => {
     let ele = await page.getByAltText("letcode")
     await expect(ele).toBeVisible()
     await expect(ele).toHaveAttribute("src", "../../assets/logo.png")
-    await expect(ele).toHaveAttribute("alt", "letcode")
-
+    await expect(ele).toHaveAttribute("alt","letcode")
 })
 
 
@@ -26,8 +25,8 @@ test("verify getByLabel selector", async ({ page }) => {
 
     await page.goto("https://letcode.in/test#google_vignette")
     let ele = await page.getByLabel("main navigation")
-
     await expect(ele).toBeVisible()
+    
     // await expect(ele).toHaveAttribute("src","../../assets/logo.png")
     // await expect(ele).toHaveAttribute("alt","letcode")
 

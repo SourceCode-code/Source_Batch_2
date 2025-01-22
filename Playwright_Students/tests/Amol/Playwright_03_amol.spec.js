@@ -363,23 +363,23 @@ test("Flipkart:- verify Dynamic dropdown for Flipkart",async ({browser})=>{
     await expect(page).toHaveTitle("Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!")
     
     await page.locator('[class="Pke_EE"]').fill("iphone 15")
-    
-    await page.waitForSelector('div[class="col-12-12 BnmXvV"]')
 
-     // let options = await page.locator('div[class="x6GwIv _2Ipp17"] span[class="-niSoj"] ').count()
-    //  console.log(options)
-    // for (let i = 0; i < options; i++) {
-    //     let text = await page.locator('[class="AgOexi"]').nth(i).textContent()
-    //     console.log(text)
-    //     if (text === "iphone 15"){
-    //         await page.locator('[class="AgOexi"]').nth(i).click()
-    //         break
-    //     }
-    // }
-    // //static wait for stability
-    // await page.waitForTimeout(3000)
-    // //verify the selected value 
-    // await expect(page.locator('[class="Pke_EE"]')).toHaveValue("iphone 15")
+    await page.waitForSelector('[class="_1sFryS _2x2Mmc _3ofZy1"]')
+
+    let options = await page.locator('div[class="YGcVZO _2VHNef"] span').count()
+     console.log(options) 
+    for (let i = 0; i < options; i++) {
+        let text = await page.locator('div[class="YGcVZO _2VHNef"] span').nth(i).textContent()
+        console.log(text)
+        // if (text === "iphone 15 pro max"){
+        //     await page.locator('div[class="YGcVZO _2VHNef"] span').nth(i).click()
+        //     break
+        // }
+    }
+    //static wait for stability
+    await page.waitForTimeout(3000)
+    //verify the selected value 
+    await expect(page.locator('[class="Pke_EE"]')).toHaveValue("iphone 15 pro max")
 
 })
 
@@ -391,6 +391,7 @@ test ("Redbus:- checking the Functionality of Dynamic dropdown",async({browser})
     const page = await Contex.newPage()
 
     await page.goto("https://www.redbus.in/")
+    await expect(page).toHaveTitle("Bus Ticket Booking Online made Easy, Secure with Top Bus Operators - redBus")
 
     //await expect(page).toHaveTitle("www.googletagmanager.com")
 })
