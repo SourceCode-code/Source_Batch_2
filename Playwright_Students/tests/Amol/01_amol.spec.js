@@ -1,4 +1,5 @@
 const { test, expect } = require("@playwright/test");
+const alldata = require("../../Fixture/TestData/Testdata01.json")
 
 
 test("01_batch2_verify the successful sumbission of details", async ({ browser }) => {
@@ -7,7 +8,7 @@ test("01_batch2_verify the successful sumbission of details", async ({ browser }
     const page = await Context.newPage()
 
     // visiting the given url
-    await page.goto("https://webdriveruniversity.com/Contact-Us/contactus.html")
+    await page.goto(alldata.tes)
     //verify the heading text 
     await expect(page).toHaveTitle("WebDriver | Contact Us")
     //enter firstname 
