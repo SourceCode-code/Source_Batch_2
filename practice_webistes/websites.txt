@@ -35,7 +35,7 @@ Grocery Store
 https://practice.automationbro.com/    not working
 
 TriNet HR Software Demo
-https://www.trinet.com/login
+https://www.trinet.comcom/login
 
 Demo Blaze
 https://www.demoblaze.com/
