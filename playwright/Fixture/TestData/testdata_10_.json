@@ -1,0 +1,18 @@
+{
+    "testdata": [
+        {
+            "index":0,
+            "first_name": "sid",
+            "last_name": "gadakh",
+            "email": "sampledata@gmail.com",
+            "commnet": "hey i am learning dyanamic data"
+        },
+        {
+            "index":1,
+            "first_name": "amol",
+            "last_name": "jadhav",
+            "email": "sampledata@gmail.com",
+            "commnet": "hey i am learning dyanamic data"
+        }
+    ]
+}
