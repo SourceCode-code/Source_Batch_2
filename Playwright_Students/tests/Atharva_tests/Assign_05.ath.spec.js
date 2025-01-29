@@ -14,3 +14,4 @@ test('Test the daynamic data', async({browser})=>{
     await expect(page.locator('[name="first_name"]')).toHaveValue("atharva")
 
 })
+
