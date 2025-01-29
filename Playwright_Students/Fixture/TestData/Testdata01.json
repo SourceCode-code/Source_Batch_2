@@ -1,0 +1,47 @@
+{
+    "Mydata": [
+        {
+            "index": 0,
+            "MainURL": "https://webdriveruniversity.com/Contact-Us/contactus.html",
+            "title": "WebDriver | Contact Us",
+            "first_name": "amol",
+            "last_name": "jadhav",
+            "email": "sampledata@gmail.com",
+            "commnet": "hey i am learning dyanamic data",
+            "ManditoryErrorfiled":"Error: all fields are required"
+       },
+       {
+        "index": 1,
+        "OrangeHRMurl": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+        "title": "OrangeHRM",
+        "username": "Admin",
+        "password": "admin123"
+        
+       },
+       {
+        "index":2,
+        "LetCodeURL":"https://letcode.in/dropdowns",
+        "Title":"LetCode with Koushik",
+        "Selectefruits":"Select Fruit",
+        "selectedValue":"header",
+        "selectApple":"Apple",
+        "applevalue":"0",
+        "aplleverify":"You have selected Apple",
+        "selectMango":"Mango",
+        "Mangovalue":"1",
+        "Mangoverify":"You have selected Mango",
+        "selectOrange":"Orange",
+        "Orangevalue":"2",
+        "Orangeverify":"You have selected Orange",
+        "selectBanana":"Banana",
+        "Bananavalue":"3",
+        "Bananaverify":"You have selected Banana",
+        "selectPineApple":"Pine Apple",
+        "PineApplevalue":"4",
+        "PineAppleverify":"You have selected Pine Apple"
+       }
+
+    ]
+}
+
+   

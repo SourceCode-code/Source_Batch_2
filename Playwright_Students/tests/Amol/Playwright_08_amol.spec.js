@@ -33,13 +33,13 @@ test ("multiple File upload handling in playwright",async({page})=>{
   await expect(forf2).toContain("It Domain PDF.pdf")
 
   // for removing purpose
-  await page.locator('[id="filesToUpload"]').setInputFiles([]) // here we have to add in Array...
+
+  await page.locator('[id="filesToUpload"]').setInputFiles([]) // here we have to add in emptyArray...
 
   await page.waitForTimeout(4000)
 
   let nofile= await page.locator('[id="fileList"] li').textContent()
   await expect(nofile).toContain("No Files Selected")
   
-
 })
 
