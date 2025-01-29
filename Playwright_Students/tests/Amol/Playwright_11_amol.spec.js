@@ -28,7 +28,6 @@ test("multiwondows:-Dynamically handle webdriver", async ({ browser }) => {
     ])
     let verifyRadio = await Radiobuttons.locator('[class="col-sm-4 col-lg-4 col-md-4"]').nth(0).textContent()
     await expect(verifyRadio).toContain("Dropdown Menu(s)")
-
 })
 
 // test("Tools:- Multi windows handling", async ({browser}) => {
