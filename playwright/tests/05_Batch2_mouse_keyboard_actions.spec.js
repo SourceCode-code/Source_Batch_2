@@ -51,7 +51,7 @@ test("verify keyboard action in playwright",async({page})=>{
     // to press any key page dn key 
     // await page.keyboard.press("PageDown")
     //enetr text 
-    await page.locator('[name="text1"]').fill("I am Learning PLaywright ")
+    await page.locator('[name="text1"]').fill("I am Learning Playwright ")
     // select and copy 
     await page.keyboard.press('Control+A')
     await page.keyboard.press('Control+C')

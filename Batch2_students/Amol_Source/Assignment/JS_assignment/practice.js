@@ -2140,6 +2140,31 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 
 
 
+// let arr = ["amol",24,"Kantilal",35,9270043110,"JAdhav"]
+// let str =[]
+// let num= []
+
+// for (i=0;i<arr.length;i++){
+// if(typeof(arr[i])=='number'){
+// num.push(arr[i])
+// }
+// else{
+// str.push(arr[i])
+// }
+// }
+// console.log(str)
+// console.log(num)
+
+// let str = "amol kantilal jadhav"
+// let vovels = "aeiou"
+// let newstr =''
+// for(i=0;i<str.length;i++){
+//     if(vovels.includes(str[i])){
+//         newstr+=str[i]
+//     }
+    
+// }
+// console.log(newstr.split(""))
 
 
 

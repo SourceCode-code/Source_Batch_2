@@ -10,7 +10,6 @@ const { test, expect } = require("@playwright/test")
 // getByTitle()--> get the selector by title value 
 //.locator
 
-
 test("verify getbyAltText selector", async ({ page }) => {
 
     await page.goto("https://letcode.in/test#google_vignette")
@@ -26,7 +25,6 @@ test("verify getByLabel selector", async ({ page }) => {
     await page.goto("https://letcode.in/test#google_vignette")
     let ele = await page.getByLabel("main navigation")
     await expect(ele).toBeVisible()
-    
     // await expect(ele).toHaveAttribute("src","../../assets/logo.png")
     // await expect(ele).toHaveAttribute("alt","letcode")
 
@@ -63,4 +61,5 @@ test("verify getByTitle selector", async ({ page }) => {
    let ele= await page.getByTitle("Koushik Chatterjee")
     await page.waitForTimeout(2000)
     await expect(ele).toBeVisible()
+    
 })
