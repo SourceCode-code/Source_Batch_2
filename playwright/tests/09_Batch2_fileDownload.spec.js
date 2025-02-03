@@ -11,7 +11,4 @@ const download = await downloadPromise
 
 //wait for downlaod to happen and save it in a specif 
 await download.saveAs("../playwright/Fixture/FileDownload/Download1.pdf")
-
-
-
 })

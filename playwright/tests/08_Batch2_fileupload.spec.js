@@ -3,7 +3,6 @@ const exp = require("constants")
 
 test("Verify the upload functionality in playwright", async ({ page }) => {
 
-  
     //visit
     await page.goto("https://webdriveruniversity.com/File-Upload/index.html")
     //upload the file
@@ -20,6 +19,5 @@ test("Verify the upload functionality in playwright", async ({ page }) => {
 
 
 })
-
 
 

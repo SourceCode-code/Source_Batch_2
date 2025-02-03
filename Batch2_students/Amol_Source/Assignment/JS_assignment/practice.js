@@ -1,8 +1,11 @@
 
+
 // rest and spread 
 // high order functiion
 // reg ex^
 //  using reduce how we can itterate on prices - assignment no.18
+
+const { rejects, strict } = require("assert")
 
 /* mquestionost important */
 
@@ -2073,9 +2076,107 @@ console.log(str5.match(/\d+/gi)) // fo using + to get join value
 // }
 
 
-let arr = [1,2,3,4,5,6,7,8,9,1,2,3]
-let arraq= [1,2,3,4]
-let arra1 = new Set(arr)
-let arrq=new Set(arraq)
-dublicate =arr.filter((el)=>arrq.has(el))
-console.log(new Set(dublicate))
+// let arr = [1,2,3,4,5,6,7,8,9,1,2,3]
+// let arraq= [1,2,3,4]
+// let arra1 = new Set(arr)
+// let arrq=new Set(arraq)
+// dublicate =arr.filter((el)=>arrq.has(el))
+// console.log(new Set(dublicate))
+
+// new Promise((resolve,reject)=>{
+//     let check = true
+//     if(check==false){
+//         resolve(("this is ok"))
+//     }
+//     else{
+//         reject(("this is not ok"))
+//     }
+// })
+// .then((msg)=>{
+//     console.log(msg)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+
+
+
+// // Write a function batchProcess(tasks, batchSize) that takes an array of asynchronous tasks and runs them in batches of size batchSize. Return the results in the correct order
+
+// async function batchProcess(tasks, batchSize){
+//     const results = []
+//     let batch = [];
+//     for (let i =0; i < tasks.length; i++){
+//         batch.push(tasks[i])
+//         if(batch.length === batchSize || i === tasks.length-1){
+//             const batchResult = await Promise.all(batch.map(task=>task()));
+//             results.push(...batchResult);
+//             batch = [];
+//     }   
+// }
+// return results;
+// }
+// const tasks = [
+//   () => new Promise(resolve => setTimeout(() => resolve(1), 1000)),
+//   () => new Promise(resolve => setTimeout(() => resolve(2), 5000)),
+//   () => new Promise(resolve => setTimeout(() => resolve(3), 3000)),
+//   () => new Promise(resolve => setTimeout(() => resolve(4), 7000))
+// ]
+// batchProcess(tasks, 2).then((results)=>console.log(results))
+
+
+// let  arraya = [1,2,[3,4,[5,6,[7,8]]]]
+// let arr = [1,2,3,[4,5],[5,6],[7,8]]
+// console.log(arraya.flat())
+
+//console.log(5+9*"1")
+
+// //let num = 1234.56
+// let num = 1234.56;
+// let result = (num*100);  // Outputs 56
+// console.log(result%100);
+
+// //console.log(Math.round((num*100)/100))
+
+
+
+
+// let arr = ["amol",24,"Kantilal",35,9270043110,"JAdhav"]
+// let str =[]
+// let num= []
+
+// for (i=0;i<arr.length;i++){
+// if(typeof(arr[i])=='number'){
+// num.push(arr[i])
+// }
+// else{
+// str.push(arr[i])
+// }
+// }
+// console.log(str)
+// console.log(num)
+
+// let str = "amol kantilal jadhav"
+// let vovels = "aeiou"
+// let newstr =''
+// for(i=0;i<str.length;i++){
+//     if(vovels.includes(str[i])){
+//         newstr+=str[i]
+//     }
+    
+// }
+// console.log(newstr.split(""))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
