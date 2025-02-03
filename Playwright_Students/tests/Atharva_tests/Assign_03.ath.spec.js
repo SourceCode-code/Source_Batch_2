@@ -471,3 +471,89 @@ test('Test the dropdown', async({browser})=>{
     await expect(page.locator('[id="dropdown-class-example"]')).toHaveValue("option3")
 
 })
+
+// ------------------------------------------------------------------------------------------------------// 
+
+// PART 2 Of Assignment 03 // 
+// Automate the Dynamic dropdown 
+
+
+
+test(' Test the Dynamic DropDowns ', async({browser})=>{
+
+
+    const Context = await browser.newContext()
+    const page = await Context.newPage()
+
+    // step1:- verify the URL of the webpage
+    await page.goto('https://rahulshettyacademy.com/AutomationPractice/')
+
+    // step 2:- verify the heading of the webpage
+    await expect(page).toHaveTitle('Practice Page')
+
+    // step 3:- verify the heading of the dynamic dropdown
+    let droptitle = await page.locator('[class="cen-left-align"][id="select-class-example"]').first()
+    await expect(droptitle).toContainText('Suggession Class Example')
+
+    // step4:- enter the partial text in the dynamic dropdown
+    await page.locator('[id="autocomplete"]').fill("ire")
+    // waiting for the locator :- meaning when we enter "ind" in the dropdown , the following locator will help to fetch the country
+    await page.waitForSelector('[id="ui-id-1"]') // this is that locator when we type partial text in the dropdown , it will fetch the country name
+    // click on the correct option 
+    let Options = await page.locator('[class="ui-menu-item"] div').count()
+    console.log(Options)
+    for (let i=0; i < Options; i++){
+        let Check = await page.locator('[class="ui-menu-item"] div').nth(i).textContent() //this line implies that we are iterating over the available options in the dropdown
+        console.log(Check)
+        if(Check === "Ireland"){
+            await page.locator('[class="ui-menu-item"] div').nth(i).click() //this is a condition which implies that if the text is "Ireland", then click on it // and "nth(i)" is used to iterate over the options of dropdown available
+            break     //we areusing break keyword here so that when playwright will search for desired option , it will stop right there
+        }
+    }
+    //step5:- wait for the dropdown to be selected
+    await page.waitForTimeout(2000)
+    // step 6:- verify the selected option 
+    await expect(page.locator('[id="autocomplete"]')).toHaveValue("Ireland")
+
+
+})
+
+// Task 2:- Dynamic dropdown of flipkart for searching iphone15
+
+test('Test the dropdown of flipkart', async({browser})=>{
+
+    const Context = await browser.newContext()
+    const page = await Context.newPage()
+
+    // Step1:- verify the url of the webpage
+    await page.goto('https://www.flipkart.com/')
+
+    // step 2:- verify the heading of the webpage
+
+    // step3:- enter the partial text in the search bar
+    await page.locator('[class="Pke_EE"]').fill('iph')
+
+    // step 4:- wait for the dropdown to be visible
+    await page.waitForSelector('[class="YGcVZO _2VHNef"] div')
+
+    // options 
+    let text = await page.locator('').count()
+})
+
+
+
+test('test the keyboard actions', async({browser})=>{
+
+    const Context = await browser.newContext()
+    const page = await Context.newPage()
+
+    await page.goto("https://demoqa.com/text-box")
+
+    await page.locator('[placeholder="Current Address"]').fill('the elegance park, ravet, pune')
+
+    await page.keyboard.press('Control+A')
+    await page.keyboard.press('Control+C')
+
+    await page.locator('[id="permanentAddress"]').click()
+    await page.keyboard.press('Control+V')
+})
