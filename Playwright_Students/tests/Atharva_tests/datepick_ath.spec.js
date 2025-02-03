@@ -74,14 +74,15 @@ test("DatePicker using Date method", async({page})=>{
     console.log(`${futuremonth} ${futureyear}`)
 
     while(true){
-        await page.locator('[class="datepicker-switch"]').first().click()
-        await page.locator('[class="next"]').first().click()
+        await page.locator('[class="datepicker-switch"]').first().click() //here we are clicking on the month, doing so because on the UI , we need to change the year by clicking the button :">>" 
+        await page.locator('[class="next"]').first().click()//clickin on ">>", but not working ,test getting failed
         // console.log()
         if(Monthyr == `${futuremonth} ${futureyear}`){
             await page.locator('[class="next"]').first().click()
             break
         }
-        
+        //since the ">>" next button is not getting clicked, the future month&year are not getting selected, 
+        // need help for this //
     }
 
 
