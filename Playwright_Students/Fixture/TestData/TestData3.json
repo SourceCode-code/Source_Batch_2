@@ -1,0 +1,41 @@
+{
+    "keydata":[
+        {
+            "index":0,
+            "title":"Free online text compare tool | GoTranscript",
+            "url":"https://gotranscript.com/text-compare",
+            "text":"Hello , I am learning Playwright",
+            "placeholder1":"Paste one version of the text here."
+        },
+        {
+            "index":1,
+            "url":"https://webdriveruniversity.com/File-Upload/index.html",
+            "title":"File Upload",
+            "path":"../../Playwright_Students/Fixture/FileUpload/AtharvaResume.pdf",
+            "alert":"Your file has now been uploaded!",
+            "url1":"https://webdriveruniversity.com/File-Upload/index.html?filename=AtharvaResume.pdf"
+        },
+        {
+            "index":2,
+            "url2":"https://letcode.in/dropdowns",
+            "title2":"LetCode with Koushik",
+            "fruit1":"Apple",
+            "value1":"0",
+            "txtapple":"You have selected Apple",
+            "fruit2":"Mango",
+            "value2":"1",
+            "txtMang":"You have selected Mango",
+            "fruit3":"Orange",
+            "value3":"2",
+            "txtOr":"You have selected Orange",
+            "fruit4":"Banana",
+            "value4":"3",
+            "txtB":"You have selected Banana",
+            "fruit5":"Pine Apple",
+            "value5":"4",
+            "txtPi":"You have selected Pine Apple"
+        }
+    ]
+}
+
+

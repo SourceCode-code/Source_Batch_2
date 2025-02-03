@@ -1,0 +1,19 @@
+{
+    "Mydata" :[
+        {
+            "index":0,
+            "first_name": "atharva",
+            "last_name": "pandit",
+            "email":"sampledata@gmail.com",
+            "comment":"hey, I am learning dynamicdata",
+            "mandatoryFields":"Error ! all fields are mandatory"
+        },
+        {
+            "index":1,
+            "first_name":"Kathie",
+            "last_name":"sanders",
+            "email":"kathies@gmail.com",
+            "comment":"Hello, I am learning javascript"
+        }
+    ]
+}

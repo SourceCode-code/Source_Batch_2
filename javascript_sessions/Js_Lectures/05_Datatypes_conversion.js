@@ -21,7 +21,7 @@ console.log(x2 + x1); // Output: "200100" (String concatenation)
 
 // 2. Conversion from String to Number
 
-// a. Using parseInt() - Converts a string into an integer
+w// a. Using parseInt() - Converts a string into an integer
 let x3 = parseInt(x2);
 console.log(x3 + x1); // Output: 300 (Number addition)
 console.log(typeof x3); // Output: "number"

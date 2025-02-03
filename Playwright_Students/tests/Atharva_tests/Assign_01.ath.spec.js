@@ -28,6 +28,10 @@ test("Contact Details Page",async({browser})=>{
     //enter the comment
     await page.locator('[name="message"]').fill("hola123")
     await expect(page.locator('[name="message"]')).toHaveValue("hola123")
+
+    let submitbtn = await page.locator('[class="contact_button"][type="submit"]').textContent()
+    console.log(submitbtn)
+    await expect(submitbtn).toEqual("Thank You for your Message!")
 })
 
 
