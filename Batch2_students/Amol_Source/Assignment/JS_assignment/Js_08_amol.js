@@ -87,4 +87,3 @@ console.log('Ans of qestion no. 5',leapcheack)
 
 
 
-

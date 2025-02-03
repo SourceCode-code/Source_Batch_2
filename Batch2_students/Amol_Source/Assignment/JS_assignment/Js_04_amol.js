@@ -65,3 +65,27 @@ let str14 = "test your code with a test case";
 console.log("Ans of Qes No. 14",str14.replace("test","exam"));
 
 //thanks 
+
+// Convert the string "learning" to uppercase.
+
+// Retrieve the last character of the string "automation".
+
+// Replace  occurrences of 'banana' with 'pineapple' in the string "banana apple".
+
+// Extract the last 4 characters from the string "automation testing".(Using substring and substr)
+
+// Write a check if  a string and returns true if it includes the word "API",
+
+// Replace the first occurrence of "test" with "exam" in the string "test your code with a test case".
+
+// Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+
+// Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+
+// Use repeat() method to print 30 Days Of JavaScript 2 times
+
+// Access the 'JavaScript' string characters using a random number.
+
+// let challenge= '30 Days Of JavaScript' convert only Days in upperletter in given string
+
+// let num = "100" convert in number and check its datatype
