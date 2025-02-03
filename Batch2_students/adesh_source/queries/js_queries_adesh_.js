@@ -564,3 +564,22 @@ for(let i=2;i<=10;i+=2){
 for(let i=1;i<=19;i+=2){
     console.log(i);
 }
+
+
+/*
+*
+**
+***
+****
+*****
+*/
+for(let i=1;i<=5;i++){
+    console.log("*".repeat(i));
+
+}
+
+
+for(let i =1;i<=7;i++){
+    console.log("#".repeat(i));
+
+}
