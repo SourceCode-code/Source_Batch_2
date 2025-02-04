@@ -1,5 +1,9 @@
 const {test,expect} = require('@playwright/test')
 
+
+// method 1 : fill the date //
+
+
 // test("Test the Datepicker method 1", async({browser})=>{
 
 //     const Context = await browser.newContext()
@@ -11,6 +15,9 @@ const {test,expect} = require('@playwright/test')
 
 //     await page.waitForTimeout(2000)
 // })
+
+
+// method 2: picking from calendar//
 
 test("Method 2 for Date Picker", async({page})=>{
 
@@ -46,8 +53,9 @@ test("Method 2 for Date Picker", async({page})=>{
         }
     }
     
+    
 })
-
+// --------------------------------------------------------------------------------------------------------\\
 
 // 2 autoamte selection of date which is 05/06/2027-- set date using date method in js --(webdriver )
 test("DatePicker using Date method", async({page})=>{
@@ -57,7 +65,7 @@ test("DatePicker using Date method", async({page})=>{
     // getting DATE of the future
     let manipulateddate = new Date()
     let futuredate = manipulateddate.getDate()
-    manipulateddate.setDate(futuredate +2)
+    manipulateddate.setDate(futuredate +1)
     console.log(manipulateddate.getDate()) //outputs : 5 , the required future date
 
     // getting MONTH of the future
@@ -74,20 +82,27 @@ test("DatePicker using Date method", async({page})=>{
     console.log(`${futuremonth} ${futureyear}`)
 
     while(true){
-        await page.locator('[class="datepicker-switch"]').first().click() //here we are clicking on the month, doing so because on the UI , we need to change the year by clicking the button :">>" 
-        await page.locator('[class="next"]').first().click()//clickin on ">>", but not working ,test getting failed
-        // console.log()
-        if(Monthyr == `${futuremonth} ${futureyear}`){
-            await page.locator('[class="next"]').first().click()
+        let mnthyear = await page.locator('[class="datepicker-switch"]').first().textContent()
+        await page.locator('[class="next"]').first().click()
+        // console.log(mnthyear)
+        if(mnthyear === `${futuremonth} ${futureyear}`){
             break
         }
-        //since the ">>" next button is not getting clicked, the future month&year are not getting selected, 
-        // need help for this //
+        // await page.locator('[class="next"]').first().click()
     }
+    // now that we have the month and year selected , we need to select the date
+    let daycnt = await page.locator('[class="day"]').count()
+    console.log(daycnt)
 
-
-
-
+    for(let i=0; i<daycnt; i++){
+        let txt = await page.locator('[class="day"]').nth(i).textContent()
+        if(txt === `${futuredate}`){
+            await page.locator('[class="day"]').nth(i).click()
+            break
+        }
+    }
+    await page.locator('[class="form-control"]').toHaveValue('06-05-2027')
+    await page.waitForTimeout(3000)
 })
 
 
