@@ -71,7 +71,7 @@ test("DatePicker using Date method", async({page})=>{
 
     await page.locator('[id="datepicker"]').click()
     console.log(`${month} ${year}`)
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(3000)
 
     while(true){
         let years = await page.locator('[class="datepicker-switch"]').nth(0).textContent()
@@ -84,8 +84,8 @@ test("DatePicker using Date method", async({page})=>{
     let days = await page.locator('[class="day"]').count()
     console.log(days)
     for(let i=0; i<=days; i++){
-        let day1 = await page.locator('[class="day"]').nth(i).textContent()
-        if(day1 === day){
+        let DAY = await page.locator('[class="day"]').nth(i).textContent()
+        if(DAY === day){
             await page.locator('[class="day"]').nth(i).click()
             break
         }
