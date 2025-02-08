@@ -90,20 +90,36 @@ test("verify PUT API ", async ({ request }) => {
     let res2 = await req2.json()
 
     console.log(res2)
-   expect(req2.status()).toBe(200)
-   expect(res2.name).toBe('amol')
+    expect(req2.status()).toBe(200)
+    expect(res2.name).toBe('amol')
 })
 
 
-test("verify DELETE API",async({request})=>{
+test("verify DELETE API", async ({ request }) => {
 
-let req4 = await request.delete("https://reqres.in/api/users/2")
+    let req4 = await request.delete("https://reqres.in/api/users/2")
 
-expect(await req4.status()).toBe(204)
+    expect(await req4.status()).toBe(204)
 
 
 
 })
+
+test("verify get API  ex 3", async ({ request }) => {
+    let requ = await request.get("https://gorest.co.in/public/v2/users", {
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization":
+                "Bearer 0a0a6a6d691a89afd6afe415607fb15b6e4b4c40b61bfed8dacc73619bb4a192",
+        }
+    })
+
+    let resp = await requ.json()
+    expect(requ.status()).toBe(200)
+})
+
+
 
 
 

@@ -142,37 +142,17 @@ test("Test the Pagination Checkbox", async({browser})=>{
     // step 1 :- visit the URL of the WebPage
     await page.goto('https://testautomationpractice.blogspot.com/')
 
-    // step 2 :- 
-    let appliance1 = await page.locator('[id="productTable"] tbody tr td:nth-child(2)').count()
-    let check = await page.locator('[id="productTable"] tbody tr td:nth-child(2)')
-
-    for(let i=0; i<appliance1; i++){
-        let check1 = await check.nth(i).textContent()
-        console.log(check1)
-    }
+    let names = await page.locator('[id="productTable"] tbody tr td:nth-child(1)').count()
     
-    // step 4 :- click on the pagination button
-    //function for checkbox //
-    async function checkAppliance(page, productNames){
-        let rows = await page.locator('[id="productTable"] tbody tr ').all()
-
-        for(let row of rows){
-            let productText = await row.locator('[id="productTable"] tbody tr td:nth-child(2)').textContent()
-        if(productNames.includes(productText.trim())){
-            let checkBox = row.locator('[id="productTable"] tbody tr td input[type="checkbox"]')
-            if(!(await checkBox.isChecked())){
-                await checkBox.click()
-                console.log(`Checked: ${productText}`)
-            }else{
-                console.log(`Already checked: ${productText}`)
-            }
+    let gadgetName1 = "Smartphone"
+    let Name = await page.locator('[id="productTable"] tbody tr td:nth-child(2)')
+    const chekbox = await page.locator('[id="productTable"] tbody tr td:nth-child(4) [type="checkbox"]')
+    for(let i=0; i<names; i++){
+        let gadName = await Name.nth(i).textContent()
+        if(gadName === gadgetName1){
+            await chekbox.nth(i).check()
         }
-
     }
-}
-
-    const prosductToSelect = ["Smartphone", "Laptop", "Tablet","Smartwatch","Wireless Earbuds"]
-    await checkAppliance(page, prosductToSelect)
 
 })
 

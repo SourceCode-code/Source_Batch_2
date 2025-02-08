@@ -55,3 +55,33 @@ test("Verify DELETE Req", async({request})=>{
     const ReQ = await request.delete('https://reqres.in/api/users/2')
     expect(await ReQ.status()).toBe(204)
 })
+
+// More API automation tests below :- \\
+
+
+test("Test GET API req", async({request})=>{
+
+    let Reqs = await request.get('https://gorest.co.in/public/v2/posts')
+
+    let ResP = await Reqs.json()
+    console.log(ResP)
+    // console.log(ResP.data)
+    expect(Reqs.status()).toBe(200)
+    
+})
+
+test('test the POST API req', async({request})=>{
+
+    let requestp = await request.post("https://gorest.co.in/public/v2/users",{
+        data:{
+            "id":7682065,
+            "name":"Tarun Nambeesan",
+            "email":"tarun_nambeesan@champlin-stehr.example",
+            "gender":"male",
+            "status":"active"}
+    })
+    let responsep = await requestp.json()
+    console.log(responsep)
+    expect(requestp.status()).toBe(201)
+
+})
