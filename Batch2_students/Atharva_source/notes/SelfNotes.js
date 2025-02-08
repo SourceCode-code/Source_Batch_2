@@ -246,7 +246,9 @@ TRACE: The message body contains the request as received by the server.
 The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests.
 
 202 Accepted
-The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to later send an asynchronous response indicating the outcome of the request. It is intended for cases where another process or server handles the request, or for batch processing.
+The request has been received but not yet acted upon. It is noncommittal, since there is no way in HTTP to
+later send an asynchronous response indicating the outcome of the request. 
+It is intended for cases where another process or server handles the request, or for batch processing.
 
 203 Non-Authoritative Information
 This response code means the returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy. 
