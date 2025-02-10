@@ -31,8 +31,6 @@ test("verify injecting the cookies and cahce", async ({ browser }) => {
     await expect(dashboardel).toHaveText("Dashboard")
     await expect(page).toHaveTitle("OrangeHRM")
 
-
-
 })
 
 //directory -->
