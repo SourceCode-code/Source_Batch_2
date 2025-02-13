@@ -1,0 +1,32 @@
+//playwright framework --->
+
+selnuium / cypress/playwright / webdriver io --> the syntax of the code may differ 
+but the way of method to write code is same and that are majorly of two type 
+
+// Page Object Model --> POM (98%)
+// Behaviour driven Development --> BDD cumcuber (2%)
+
+
+your frame work should be able to meet 4 (basic conditions ) condition
+
+1 your frame work should be easy to understand to even a non tech person 
+2 your framework should be dynamic 
+3 your should be able to make any changes with ease 
+4 your framework must be easy to share and meets all the security requirement 
+
+
+
+
+
+// ------------------------------------
+FOLDER STRUCTURE
+
+//FIXTURE FOLDER --> to save testcase data 
+//TESTS --> TO save the testcases
+//configfiles --> to save your configs (settings)
+//Support folder --> to store your supporting file and folders
+// pageobjects --> this is a folder which will contain function and methods based on the use and location
+//package.json --> use to store the depency 
+//package.lock.json-->
+
+
