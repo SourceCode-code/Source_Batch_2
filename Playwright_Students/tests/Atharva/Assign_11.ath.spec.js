@@ -137,6 +137,7 @@ test('Download functionality', async({page})=>{
    const download = await downlaodpr
 
    await download.saveAs("../../Playwright_Students/Fixture/FileDownload/doc1.pdf")
+   
 })
 
 // D:\Source_batch2\Source_Batch_2\Playwright_Students\Fixture\FileDownload
