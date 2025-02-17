@@ -284,30 +284,38 @@ more instance-manipulations applied to the current instance.
 
 
 300 Multiple Choices
-In agent-driven content negotiation, the request has more than one possible response and the user agent or user should choose one of them. There is no standardized way for clients to automatically choose one of the responses, so this is rarely used.
+In agent-driven content negotiation, the request has more than one possible response 
+and the user agent or user should choose one of them. 
+There is no standardized way for clients to automatically choose one of the responses, so this is rarely used.
 
 301 Moved Permanently
 The URL of the requested resource has been changed permanently. The new URL is given in the response.
 
 302 Found
-This response code means that the URI of requested resource has been changed temporarily. Further changes in the URI might be made in the future, so the same URI should be used by the client in future requests.
+This response code means that the URI of requested resource has been changed temporarily. 
+Further changes in the URI might be made in the future, so the same URI should 
+be used by the client in future requests.
 
 303 See Other
 The server sent this response to direct the client to get the requested resource at another URI with a GET request.
 
 304 Not Modified
-This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.
+This is used for caching purposes. It tells the client that the response has not been modified, 
+so the client can continue to use the same cached version of the response.
 
 305 Use Proxy Deprecated
-Defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.
+Defined in a previous version of the HTTP specification to indicate that a requested response must be accessed by a proxy. 
+It has been deprecated due to security concerns regarding in-band configuration of a proxy.
 
 306 unused
-This response code is no longer used; but is reserved. It was used in a previous version of the HTTP/1.1 specification.
+This response code is no longer used; but is reserved. 
+It was used in a previous version of the HTTP/1.1 specification.
 
 307 Temporary Redirect
-The server sends this response to direct the client to get the requested resource at another URI with the same method that was used in the prior request. This has the same semantics as the 302 Found response code, 
+The server sends this response to direct the client to get the requested resource at another URI with the same method that was used in the prior request. 
+This has the same semantics as the 302 Found response code, 
 with the exception that the user agent must not change the HTTP method used:
- if a POST was used in the first request, a POST must be used in the redirected request.
+if a POST was used in the first request, a POST must be used in the redirected request.
 
 308 Permanent Redirect
 This means that the resource is now permanently located at another URI, 
@@ -331,7 +339,7 @@ That is, the client must authenticate itself to get the requested response.
 
 402 Payment Required
 The initial purpose of this code was for digital payment systems,
- however this status code is rarely used and no standard convention exists.
+however this status code is rarely used and no standard convention exists.
 
 403 Forbidden
 The client does not have access rights to the content; that is, 
@@ -391,7 +399,7 @@ The media format of the requested data is not supported by the server, so the se
 
 416 Range Not Satisfiable
 The ranges specified by the Range header field in the request cannot be fulfilled.
- It's possible that the range is outside the size of the target resource's data.
+It's possible that the range is outside the size of the target resource's data.
 
 417 Expectation Failed
 This response code means the expectation indicated by the Expect request header field cannot be met by the server.
@@ -399,32 +407,32 @@ This response code means the expectation indicated by the Expect request header 
 418 I'm a teapot
 The server refuses the attempt to brew coffee with a teapot.
 
-421 Misdirected Request
+421 Misdirected Request :-
 The request was directed at a server that is not able to produce a response.
- This can be sent by a server that is not configured to produce responses for the combination of 
- scheme and authority that are included in the request URI.
+This can be sent by a server that is not configured to produce responses for the combination of 
+scheme and authority that are included in the request URI.
 
-422 Unprocessable Content (WebDAV)
+422 Unprocessable Content (WebDAV) :- 
 The request was well-formed but was unable to be followed due to semantic errors.
 
-423 Locked (WebDAV)
-The resource that is being accessed is locked.
+423 Locked (WebDAV) :-
+The resource that is being accessed is locked. 
 
-424 Failed Dependency (WebDAV)
+424 Failed Dependency (WebDAV) :-
 The request failed due to failure of a previous request.
 
-425 Too Early Experimental
+425 Too Early Experimental 
 Indicates that the server is unwilling to risk processing a request that might be replayed.
 
-426 Upgrade Required
+426 Upgrade Required  
 The server refuses to perform the request using the current protocol but might be willing
- to do so after the client upgrades to a different protocol. 
- The server sends an Upgrade header in a 426 response to indicate the required protocol(s).
+to do so after the client upgrades to a different protocol. 
+The server sends an Upgrade header in a 426 response to indicate the required protocol(s).
 
 428 Precondition Required
 The origin server requires the request to be conditional. This response is intended to prevent the 'lost update' problem,
- where a client GETs a resource's state, modifies it and PUTs it back to the server, 
- when meanwhile a third party has modified the state on the server, leading to a conflict.
+where a client GETs a resource's state, modifies it and PUTs it back to the server, 
+when meanwhile a third party has modified the state on the server, leading to a conflict.
 
 429 Too Many Requests
 The user has sent too many requests in a given amount of time (rate limiting).
