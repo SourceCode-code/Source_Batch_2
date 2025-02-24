@@ -1,0 +1,65 @@
+Exceution -->
+
+smoke  -->
+regression--> 
+
+
+commands 
+
+// for running whole -->
+
+npx playwright test 
+
+// for single testcases 
+
+npx playwright test 'path of testcases'
+
+
+
+
+// to open ui 
+npx playwright test --ui 
+
+// for debugging 
+
+npx playwright test  "path "--debug 
+
+//for running in headless 
+
+npx playwright test 
+
+// 
+npx playwright test --headed
+
+
+falky test -->  testcases that passes for sometime and fails other due to some timeout or unceratinty is called falky testcases
+failed testcases  --> testcases that fails everytime due to failure 
+
+
+
+
+//----------------------------------------------------------------------------
+
+//exceution flow project 
+
+
+//--------------------------------------------
+
+general --> 
+
+master regression --
+
+step 1 checkout to master regression 
+step 2 fetch and pull orgin changes  --> master regression
+step 3  -->creatre a feature branch form master regression --> projcet name suitename KW09 
+step 4 hit approperter commands --> npx playwright test --headed 
+step5 --> save the report and rename it 
+
+step6 --> re run the failed in mode ui (if any changes make // if bug found report it )
+step7 --> genreate report again 
+step 8 --> push the changes to and the report to the barnch  (assign the report to jira )
+step 9 --> lead will merge the excuetion changes with master regression 
+
+
+
+
