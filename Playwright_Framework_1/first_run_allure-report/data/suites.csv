@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6262","verify the contact us from","","Tue Feb 25 09:52:15 IST 2025","passed","Tue Feb 25 09:52:21 IST 2025","","01_SC2_verify_Contact_us_form.spec.js","",""

@@ -1,0 +1,25 @@
+//step 1 install allure depency 
+
+npm install -D allure-playwright
+
+//step 2 add in confg reporter 
+ reporter: [["line"], ["allure-playwright"]],
+ // 
+ reporter:['allure-playwright',{outputFolder:"my-allure-results'}]
+
+
+step 3  -- install allure 
+//go on the link and install allure 
+https://allurereport.org/docs/install/ 
+
+step 4 
+ run all testcases 
+ npx playwright test --reporter=line,allure-playwright
+
+ step 5 
+
+ run commands to compline and run allure report 
+
+ command 1 to generate report to html --> allure generate ./allure-results -o ./allure-report
+
+ command 2 complie the report and run --> allure open ./allure-report
