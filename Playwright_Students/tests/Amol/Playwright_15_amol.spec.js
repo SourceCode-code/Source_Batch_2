@@ -111,5 +111,4 @@ test ("Pagination Web Table",async({browser})=>{
         await checkbox4.nth(i).check()
      }
    }
-
 })
