@@ -20,6 +20,9 @@ step 4
 
  run commands to compline and run allure report 
 
- command 1 to generate report to html --> allure generate ./allure-results -o ./allure-report
+ command 1 to generate report to html -->
 
- command 2 complie the report and run --> allure open ./allure-report
+ allure generate ./allure-results -o ./allure-report --clean
+
+ command 2 complie the report and run -->
+  allure open ./allure-report
