@@ -9,14 +9,14 @@ test("Verify ToDo List", async({browser})=>{
     const Context = await browser.newContext()
     const page = await Context.newPage()
     let todopgtitle = data.testdata[1].todopagetitle
-    let homepgtitle = data.testdata[0].homepagetitle
+    let Hometitle = data.testdata[1].HomeTitle
     let toheading = data.testdata[1].todoheading
     let textfield = data.testdata[1].textfield
     let textvalue = data.testdata[1].textvalue
 
     await page.goto("https://webdriveruniversity.com")
 
-    await homepage.verifyHomepageTitle(page,homepgtitle)
+    await homepage.verifyHomepageTitle(page,Hometitle)
 
     const [TodoPage] = await Promise.all([
 

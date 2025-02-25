@@ -13,6 +13,7 @@
             "index":1,
             "testid":"02",
             "todopagetitle":"TO DO LIST",
+            "HomeTitle":"WebDriverUniversity.com",
             "todoheading":"WebDriver | To Do List",
             "textvalue":"text",
             "textfield":"Complete the test case"
