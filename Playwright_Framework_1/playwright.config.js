@@ -4,7 +4,7 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
-  reporter: 'html', 
+  reporter: [['html'],["line"], ["allure-playwright"]],
   timeout:30000, // 
   fullyParallel: true,
   // report --> html , mochaawesome report , allure report
