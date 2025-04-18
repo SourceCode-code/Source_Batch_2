@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test')
-const { parseEnv } = require('util')
+const exp = require('constants')
+
 
 test('Testing the TRINET HR Solutions WebPage', async({browser})=>{
 
@@ -126,3 +127,27 @@ test('Adding Product to Cart PopUp', async({page})=>{
     await page.waitForTimeout(3000)
 
 })
+
+
+// FILE UPLOAD functionality test\\
+
+// test('File Upload Functionality', async({page})=>{
+
+//     // step 1 :- visit  the URL of the webpage
+//     await page.goto("https://webdriveruniversity.com/File-Upload/index.html")
+
+//     // step 2 :- verify the heading of the webpage
+//     // await expect(page).toHaveTitle("WebdriverUniversity.com (File Upload)")
+
+//     // step 3 :- click on the choose file button 
+//     await page.locator("#myFile").setInputFiles('playwright/Fixture/Fileuploaddata/AtharvaResume.pdf')
+    
+//     page.on("dialog", async(alert1)=>{
+
+//         await expect(alert1.message()).toContain("Your file has now been uploaded!")
+//         await alert.accept()
+//     })
+
+//     await page.locator('[id="submit-button"]').click()
+//     await expect(page.url()).toContain("https://webdriveruniversity.com/File-Upload/index.html?filename=AtharvaResume.pdf")
+// })

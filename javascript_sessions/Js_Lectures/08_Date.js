@@ -63,7 +63,7 @@ let curHours = curTime % 12;
 curHours = curHours ? curHours : 12; // Convert "0" hours to "12" for 12:00
 let paddedTime = String(curHours).padStart(2, '0');
 let paddedMin = String(curMin).padStart(2, '0');
-
+    
 // Display the time in 12-hour format
 console.log(`${paddedTime}:${paddedMin}:${curSec} ${amPm}`); // Example: "08:37:54 AM"
 
