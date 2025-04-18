@@ -14,8 +14,5 @@ test("Randomly acquiring Tests", async({browser})=>{
         page.locator('[href="/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles"]').click()
     ])
 
-
-
-
-
 })
+
