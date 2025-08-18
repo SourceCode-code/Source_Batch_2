@@ -4,16 +4,19 @@
             "index": 0,
             "testId": "01",
             "Homepagetitle": "WebDriverUniversity.com",
-            "ContactusTitle": "CONTACT US",
-            "ContactusHeading": "WebDriver | Contact Us",
-            "fristnamevalue": "siddhant",
-            "FirstnameFeild": "First Name",
-            "LastnameFeild": "Last Name",
-            "Lastnamevalue": "gadakh",
-            "emailFeild": "Email Address",
-            "emailvalue": "test123@gmail.com",
-            "commentFeild": "Comments",
-            "commnetvalue": "test1"
+            "ContactusTitle":"CONTACT US",
+            "ContactusHeading":"WebDriver | Contact Us",
+            "fristnamevalue":"siddhant",
+            "FirstnameFeild":"First Name"
+        },
+        {
+            "index":1,
+            "testid":"02",
+            "todopagetitle":"TO DO LIST",
+            "HomeTitle":"WebDriverUniversity.com",
+            "todoheading":"WebDriver | To Do List",
+            "textvalue":"text",
+            "textfield":"Complete the test case"
         }
     ]
 }

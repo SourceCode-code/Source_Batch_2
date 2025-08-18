@@ -82,6 +82,8 @@ let IsTrueNumber = Boolean("9999");
 console.log(IsTrueNumber);
 
 //3 
+
+
 let stateMent3 = 'Guten Tag';
 let isTrue = Boolean('Tag');
 console.log(isTrue);

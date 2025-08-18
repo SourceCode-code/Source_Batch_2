@@ -6,7 +6,6 @@ class ContactusPage {
     successmessage = '[id="contact_reply"] h1'
 
 
-
     //enter text into input feild
     //this is used to enter text in input feild on contact us page 
     // parameter for this function represent 
