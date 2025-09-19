@@ -1,0 +1,33 @@
+1 working laptop  or pc with webcam  -- i5> ram 8gb -- 16gb --
+2 in day 5 minimium hours study
+
+
+//-------------------------------------------------------//
+
+ 1 code editor ( compiler , editor ) -- microsoft (vs- code)
+
+ 
+ // steps to install vs code 
+ 
+ // 1 url -->https://code.visualstudio.com/
+ // 2 download -->
+ //3 in setup check all boxes 
+ 
+ // steps to install node js 
+ 
+ 1 visit https://nodejs.org/en/download/current
+ 2 download node for windows 
+ 3 click on next and install
+ 
+ // install git 
+ 
+ visit https://git-scm.com/downloads/win
+ 2 download for windows (Git for Windows/x64 Setup.)
+ 
+ ( year )
+ 
+ Q1 - jan march      -- hiring peak 
+ Q2 -- aprl - june   -- good enongh 
+ Q3-- july - sept    -- better 
+ Q4-- sept dec       -- learning   25 dec 
+ 

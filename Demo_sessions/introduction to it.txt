@@ -1,0 +1,59 @@
+// what is primal software industry 
+
+--> software // application
+
+software --> system bulid to solve a problem or to assist in working ( its a compliactioon of multiple system and code )
+
+//1 product based -->a product based company build a software for the market (example -> google -(search engine --> everyone))
+
+//2 service based -->a service company build software for a client or other company 
+
+tcs     -->3.6lpa(serive based company) --> hdfc sbi 
+infosys --> indian governemt
+google  -->40-50lpa(product based company)
+
+skilled based hiring --> 
+product has more skills and commands 
+
+every comapny in it industry bulid software 
+
+every company follows basic principle / foundation
+
+SDLC(SOFTWARE DEVElOPMENT LIFECYLE )--> the process followed to ensure high quality delivery of software 
+
+requirement analysis --> feasbility study --> design -->  coding (developers) --> Testing(mannual & automation)--> deployment --> Maintanece
+
+
+// waterfall 
+// agile 
+// v model 
+// fish 
+// spiral 
+
+
+//what is software testing --> the process of exceuting or checking the software to ensure it meets the specifaication or requirments of the client or user without having any defects 
+
+//why  do we need testing  --> aviod bugs or defect , reduce risk , user stastfication 
+
+// how --> 
+
+testing --> 
+
+if the chechking is done mannually --> mannual testing 
+if the checking is done by a tool or a program -->automation testing 
+
+// --> as we have sdlc for software development for testing we STLC
+
+STLC(SOFTWARE TESTING LIFE CYLCE)
+
+requirement analysis --> test planing --> test case desgin --> testing (exceution & bug reporting) --> final validtion--> mainaitnace ( regression or resting)
+
+
+
+assignments --> 
+
+1 need names of 5 prodcut based companies and there products 
+2 name of service based and the there clients 
+3 write description of sldc and stlc accoring your understanding 
+
+
